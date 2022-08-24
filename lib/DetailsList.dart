@@ -394,7 +394,7 @@ class _DetailsListState extends State<DetailsList> {
                   ),
                 ),
       SizedBox(
-        height: 20,
+        height: 20.h,
 
       ),
                 InkWell(

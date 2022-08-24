@@ -422,7 +422,7 @@ class _StarMarkState extends State<StarMark> {
               ),
               Container(
                 alignment: Alignment.center,
-                width: 150.w,
+                width: 100.w,
                 height: 40.h,
                 child: TextField(
                   decoration: InputDecoration(
@@ -444,7 +444,7 @@ class _StarMarkState extends State<StarMark> {
         height: 500.h,
         child: Expanded(
           child: ListView.builder(
-              itemCount: 12,
+              itemCount: 22,
               itemBuilder: (BuildContext context, index) {
                 return ListTile(
                     leading: CircleAvatar(

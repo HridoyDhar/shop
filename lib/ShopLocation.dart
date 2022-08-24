@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:goldshop/Commentpeople.dart';
 import 'package:goldshop/Home_page.dart';
 import 'package:goldshop/Likepage.dart';
@@ -23,7 +24,9 @@ class _ShopLocationState extends State<ShopLocation> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
+
         child: Scaffold(
+          backgroundColor: Colors.white,
         bottomNavigationBar: BottomNavigationBar(
         items: [
         BottomNavigationBarItem(
@@ -115,23 +118,22 @@ class _ShopLocationState extends State<ShopLocation> {
           Container(
               height: 212,
               width: 331,
-              child: Image.asset("assets/39612-location-animation.gif")),
+              child: Image.asset("assets/86234-select-location.gif")),
           SizedBox(
             height: 10,
           ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => ShopProfile()));
-            },
-          ),
+
           Container(
             height: 45,
-            width: 352,
+           margin: EdgeInsets.symmetric(horizontal: 20.w),
             child: TextField(
               decoration: InputDecoration(
                 // border: Border.all(color: Color(0xffFA504B)),
                   hintText: "Search",
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(10.sp)
+                  ),
+                  
                   hintStyle: TextStyle(
                     color: Colors.grey,
                   ),
@@ -142,7 +144,7 @@ class _ShopLocationState extends State<ShopLocation> {
             ),
           ),
           SizedBox(
-            height: 24,
+            height: 24.h,
           ),
           InkWell(
             onTap: () {
@@ -151,8 +153,8 @@ class _ShopLocationState extends State<ShopLocation> {
             },
           ),
           Container(
-            height: 52,
-            width: 353,
+            height: 52.h,
+            width: 353.w,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
               border: Border.all(
@@ -169,7 +171,7 @@ class _ShopLocationState extends State<ShopLocation> {
             ),
           ),
           SizedBox(
-            height: 24,
+            height: 24.h,
           ),
           InkWell(
             onTap: () {
@@ -178,8 +180,8 @@ class _ShopLocationState extends State<ShopLocation> {
             },
           ),
           Container(
-            height: 52,
-            width: 353,
+            height: 52.h,
+            width: 353.w,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
               border: Border.all(
@@ -195,7 +197,7 @@ class _ShopLocationState extends State<ShopLocation> {
             ),
           ),
           SizedBox(
-            height: 24,
+            height: 24.h,
           ),
           InkWell(
             onTap: () {
@@ -204,8 +206,8 @@ class _ShopLocationState extends State<ShopLocation> {
             },
           ),
           Container(
-            height: 52,
-            width: 353,
+            height: 52.h,
+            width: 353.w,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
               border: Border.all(
@@ -221,7 +223,7 @@ class _ShopLocationState extends State<ShopLocation> {
             ),
           ),
           SizedBox(
-            height: 24,
+            height: 24.h,
           ),
           InkWell(
             onTap: () {
@@ -230,8 +232,8 @@ class _ShopLocationState extends State<ShopLocation> {
             },
           ),
           Container(
-            height: 52,
-            width: 353,
+            height: 52.h,
+            width: 353.w,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
               border: Border.all(
@@ -247,7 +249,7 @@ class _ShopLocationState extends State<ShopLocation> {
             ),
           ),
           SizedBox(
-            height: 24,
+            height: 24.h,
           ),
           InkWell(
             onTap: () {
@@ -256,8 +258,8 @@ class _ShopLocationState extends State<ShopLocation> {
             },
           ),
           Container(
-            height: 52,
-            width: 353,
+            height: 52.h,
+            width: 353.w,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
               border: Border.all(
