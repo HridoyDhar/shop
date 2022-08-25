@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:goldshop/Commentpeople/Commentpeople.dart';
 
-import 'package:goldshop/Commentpeople.dart';
+
 import 'package:goldshop/Home_page.dart';
 import 'package:goldshop/Notifi_cation.dart';
 import 'package:goldshop/Postyou.dart';
@@ -118,7 +119,8 @@ class _LikepageState extends State<Likepage> {
                         style: TextStyle(
                           fontFamily: "itim",
                           fontSize: 13.sp,
-                        )),
+                        )
+                    )
                   ),
                 );
               }),

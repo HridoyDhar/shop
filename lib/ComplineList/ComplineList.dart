@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:goldshop/ComplinePerson.dart';
+import 'package:goldshop/ComplinePerson/ComplinePerson.dart';
+
 
 class CompineList extends StatefulWidget {
   const CompineList({Key? key}) : super(key: key);

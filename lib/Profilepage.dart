@@ -4,8 +4,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:goldshop/Commentpeople.dart';
-import 'package:goldshop/DetailsList.dart';
+
+import 'package:goldshop/Commentpeople/Commentpeople.dart';
+import 'package:goldshop/DetailsList/DetailsList.dart';
+
 import 'package:goldshop/Home_page.dart';
 import 'package:goldshop/Likepage.dart';
 import 'package:goldshop/Notifi_cation.dart';
@@ -380,7 +382,9 @@ class _profilepageState extends State<profilepage> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => DetailsList()));
+                              builder: (context) => DetailsList(
+
+                              )));
                     },
                     child: Container(
                       width: 70.w,

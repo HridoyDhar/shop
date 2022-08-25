@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:goldshop/Choscegmail.dart';
+import 'package:goldshop/Chocegmail/Choscegmail.dart';
+
 import 'package:goldshop/Home_page.dart';
 import 'package:goldshop/forgetpassword.dart';
 

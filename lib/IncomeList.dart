@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:goldshop/DayIncome.dart';
+
+import 'package:goldshop/DayIncome/DayIncome.dart';
 
 class IncomeList extends StatefulWidget {
   const IncomeList({Key? key}) : super(key: key);

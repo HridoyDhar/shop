@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:goldshop/CustomersellDetails.dart';
+import 'package:goldshop/CustomersellDetails/CustomersellDetails.dart';
+
 class Selllist extends StatefulWidget {
   const Selllist({Key? key}) : super(key: key);
 

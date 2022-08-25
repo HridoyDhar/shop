@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:goldshop/Commentpeople.dart';
+
+import 'package:goldshop/Commentpeople/Commentpeople.dart';
 import 'package:goldshop/Findperson.dart';
 import 'package:goldshop/Likepage.dart';
 

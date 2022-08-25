@@ -5,7 +5,8 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:goldshop/Commentpeople.dart';
+
+import 'package:goldshop/Commentpeople/Commentpeople.dart';
 import 'package:goldshop/Home_page.dart';
 import 'package:goldshop/Likepage.dart';
 import 'package:goldshop/Notifi_cation.dart';
@@ -143,189 +144,632 @@ class _ShopLocationState extends State<ShopLocation> {
                   )),
             ),
           ),
-          SizedBox(
-            height: 24.h,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => ShopProfile()));
+         SizedBox(
+           height: 20,
+         ),InkWell(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>ShopProfile()));
             },
-          ),
-          Container(
-            height: 52.h,
-            width: 353.w,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20),
-              border: Border.all(
-                color: Color(0xffFA504B),
+            child:
 
-              ),
-            ),
-            // prefixIcon: Icon(Icons.location_city,
-            // ),
-            child: Text(
-              "Krishna Gold Shop",
-              style: TextStyle(
-                  fontFamily: "itim", fontSize: 20, color: Color(0xffFE7062)),
-            ),
-          ),
-          SizedBox(
-            height: 24.h,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => ShopProfile()));
-            },
-          ),
-          Container(
-            height: 52.h,
-            width: 353.w,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20),
-              border: Border.all(
-                color: Color(0xffFA504B),
-              ),
-            ),
-            // prefixIcon: Icon(Icons.location_city,
-            // ),
-            child: Text(
-              "Krishna Gold Shop",
-              style: TextStyle(
-                  fontFamily: "itim", fontSize: 20, color: Color(0xffFE7062)),
-            ),
-          ),
-          SizedBox(
-            height: 24.h,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => ShopProfile()));
-            },
-          ),
-          Container(
-            height: 52.h,
-            width: 353.w,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20),
-              border: Border.all(
-                color: Color(0xffFA504B),
-              ),
-            ),
-            // prefixIcon: Icon(Icons.location_city,
-            // ),
-            child: Text(
-              "Krishna Gold Shop",
-              style: TextStyle(
-                  fontFamily: "itim", fontSize: 20, color: Color(0xffFE7062)),
-            ),
-          ),
-          SizedBox(
-            height: 24.h,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => ShopProfile()));
-            },
-          ),
-          Container(
-            height: 52.h,
-            width: 353.w,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20),
-              border: Border.all(
-                color: Color(0xffFA504B),
-              ),
-            ),
-            // prefixIcon: Icon(Icons.location_city,
-            // ),
-            child: Text(
-              "Krishna Gold Shop",
-              style: TextStyle(
-                  fontFamily: "itim", fontSize: 20, color: Color(0xffFE7062)),
-            ),
-          ),
-          SizedBox(
-            height: 24.h,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => ShopProfile()));
-            },
-          ),
-          Container(
-            height: 52.h,
-            width: 353.w,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20),
-              border: Border.all(
-                color: Color(0xffFA504B),
-              ),
-            ),
-            // prefixIcon: Icon(Icons.location_city,
-            // ),
-            child: Text(
-              "Krishna Gold Shop",
-              style: TextStyle(
-                  fontFamily: "itim", fontSize: 20, color: Color(0xffFE7062)),
-            ),
-          ),
-          SizedBox(
-            height: 24,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => ShopProfile()));
-            },
-          ),
-          Container(
-            height: 52,
-            width: 353,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20),
-              border: Border.all(
-                color: Color(0xffFA504B),
-              ),
-            ),
-            // prefixIcon: Icon(Icons.location_city,
-            // ),
-            child: Text(
-              "Krishna Gold Shop",
-              style: TextStyle(
-                  fontFamily: "itim", fontSize: 20, color: Color(0xffFE7062)),
-            ),
-          ),
-          SizedBox(
-            height: 24,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => ShopProfile()));
-            },
-          ),
-          Container(
-            height: 52,
-            width: 353,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20),
-              border: Border.all(
-                color: Color(0xffFA504B),
-              ),
-            ),
-            // prefixIcon: Icon(Icons.location_city,
-            // ),
-            child: Text(
-             "Krishna Gold Shop",
-              style: TextStyle(
-                 fontFamily: "itim", fontSize: 20, color: Color(0xffFE7062)),
+            Container(
+           height: 40,
+         alignment: Alignment.center,
+         margin: EdgeInsets.symmetric(horizontal: 20),
+           decoration: BoxDecoration(
+             borderRadius: BorderRadius.circular(10),
+             border: Border.all(
+               color: Colors.blueAccent
+             )
            ),
-         ),
+           child: Text("Krishna Gold Shop",
+           style: TextStyle(
+             fontSize: 15,
+             fontFamily: "itim",
+             color: Colors.black
+           ),),
+         )),
+          SizedBox(
+            height: 20,
+          ),InkWell(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>ShopProfile()));
+            },
+            child:
+            Container(
+            height: 40,
+            alignment: Alignment.center,
+            margin: EdgeInsets.symmetric(horizontal: 20),
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                border: Border.all(
+                    color: Colors.blueAccent
+                )
+            ),
+            child: Text("Krishna Gold Shop",
+              style: TextStyle(
+                  fontSize: 15,
+                  fontFamily: "itim",
+                  color: Colors.black
+              ),),
+          )),
+          SizedBox(
+            height: 20,
+          ),InkWell(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>ShopProfile()));
+            },
+            child:
+            Container(
+            height: 40,
+            alignment: Alignment.center,
+            margin: EdgeInsets.symmetric(horizontal: 20),
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                border: Border.all(
+                    color: Colors.blueAccent
+                )
+            ),
+            child: Text("Krishna Gold Shop",
+              style: TextStyle(
+                  fontSize: 15,
+                  fontFamily: "itim",
+                  color: Colors.black
+              ),),
+          )),
+          SizedBox(
+            height: 20,
+          ),InkWell(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>ShopProfile()));
+            },
+            child:
+            Container(
+            height: 40,
+            alignment: Alignment.center,
+            margin: EdgeInsets.symmetric(horizontal: 20),
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                border: Border.all(
+                    color: Colors.blueAccent
+                )
+            ),
+            child: Text("Krishna Gold Shop",
+              style: TextStyle(
+                  fontSize: 15,
+                  fontFamily: "itim",
+                  color: Colors.black
+              ),),
+          )),
+          SizedBox(
+            height: 20,
+          ),
+            InkWell(
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>ShopProfile()));
+                },
+                child:
+                Container(
+            height: 40,
+            alignment: Alignment.center,
+            margin: EdgeInsets.symmetric(horizontal: 20),
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                border: Border.all(
+                    color: Colors.blueAccent
+                )
+            ),
+            child: Text("Krishna Gold Shop",
+              style: TextStyle(
+                  fontSize: 15,
+                  fontFamily: "itim",
+                  color: Colors.black
+              ),),
+          )),
+          SizedBox(
+            height: 20,
+          ),
+            InkWell(
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>ShopProfile()));
+                },
+                child:
+                Container(
+            height: 40,
+            alignment: Alignment.center,
+            margin: EdgeInsets.symmetric(horizontal: 20),
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                border: Border.all(
+                    color: Colors.blueAccent
+                )
+            ),
+            child: Text("Krishna Gold Shop",
+              style: TextStyle(
+                  fontSize: 15,
+                  fontFamily: "itim",
+                  color: Colors.black
+              ),),
+          )),
+          SizedBox(
+            height: 20,
+          ),InkWell(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>ShopProfile()));
+            },
+            child:
+            Container(
+            height: 40,
+            alignment: Alignment.center,
+            margin: EdgeInsets.symmetric(horizontal: 20),
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                border: Border.all(
+                    color: Colors.blueAccent
+                )
+            ),
+            child: Text("Krishna Gold Shop",
+              style: TextStyle(
+                  fontSize: 15,
+                  fontFamily: "itim",
+                  color: Colors.black
+              ),),
+          )),
+          SizedBox(
+            height: 20,
+          ),
+            InkWell(
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>ShopProfile()));
+                },
+                child:
+                Container(
+            height: 40,
+            alignment: Alignment.center,
+            margin: EdgeInsets.symmetric(horizontal: 20),
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                border: Border.all(
+                    color: Colors.blueAccent
+                )
+            ),
+            child: Text("Krishna Gold Shop",
+              style: TextStyle(
+                  fontSize: 15,
+                  fontFamily: "itim",
+                  color: Colors.black
+              ),),
+          ),),
+          SizedBox(
+            height: 20,
+          ),
+            InkWell(
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>ShopProfile()));
+                },
+                child:
+                Container(
+            height: 40,
+            alignment: Alignment.center,
+            margin: EdgeInsets.symmetric(horizontal: 20),
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                border: Border.all(
+                    color: Colors.blueAccent
+                )
+            ),
+            child: Text("Krishna Gold Shop",
+              style: TextStyle(
+                  fontSize: 15,
+                  fontFamily: "itim",
+                  color: Colors.black
+              ),),
+          ),),
+          SizedBox(
+            height: 20,
+          ),InkWell(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>ShopProfile()));
+            },
+            child:
+            Container(
+            height: 40,
+            alignment: Alignment.center,
+            margin: EdgeInsets.symmetric(horizontal: 20),
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                border: Border.all(
+                    color: Colors.blueAccent
+                )
+            ),
+            child: Text("Krishna Gold Shop",
+              style: TextStyle(
+                  fontSize: 15,
+                  fontFamily: "itim",
+                  color: Colors.black
+              ),),
+          ),),
+          SizedBox(
+            height: 20,
+          ),InkWell(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>ShopProfile()));
+            },
+            child:
+            Container(
+            height: 40,
+            alignment: Alignment.center,
+            margin: EdgeInsets.symmetric(horizontal: 20),
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                border: Border.all(
+                    color: Colors.blueAccent
+                )
+            ),
+            child: Text("Krishna Gold Shop",
+              style: TextStyle(
+                  fontSize: 15,
+                  fontFamily: "itim",
+                  color: Colors.black
+              ),),
+          ),),
+          SizedBox(
+            height: 20,
+          ),InkWell(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>ShopProfile()));
+            },
+            child:
+            Container(
+            height: 40,
+            alignment: Alignment.center,
+            margin: EdgeInsets.symmetric(horizontal: 20),
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                border: Border.all(
+                    color: Colors.blueAccent
+                )
+            ),
+            child: Text("Krishna Gold Shop",
+              style: TextStyle(
+                  fontSize: 15,
+                  fontFamily: "itim",
+                  color: Colors.black
+              ),),
+          ),),
+          SizedBox(
+            height: 20,
+          ),InkWell(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>ShopProfile()));
+            },
+            child:
+            Container(
+            height: 40,
+            alignment: Alignment.center,
+            margin: EdgeInsets.symmetric(horizontal: 20),
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                border: Border.all(
+                    color: Colors.blueAccent
+                )
+            ),
+            child: Text("Krishna Gold Shop",
+              style: TextStyle(
+                  fontSize: 15,
+                  fontFamily: "itim",
+                  color: Colors.black
+              ),),
+          ),),        SizedBox(
+            height: 20,
+          ),InkWell(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>ShopProfile()));
+            },
+            child:
+            Container(
+            height: 40,
+            alignment: Alignment.center,
+            margin: EdgeInsets.symmetric(horizontal: 20),
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                border: Border.all(
+                    color: Colors.blueAccent
+                )
+            ),
+            child: Text("Krishna Gold Shop",
+              style: TextStyle(
+                  fontSize: 15,
+                  fontFamily: "itim",
+                  color: Colors.black
+              ),),
+          ),),
+          SizedBox(
+            height: 20,
+          ),InkWell(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>ShopProfile()));
+            },
+            child:
+            Container(
+            height: 40,
+            alignment: Alignment.center,
+            margin: EdgeInsets.symmetric(horizontal: 20),
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                border: Border.all(
+                    color: Colors.blueAccent
+                )
+            ),
+            child: Text("Krishna Gold Shop",
+              style: TextStyle(
+                  fontSize: 15,
+                  fontFamily: "itim",
+                  color: Colors.black
+              ),),
+          ),),
+          SizedBox(
+            height: 20,
+          ),
+            InkWell(
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>ShopProfile()));
+                },
+                child:
+                Container(
+            height: 40,
+            alignment: Alignment.center,
+            margin: EdgeInsets.symmetric(horizontal: 20),
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                border: Border.all(
+                    color: Colors.blueAccent
+                )
+            ),
+            child: Text("Krishna Gold Shop",
+              style: TextStyle(
+                  fontSize: 15,
+                  fontFamily: "itim",
+                  color: Colors.black
+              ),),
+          ),),
+          SizedBox(
+            height: 20,
+          ),
+          InkWell(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>ShopProfile()));
+            },
+            child: Container(
+              height: 40,
+              alignment: Alignment.center,
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  border: Border.all(
+                      color: Colors.blueAccent
+                  )
+              ),
+              child: Text("Krishna Gold Shop",
+                style: TextStyle(
+                    fontSize: 15,
+                    fontFamily: "itim",
+                    color: Colors.black
+                ),),
+            ),
+          ),SizedBox(
+            height: 20,
+          ),
+
+          InkWell(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>ShopProfile()));
+            },
+            child: Container(
+              height: 40,
+              alignment: Alignment.center,
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  border: Border.all(
+                      color: Colors.blueAccent
+                  )
+              ),
+              child: Text("Krishna Gold Shop",
+                style: TextStyle(
+                    fontSize: 15,
+                    fontFamily: "itim",
+                    color: Colors.black
+                ),),
+            ),
+          ),
+
+
+
+         //  SizedBox(
+         //    height: 24.h,
+         //  ),
+         //  InkWell(
+         //    onTap: () {
+         //      Navigator.push(context,
+         //          MaterialPageRoute(builder: (context) => ShopProfile()));
+         //    },
+         //  ),
+         //  Container(
+         //    height: 52.h,
+         //    width: 353.w,
+         //    decoration: BoxDecoration(
+         //      borderRadius: BorderRadius.circular(20),
+         //      border: Border.all(
+         //        color: Color(0xffFA504B),
+         //
+         //      ),
+         //    ),
+         //    // prefixIcon: Icon(Icons.location_city,
+         //    // ),
+         //    child: Text(
+         //      "Krishna Gold Shop",
+         //      style: TextStyle(
+         //          fontFamily: "itim", fontSize: 20, color: Color(0xffFE7062)),
+         //    ),
+         //  ),
+         //  SizedBox(
+         //    height: 24.h,
+         //  ),
+         //  InkWell(
+         //    onTap: () {
+         //      Navigator.push(context,
+         //
+         //          MaterialPageRoute(builder: (context) => ShopProfile()));
+         //    },
+         //  ),
+         //  Container(
+         //    height: 52.h,
+         //    width: 353.w,
+         //    decoration: BoxDecoration(
+         //      borderRadius: BorderRadius.circular(20),
+         //      border: Border.all(
+         //        color: Color(0xffFA504B),
+         //      ),
+         //    ),
+         //    // prefixIcon: Icon(Icons.location_city,
+         //    // ),
+         //    child: Text(
+         //      "Krishna Gold Shop",
+         //      style: TextStyle(
+         //          fontFamily: "itim", fontSize: 20, color: Color(0xffFE7062)),
+         //    ),
+         //  ),
+         //  SizedBox(
+         //    height: 24.h,
+         //  ),
+         //  InkWell(
+         //    onTap: () {
+         //      Navigator.push(context,
+         //          MaterialPageRoute(builder: (context) => ShopProfile()));
+         //    },
+         //  ),
+         //  Container(
+         //    height: 52.h,
+         //    width: 353.w,
+         //    decoration: BoxDecoration(
+         //      borderRadius: BorderRadius.circular(20),
+         //      border: Border.all(
+         //        color: Color(0xffFA504B),
+         //      ),
+         //    ),
+         //    // prefixIcon: Icon(Icons.location_city,
+         //    // ),
+         //    child: Text(
+         //      "Krishna Gold Shop",
+         //      style: TextStyle(
+         //          fontFamily: "itim", fontSize: 20, color: Color(0xffFE7062)),
+         //    ),
+         //  ),
+         //  SizedBox(
+         //    height: 24.h,
+         //  ),
+         //  InkWell(
+         //    onTap: () {
+         //      Navigator.push(context,
+         //          MaterialPageRoute(builder: (context) => ShopProfile()));
+         //    },
+         //  ),
+         //  Container(
+         //    height: 52.h,
+         //    width: 353.w,
+         //    decoration: BoxDecoration(
+         //      borderRadius: BorderRadius.circular(20),
+         //      border: Border.all(
+         //        color: Color(0xffFA504B),
+         //      ),
+         //    ),
+         //    // prefixIcon: Icon(Icons.location_city,
+         //    // ),
+         //    child: Text(
+         //      "Krishna Gold Shop",
+         //      style: TextStyle(
+         //          fontFamily: "itim", fontSize: 20, color: Color(0xffFE7062)),
+         //    ),
+         //  ),
+         //  SizedBox(
+         //    height: 24.h,
+         //  ),
+         //  InkWell(
+         //    onTap: () {
+         //      Navigator.push(context,
+         //          MaterialPageRoute(builder: (context) => ShopProfile()));
+         //    },
+         //  ),
+         //  Container(
+         //    height: 52.h,
+         //    width: 353.w,
+         //    decoration: BoxDecoration(
+         //      borderRadius: BorderRadius.circular(20),
+         //      border: Border.all(
+         //        color: Color(0xffFA504B),
+         //      ),
+         //    ),
+         //    // prefixIcon: Icon(Icons.location_city,
+         //    // ),
+         //    child: Text(
+         //      "Krishna Gold Shop",
+         //      style: TextStyle(
+         //          fontFamily: "itim", fontSize: 20, color: Color(0xffFE7062)),
+         //    ),
+         //  ),
+         //  SizedBox(
+         //    height: 24,
+         //  ),
+         //  InkWell(
+         //    onTap: () {
+         //      Navigator.push(context,
+         //          MaterialPageRoute(builder: (context) => ShopProfile()));
+         //    },
+         //  ),
+         //  Container(
+         //    height: 52,
+         //    width: 353,
+         //    decoration: BoxDecoration(
+         //      borderRadius: BorderRadius.circular(20),
+         //      border: Border.all(
+         //        color: Color(0xffFA504B),
+         //      ),
+         //    ),
+         //    // prefixIcon: Icon(Icons.location_city,
+         //    // ),
+         //    child: Text(
+         //      "Krishna Gold Shop",
+         //      style: TextStyle(
+         //          fontFamily: "itim", fontSize: 20, color: Color(0xffFE7062)),
+         //    ),
+         //  ),
+         //  SizedBox(
+         //    height: 24,
+         //  ),
+         //  InkWell(
+         //    onTap: () {
+         //      Navigator.push(context,
+         //          MaterialPageRoute(builder: (context) => ShopProfile()));
+         //    },
+         //  ),
+         //  Container(
+         //    height: 52,
+         //    width: 353,
+         //    decoration: BoxDecoration(
+         //      borderRadius: BorderRadius.circular(20),
+         //      border: Border.all(
+         //        color: Color(0xffFA504B),
+         //      ),
+         //    ),
+         //    // prefixIcon: Icon(Icons.location_city,
+         //    // ),
+         //    child: Text(
+         //     "Krishna Gold Shop",
+         //      style: TextStyle(
+         //         fontFamily: "itim", fontSize: 20, color: Color(0xffFE7062)),
+         //   ),
+         // ),
        ]
     )),
     );

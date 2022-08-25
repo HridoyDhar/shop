@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class Findperson extends StatefulWidget {
   const Findperson({Key? key}) : super(key: key);
@@ -21,17 +22,1190 @@ class _FindpersonState extends State<Findperson> {
           Container(
             alignment: Alignment.center,
             height: 41,
-            width: 348,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10),
-              color: Color(0xffF6FAFF),
+            margin: EdgeInsets.symmetric(horizontal: 20),
+            child:TextField(
+              decoration: InputDecoration(
+                hintText: "Search",
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
+
+
+                ),
+                prefixIcon: Icon(Icons.search,
+                color: Colors.blue,)
+
+              ),
+
             ),
-            child: Text(
-              "Search",
-              style: TextStyle(
-                  fontFamily: "itim", fontSize: 20, color: Colors.black),
+          ),
+
+
+
+                  SizedBox(
+                height: 40.h,
+              ),
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 20.w),
+                child: Row(
+                  children: [
+                    Container(
+                        child: CircleAvatar(
+                      backgroundImage: AssetImage("assets/Ellipse60.png"),
+                      radius: 30.r,
+                    )),
+                    SizedBox(
+                      width: 20.h,
+                    ),
+                    Text("Algibentna Decousta",
+                        style: TextStyle(
+                          fontFamily: "itim",
+                          fontSize: 12.sp,
+                        )),
+                    SizedBox(
+                      width: 20.h,
+                    ),
+                    Text("Follow",
+                        style: TextStyle(
+                          fontFamily: "itim",
+                          fontSize: 12.sp,
+                          color: Colors.blue
+                        )
+                    ),
+                  ],
+                ),
+              ),
+          SizedBox(
+            height: 10.h,
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20.w),
+            child: Row(
+              children: [
+                Container(
+                    child: CircleAvatar(
+                      backgroundImage: AssetImage("assets/Ellipse60.png"),
+                      radius: 30.r,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Algibentna Decousta",
+                    style: TextStyle(
+                      fontFamily: "itim",
+                      fontSize: 12.sp,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Follow",
+                    style: TextStyle(
+                        fontFamily: "itim",
+                        fontSize: 12.sp,
+                        color: Colors.blue
+                    )
+                ),
+              ],
             ),
-          )
+          ),
+          SizedBox(
+            height: 10.h,
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20.w),
+            child: Row(
+              children: [
+                Container(
+                    child: CircleAvatar(
+                      backgroundImage: AssetImage("assets/Ellipse60.png"),
+                      radius: 30.r,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Algibentna Decousta",
+                    style: TextStyle(
+                      fontFamily: "itim",
+                      fontSize: 12.sp,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Follow",
+                    style: TextStyle(
+                        fontFamily: "itim",
+                        fontSize: 12.sp,
+                        color: Colors.blue
+                    )
+                ),
+              ],
+            ),
+          ),
+          SizedBox(
+            height: 10.h,
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20.w),
+            child: Row(
+              children: [
+                Container(
+                    child: CircleAvatar(
+                      backgroundImage: AssetImage("assets/Ellipse60.png"),
+                      radius: 30.r,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Algibentna Decousta",
+                    style: TextStyle(
+                      fontFamily: "itim",
+                      fontSize: 12.sp,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Follow",
+                    style: TextStyle(
+                        fontFamily: "itim",
+                        fontSize: 12.sp,
+                        color: Colors.blue
+                    )
+                ),
+              ],
+            ),
+          ),
+          SizedBox(
+            height: 10.h,
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20.w),
+            child: Row(
+              children: [
+                Container(
+                    child: CircleAvatar(
+                      backgroundImage: AssetImage("assets/Ellipse60.png"),
+                      radius: 30.r,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Algibentna Decousta",
+                    style: TextStyle(
+                      fontFamily: "itim",
+                      fontSize: 12.sp,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Follow",
+                    style: TextStyle(
+                        fontFamily: "itim",
+                        fontSize: 12.sp,
+                        color: Colors.blue
+                    )
+                ),
+              ],
+            ),
+          ),
+          SizedBox(
+            height: 10.h,
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20.w),
+            child: Row(
+              children: [
+                Container(
+                    child: CircleAvatar(
+                      backgroundImage: AssetImage("assets/Ellipse60.png"),
+                      radius: 30.r,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Algibentna Decousta",
+                    style: TextStyle(
+                      fontFamily: "itim",
+                      fontSize: 12.sp,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Follow",
+                    style: TextStyle(
+                        fontFamily: "itim",
+                        fontSize: 12.sp,
+                        color: Colors.blue
+                    )
+                ),
+              ],
+            ),
+          ),
+          SizedBox(
+            height: 10.h,
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20.w),
+            child: Row(
+              children: [
+                Container(
+                    child: CircleAvatar(
+                      backgroundImage: AssetImage("assets/Ellipse60.png"),
+                      radius: 30.r,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Algibentna Decousta",
+                    style: TextStyle(
+                      fontFamily: "itim",
+                      fontSize: 12.sp,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Follow",
+                    style: TextStyle(
+                        fontFamily: "itim",
+                        fontSize: 12.sp,
+                        color: Colors.blue
+                    )
+                ),
+              ],
+            ),
+          ),
+          SizedBox(
+            height: 10.h,
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20.w),
+            child: Row(
+              children: [
+                Container(
+                    child: CircleAvatar(
+                      backgroundImage: AssetImage("assets/Ellipse60.png"),
+                      radius: 30.r,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Algibentna Decousta",
+                    style: TextStyle(
+                      fontFamily: "itim",
+                      fontSize: 12.sp,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Follow",
+                    style: TextStyle(
+                        fontFamily: "itim",
+                        fontSize: 12.sp,
+                        color: Colors.blue
+                    )
+                ),
+              ],
+            ),
+          ),
+          SizedBox(
+            height: 10.h,
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20.w),
+            child: Row(
+              children: [
+                Container(
+                    child: CircleAvatar(
+                      backgroundImage: AssetImage("assets/Ellipse60.png"),
+                      radius: 30.r,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Algibentna Decousta",
+                    style: TextStyle(
+                      fontFamily: "itim",
+                      fontSize: 12.sp,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Follow",
+                    style: TextStyle(
+                        fontFamily: "itim",
+                        fontSize: 12.sp,
+                        color: Colors.blue
+                    )
+                ),
+              ],
+            ),
+          ),
+          SizedBox(
+            height: 10.h,
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20.w),
+            child: Row(
+              children: [
+                Container(
+                    child: CircleAvatar(
+                      backgroundImage: AssetImage("assets/Ellipse60.png"),
+                      radius: 30.r,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Algibentna Decousta",
+                    style: TextStyle(
+                      fontFamily: "itim",
+                      fontSize: 12.sp,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Follow",
+                    style: TextStyle(
+                        fontFamily: "itim",
+                        fontSize: 12.sp,
+                        color: Colors.blue
+                    )
+                ),
+              ],
+            ),
+          ),SizedBox(
+            height: 10.h,
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20.w),
+            child: Row(
+              children: [
+                Container(
+                    child: CircleAvatar(
+                      backgroundImage: AssetImage("assets/Ellipse60.png"),
+                      radius: 30.r,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Algibentna Decousta",
+                    style: TextStyle(
+                      fontFamily: "itim",
+                      fontSize: 12.sp,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Follow",
+                    style: TextStyle(
+                        fontFamily: "itim",
+                        fontSize: 12.sp,
+                        color: Colors.blue
+                    )
+                ),
+              ],
+            ),
+          ),SizedBox(
+            height: 10.h,
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20.w),
+            child: Row(
+              children: [
+                Container(
+                    child: CircleAvatar(
+                      backgroundImage: AssetImage("assets/Ellipse60.png"),
+                      radius: 30.r,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Algibentna Decousta",
+                    style: TextStyle(
+                      fontFamily: "itim",
+                      fontSize: 12.sp,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Follow",
+                    style: TextStyle(
+                        fontFamily: "itim",
+                        fontSize: 12.sp,
+                        color: Colors.blue
+                    )
+                ),
+              ],
+            ),
+          ),SizedBox(
+            height: 10.h,
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20.w),
+            child: Row(
+              children: [
+                Container(
+                    child: CircleAvatar(
+                      backgroundImage: AssetImage("assets/Ellipse60.png"),
+                      radius: 30.r,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Algibentna Decousta",
+                    style: TextStyle(
+                      fontFamily: "itim",
+                      fontSize: 12.sp,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Follow",
+                    style: TextStyle(
+                        fontFamily: "itim",
+                        fontSize: 12.sp,
+                        color: Colors.blue
+                    )
+                ),
+              ],
+            ),
+          ),
+          SizedBox(
+            height: 10.h,
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20.w),
+            child: Row(
+              children: [
+                Container(
+                    child: CircleAvatar(
+                      backgroundImage: AssetImage("assets/Ellipse60.png"),
+                      radius: 30.r,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Algibentna Decousta",
+                    style: TextStyle(
+                      fontFamily: "itim",
+                      fontSize: 12.sp,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Follow",
+                    style: TextStyle(
+                        fontFamily: "itim",
+                        fontSize: 12.sp,
+                        color: Colors.blue
+                    )
+                ),
+              ],
+            ),
+          ),
+          SizedBox(
+            height: 10.h,
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20.w),
+            child: Row(
+              children: [
+                Container(
+                    child: CircleAvatar(
+                      backgroundImage: AssetImage("assets/Ellipse60.png"),
+                      radius: 30.r,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Algibentna Decousta",
+                    style: TextStyle(
+                      fontFamily: "itim",
+                      fontSize: 12.sp,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Follow",
+                    style: TextStyle(
+                        fontFamily: "itim",
+                        fontSize: 12.sp,
+                        color: Colors.blue
+                    )
+                ),
+              ],
+            ),
+          ),
+          SizedBox(
+            height: 10.h,
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20.w),
+            child: Row(
+              children: [
+                Container(
+                    child: CircleAvatar(
+                      backgroundImage: AssetImage("assets/Ellipse60.png"),
+                      radius: 30.r,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Algibentna Decousta",
+                    style: TextStyle(
+                      fontFamily: "itim",
+                      fontSize: 12.sp,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Follow",
+                    style: TextStyle(
+                        fontFamily: "itim",
+                        fontSize: 12.sp,
+                        color: Colors.blue
+                    )
+                ),
+              ],
+            ),
+          ),SizedBox(
+            height: 10.h,
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20.w),
+            child: Row(
+              children: [
+                Container(
+                    child: CircleAvatar(
+                      backgroundImage: AssetImage("assets/Ellipse60.png"),
+                      radius: 30.r,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Algibentna Decousta",
+                    style: TextStyle(
+                      fontFamily: "itim",
+                      fontSize: 12.sp,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Follow",
+                    style: TextStyle(
+                        fontFamily: "itim",
+                        fontSize: 12.sp,
+                        color: Colors.blue
+                    )
+                ),
+              ],
+            ),
+          ),
+          SizedBox(
+            height: 10.h,
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20.w),
+            child: Row(
+              children: [
+                Container(
+                    child: CircleAvatar(
+                      backgroundImage: AssetImage("assets/Ellipse60.png"),
+                      radius: 30.r,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Algibentna Decousta",
+                    style: TextStyle(
+                      fontFamily: "itim",
+                      fontSize: 12.sp,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Follow",
+                    style: TextStyle(
+                        fontFamily: "itim",
+                        fontSize: 12.sp,
+                        color: Colors.blue
+                    )
+                ),
+              ],
+            ),
+          ),
+          SizedBox(
+            height: 10.h,
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20.w),
+            child: Row(
+              children: [
+                Container(
+                    child: CircleAvatar(
+                      backgroundImage: AssetImage("assets/Ellipse60.png"),
+                      radius: 30.r,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Algibentna Decousta",
+                    style: TextStyle(
+                      fontFamily: "itim",
+                      fontSize: 12.sp,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Follow",
+                    style: TextStyle(
+                        fontFamily: "itim",
+                        fontSize: 12.sp,
+                        color: Colors.blue
+                    )
+                ),
+              ],
+            ),
+          ),
+          SizedBox(
+            height: 10.h,
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20.w),
+            child: Row(
+              children: [
+                Container(
+                    child: CircleAvatar(
+                      backgroundImage: AssetImage("assets/Ellipse60.png"),
+                      radius: 30.r,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Algibentna Decousta",
+                    style: TextStyle(
+                      fontFamily: "itim",
+                      fontSize: 12.sp,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Follow",
+                    style: TextStyle(
+                        fontFamily: "itim",
+                        fontSize: 12.sp,
+                        color: Colors.blue
+                    )
+                ),
+              ],
+            ),
+          ),
+          SizedBox(
+            height: 10.h,
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20.w),
+            child: Row(
+              children: [
+                Container(
+                    child: CircleAvatar(
+                      backgroundImage: AssetImage("assets/Ellipse60.png"),
+                      radius: 30.r,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Algibentna Decousta",
+                    style: TextStyle(
+                      fontFamily: "itim",
+                      fontSize: 12.sp,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Follow",
+                    style: TextStyle(
+                        fontFamily: "itim",
+                        fontSize: 12.sp,
+                        color: Colors.blue
+                    )
+                ),
+              ],
+            ),
+          ),
+          SizedBox(
+            height: 10.h,
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20.w),
+            child: Row(
+              children: [
+                Container(
+                    child: CircleAvatar(
+                      backgroundImage: AssetImage("assets/Ellipse60.png"),
+                      radius: 30.r,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Algibentna Decousta",
+                    style: TextStyle(
+                      fontFamily: "itim",
+                      fontSize: 12.sp,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Follow",
+                    style: TextStyle(
+                        fontFamily: "itim",
+                        fontSize: 12.sp,
+                        color: Colors.blue
+                    )
+                ),
+              ],
+            ),
+          ),
+          SizedBox(
+            height: 10.h,
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20.w),
+            child: Row(
+              children: [
+                Container(
+                    child: CircleAvatar(
+                      backgroundImage: AssetImage("assets/Ellipse60.png"),
+                      radius: 30.r,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Algibentna Decousta",
+                    style: TextStyle(
+                      fontFamily: "itim",
+                      fontSize: 12.sp,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Follow",
+                    style: TextStyle(
+                        fontFamily: "itim",
+                        fontSize: 12.sp,
+                        color: Colors.blue
+                    )
+                ),
+              ],
+            ),
+          ),
+          SizedBox(
+            height: 10.h,
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20.w),
+            child: Row(
+              children: [
+                Container(
+                    child: CircleAvatar(
+                      backgroundImage: AssetImage("assets/Ellipse60.png"),
+                      radius: 30.r,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Algibentna Decousta",
+                    style: TextStyle(
+                      fontFamily: "itim",
+                      fontSize: 12.sp,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Follow",
+                    style: TextStyle(
+                        fontFamily: "itim",
+                        fontSize: 12.sp,
+                        color: Colors.blue
+                    )
+                ),
+              ],
+            ),
+          ),
+          SizedBox(
+            height: 10.h,
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20.w),
+            child: Row(
+              children: [
+                Container(
+                    child: CircleAvatar(
+                      backgroundImage: AssetImage("assets/Ellipse60.png"),
+                      radius: 30.r,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Algibentna Decousta",
+                    style: TextStyle(
+                      fontFamily: "itim",
+                      fontSize: 12.sp,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Follow",
+                    style: TextStyle(
+                        fontFamily: "itim",
+                        fontSize: 12.sp,
+                        color: Colors.blue
+                    )
+                ),
+              ],
+            ),
+          ),
+          SizedBox(
+            height: 10.h,
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20.w),
+            child: Row(
+              children: [
+                Container(
+                    child: CircleAvatar(
+                      backgroundImage: AssetImage("assets/Ellipse60.png"),
+                      radius: 30.r,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Algibentna Decousta",
+                    style: TextStyle(
+                      fontFamily: "itim",
+                      fontSize: 12.sp,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Follow",
+                    style: TextStyle(
+                        fontFamily: "itim",
+                        fontSize: 12.sp,
+                        color: Colors.blue
+                    )
+                ),
+              ],
+            ),
+          ),
+          SizedBox(
+            height: 10.h,
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20.w),
+            child: Row(
+              children: [
+                Container(
+                    child: CircleAvatar(
+                      backgroundImage: AssetImage("assets/Ellipse60.png"),
+                      radius: 30.r,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Algibentna Decousta",
+                    style: TextStyle(
+                      fontFamily: "itim",
+                      fontSize: 12.sp,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Follow",
+                    style: TextStyle(
+                        fontFamily: "itim",
+                        fontSize: 12.sp,
+                        color: Colors.blue
+                    )
+                ),
+              ],
+            ),
+          ),
+          SizedBox(
+            height: 10.h,
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20.w),
+            child: Row(
+              children: [
+                Container(
+                    child: CircleAvatar(
+                      backgroundImage: AssetImage("assets/Ellipse60.png"),
+                      radius: 30.r,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Algibentna Decousta",
+                    style: TextStyle(
+                      fontFamily: "itim",
+                      fontSize: 12.sp,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Follow",
+                    style: TextStyle(
+                        fontFamily: "itim",
+                        fontSize: 12.sp,
+                        color: Colors.blue
+                    )
+                ),
+              ],
+            ),
+          ),SizedBox(
+            height: 10.h,
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20.w),
+            child: Row(
+              children: [
+                Container(
+                    child: CircleAvatar(
+                      backgroundImage: AssetImage("assets/Ellipse60.png"),
+                      radius: 30.r,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Algibentna Decousta",
+                    style: TextStyle(
+                      fontFamily: "itim",
+                      fontSize: 12.sp,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Follow",
+                    style: TextStyle(
+                        fontFamily: "itim",
+                        fontSize: 12.sp,
+                        color: Colors.blue
+                    )
+                ),
+              ],
+            ),
+          ),
+          SizedBox(
+            height: 10.h,
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20.w),
+            child: Row(
+              children: [
+                Container(
+                    child: CircleAvatar(
+                      backgroundImage: AssetImage("assets/Ellipse60.png"),
+                      radius: 30.r,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Algibentna Decousta",
+                    style: TextStyle(
+                      fontFamily: "itim",
+                      fontSize: 12.sp,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Follow",
+                    style: TextStyle(
+                        fontFamily: "itim",
+                        fontSize: 12.sp,
+                        color: Colors.blue
+                    )
+                ),
+              ],
+            ),
+          ),
+          SizedBox(
+            height: 10.h,
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20.w),
+            child: Row(
+              children: [
+                Container(
+                    child: CircleAvatar(
+                      backgroundImage: AssetImage("assets/Ellipse60.png"),
+                      radius: 30.r,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Algibentna Decousta",
+                    style: TextStyle(
+                      fontFamily: "itim",
+                      fontSize: 12.sp,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Follow",
+                    style: TextStyle(
+                        fontFamily: "itim",
+                        fontSize: 12.sp,
+                        color: Colors.blue
+                    )
+                ),
+              ],
+            ),
+          ),
+          SizedBox(
+            height: 10.h,
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20.w),
+            child: Row(
+              children: [
+                Container(
+                    child: CircleAvatar(
+                      backgroundImage: AssetImage("assets/Ellipse60.png"),
+                      radius: 30.r,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Algibentna Decousta",
+                    style: TextStyle(
+                      fontFamily: "itim",
+                      fontSize: 12.sp,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Follow",
+                    style: TextStyle(
+                        fontFamily: "itim",
+                        fontSize: 12.sp,
+                        color: Colors.blue
+                    )
+                ),
+              ],
+            ),
+          ),
+          SizedBox(
+            height: 10.h,
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20.w),
+            child: Row(
+              children: [
+                Container(
+                    child: CircleAvatar(
+                      backgroundImage: AssetImage("assets/Ellipse60.png"),
+                      radius: 30.r,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Algibentna Decousta",
+                    style: TextStyle(
+                      fontFamily: "itim",
+                      fontSize: 12.sp,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Follow",
+                    style: TextStyle(
+                        fontFamily: "itim",
+                        fontSize: 12.sp,
+                        color: Colors.blue
+                    )
+                ),
+              ],
+            ),
+          ),
+          SizedBox(
+            height: 10.h,
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20.w),
+            child: Row(
+              children: [
+                Container(
+                    child: CircleAvatar(
+                      backgroundImage: AssetImage("assets/Ellipse60.png"),
+                      radius: 30.r,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Algibentna Decousta",
+                    style: TextStyle(
+                      fontFamily: "itim",
+                      fontSize: 12.sp,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Follow",
+                    style: TextStyle(
+                        fontFamily: "itim",
+                        fontSize: 12.sp,
+                        color: Colors.blue
+                    )
+                ),
+              ],
+            ),
+          ),SizedBox(
+            height: 10.h,
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20.w),
+            child: Row(
+              children: [
+                Container(
+                    child: CircleAvatar(
+                      backgroundImage: AssetImage("assets/Ellipse60.png"),
+                      radius: 30.r,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Algibentna Decousta",
+                    style: TextStyle(
+                      fontFamily: "itim",
+                      fontSize: 12.sp,
+                    )),
+                SizedBox(
+                  width: 20.h,
+                ),
+                Text("Follow",
+                    style: TextStyle(
+                        fontFamily: "itim",
+                        fontSize: 12.sp,
+                        color: Colors.blue
+                    )
+                ),
+              ],
+            ),
+          ),
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         ],
       ),
     );
