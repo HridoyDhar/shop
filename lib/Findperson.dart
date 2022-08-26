@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:goldshop/Searchperson.dart';
 
 class Findperson extends StatefulWidget {
   const Findperson({Key? key}) : super(key: key);
@@ -48,11 +49,16 @@ class _FindpersonState extends State<Findperson> {
                 padding: EdgeInsets.symmetric(horizontal: 20.w),
                 child: Row(
                   children: [
-                    Container(
-                        child: CircleAvatar(
-                      backgroundImage: AssetImage("assets/Ellipse60.png"),
-                      radius: 30.r,
-                    )),
+                    InkWell(
+                      onTap: (){
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=>Searchperson()));
+                      },
+                      child: Container(
+                          child: CircleAvatar(
+                        backgroundImage: AssetImage("assets/Ellipse60.png"),
+                        radius: 30.r,
+                      )),
+                    ),
                     SizedBox(
                       width: 20.h,
                     ),

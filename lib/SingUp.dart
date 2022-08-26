@@ -21,7 +21,7 @@ class _SingUpState extends State<SingUp> {
         body: ListView(
           children: [
             SizedBox(
-                height: 20
+                height: 70
             ),
             Container(
               alignment: Alignment.centerLeft,

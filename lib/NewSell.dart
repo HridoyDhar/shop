@@ -215,6 +215,7 @@ class _NewSellState extends State<NewSell> {
               ),
             ),
 
+
             SizedBox(
               height: 20,
             ),
@@ -223,35 +224,16 @@ class _NewSellState extends State<NewSell> {
               width: 120,
               alignment: Alignment.center,
               margin: EdgeInsets.symmetric(horizontal: 80),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                color: Colors.greenAccent
+
+              child: TextField(
+                decoration: InputDecoration(
+                    labelText: "Discount",
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10)
+
+                    )
+                ),
               ),
-              child: Text("Total:5637000Tk",
-              style: TextStyle(
-                fontFamily: "itim",
-                fontSize: 20,
-                color: Colors.black
-              ),),
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            Container(
-              height: 40,
-              width: 120,
-              alignment: Alignment.center,
-              margin: EdgeInsets.symmetric(horizontal: 80),
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  color: Color(0xffF7FAFF)
-              ),
-              child: Text("Discount:5000Tk",
-                style: TextStyle(
-                    fontFamily: "itim",
-                    fontSize: 20,
-                    color: Colors.black
-                ),),
             ),
             SizedBox(
               height: 20,
@@ -260,16 +242,15 @@ class _NewSellState extends State<NewSell> {
               width: 120,
               alignment: Alignment.center,
               margin: EdgeInsets.symmetric(horizontal: 80),
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  color: Color(0xffF7FAFF)
+              child: TextField(
+                decoration: InputDecoration(
+                  labelText: "Total",
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(10)
+
+                  )
+                ),
               ),
-              child: Text("6795300Tk",
-                style: TextStyle(
-                    fontFamily: "itim",
-                    fontSize: 20,
-                    color: Colors.black
-                ),),
             ),
             SizedBox(
               height: 20

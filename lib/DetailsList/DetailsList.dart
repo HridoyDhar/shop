@@ -5,6 +5,7 @@ import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:goldshop/AutoCalculator/AutoCalculate.dart';
 import 'package:goldshop/Calculate/Calculate.dart';
+import 'package:goldshop/Calculator/Calculator.dart';
 import 'package:goldshop/Commentpeople/Commentpeople.dart';
 import 'package:goldshop/Compline/Compline.dart';
 
@@ -394,170 +395,198 @@ class _DetailsListState extends State<DetailsList> {
                         ),
                       ),
                     ),
-                    SizedBox(
-                      height: 20.h,
-
-                    ),
-                    InkWell(
-                      onTap: (){
-                        Navigator.push(context, MaterialPageRoute(builder: (context)=>ShopLocation()));
-                      },
-                      child: Container(
-                          height: 38,
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(10),
-                              color: Color(0xffF7FAFF)
-                          ),
-                          child: Text("Store",
-                              style: TextStyle(
-                                  fontFamily: "itim",
-                                  fontSize: 20,
-                                  color: Colors.black
-                              ))
-
-                      ),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    InkWell(
-                      onTap: (){
-                        Navigator.push(context, MaterialPageRoute(builder: (context)=>ShoppingList()));
-                      },
-                      child: Container(
-                          height: 38,
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(10),
-                              color: Color(0xffF7FAFF)
-                          ),
-                          child: Text("Shopping",
-                              style: TextStyle(
-                                  fontFamily: "itim",
-                                  fontSize: 20,
-                                  color: Colors.black
-                              ))
-
-                      ),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    InkWell(
-                      onTap:(){
-                        Navigator.push(context, MaterialPageRoute(builder: (context)=>Calculate()));
-                      },
-
-                      child: Container(
-                          height: 38,
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(10),
-                              color: Color(0xffF7FAFF)
-                          ),
-                          child: Text("Calculator",
-                              style: TextStyle(
-                                  fontFamily: "itim",
-                                  fontSize: 20,
-                                  color: Colors.black
-                              ))
-
-                      ),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    InkWell(
-                      onTap: (){
-                        Navigator.push(context, MaterialPageRoute(builder: (context)=>Autocalculate()));
-                      },
-                      child: Container(
-                          height: 38,
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(10),
-                              color: Color(0xffF7FAFF)
-                          ),
-                          child: Text("Auto Calculator",
-                              style: TextStyle(
-                                  fontFamily: "itim",
-                                  fontSize: 20,
-                                  color: Colors.black
-                              ))
-
-                      ),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    InkWell(
-                      onTap: (){
-                        Navigator.push(context, MaterialPageRoute(builder: (context)=> Notifi_cation()));
-                      },
-                      child: Container(
-                          height: 38,
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(10),
-                              color: Color(0xffF7FAFF)
-                          ),
-                          child: Text("Notification",
-                              style: TextStyle(
-                                  fontFamily: "itim",
-                                  fontSize: 20,
-                                  color: Colors.black
-                              ))
-
-                      ),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    InkWell(
-                      onTap: (){
-                        Navigator.push(context, MaterialPageRoute(builder: (context)=>Compline()));
-                      },
-                      child: Container(
-                          height: 38,
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(10),
-                              color: Color(0xffF7FAFF)
-                          ),
-                          child: Text("Compline",
-                              style: TextStyle(
-                                  fontFamily: "itim",
-                                  fontSize: 20,
-                                  color: Colors.black
-                              ))
-
-                      ),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    InkWell(onTap: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context)=> Joblist()));
-                    },
-                      child: Container(
-                          height: 38,
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(10),
-                              color: Color(0xffF7FAFF)
-                          ),
-                          child: Text("Job",
-                              style: TextStyle(
-                                  fontFamily: "itim",
-                                  fontSize: 20,
-                                  color: Colors.black
-                              ))
-
-                      ),
-                    ),
-
-
-                    // ListView()
-
 
                   ]
-              )
-            ]    )
-        )
+              ),
+              SizedBox(
+                height: 40,
+              ),
+              InkWell(
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>ShopLocation()));
+                },
+                child: Container(
+                  alignment: Alignment.center,
+                  margin: EdgeInsets.symmetric(horizontal: 20),
+                  height: 50,
+                  width: 370,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    // border: Border.all(color:Colors.blueAccent),
+                    color: Color(0xffF7FAFF)
+                  ),
+                  child: Text("Store",
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontFamily: "itim",
+                    color:Colors.black
+
+                  ),),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              InkWell(
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=> ShoppingList()));
+                },
+                child: Container(
+                  alignment: Alignment.center,
+                  margin: EdgeInsets.symmetric(horizontal: 20),
+                  height: 50,
+                  width: 370,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      // border: Border.all(color:Colors.blueAccent),
+                      color: Color(0xffF7FAFF)
+                  ),
+                  child: Text("Shopping",
+                    style: TextStyle(
+                        fontSize: 20,
+                        fontFamily: "itim",
+                        color:Colors.black
+
+                    ),),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              InkWell(
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=> Calculator()));
+                },
+                child: Container(
+                  alignment: Alignment.center,
+                  margin: EdgeInsets.symmetric(horizontal: 20),
+                  height: 50,
+                  width: 370,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      // border: Border.all(color:Colors.blueAccent),
+                      color: Color(0xffF7FAFF)
+                  ),
+                  child: Text("Calculator",
+                    style: TextStyle(
+                        fontSize: 20,
+                        fontFamily: "itim",
+                        color:Colors.black
+
+                    ),),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              InkWell(
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>Autocalculate()));
+                },
+                child: Container(
+                  alignment: Alignment.center,
+                  margin: EdgeInsets.symmetric(horizontal: 20),
+                  height: 50,
+                  width: 370,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      // border: Border.all(color:Colors.blueAccent),
+                      color: Color(0xffF7FAFF)
+                  ),
+                  child: Text("Auto Calculator",
+                    style: TextStyle(
+                        fontSize: 20,
+                        fontFamily: "itim",
+                        color:Colors.black
+
+                    ),),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              InkWell(
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>Notifi_cation()));
+                },
+                child: Container(
+                  alignment: Alignment.center,
+                  margin: EdgeInsets.symmetric(horizontal: 20),
+                  height: 50,
+                  width: 370,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      // border: Border.all(color:Colors.blueAccent),
+                      color: Color(0xffF7FAFF)
+                  ),
+                  child: Text("Notification",
+                    style: TextStyle(
+                        fontSize: 20,
+                        fontFamily: "itim",
+                        color:Colors.black
+
+                    ),),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              InkWell(
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>Compline()));
+                },
+                child: Container(
+                  alignment: Alignment.center,
+                  margin: EdgeInsets.symmetric(horizontal: 20),
+                  height: 50,
+                  width: 370,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      // border: Border.all(color:Colors.blueAccent),
+                      color: Color(0xffF7FAFF)
+                  ),
+                  child: Text("Compline",
+                    style: TextStyle(
+                        fontSize: 20,
+                        fontFamily: "itim",
+                        color:Colors.black
+
+                    ),),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              InkWell(
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>Joblist()));
+                },
+                child: Container(
+                  alignment: Alignment.center,
+                  margin: EdgeInsets.symmetric(horizontal: 20),
+                  height: 50,
+                  width: 370,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Color(0xffF7FAFF)
+                  ),
+                  child: Text("Job",
+                    style: TextStyle(
+                        fontSize: 20,
+                        fontFamily: "itim",
+                        color:Colors.black
+
+                    ),),
+                ),
+              ),
+
+
+
+
+            ]
+            )
+        ),
+
 
     );
   }

@@ -93,6 +93,7 @@ class _CompineListState extends State<CompineList> {
               width: 373,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
+                  border: Border.all(color: Colors.black),
                   color: Color(0xffF7FAFF)
               ),
               child: Text("Mr.rahul                4567330Tk",
@@ -117,7 +118,7 @@ class _CompineListState extends State<CompineList> {
             height: 51,
             width: 373,
             decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
+                borderRadius: BorderRadius.circular(10),border: Border.all(color: Colors.black),
                 color: Color(0xffF7FAFF)
             ),
             child: Text("Mr.rahul                4567330Tk",
@@ -142,7 +143,7 @@ class _CompineListState extends State<CompineList> {
               height: 51,
               width: 373,
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
+                  borderRadius: BorderRadius.circular(10),border: Border.all(color: Colors.black),
                   color: Color(0xffF7FAFF)
               ),
               child: Text("Mr.rahul                4567330Tk",

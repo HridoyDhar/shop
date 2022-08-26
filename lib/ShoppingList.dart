@@ -61,6 +61,7 @@ class _ShoppingListState extends State<ShoppingList> {
               margin: EdgeInsets.symmetric(horizontal: 20),
               decoration: BoxDecoration(
                 color: Color(0xffF6FAFF),
+                border: Border.all(color: Colors.black),
               ),
               child: Text("2.Neckless           4ps        6500 ",
                   style: TextStyle(
@@ -74,6 +75,7 @@ class _ShoppingListState extends State<ShoppingList> {
               margin: EdgeInsets.symmetric(horizontal: 20),
               decoration: BoxDecoration(
                 color: Color(0xffF6FAFF),
+                border: Border.all(color: Colors.black),
               ),
               child: Text("3.Neckless           4ps        6500 ",
                   style: TextStyle(
@@ -87,6 +89,7 @@ class _ShoppingListState extends State<ShoppingList> {
               margin: EdgeInsets.symmetric(horizontal: 20),
               decoration: BoxDecoration(
                 color: Color(0xffF6FAFF),
+                border: Border.all(color: Colors.black),
               ),
               child: Text("4.Neckless           4ps        6500 ",
                   style: TextStyle(
@@ -99,6 +102,7 @@ class _ShoppingListState extends State<ShoppingList> {
               width: 406,
               margin: EdgeInsets.symmetric(horizontal: 20),
               decoration: BoxDecoration(
+                border: Border.all(color: Colors.black),
                 color: Color(0xffF6FAFF),
               ),
               child: Text("5.Neckless           4ps        6500 ",
@@ -114,6 +118,7 @@ class _ShoppingListState extends State<ShoppingList> {
               height: 52,
               width: 230,
               decoration: BoxDecoration(
+                  border: Border.all(color: Colors.black),
                   borderRadius: BorderRadius.circular(10),
                   color: Color(0xffF6FAFF)),
               child: Text("Discount   2000",
@@ -129,6 +134,7 @@ class _ShoppingListState extends State<ShoppingList> {
               height: 52,
               width: 230,
               decoration: BoxDecoration(
+                  border: Border.all(color: Colors.black),
                   borderRadius: BorderRadius.circular(10),
                   color: Color(0xffF6FAFF)),
               child: Text("Total   762000",

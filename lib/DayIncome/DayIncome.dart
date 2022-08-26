@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:goldshop/AutoCalculator/AutoCalculate.dart';
+import 'package:goldshop/Calculator/Calculator.dart';
 class DayIncome extends StatefulWidget {
   const DayIncome({Key? key}) : super(key: key);
 
@@ -24,6 +26,7 @@ class _DayIncomeState extends State<DayIncome> {
             width: 130,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
+                border: Border.all(color: Colors.black),
                 color: Color(0xffF7FAFF)
             ),
             child: Text("23-05-63",
@@ -38,11 +41,13 @@ class _DayIncomeState extends State<DayIncome> {
           ),
           Container(
 
-            alignment: Alignment.centerLeft,
+            alignment: Alignment.center,
             height: 51,
             width: 374,
+            margin: EdgeInsets.symmetric(horizontal: 20),
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
+                border: Border.all(color: Colors.black),
                 color: Color(0xffF7FAFF)
             ),
             child: Text("Money                  4500000Tk",
@@ -57,11 +62,13 @@ class _DayIncomeState extends State<DayIncome> {
           ),
           Container(
 
-            alignment: Alignment.centerLeft,
+            alignment: Alignment.center,
             height: 51,
             width: 374,
+            margin: EdgeInsets.symmetric(horizontal: 20),
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
+                border: Border.all(color: Colors.black),
                 color: Color(0xffF7FAFF)
             ),
             child: Text("Sell                  45000Tk",
@@ -76,11 +83,14 @@ class _DayIncomeState extends State<DayIncome> {
           ),
           Container(
 
-            alignment: Alignment.centerLeft,
+            alignment: Alignment.center,
             height: 51,
             width: 374,
+
+            margin: EdgeInsets.symmetric(horizontal: 20),
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
+                border: Border.all(color: Colors.black),
                 color: Color(0xffF7FAFF)
             ),
             child: Text("Mortage                  50000Tk",
@@ -95,11 +105,13 @@ class _DayIncomeState extends State<DayIncome> {
           ),
           Container(
 
-            alignment: Alignment.centerLeft,
+            alignment: Alignment.center,
             height: 51,
+            margin: EdgeInsets.symmetric(horizontal: 20),
             width: 374,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
+                border: Border.all(color: Colors.black),
                 color: Color(0xffF7FAFF)
             ),
             child: Text("Cost                  1000Tk",
@@ -115,11 +127,13 @@ class _DayIncomeState extends State<DayIncome> {
 
           Container(
 
-            alignment: Alignment.centerLeft,
+            alignment: Alignment.center,
             height: 51,
             width: 281,
+            margin: EdgeInsets.symmetric(horizontal: 20),
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
+                border: Border.all(color: Colors.black),
                 color: Color(0xffF7FAFF)
             ),
             child: Text("Earn                  500000Tk",
@@ -151,11 +165,13 @@ class _DayIncomeState extends State<DayIncome> {
           ),
           Container(
 
-            alignment: Alignment.centerLeft,
+            alignment: Alignment.center,
             height: 51,
             width: 374,
+            margin: EdgeInsets.symmetric(horizontal: 20),
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
+                border: Border.all(color: Colors.black),
                 color: Color(0xffF7FAFF)
             ),
             child: Text("Mortage                  60000Tk",
@@ -170,11 +186,13 @@ class _DayIncomeState extends State<DayIncome> {
           ),
           Container(
 
-            alignment: Alignment.centerLeft,
+            alignment: Alignment.center,
             height: 51,
             width: 374,
+            margin: EdgeInsets.symmetric(horizontal: 20),
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
+                border: Border.all(color: Colors.black),
                 color: Color(0xffF7FAFF)
             ),
             child: Text("Big mortage                  400000Tk",
@@ -189,11 +207,13 @@ class _DayIncomeState extends State<DayIncome> {
           ),
           Container(
 
-            alignment: Alignment.centerLeft,
+            alignment: Alignment.center,
             height: 51,
+            margin: EdgeInsets.symmetric(horizontal: 20),
             width: 374,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
+                border: Border.all(color: Colors.black),
                 color: Color(0xffF7FAFF)
             ),
             child: Text("Sell                  4500000Tk",
@@ -205,22 +225,27 @@ class _DayIncomeState extends State<DayIncome> {
           SizedBox(
             height: 20,
           ),
-          Container(
-            margin: EdgeInsets.symmetric(horizontal: 80),
-            alignment: Alignment.center,
-            height: 43,
-            width: 153,
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                color: Colors.black
+          InkWell(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=> Calculator()));
+            },
+            child: Container(
+              margin: EdgeInsets.symmetric(horizontal: 80),
+              alignment: Alignment.center,
+              height: 43,
+              width: 153,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  color: Colors.black
+              ),
+              child: Text(""
+                  "Calculate",
+                style: TextStyle(
+                    fontFamily: "itim",
+                    fontSize: 20,
+                    color: Colors.white
+                ),),
             ),
-            child: Text(""
-                "Calculate",
-              style: TextStyle(
-                  fontFamily: "itim",
-                  fontSize: 20,
-                  color: Colors.white
-              ),),
           )
         ],
       ),

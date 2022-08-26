@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:goldshop/HomePage2.dart';
 import 'package:goldshop/Home_page.dart';
 import 'package:goldshop/VerificationCode.dart';
+import 'package:goldshop/verification2.dart';
 
 class Login2 extends StatefulWidget {
   const Login2({Key? key}) : super(key: key);
@@ -68,7 +70,7 @@ class _Login2State extends State<Login2> {
           GestureDetector(
             onTap: () {
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => VerificationCode()));
+                  MaterialPageRoute(builder: (context) => verification2()));
             },
             child: Padding(
               padding: EdgeInsets.only(right: 25.w),
@@ -88,7 +90,7 @@ class _Login2State extends State<Login2> {
           InkWell(
             onTap: () {
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => Home_page()));
+                  MaterialPageRoute(builder: (context) => HomePage2()));
             },
             child: Container(
               margin: EdgeInsets.symmetric(horizontal: 110.w),

@@ -23,6 +23,7 @@ class _PaymentlistState extends State<Paymentlist> {
                 width: 130,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
+
                     color: Color(0xffF7FAFF)
                 ),
                 child: Text("10-03-29",
@@ -57,6 +58,7 @@ class _PaymentlistState extends State<Paymentlist> {
                 height: 51,
                 width: 350,
                 decoration: BoxDecoration(
+                    border: Border.all(color: Colors.black),
                     borderRadius: BorderRadius.circular(10),
                     color: Color(0xffF7FAFF)
                 ),
@@ -75,6 +77,7 @@ class _PaymentlistState extends State<Paymentlist> {
                 width: 350,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
+                    border: Border.all(color: Colors.black),
                     color: Color(0xffF7FAFF)
                 ),
                 child: Text("2.Rahul                            300000Tk",
@@ -92,6 +95,7 @@ class _PaymentlistState extends State<Paymentlist> {
                 width: 350,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
+                    border: Border.all(color: Colors.black),
                     color: Color(0xffF7FAFF)
                 ),
                 child: Text("3.Rahul                            400000Tk",
@@ -109,6 +113,7 @@ class _PaymentlistState extends State<Paymentlist> {
                 width: 350,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
+                    border: Border.all(color: Colors.black),
                     color: Color(0xffF7FAFF)
                 ),
                 child: Text("4.Rahul                            500000Tk",
@@ -126,6 +131,7 @@ class _PaymentlistState extends State<Paymentlist> {
                 width: 350,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
+                    border: Border.all(color: Colors.black),
                     color: Color(0xffF7FAFF)
                 ),
                 child: Text("5.Rahul                            500000Tk",
@@ -142,6 +148,7 @@ class _PaymentlistState extends State<Paymentlist> {
                 height: 51,
                 width: 350,
                 decoration: BoxDecoration(
+                    border: Border.all(color: Colors.black),
                     borderRadius: BorderRadius.circular(10),
                     color: Color(0xffF7FAFF)
                 ),
@@ -159,6 +166,7 @@ class _PaymentlistState extends State<Paymentlist> {
                 height: 51,
                 width: 350,
                 decoration: BoxDecoration(
+                    border: Border.all(color: Colors.black),
                     borderRadius: BorderRadius.circular(10),
                     color: Color(0xffF7FAFF)
                 ),
