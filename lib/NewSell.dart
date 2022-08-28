@@ -18,17 +18,18 @@ class _NewSellState extends State<NewSell> {
             ),
             Container(
               alignment: Alignment.center,
+              margin: EdgeInsets.symmetric(horizontal: 20),
               height: 51,
               width: 368,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Color(0xffF7FAFF)
+                  color: Colors.cyanAccent
               ),
               child: Text("Krishna Gold Shop",
                 style: TextStyle(
                     fontSize: 20,
                     fontFamily: "itim",
-                    color: Colors.black
+                    color: Colors.white
                 ),),
             ),
             SizedBox(
@@ -37,17 +38,18 @@ class _NewSellState extends State<NewSell> {
             Container(
               margin: EdgeInsets.symmetric(horizontal: 80),
               alignment: Alignment.center,
-              height: 32,
-              width: 130,
+                height:50,
+                width:300,
+
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Color(0xffF7FAFF)
+                  color: Colors.black
               ),
               child: Text("19-09-34",
                 style: TextStyle(
                     fontSize: 20,
                     fontFamily: "itim",
-                    color: Colors.black
+                    color: Colors.white
                 ),),
             ),
             SizedBox(
@@ -220,8 +222,7 @@ class _NewSellState extends State<NewSell> {
               height: 20,
             ),
             Container(
-              height: 40,
-              width: 120,
+
               alignment: Alignment.center,
               margin: EdgeInsets.symmetric(horizontal: 80),
 
@@ -238,8 +239,8 @@ class _NewSellState extends State<NewSell> {
             SizedBox(
               height: 20,
             ),Container(
-              height: 40,
-              width: 120,
+              height:50,
+              width:300,
               alignment: Alignment.center,
               margin: EdgeInsets.symmetric(horizontal: 80),
               child: TextField(
@@ -259,8 +260,9 @@ class _NewSellState extends State<NewSell> {
 
             ),
             Container(
-              height: 30,
-              width: 120,
+              height:50,
+              width:300,
+
               alignment: Alignment.center,
               margin: EdgeInsets.symmetric(horizontal: 80),
               decoration: BoxDecoration(

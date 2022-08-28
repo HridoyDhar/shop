@@ -23,13 +23,13 @@ class _CustomersellDetailsState extends State<CustomersellDetails> {
               width: 376,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Color(0xffF7FAFF)
+                  color: Colors.teal
               ),
               child: Text("Krishna Gold Shop",
                   style: TextStyle(
                       fontSize: 20,
                       fontFamily: "itim",
-                      color: Colors.black
+                      color: Colors.white
                   ))
           ),
           SizedBox(
@@ -38,30 +38,32 @@ class _CustomersellDetailsState extends State<CustomersellDetails> {
           Container(
             margin: EdgeInsets.symmetric(horizontal: 100),
             alignment:Alignment.center,
-            height: 32,
-            width: 130,
+            height: 50,
+            width: 300,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                color: Color(0xffF7FAFF)
+                color: Colors.black
             ),
             child: Text("19-03-23",
                 style:TextStyle(
                     fontFamily: "itim",
                     fontSize: 15,
-                    color: Colors.black
+                    color: Colors.white
                 )),
           ),
           SizedBox(
-            height: 120,
+            height: 30,
 
           ),
           Container(
-            alignment: Alignment.centerLeft,
+            alignment: Alignment.center,
+            margin: EdgeInsets.symmetric(horizontal: 20),
             height: 51,
             width: 372,
             decoration: BoxDecoration(
                 color: Color(0xffF7FAFF),
-                borderRadius:BorderRadius.circular(10)
+                borderRadius:BorderRadius.circular(10),
+                border: Border.all(color: Colors.teal)
             ),
             child: Text("Mr.Rahul",
                 style:TextStyle(
@@ -76,12 +78,14 @@ class _CustomersellDetailsState extends State<CustomersellDetails> {
 
           ),
           Container(
-            alignment: Alignment.centerLeft,
+            alignment: Alignment.center,
+            margin: EdgeInsets.symmetric(horizontal: 20),
             height: 51,
             width: 372,
             decoration: BoxDecoration(
                 color: Color(0xffF7FAFF),
-                borderRadius:BorderRadius.circular(10)
+                borderRadius:BorderRadius.circular(10),
+                border: Border.all(color: Colors.teal)
             ),
             child: Text("Mew towner aros ,chiigltonk",
                 style:TextStyle(
@@ -96,13 +100,15 @@ class _CustomersellDetailsState extends State<CustomersellDetails> {
 
           ),
           Container(
-            alignment: Alignment.centerLeft,
+            alignment: Alignment.center,
+            margin: EdgeInsets.symmetric(horizontal: 20),
             height: 51,
             width: 372,
             decoration: BoxDecoration(
 
                 color: Color(0xffF7FAFF),
-                borderRadius:BorderRadius.circular(10)
+                borderRadius:BorderRadius.circular(10),
+              border: Border.all(color: Colors.teal)
             ),
             child: Text("013743995723",
                 style:TextStyle(
@@ -117,12 +123,14 @@ class _CustomersellDetailsState extends State<CustomersellDetails> {
 
           ),
           Container(
-            alignment: Alignment.centerLeft,
+            alignment: Alignment.center,
+            margin: EdgeInsets.symmetric(horizontal: 20),
             height: 51,
             width: 372,
             decoration: BoxDecoration(
                 color: Color(0xffF7FAFF),
-                borderRadius:BorderRadius.circular(10)
+                borderRadius:BorderRadius.circular(10),
+                border: Border.all(color: Colors.teal)
             ),
             child: Text("1.Neckless       2b        430000Tk",
                 style:TextStyle(
@@ -137,12 +145,14 @@ class _CustomersellDetailsState extends State<CustomersellDetails> {
 
           ),
           Container(
-            alignment: Alignment.centerLeft,
+            alignment: Alignment.center,
+            margin: EdgeInsets.symmetric(horizontal: 20),
             height: 51,
             width: 372,
             decoration: BoxDecoration(
                 color: Color(0xffF7FAFF),
-                borderRadius:BorderRadius.circular(10)
+                borderRadius:BorderRadius.circular(10),
+              border: Border.all(color: Colors.teal)
             ),
             child: Text("2.Chain       2b        43000Tk",
                 style:TextStyle(
@@ -157,12 +167,14 @@ class _CustomersellDetailsState extends State<CustomersellDetails> {
 
           ),
           Container(
-            alignment: Alignment.centerLeft,
+            alignment: Alignment.center,
+            margin: EdgeInsets.symmetric(horizontal: 20),
             height: 51,
             width: 372,
             decoration: BoxDecoration(
                 color: Color(0xffF7FAFF),
-                borderRadius:BorderRadius.circular(10)
+                borderRadius:BorderRadius.circular(10),
+                border: Border.all(color: Colors.teal)
             ),
             child: Text("3.Ring       2b        30000Tk",
                 style:TextStyle(
@@ -172,13 +184,16 @@ class _CustomersellDetailsState extends State<CustomersellDetails> {
                 )),
 
           ),
+          SizedBox(height: 20,
+          ),
           Container(
             margin: EdgeInsets.symmetric(horizontal: 80),
             alignment:Alignment.center,
-            height: 32,
-            width: 130,
+            height: 50,
+            width: 300,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
+                border: Border.all(color: Colors.teal),
                 color: Color(0xffF7FAFF)
             ),
             child: Text("Discount=2000Tk",
@@ -188,13 +203,16 @@ class _CustomersellDetailsState extends State<CustomersellDetails> {
                     color: Colors.black
                 )),
           ),
+          SizedBox(height: 20,
+          ),
           Container(
             margin: EdgeInsets.symmetric(horizontal: 100),
             alignment:Alignment.center,
-            height: 32,
-            width: 130,
+            height: 50,
+            width: 300,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
+                border: Border.all(color: Colors.teal),
                 color: Color(0xffF7FAFF)
             ),
             child: Text("Total=5674300Tk",

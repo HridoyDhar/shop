@@ -1,4 +1,4 @@
-import 'dart:html';
+
 
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
@@ -154,7 +154,8 @@ class _SearchpersonPostState extends State<SearchpersonPost> {
                               ),
                             ],
                           ),
-                        ]),
+                        ]
+                        ),
                       ),
                       SizedBox(
                         width: 10.h,
@@ -335,7 +336,32 @@ class _SearchpersonPostState extends State<SearchpersonPost> {
                           Icons.star,
                           color: Colors.amber,
                         ),
-                      ]),
-                ]))));
+                      ]
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Container(
+                    height: 400.h,
+                    child: Expanded(
+                      child: GridView.builder(
+                          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                            crossAxisCount: 2,
+                            crossAxisSpacing: 10.w,
+                            mainAxisSpacing: 10.h,
+                          ),
+                          itemCount: 10,
+                          itemBuilder: ((context, index) {
+                            return Container(
+                                child: Image.asset(
+                                    "assets/Gold-plated-antique-pendant-chian-queens-e1462452869148.jpg"));
+                          })),
+                    ),
+                  )
+                ]
+                )
+            )
+        )
+    );
   }
 }

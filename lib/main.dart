@@ -4,6 +4,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 
 import 'package:goldshop/Savechange.dart';
+import 'package:goldshop/Searchperson.dart';
+import 'package:goldshop/SearchpersonPost.dart';
+import 'package:goldshop/SearchpersonRate.dart';
 import 'package:goldshop/Selleror%20Buyer.dart';
 
 

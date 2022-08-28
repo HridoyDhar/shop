@@ -22,10 +22,10 @@ class _JobapplyState extends State<Jobapply> {
             Container(
               height: 222,
               width: 222,
-              child: Image.asset("assets/"),
+              child: Image.asset("assets/12709-form.gif"),
             ),
             SizedBox(
-              height: 120,
+              height: 50,
             ),
             Container(
               height: 45.h,

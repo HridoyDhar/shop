@@ -29,7 +29,7 @@ class _EmployeListState extends State<EmployeList> {
               width: 373,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  border: Border.all(color: Colors.black),
+                  border: Border.all(color: Colors.lightGreenAccent),
                   color: Color(0xffF7FAFF)
               ),
               child: Text("Rimi dhar",
@@ -55,7 +55,7 @@ class _EmployeListState extends State<EmployeList> {
               width: 373,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  border: Border.all(color: Colors.black),
+                  border: Border.all(color: Colors.lightGreenAccent),
                   color: Color(0xffF7FAFF)
               ),
               child: Text("Rimi dhar",
@@ -80,7 +80,7 @@ class _EmployeListState extends State<EmployeList> {
               width: 373,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  border: Border.all(color: Colors.black),
+                  border: Border.all(color: Colors.lightGreenAccent),
                   color: Color(0xffF7FAFF)
               ),
               child: Text("Rimi dhar",
@@ -93,23 +93,430 @@ class _EmployeListState extends State<EmployeList> {
           SizedBox(
             height: 20,
           ),
-          Container(
-            margin: EdgeInsets.symmetric(horizontal: 20),
-            alignment: Alignment.center,
-            height: 51,
-            width: 373,
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                border: Border.all(color: Colors.black),
-                color: Color(0xffF7FAFF)
-            ),
-            child: Text("Rimi dhar",
-              style: TextStyle(
-                  fontFamily: "itim",
-                  fontSize: 20,
-                  color: Colors.black
-              ),),
-          )
+          InkWell(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>EmployeDetails()));
+            },
+            child:
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              alignment: Alignment.center,
+              height: 51,
+              width: 373,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  border: Border.all(color: Colors.lightGreenAccent),
+                  color: Color(0xffF7FAFF)
+              ),
+              child: Text("Rimi dhar",
+                style: TextStyle(
+                    fontFamily: "itim",
+                    fontSize: 20,
+                    color: Colors.black
+                ),),
+            ),),
+          SizedBox(
+            height: 20,
+          ),
+          InkWell(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>EmployeDetails()));
+            },
+            child:
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              alignment: Alignment.center,
+              height: 51,
+              width: 373,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  border: Border.all(color: Colors.lightGreenAccent),
+                  color: Color(0xffF7FAFF)
+              ),
+              child: Text("Rimi dhar",
+                style: TextStyle(
+                    fontFamily: "itim",
+                    fontSize: 20,
+                    color: Colors.black
+                ),),
+            ),),
+          SizedBox(
+            height: 20,
+          ),
+          InkWell(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>EmployeDetails()));
+            },
+            child:
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              alignment: Alignment.center,
+              height: 51,
+              width: 373,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  border: Border.all(color: Colors.lightGreenAccent),
+                  color: Color(0xffF7FAFF)
+              ),
+              child: Text("Rimi dhar",
+                style: TextStyle(
+                    fontFamily: "itim",
+                    fontSize: 20,
+                    color: Colors.black
+                ),),
+            ),),
+          SizedBox(
+            height: 20,
+          ),
+          InkWell(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>EmployeDetails()));
+            },
+            child:
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              alignment: Alignment.center,
+              height: 51,
+              width: 373,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  border: Border.all(color: Colors.lightGreenAccent),
+                  color: Color(0xffF7FAFF)
+              ),
+              child: Text("Rimi dhar",
+                style: TextStyle(
+                    fontFamily: "itim",
+                    fontSize: 20,
+                    color: Colors.black
+                ),),
+            ),),
+          SizedBox(
+            height: 20,
+          ),
+          InkWell(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>EmployeDetails()));
+            },
+            child:
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              alignment: Alignment.center,
+              height: 51,
+              width: 373,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  border: Border.all(color: Colors.lightGreenAccent),
+                  color: Color(0xffF7FAFF)
+              ),
+              child: Text("Rimi dhar",
+                style: TextStyle(
+                    fontFamily: "itim",
+                    fontSize: 20,
+                    color: Colors.black
+                ),),
+            ),),
+          SizedBox(
+            height: 20,
+          ),
+          InkWell(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>EmployeDetails()));
+            },
+            child:
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              alignment: Alignment.center,
+              height: 51,
+              width: 373,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  border: Border.all(color: Colors.lightGreenAccent),
+                  color: Color(0xffF7FAFF)
+              ),
+              child: Text("Rimi dhar",
+                style: TextStyle(
+                    fontFamily: "itim",
+                    fontSize: 20,
+                    color: Colors.black
+                ),),
+            ),),
+          SizedBox(
+            height: 20,
+          ),
+          InkWell(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>EmployeDetails()));
+            },
+            child:
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              alignment: Alignment.center,
+              height: 51,
+              width: 373,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  border: Border.all(color: Colors.lightGreenAccent),
+                  color: Color(0xffF7FAFF)
+              ),
+              child: Text("Rimi dhar",
+                style: TextStyle(
+                    fontFamily: "itim",
+                    fontSize: 20,
+                    color: Colors.black
+                ),),
+            ),),
+          SizedBox(
+            height: 20,
+          ),
+          InkWell(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>EmployeDetails()));
+            },
+            child:
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              alignment: Alignment.center,
+              height: 51,
+              width: 373,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  border: Border.all(color: Colors.lightGreenAccent),
+                  color: Color(0xffF7FAFF)
+              ),
+              child: Text("Rimi dhar",
+                style: TextStyle(
+                    fontFamily: "itim",
+                    fontSize: 20,
+                    color: Colors.black
+                ),),
+            ),),
+          SizedBox(
+            height: 20,
+          ),
+          InkWell(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>EmployeDetails()));
+            },
+            child:
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              alignment: Alignment.center,
+              height: 51,
+              width: 373,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  border: Border.all(color: Colors.lightGreenAccent),
+                  color: Color(0xffF7FAFF)
+              ),
+              child: Text("Rimi dhar",
+                style: TextStyle(
+                    fontFamily: "itim",
+                    fontSize: 20,
+                    color: Colors.black
+                ),),
+            ),),
+          SizedBox(
+            height: 20,
+          ),
+          InkWell(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>EmployeDetails()));
+            },
+            child:
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              alignment: Alignment.center,
+              height: 51,
+              width: 373,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  border: Border.all(color: Colors.lightGreenAccent),
+                  color: Color(0xffF7FAFF)
+              ),
+              child: Text("Rimi dhar",
+                style: TextStyle(
+                    fontFamily: "itim",
+                    fontSize: 20,
+                    color: Colors.black
+                ),),
+            ),),
+          SizedBox(
+            height: 20,
+          ),
+          InkWell(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>EmployeDetails()));
+            },
+            child:
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              alignment: Alignment.center,
+              height: 51,
+              width: 373,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  border: Border.all(color: Colors.lightGreenAccent),
+                  color: Color(0xffF7FAFF)
+              ),
+              child: Text("Rimi dhar",
+                style: TextStyle(
+                    fontFamily: "itim",
+                    fontSize: 20,
+                    color: Colors.black
+                ),),
+            ),), SizedBox(
+            height: 20,
+          ),
+          InkWell(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>EmployeDetails()));
+            },
+            child:
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              alignment: Alignment.center,
+              height: 51,
+              width: 373,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  border: Border.all(color: Colors.lightGreenAccent),
+                  color: Color(0xffF7FAFF)
+              ),
+              child: Text("Rimi dhar",
+                style: TextStyle(
+                    fontFamily: "itim",
+                    fontSize: 20,
+                    color: Colors.black
+                ),),
+            ),), SizedBox(
+            height: 20,
+          ),
+          InkWell(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>EmployeDetails()));
+            },
+            child:
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              alignment: Alignment.center,
+              height: 51,
+              width: 373,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  border: Border.all(color: Colors.lightGreenAccent),
+                  color: Color(0xffF7FAFF)
+              ),
+              child: Text("Rimi dhar",
+                style: TextStyle(
+                    fontFamily: "itim",
+                    fontSize: 20,
+                    color: Colors.black
+                ),),
+            ),),
+          SizedBox(
+            height: 20,
+          ),
+          InkWell(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>EmployeDetails()));
+            },
+            child:
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              alignment: Alignment.center,
+              height: 51,
+              width: 373,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  border: Border.all(color: Colors.lightGreenAccent),
+                  color: Color(0xffF7FAFF)
+              ),
+              child: Text("Rimi dhar",
+                style: TextStyle(
+                    fontFamily: "itim",
+                    fontSize: 20,
+                    color: Colors.black
+                ),),
+            ),), SizedBox(
+            height: 20,
+          ),
+          InkWell(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>EmployeDetails()));
+            },
+            child:
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              alignment: Alignment.center,
+              height: 51,
+              width: 373,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  border: Border.all(color: Colors.lightGreenAccent),
+                  color: Color(0xffF7FAFF)
+              ),
+              child: Text("Rimi dhar",
+                style: TextStyle(
+                    fontFamily: "itim",
+                    fontSize: 20,
+                    color: Colors.black
+                ),),
+            ),),
+          SizedBox(
+            height: 20,
+          ),
+          InkWell(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>EmployeDetails()));
+            },
+            child:
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              alignment: Alignment.center,
+              height: 51,
+              width: 373,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  border: Border.all(color: Colors.lightGreenAccent),
+                  color: Color(0xffF7FAFF)
+              ),
+              child: Text("Rimi dhar",
+                style: TextStyle(
+                    fontFamily: "itim",
+                    fontSize: 20,
+                    color: Colors.black
+                ),),
+            ),),
+          SizedBox(
+            height: 20,
+          ),
+          InkWell(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>EmployeDetails()));
+            },
+            child:
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              alignment: Alignment.center,
+              height: 51,
+              width: 373,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  border: Border.all(color: Colors.lightGreenAccent),
+                  color: Color(0xffF7FAFF)
+              ),
+              child: Text("Rimi dhar",
+                style: TextStyle(
+                    fontFamily: "itim",
+                    fontSize: 20,
+                    color: Colors.black
+                ),),
+            ),),
+
+
+
+
+
         ],
       ),
     );

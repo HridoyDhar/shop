@@ -18,8 +18,10 @@ class _CompineListState extends State<CompineList> {
         children: [
           SizedBox(
             height: 20,
+
           ),
           Container(
+
             alignment: Alignment.centerLeft,
             child: Text("Compline",
               style: TextStyle
@@ -37,17 +39,18 @@ class _CompineListState extends State<CompineList> {
             alignment: Alignment.center,
 
             margin: EdgeInsets.symmetric(horizontal: 90),
-            height: 32,
-            width: 130,
+            height: 50,
+            width: 300,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                color: Color(0xffF7FAFF)
+                color: Colors.black,
+
             ),
             child: Text("18-07-22",
               style: TextStyle(
-                  fontSize: 15,
+                  fontSize: 20,
                   fontFamily: "itim",
-                  color: Colors.black
+                  color: Colors.white
               ),),
           ),
           SizedBox(
@@ -67,7 +70,8 @@ class _CompineListState extends State<CompineList> {
               width: 373,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Color(0xffF7FAFF)
+                  color: Color(0xffF7FAFF),
+                  border: Border.all(color: Colors.red)
               ),
               child: Text("Mr.rahul                4567330Tk",
                 style: TextStyle(
@@ -93,7 +97,7 @@ class _CompineListState extends State<CompineList> {
               width: 373,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  border: Border.all(color: Colors.black),
+                  border: Border.all(color: Colors.redAccent),
                   color: Color(0xffF7FAFF)
               ),
               child: Text("Mr.rahul                4567330Tk",
@@ -118,7 +122,7 @@ class _CompineListState extends State<CompineList> {
             height: 51,
             width: 373,
             decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),border: Border.all(color: Colors.black),
+                borderRadius: BorderRadius.circular(10),border: Border.all(color: Colors.redAccent),
                 color: Color(0xffF7FAFF)
             ),
             child: Text("Mr.rahul                4567330Tk",
@@ -143,7 +147,7 @@ class _CompineListState extends State<CompineList> {
               height: 51,
               width: 373,
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),border: Border.all(color: Colors.black),
+                  borderRadius: BorderRadius.circular(10),border: Border.all(color: Colors.redAccent),
                   color: Color(0xffF7FAFF)
               ),
               child: Text("Mr.rahul                4567330Tk",
@@ -154,6 +158,320 @@ class _CompineListState extends State<CompineList> {
                 ),),
             ),
           ),
+          SizedBox(
+            height: 20,
+          ),
+          InkWell(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>ComplilnePerson()));
+            },
+            child: Container(
+
+              alignment: Alignment.center,
+
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              height: 51,
+              width: 373,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),border: Border.all(color: Colors.redAccent),
+                  color: Color(0xffF7FAFF)
+              ),
+              child: Text("Mr.rahul                4567330Tk",
+                style: TextStyle(
+                    fontSize: 15,
+                    fontFamily: "itim",
+                    color: Colors.black
+                ),),
+            ),
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          InkWell(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>ComplilnePerson()));
+            },
+            child: Container(
+
+              alignment: Alignment.center,
+
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              height: 51,
+              width: 373,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),border: Border.all(color: Colors.redAccent),
+                  color: Color(0xffF7FAFF)
+              ),
+              child: Text("Mr.rahul                4567330Tk",
+                style: TextStyle(
+                    fontSize: 15,
+                    fontFamily: "itim",
+                    color: Colors.black
+                ),),
+            ),
+          ),
+
+          SizedBox(
+            height: 20,
+          ),
+          InkWell(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>ComplilnePerson()));
+            },
+            child: Container(
+
+              alignment: Alignment.center,
+
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              height: 51,
+              width: 373,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),border: Border.all(color: Colors.redAccent),
+                  color: Color(0xffF7FAFF)
+              ),
+              child: Text("Mr.rahul                4567330Tk",
+                style: TextStyle(
+                    fontSize: 15,
+                    fontFamily: "itim",
+                    color: Colors.black
+                ),),
+            ),
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          InkWell(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>ComplilnePerson()));
+            },
+            child: Container(
+
+              alignment: Alignment.center,
+
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              height: 51,
+              width: 373,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),border: Border.all(color: Colors.redAccent),
+                  color: Color(0xffF7FAFF)
+              ),
+              child: Text("Mr.rahul                4567330Tk",
+                style: TextStyle(
+                    fontSize: 15,
+                    fontFamily: "itim",
+                    color: Colors.black
+                ),),
+            ),
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          InkWell(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>ComplilnePerson()));
+            },
+            child: Container(
+
+              alignment: Alignment.center,
+
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              height: 51,
+              width: 373,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),border: Border.all(color: Colors.redAccent),
+                  color: Color(0xffF7FAFF)
+              ),
+              child: Text("Mr.rahul                4567330Tk",
+                style: TextStyle(
+                    fontSize: 15,
+                    fontFamily: "itim",
+                    color: Colors.black
+                ),),
+            ),
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          InkWell(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>ComplilnePerson()));
+            },
+            child: Container(
+
+              alignment: Alignment.center,
+
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              height: 51,
+              width: 373,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),border: Border.all(color: Colors.redAccent),
+                  color: Color(0xffF7FAFF)
+              ),
+              child: Text("Mr.rahul                4567330Tk",
+                style: TextStyle(
+                    fontSize: 15,
+                    fontFamily: "itim",
+                    color: Colors.black
+                ),),
+            ),
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          InkWell(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>ComplilnePerson()));
+            },
+            child: Container(
+
+              alignment: Alignment.center,
+
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              height: 51,
+              width: 373,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),border: Border.all(color: Colors.redAccent),
+                  color: Color(0xffF7FAFF)
+              ),
+              child: Text("Mr.rahul                4567330Tk",
+                style: TextStyle(
+                    fontSize: 15,
+                    fontFamily: "itim",
+                    color: Colors.black
+                ),),
+            ),
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          InkWell(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>ComplilnePerson()));
+            },
+            child: Container(
+
+              alignment: Alignment.center,
+
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              height: 51,
+              width: 373,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),border: Border.all(color: Colors.redAccent),
+                  color: Color(0xffF7FAFF)
+              ),
+              child: Text("Mr.rahul                4567330Tk",
+                style: TextStyle(
+                    fontSize: 15,
+                    fontFamily: "itim",
+                    color: Colors.black
+                ),),
+            ),
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          InkWell(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>ComplilnePerson()));
+            },
+            child: Container(
+
+              alignment: Alignment.center,
+
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              height: 51,
+              width: 373,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),border: Border.all(color: Colors.redAccent),
+                  color: Color(0xffF7FAFF)
+              ),
+              child: Text("Mr.rahul                4567330Tk",
+                style: TextStyle(
+                    fontSize: 15,
+                    fontFamily: "itim",
+                    color: Colors.black
+                ),),
+            ),
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          InkWell(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>ComplilnePerson()));
+            },
+            child: Container(
+
+              alignment: Alignment.center,
+
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              height: 51,
+              width: 373,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),border: Border.all(color: Colors.redAccent),
+                  color: Color(0xffF7FAFF)
+              ),
+              child: Text("Mr.rahul                4567330Tk",
+                style: TextStyle(
+                    fontSize: 15,
+                    fontFamily: "itim",
+                    color: Colors.black
+                ),),
+            ),
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          InkWell(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>ComplilnePerson()));
+            },
+            child: Container(
+
+              alignment: Alignment.center,
+
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              height: 51,
+              width: 373,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),border: Border.all(color: Colors.redAccent),
+                  color: Color(0xffF7FAFF)
+              ),
+              child: Text("Mr.rahul                4567330Tk",
+                style: TextStyle(
+                    fontSize: 15,
+                    fontFamily: "itim",
+                    color: Colors.black
+                ),),
+            ),
+          ),   SizedBox(
+            height: 20,
+          ),
+          InkWell(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>ComplilnePerson()));
+            },
+            child: Container(
+
+              alignment: Alignment.center,
+
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              height: 51,
+              width: 373,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),border: Border.all(color: Colors.redAccent),
+                  color: Color(0xffF7FAFF)
+              ),
+              child: Text("Mr.rahul                4567330Tk",
+                style: TextStyle(
+                    fontSize: 15,
+                    fontFamily: "itim",
+                    color: Colors.black
+                ),),
+            ),
+          ),
+
+
         ],
       ),
     );

@@ -583,6 +583,7 @@ class _DetailsListState extends State<DetailsList> {
 
 
 
+
             ]
             )
         ),

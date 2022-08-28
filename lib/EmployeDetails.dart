@@ -62,12 +62,15 @@ class _EmployeDetailsState extends State<EmployeDetails> {
             height: 10,
           ),
           Container(
-            alignment: Alignment.centerLeft,
+            alignment: Alignment.center,
+            margin: EdgeInsets.symmetric(horizontal: 20),
             height: 51,
             width: 372,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                color: Color(0xffF7FAFF)
+                color: Color(0xffF7FAFF),
+                border: Border.all(color: Colors.deepPurpleAccent)
+
             ),
             child: Text("Rimi Dhar",
               style: TextStyle(
@@ -80,12 +83,15 @@ class _EmployeDetailsState extends State<EmployeDetails> {
             height: 10,
           ),
           Container(
-            alignment: Alignment.centerLeft,
+            alignment: Alignment.center,
+            margin: EdgeInsets.symmetric(horizontal: 20),
             height: 51,
             width: 372,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                color: Color(0xffF7FAFF)
+                color: Color(0xffF7FAFF),
+                border: Border.all(color: Colors.deepPurpleAccent)
+
             ),
             child: Text("Bazer no road 3,New york",
               style: TextStyle(
@@ -98,18 +104,40 @@ class _EmployeDetailsState extends State<EmployeDetails> {
             height: 10,
           ),
           Container(
-            alignment: Alignment.centerLeft,
+            alignment: Alignment.center,
+            margin: EdgeInsets.symmetric(horizontal: 20),
             height: 51,
             width: 372,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                color: Color(0xffF7FAFF)
+                color: Color(0xffF7FAFF),
+              border: Border.all(color: Colors.deepPurpleAccent)
             ),
             child: Text("0178378392",
               style: TextStyle(
                   fontSize: 20,
                   fontFamily: "itim",
                   color: Colors.black
+              ),),
+          ),
+
+          SizedBox(
+            height: 20,
+          ),
+          Container(
+            alignment: Alignment.center,
+            margin: EdgeInsets.symmetric(horizontal: 120),
+            height: 50,
+            width: 370,
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                color: Colors.black
+            ),
+            child: Text("01-02-22",
+              style: TextStyle(
+                  fontFamily: "itim",
+                  fontSize: 20,
+                  color: Colors.white
               ),),
           ),
           SizedBox(
@@ -122,14 +150,17 @@ class _EmployeDetailsState extends State<EmployeDetails> {
             width: 370,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                color: Color(0xffF7FAFF)
-            ),
+                color: Color(0xffF7FAFF),
+    border: Border.all(color: Colors.deepPurpleAccent)
+
+    ),
             child: Text("January                                   10000Tk",
               style: TextStyle(
                   fontFamily: "itim",
                   fontSize: 20,
                   color: Colors.black
               ),),
+
           ),
           SizedBox(
             height: 20,
@@ -160,7 +191,9 @@ class _EmployeDetailsState extends State<EmployeDetails> {
             width: 370,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                color: Color(0xffF7FAFF)
+                color: Color(0xffF7FAFF),
+                border: Border.all(color: Colors.deepPurpleAccent)
+
             ),
             child: Text("January                                   10000Tk",
               style: TextStyle(
@@ -168,7 +201,49 @@ class _EmployeDetailsState extends State<EmployeDetails> {
                   fontSize: 20,
                   color: Colors.black
               ),),
-          )
+
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          Container(
+            alignment: Alignment.center,
+            margin: EdgeInsets.symmetric(horizontal: 120),
+            height: 50,
+            width: 370,
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                color: Colors.black
+            ),
+            child: Text("01-02-22",
+              style: TextStyle(
+                  fontFamily: "itim",
+                  fontSize: 20,
+                  color: Colors.white
+              ),),
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          Container(
+            alignment: Alignment.center,
+            margin: EdgeInsets.symmetric(horizontal: 20),
+            height: 50,
+            width: 370,
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                color: Color(0xffF7FAFF),
+                border: Border.all(color: Colors.deepPurpleAccent)
+
+            ),
+            child: Text("January                                   10000Tk",
+              style: TextStyle(
+                  fontFamily: "itim",
+                  fontSize: 20,
+                  color: Colors.black
+              ),),
+
+          ),
 
         ],
       ),

@@ -26,15 +26,39 @@ class _ShoppingListState extends State<ShoppingList> {
             SizedBox(
               height: 5,
             ),
-            Container(
-              // Center Text
-              margin: EdgeInsets.symmetric(),
-              child: Text(
-                "Krishna Gold Shop  Contact: 0347628323",
-                style: TextStyle(
-                  color: Colors.black,
-                  fontFamily: "itim",
-                  fontSize: 20,
+            Center(
+              child: Container(
+                // Center Text
+
+                child: Text(
+                  "Krishna Gold Shop "
+
+                  ,
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontFamily: "itim",
+                    fontSize: 20,
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 5,
+            ),
+            Center(
+              child: Container(
+
+                // Center Text
+
+                child: Text(
+
+                      " Contact: 0347628323"
+                  ,
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontFamily: "itim",
+                    fontSize: 20,
+                  ),
                 ),
               ),
             ),
@@ -44,8 +68,10 @@ class _ShoppingListState extends State<ShoppingList> {
               height: 51,
               width: 406,
               margin: EdgeInsets.symmetric(horizontal: 20),
+
               decoration: BoxDecoration(
                 color: Color(0xffF6FAFF),
+                border: Border.all(color: Colors.black)
               ),
               child: Text(
                 "1.Neckless             2ps        6500 ",
@@ -114,9 +140,9 @@ class _ShoppingListState extends State<ShoppingList> {
             ),
             Container(
               alignment: Alignment.center,
-              margin: EdgeInsets.symmetric(horizontal: 200),
-              height: 52,
-              width: 230,
+              margin: EdgeInsets.symmetric(horizontal: 100),
+              height: 50,
+
               decoration: BoxDecoration(
                   border: Border.all(color: Colors.black),
                   borderRadius: BorderRadius.circular(10),
@@ -130,9 +156,9 @@ class _ShoppingListState extends State<ShoppingList> {
             ),
             Container(
               alignment: Alignment.center,
-              margin: EdgeInsets.symmetric(horizontal: 200),
-              height: 52,
-              width: 230,
+              margin: EdgeInsets.symmetric(horizontal: 100),
+              height: 50,
+
               decoration: BoxDecoration(
                   border: Border.all(color: Colors.black),
                   borderRadius: BorderRadius.circular(10),

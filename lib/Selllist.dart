@@ -33,17 +33,17 @@ class _SelllistState extends State<Selllist> {
             Container(
               alignment: Alignment.center,
               margin: EdgeInsets.symmetric(horizontal: 89),
-              height: 40,
-              width: 120,
+              height: 50,
+              width: 300,
               decoration: BoxDecoration(
-                border: Border.all(color: Colors.black),
+
                   borderRadius: BorderRadius.circular(10),
-                  color: Color(0xffF7FAFF)
+                  color: Colors.cyanAccent
               ),
               child: Text("19-03-22",
                 style: TextStyle(
                     fontFamily: "itim",
-                    fontSize: 15,
+                    fontSize: 20,
                     color: Colors.black
                 ),),
             ),
@@ -62,7 +62,7 @@ class _SelllistState extends State<Selllist> {
                   width: 360,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      border: Border.all(color: Colors.black),
+                      border: Border.all(color: Colors.teal),
                       color: Color(0xffF7FAFF)
                   ),
                   child: Text("1. Mr.rahul         23.4b          4569000Tk",
@@ -87,7 +87,7 @@ class _SelllistState extends State<Selllist> {
                   height: 51,
                   width: 360,
                   decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),border: Border.all(color: Colors.black),
+                      borderRadius: BorderRadius.circular(10),border: Border.all(color: Colors.teal),
                       color: Color(0xffF7FAFF)
                   ),
                   child: Text("1. Mr.rahul         23.4b          4569000Tk",
@@ -112,7 +112,7 @@ class _SelllistState extends State<Selllist> {
                   width: 360,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      border: Border.all(color: Colors.black),
+                      border: Border.all(color: Colors.teal),
                       color: Color(0xffF7FAFF)
                   ),
                   child: Text("2r. Mr.rahul         23.4b          4569000Tk",
@@ -140,7 +140,7 @@ class _SelllistState extends State<Selllist> {
                   width: 360,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      border: Border.all(color: Colors.black),
+                      border: Border.all(color: Colors.teal),
                       color: Color(0xffF7FAFF)
                   ),
                   child: Text("3. Mr.rahul         23.4b          4569000Tk",
@@ -166,7 +166,7 @@ class _SelllistState extends State<Selllist> {
                   width: 360,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      border: Border.all(color: Colors.black),
+                      border: Border.all(color: Colors.teal),
                       color: Color(0xffF7FAFF)
                   ),
                   child: Text("3. Mr.rahul         23.4b          4569000Tk",
@@ -192,7 +192,7 @@ class _SelllistState extends State<Selllist> {
                   width: 360,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      border: Border.all(color: Colors.black),
+                      border: Border.all(color: Colors.teal),
                       color: Color(0xffF7FAFF)
                   ),
                   child: Text("3. Mr.rahul         23.4b          4569000Tk",
@@ -218,7 +218,7 @@ class _SelllistState extends State<Selllist> {
                   width: 360,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      border: Border.all(color: Colors.black),
+                      border: Border.all(color: Colors.teal),
                       color: Color(0xffF7FAFF)
                   ),
                   child: Text("3. Mr.rahul         23.4b          4569000Tk",
@@ -244,7 +244,7 @@ class _SelllistState extends State<Selllist> {
                   width: 360,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      border: Border.all(color: Colors.black),
+                      border: Border.all(color: Colors.teal),
                       color: Color(0xffF7FAFF)
                   ),
                   child: Text("3. Mr.rahul         23.4b          4569000Tk",
@@ -270,7 +270,7 @@ class _SelllistState extends State<Selllist> {
                   width: 360,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      border: Border.all(color: Colors.black),
+                      border: Border.all(color: Colors.teal),
                       color: Color(0xffF7FAFF)
                   ),
                   child: Text("3. Mr.rahul         23.4b          4569000Tk",
@@ -296,7 +296,7 @@ class _SelllistState extends State<Selllist> {
                   width: 360,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      border: Border.all(color: Colors.black),
+                      border: Border.all(color: Colors.teal),
                       color: Color(0xffF7FAFF)
                   ),
                   child: Text("3. Mr.rahul         23.4b          4569000Tk",
@@ -322,7 +322,7 @@ class _SelllistState extends State<Selllist> {
                   width: 360,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      border: Border.all(color: Colors.black),
+                      border: Border.all(color: Colors.teal),
                       color: Color(0xffF7FAFF)
                   ),
                   child: Text("3. Mr.rahul         23.4b          4569000Tk",
@@ -348,7 +348,7 @@ class _SelllistState extends State<Selllist> {
                   width: 360,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      border: Border.all(color: Colors.black),
+                      border: Border.all(color: Colors.teal),
                       color: Color(0xffF7FAFF)
                   ),
                   child: Text("3. Mr.rahul         23.4b          4569000Tk",
@@ -373,7 +373,7 @@ class _SelllistState extends State<Selllist> {
                   width: 360,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      border: Border.all(color: Colors.black),
+                      border: Border.all(color: Colors.teal),
                       color: Color(0xffF7FAFF)
                   ),
                   child: Text("3. Mr.rahul         23.4b          4569000Tk",
@@ -398,7 +398,7 @@ class _SelllistState extends State<Selllist> {
                   width: 360,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      border: Border.all(color: Colors.black),
+                      border: Border.all(color: Colors.teal),
                       color: Color(0xffF7FAFF)
                   ),
                   child: Text("3. Mr.rahul         23.4b          4569000Tk",
@@ -423,7 +423,7 @@ class _SelllistState extends State<Selllist> {
                   width: 360,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      border: Border.all(color: Colors.black),
+                      border: Border.all(color: Colors.teal),
                       color: Color(0xffF7FAFF)
                   ),
                   child: Text("3. Mr.rahul         23.4b          4569000Tk",

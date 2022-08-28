@@ -19,12 +19,12 @@ class _MortagelistState extends State<Mortagelist> {
               height: 20,
             ),
             Container(
-              alignment: Alignment.centerLeft,
+              alignment: Alignment.center,
               child: Text("Selllist",
                   style: TextStyle(
                       fontSize: 30,
                       fontFamily: "itim",
-                      color: Colors.amberAccent
+                      color: Colors.blue
                   )),
             ),
             SizedBox(
@@ -37,6 +37,7 @@ class _MortagelistState extends State<Mortagelist> {
                 width: 130,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
+                    border: Border.all(color: Colors.tealAccent),
                     color: Color(0xffF7FAFF)
                 ),
                 child: Text("10-03-29",
@@ -60,7 +61,7 @@ class _MortagelistState extends State<Mortagelist> {
                   height: 51,
                   width: 360,
                   decoration: BoxDecoration(
-                      border: Border.all(color: Colors.black),
+                      border: Border.all(color: Colors.tealAccent),
                       borderRadius: BorderRadius.circular(10),
                       color: Color(0xffF7FAFF)
                   ),
@@ -88,7 +89,7 @@ class _MortagelistState extends State<Mortagelist> {
                   width: 360,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      border: Border.all(color: Colors.black),
+                      border: Border.all(color: Colors.tealAccent),
                       color: Color(0xffF7FAFF)
                   ),
                   child: Text("1. Mr.rahul         23.4b          4569000Tk",
@@ -115,7 +116,7 @@ class _MortagelistState extends State<Mortagelist> {
                   width: 360,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      border: Border.all(color: Colors.black),
+                      border: Border.all(color: Colors.tealAccent),
                       color: Color(0xffF7FAFF)
                   ),
                   child: Text("2r. Mr.rahul         23.4b          4569000Tk",
@@ -141,7 +142,163 @@ class _MortagelistState extends State<Mortagelist> {
                   width: 360,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      border: Border.all(color: Colors.black),
+                      border: Border.all(color: Colors.tealAccent),
+                      color: Color(0xffF7FAFF)
+                  ),
+                  child: Text("3. Mr.rahul         23.4b          4569000Tk",
+                      style: TextStyle
+                        (
+                          fontFamily: "itim",
+                          fontSize: 20,
+                          color: Colors.black
+                      ))
+              ),),
+            SizedBox(
+              height: 20,
+            ),
+            InkWell(
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>MortagePerson()));
+              },
+              child:
+              Container(
+                  alignment: Alignment.center,
+                  margin: EdgeInsets.symmetric(horizontal: 20),
+                  height: 51,
+                  width: 360,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      border: Border.all(color: Colors.tealAccent),
+                      color: Color(0xffF7FAFF)
+                  ),
+                  child: Text("3. Mr.rahul         23.4b          4569000Tk",
+                      style: TextStyle
+                        (
+                          fontFamily: "itim",
+                          fontSize: 20,
+                          color: Colors.black
+                      ))
+              ),),
+            SizedBox(
+              height: 20,
+            ),
+            InkWell(
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>MortagePerson()));
+              },
+              child:
+              Container(
+                  alignment: Alignment.center,
+                  margin: EdgeInsets.symmetric(horizontal: 20),
+                  height: 51,
+                  width: 360,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      border: Border.all(color: Colors.tealAccent),
+                      color: Color(0xffF7FAFF)
+                  ),
+                  child: Text("3. Mr.rahul         23.4b          4569000Tk",
+                      style: TextStyle
+                        (
+                          fontFamily: "itim",
+                          fontSize: 20,
+                          color: Colors.black
+                      ))
+              ),),
+            SizedBox(
+              height: 20,
+            ),
+            InkWell(
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>MortagePerson()));
+              },
+              child:
+              Container(
+                  alignment: Alignment.center,
+                  margin: EdgeInsets.symmetric(horizontal: 20),
+                  height: 51,
+                  width: 360,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      border: Border.all(color: Colors.tealAccent),
+                      color: Color(0xffF7FAFF)
+                  ),
+                  child: Text("3. Mr.rahul         23.4b          4569000Tk",
+                      style: TextStyle
+                        (
+                          fontFamily: "itim",
+                          fontSize: 20,
+                          color: Colors.black
+                      ))
+              ),),
+            SizedBox(
+              height: 20,
+            ),
+            InkWell(
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>MortagePerson()));
+              },
+              child:
+              Container(
+                  alignment: Alignment.center,
+                  margin: EdgeInsets.symmetric(horizontal: 20),
+                  height: 51,
+                  width: 360,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      border: Border.all(color: Colors.tealAccent),
+                      color: Color(0xffF7FAFF)
+                  ),
+                  child: Text("3. Mr.rahul         23.4b          4569000Tk",
+                      style: TextStyle
+                        (
+                          fontFamily: "itim",
+                          fontSize: 20,
+                          color: Colors.black
+                      ))
+              ),),
+            SizedBox(
+              height: 20,
+            ),
+            InkWell(
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>MortagePerson()));
+              },
+              child:
+              Container(
+                  alignment: Alignment.center,
+                  margin: EdgeInsets.symmetric(horizontal: 20),
+                  height: 51,
+                  width: 360,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      border: Border.all(color: Colors.tealAccent),
+                      color: Color(0xffF7FAFF)
+                  ),
+                  child: Text("3. Mr.rahul         23.4b          4569000Tk",
+                      style: TextStyle
+                        (
+                          fontFamily: "itim",
+                          fontSize: 20,
+                          color: Colors.black
+                      ))
+              ),),
+            SizedBox(
+              height: 20,
+            ),
+            InkWell(
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>MortagePerson()));
+              },
+              child:
+              Container(
+                  alignment: Alignment.center,
+                  margin: EdgeInsets.symmetric(horizontal: 20),
+                  height: 51,
+                  width: 360,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      border: Border.all(color: Colors.tealAccent),
                       color: Color(0xffF7FAFF)
                   ),
                   child: Text("3. Mr.rahul         23.4b          4569000Tk",
@@ -162,15 +319,15 @@ class _MortagelistState extends State<Mortagelist> {
                 width: 360,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
-                    border: Border.all(color: Colors.black),
-                    color: Color(0xffF7FAFF)
+
+                    color: Colors.red
                 ),
                 child: Text("Total: 8569000Tk",
                     style: TextStyle
                       (
                         fontFamily: "itim",
                         fontSize: 20,
-                        color: Colors.black
+                        color: Colors.white
                     ))
             ),
           ],

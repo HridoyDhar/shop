@@ -87,11 +87,16 @@ class _FindpersonState extends State<Findperson> {
             padding: EdgeInsets.symmetric(horizontal: 20.w),
             child: Row(
               children: [
-                Container(
-                    child: CircleAvatar(
-                      backgroundImage: AssetImage("assets/Ellipse60.png"),
-                      radius: 30.r,
-                    )),
+                InkWell(
+                  onTap: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> Searchperson()));
+                  },
+                  child: Container(
+                      child: CircleAvatar(
+                        backgroundImage: AssetImage("assets/Ellipse60.png"),
+                        radius: 30.r,
+                      )),
+                ),
                 SizedBox(
                   width: 20.h,
                 ),
@@ -120,11 +125,17 @@ class _FindpersonState extends State<Findperson> {
             padding: EdgeInsets.symmetric(horizontal: 20.w),
             child: Row(
               children: [
-                Container(
-                    child: CircleAvatar(
-                      backgroundImage: AssetImage("assets/Ellipse60.png"),
-                      radius: 30.r,
-                    )),
+                InkWell(
+                  onTap: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Findperson()));
+
+                  },
+                  child: Container(
+                      child: CircleAvatar(
+                        backgroundImage: AssetImage("assets/Ellipse60.png"),
+                        radius: 30.r,
+                      )),
+                ),
                 SizedBox(
                   width: 20.h,
                 ),
@@ -153,11 +164,16 @@ class _FindpersonState extends State<Findperson> {
             padding: EdgeInsets.symmetric(horizontal: 20.w),
             child: Row(
               children: [
-                Container(
-                    child: CircleAvatar(
-                      backgroundImage: AssetImage("assets/Ellipse60.png"),
-                      radius: 30.r,
-                    )),
+                InkWell(
+                  onTap: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Findperson()));
+                  },
+                  child: Container(
+                      child: CircleAvatar(
+                        backgroundImage: AssetImage("assets/Ellipse60.png"),
+                        radius: 30.r,
+                      )),
+                ),
                 SizedBox(
                   width: 20.h,
                 ),
@@ -186,11 +202,17 @@ class _FindpersonState extends State<Findperson> {
             padding: EdgeInsets.symmetric(horizontal: 20.w),
             child: Row(
               children: [
-                Container(
-                    child: CircleAvatar(
-                      backgroundImage: AssetImage("assets/Ellipse60.png"),
-                      radius: 30.r,
-                    )),
+                InkWell(
+                  onTap: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Findperson()));
+
+                  },
+                  child: Container(
+                      child: CircleAvatar(
+                        backgroundImage: AssetImage("assets/Ellipse60.png"),
+                        radius: 30.r,
+                      )),
+                ),
                 SizedBox(
                   width: 20.h,
                 ),
@@ -219,11 +241,16 @@ class _FindpersonState extends State<Findperson> {
             padding: EdgeInsets.symmetric(horizontal: 20.w),
             child: Row(
               children: [
-                Container(
-                    child: CircleAvatar(
-                      backgroundImage: AssetImage("assets/Ellipse60.png"),
-                      radius: 30.r,
-                    )),
+                InkWell(
+                  onTap: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Findperson()));
+                  },
+                  child: Container(
+                      child: CircleAvatar(
+                        backgroundImage: AssetImage("assets/Ellipse60.png"),
+                        radius: 30.r,
+                      )),
+                ),
                 SizedBox(
                   width: 20.h,
                 ),
@@ -252,11 +279,15 @@ class _FindpersonState extends State<Findperson> {
             padding: EdgeInsets.symmetric(horizontal: 20.w),
             child: Row(
               children: [
-                Container(
-                    child: CircleAvatar(
-                      backgroundImage: AssetImage("assets/Ellipse60.png"),
-                      radius: 30.r,
-                    )),
+                InkWell(onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>Findperson()));
+                },
+                  child: Container(
+                      child: CircleAvatar(
+                        backgroundImage: AssetImage("assets/Ellipse60.png"),
+                        radius: 30.r,
+                      )),
+                ),
                 SizedBox(
                   width: 20.h,
                 ),
@@ -285,11 +316,16 @@ class _FindpersonState extends State<Findperson> {
             padding: EdgeInsets.symmetric(horizontal: 20.w),
             child: Row(
               children: [
-                Container(
-                    child: CircleAvatar(
-                      backgroundImage: AssetImage("assets/Ellipse60.png"),
-                      radius: 30.r,
-                    )),
+                InkWell(
+                  onTap: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Findperson()));
+                  },
+                  child: Container(
+                      child: CircleAvatar(
+                        backgroundImage: AssetImage("assets/Ellipse60.png"),
+                        radius: 30.r,
+                      )),
+                ),
                 SizedBox(
                   width: 20.h,
                 ),
@@ -318,11 +354,16 @@ class _FindpersonState extends State<Findperson> {
             padding: EdgeInsets.symmetric(horizontal: 20.w),
             child: Row(
               children: [
+                InkWell(
+                onTap: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context)=>Findperson()));
+          },
+            child:
                 Container(
                     child: CircleAvatar(
                       backgroundImage: AssetImage("assets/Ellipse60.png"),
                       radius: 30.r,
-                    )),
+                    )),),
                 SizedBox(
                   width: 20.h,
                 ),
@@ -351,11 +392,16 @@ class _FindpersonState extends State<Findperson> {
             padding: EdgeInsets.symmetric(horizontal: 20.w),
             child: Row(
               children: [
+                InkWell(
+                onTap: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context)=>Findperson()));
+          },
+            child:
                 Container(
                     child: CircleAvatar(
                       backgroundImage: AssetImage("assets/Ellipse60.png"),
                       radius: 30.r,
-                    )),
+                    )),),
                 SizedBox(
                   width: 20.h,
                 ),
@@ -383,11 +429,16 @@ class _FindpersonState extends State<Findperson> {
             padding: EdgeInsets.symmetric(horizontal: 20.w),
             child: Row(
               children: [
+                InkWell(
+                onTap: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context)=>Findperson()));
+          },
+            child:
                 Container(
                     child: CircleAvatar(
                       backgroundImage: AssetImage("assets/Ellipse60.png"),
                       radius: 30.r,
-                    )),
+                    )),),
                 SizedBox(
                   width: 20.h,
                 ),
@@ -415,11 +466,16 @@ class _FindpersonState extends State<Findperson> {
             padding: EdgeInsets.symmetric(horizontal: 20.w),
             child: Row(
               children: [
+                InkWell(
+                onTap: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context)=>Findperson()));
+          },
+            child:
                 Container(
                     child: CircleAvatar(
                       backgroundImage: AssetImage("assets/Ellipse60.png"),
                       radius: 30.r,
-                    )),
+                    )),),
                 SizedBox(
                   width: 20.h,
                 ),
@@ -447,11 +503,16 @@ class _FindpersonState extends State<Findperson> {
             padding: EdgeInsets.symmetric(horizontal: 20.w),
             child: Row(
               children: [
+                InkWell(
+                onTap: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context)=>Findperson()));
+          },
+            child:
                 Container(
                     child: CircleAvatar(
                       backgroundImage: AssetImage("assets/Ellipse60.png"),
                       radius: 30.r,
-                    )),
+                    )),),
                 SizedBox(
                   width: 20.h,
                 ),
@@ -480,11 +541,16 @@ class _FindpersonState extends State<Findperson> {
             padding: EdgeInsets.symmetric(horizontal: 20.w),
             child: Row(
               children: [
+                InkWell(
+                onTap: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context)=>Findperson()));
+          },
+            child:
                 Container(
                     child: CircleAvatar(
                       backgroundImage: AssetImage("assets/Ellipse60.png"),
                       radius: 30.r,
-                    )),
+                    )),),
                 SizedBox(
                   width: 20.h,
                 ),
@@ -513,11 +579,16 @@ class _FindpersonState extends State<Findperson> {
             padding: EdgeInsets.symmetric(horizontal: 20.w),
             child: Row(
               children: [
+                InkWell(
+                onTap: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context)=>Findperson()));
+          },
+            child:
                 Container(
                     child: CircleAvatar(
                       backgroundImage: AssetImage("assets/Ellipse60.png"),
                       radius: 30.r,
-                    )),
+                    )),),
                 SizedBox(
                   width: 20.h,
                 ),
@@ -546,11 +617,16 @@ class _FindpersonState extends State<Findperson> {
             padding: EdgeInsets.symmetric(horizontal: 20.w),
             child: Row(
               children: [
+                InkWell(
+                onTap: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context)=>Findperson()));
+          },
+            child:
                 Container(
                     child: CircleAvatar(
                       backgroundImage: AssetImage("assets/Ellipse60.png"),
                       radius: 30.r,
-                    )),
+                    )),),
                 SizedBox(
                   width: 20.h,
                 ),
@@ -578,11 +654,16 @@ class _FindpersonState extends State<Findperson> {
             padding: EdgeInsets.symmetric(horizontal: 20.w),
             child: Row(
               children: [
+                InkWell(
+                onTap: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context)=>Findperson()));
+          },
+            child:
                 Container(
                     child: CircleAvatar(
                       backgroundImage: AssetImage("assets/Ellipse60.png"),
                       radius: 30.r,
-                    )),
+                    )),),
                 SizedBox(
                   width: 20.h,
                 ),
@@ -611,11 +692,16 @@ class _FindpersonState extends State<Findperson> {
             padding: EdgeInsets.symmetric(horizontal: 20.w),
             child: Row(
               children: [
+                InkWell(
+                onTap: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context)=>Findperson()));
+          },
+            child:
                 Container(
                     child: CircleAvatar(
                       backgroundImage: AssetImage("assets/Ellipse60.png"),
                       radius: 30.r,
-                    )),
+                    )),),
                 SizedBox(
                   width: 20.h,
                 ),
@@ -644,11 +730,16 @@ class _FindpersonState extends State<Findperson> {
             padding: EdgeInsets.symmetric(horizontal: 20.w),
             child: Row(
               children: [
+                InkWell(
+                onTap: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context)=>Findperson()));
+          },
+            child:
                 Container(
                     child: CircleAvatar(
                       backgroundImage: AssetImage("assets/Ellipse60.png"),
                       radius: 30.r,
-                    )),
+                    )),),
                 SizedBox(
                   width: 20.h,
                 ),
@@ -677,11 +768,16 @@ class _FindpersonState extends State<Findperson> {
             padding: EdgeInsets.symmetric(horizontal: 20.w),
             child: Row(
               children: [
+                InkWell(
+                onTap: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context)=>Findperson()));
+          },
+            child:
                 Container(
                     child: CircleAvatar(
                       backgroundImage: AssetImage("assets/Ellipse60.png"),
                       radius: 30.r,
-                    )),
+                    )),),
                 SizedBox(
                   width: 20.h,
                 ),
@@ -710,11 +806,16 @@ class _FindpersonState extends State<Findperson> {
             padding: EdgeInsets.symmetric(horizontal: 20.w),
             child: Row(
               children: [
+                InkWell(
+                onTap: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context)=>Findperson()));
+          },
+            child:
                 Container(
                     child: CircleAvatar(
                       backgroundImage: AssetImage("assets/Ellipse60.png"),
                       radius: 30.r,
-                    )),
+                    )),),
                 SizedBox(
                   width: 20.h,
                 ),
@@ -743,11 +844,16 @@ class _FindpersonState extends State<Findperson> {
             padding: EdgeInsets.symmetric(horizontal: 20.w),
             child: Row(
               children: [
+                InkWell(
+                onTap: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context)=>Findperson()));
+          },
+            child:
                 Container(
                     child: CircleAvatar(
                       backgroundImage: AssetImage("assets/Ellipse60.png"),
                       radius: 30.r,
-                    )),
+                    )),),
                 SizedBox(
                   width: 20.h,
                 ),
@@ -776,11 +882,16 @@ class _FindpersonState extends State<Findperson> {
             padding: EdgeInsets.symmetric(horizontal: 20.w),
             child: Row(
               children: [
+                InkWell(
+                onTap: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context)=>Findperson()));
+          },
+            child:
                 Container(
                     child: CircleAvatar(
                       backgroundImage: AssetImage("assets/Ellipse60.png"),
                       radius: 30.r,
-                    )),
+                    )),),
                 SizedBox(
                   width: 20.h,
                 ),
@@ -809,11 +920,16 @@ class _FindpersonState extends State<Findperson> {
             padding: EdgeInsets.symmetric(horizontal: 20.w),
             child: Row(
               children: [
+                InkWell(
+                onTap: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context)=>Findperson()));
+          },
+            child:
                 Container(
                     child: CircleAvatar(
                       backgroundImage: AssetImage("assets/Ellipse60.png"),
                       radius: 30.r,
-                    )),
+                    )),),
                 SizedBox(
                   width: 20.h,
                 ),
@@ -842,11 +958,16 @@ class _FindpersonState extends State<Findperson> {
             padding: EdgeInsets.symmetric(horizontal: 20.w),
             child: Row(
               children: [
+                InkWell(
+                onTap: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context)=>Findperson()));
+          },
+            child:
                 Container(
                     child: CircleAvatar(
                       backgroundImage: AssetImage("assets/Ellipse60.png"),
                       radius: 30.r,
-                    )),
+                    )),),
                 SizedBox(
                   width: 20.h,
                 ),
@@ -875,11 +996,16 @@ class _FindpersonState extends State<Findperson> {
             padding: EdgeInsets.symmetric(horizontal: 20.w),
             child: Row(
               children: [
+                InkWell(
+                onTap: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context)=>Findperson()));
+          },
+            child:
                 Container(
                     child: CircleAvatar(
                       backgroundImage: AssetImage("assets/Ellipse60.png"),
                       radius: 30.r,
-                    )),
+                    )),),
                 SizedBox(
                   width: 20.h,
                 ),
@@ -908,11 +1034,16 @@ class _FindpersonState extends State<Findperson> {
             padding: EdgeInsets.symmetric(horizontal: 20.w),
             child: Row(
               children: [
+                InkWell(
+                onTap: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context)=>Findperson()));
+          },
+            child:
                 Container(
                     child: CircleAvatar(
                       backgroundImage: AssetImage("assets/Ellipse60.png"),
                       radius: 30.r,
-                    )),
+                    )),),
                 SizedBox(
                   width: 20.h,
                 ),
@@ -941,11 +1072,16 @@ class _FindpersonState extends State<Findperson> {
             padding: EdgeInsets.symmetric(horizontal: 20.w),
             child: Row(
               children: [
+                InkWell(
+                onTap: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context)=>Findperson()));
+          },
+            child:
                 Container(
                     child: CircleAvatar(
                       backgroundImage: AssetImage("assets/Ellipse60.png"),
                       radius: 30.r,
-                    )),
+                    )),),
                 SizedBox(
                   width: 20.h,
                 ),
@@ -973,11 +1109,16 @@ class _FindpersonState extends State<Findperson> {
             padding: EdgeInsets.symmetric(horizontal: 20.w),
             child: Row(
               children: [
+                InkWell(
+                onTap: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context)=>Findperson()));
+          },
+            child:
                 Container(
                     child: CircleAvatar(
                       backgroundImage: AssetImage("assets/Ellipse60.png"),
                       radius: 30.r,
-                    )),
+                    )),),
                 SizedBox(
                   width: 20.h,
                 ),
@@ -1006,11 +1147,16 @@ class _FindpersonState extends State<Findperson> {
             padding: EdgeInsets.symmetric(horizontal: 20.w),
             child: Row(
               children: [
+                InkWell(
+                onTap: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context)=>Findperson()));
+          },
+            child:
                 Container(
                     child: CircleAvatar(
                       backgroundImage: AssetImage("assets/Ellipse60.png"),
                       radius: 30.r,
-                    )),
+                    )),),
                 SizedBox(
                   width: 20.h,
                 ),
@@ -1039,11 +1185,16 @@ class _FindpersonState extends State<Findperson> {
             padding: EdgeInsets.symmetric(horizontal: 20.w),
             child: Row(
               children: [
+                InkWell(
+                onTap: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context)=>Findperson()));
+          },
+            child:
                 Container(
                     child: CircleAvatar(
                       backgroundImage: AssetImage("assets/Ellipse60.png"),
                       radius: 30.r,
-                    )),
+                    )),),
                 SizedBox(
                   width: 20.h,
                 ),
@@ -1072,11 +1223,16 @@ class _FindpersonState extends State<Findperson> {
             padding: EdgeInsets.symmetric(horizontal: 20.w),
             child: Row(
               children: [
+                InkWell(
+                onTap: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context)=>Findperson()));
+          },
+            child:
                 Container(
                     child: CircleAvatar(
                       backgroundImage: AssetImage("assets/Ellipse60.png"),
                       radius: 30.r,
-                    )),
+                    )),),
                 SizedBox(
                   width: 20.h,
                 ),
@@ -1105,11 +1261,16 @@ class _FindpersonState extends State<Findperson> {
             padding: EdgeInsets.symmetric(horizontal: 20.w),
             child: Row(
               children: [
+                InkWell(
+                onTap: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context)=>Findperson()));
+          },
+            child:
                 Container(
                     child: CircleAvatar(
                       backgroundImage: AssetImage("assets/Ellipse60.png"),
                       radius: 30.r,
-                    )),
+                    )),),
                 SizedBox(
                   width: 20.h,
                 ),
@@ -1138,11 +1299,16 @@ class _FindpersonState extends State<Findperson> {
             padding: EdgeInsets.symmetric(horizontal: 20.w),
             child: Row(
               children: [
+                InkWell(
+                onTap: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context)=>Findperson()));
+          },
+            child:
                 Container(
                     child: CircleAvatar(
                       backgroundImage: AssetImage("assets/Ellipse60.png"),
                       radius: 30.r,
-                    )),
+                    )),),
                 SizedBox(
                   width: 20.h,
                 ),
@@ -1170,11 +1336,16 @@ class _FindpersonState extends State<Findperson> {
             padding: EdgeInsets.symmetric(horizontal: 20.w),
             child: Row(
               children: [
+                InkWell(
+                onTap: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context)=>Findperson()));
+          },
+            child:
                 Container(
                     child: CircleAvatar(
                       backgroundImage: AssetImage("assets/Ellipse60.png"),
                       radius: 30.r,
-                    )),
+                    )),),
                 SizedBox(
                   width: 20.h,
                 ),

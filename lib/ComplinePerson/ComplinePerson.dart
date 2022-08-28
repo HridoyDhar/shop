@@ -16,35 +16,23 @@ class _ComplilnePersonState extends State<ComplilnePerson> {
           SizedBox(
             height: 20,
           ),
-          Container(
-            alignment: Alignment.centerLeft,
-            child: Text("Compline",
-              style: TextStyle
-                (
-                  fontFamily: "itim",
-                  fontSize: 20,
-                  color: Colors.black
-              ),),
-          ),
-          SizedBox(
-            height: 20,
-          ),
+
           Container(
 
             alignment: Alignment.center,
 
             margin: EdgeInsets.symmetric(horizontal: 90),
-            height: 32,
-            width: 130,
+           height: 50,
+            width: 300,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                color: Color(0xffF7FAFF)
+                color: Colors.black
             ),
             child: Text("18-07-22",
               style: TextStyle(
-                  fontSize: 15,
+                  fontSize: 20,
                   fontFamily: "itim",
-                  color: Colors.black
+                  color: Colors.white
               ),),
           ),
 
@@ -60,7 +48,8 @@ class _ComplilnePersonState extends State<ComplilnePerson> {
             width: 373,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                color: Color(0xffF7FAFF)
+                color: Color(0xffF7FAFF),
+              border: Border.all(color: Colors.yellowAccent)
             ),
             child: Text("Mr.rahul              ",
               style: TextStyle(
@@ -81,7 +70,8 @@ class _ComplilnePersonState extends State<ComplilnePerson> {
             width: 373,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                color: Color(0xffF7FAFF)
+                color: Color(0xffF7FAFF),
+                border: Border.all(color: Colors.yellowAccent)
             ),
             child: Text("01783634923",
               style: TextStyle(
@@ -102,7 +92,8 @@ class _ComplilnePersonState extends State<ComplilnePerson> {
             width: 373,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                color: Color(0xffF7FAFF)
+                color: Color(0xffF7FAFF),
+                border: Border.all(color: Colors.yellowAccent)
             ),
             child: Text("New market,Dhaka",
               style: TextStyle(

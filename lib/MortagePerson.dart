@@ -20,16 +20,17 @@ class _MortagePersonState extends State<MortagePerson> {
             (
             alignment: Alignment.center,
             height: 42,
-            width: 357,
+          margin: EdgeInsets.symmetric(horizontal: 20),
             decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),color:Color(0xffF7FAFF)
+                borderRadius: BorderRadius.circular(10),color:Colors.purpleAccent,
+
 
             ),
             child: Text("Krishna Gold Shop",
               style: TextStyle(
                   fontFamily: "itim",
                   fontSize: 20,
-                  color: Colors.black
+                  color: Colors.white
               ),),
 
           ),
@@ -43,26 +44,30 @@ class _MortagePersonState extends State<MortagePerson> {
             width: 130,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                color: Color(0xffF7FAFF)
+
+                color: Colors.black,
+
             ),
             child: Text("19-03-23",
                 style:TextStyle(
                     fontFamily: "itim",
                     fontSize: 15,
-                    color: Colors.black
+                    color: Colors.white
                 )),
           ),
           SizedBox(
-            height: 120,
+            height: 30,
 
           ),
           Container(
-            alignment: Alignment.centerLeft,
+            alignment: Alignment.center,
+            margin: EdgeInsets.symmetric(horizontal: 20),
             height: 51,
             width: 372,
             decoration: BoxDecoration(
                 color: Color(0xffF7FAFF),
-                borderRadius:BorderRadius.circular(10)
+                borderRadius:BorderRadius.circular(10),
+                border:Border.all(color: Colors.tealAccent)
             ),
             child: Text("Mr.Rahul",
                 style:TextStyle(
@@ -77,12 +82,14 @@ class _MortagePersonState extends State<MortagePerson> {
 
           ),
           Container(
-            alignment: Alignment.centerLeft,
+            alignment: Alignment.center,
+            margin: EdgeInsets.symmetric(horizontal: 20),
             height: 51,
             width: 372,
             decoration: BoxDecoration(
                 color: Color(0xffF7FAFF),
-                borderRadius:BorderRadius.circular(10)
+                borderRadius:BorderRadius.circular(10),
+                border:Border.all(color: Colors.tealAccent)
             ),
             child: Text("Mew towner aros ,chiigltonk",
                 style:TextStyle(
@@ -97,13 +104,15 @@ class _MortagePersonState extends State<MortagePerson> {
 
           ),
           Container(
-            alignment: Alignment.centerLeft,
+            alignment: Alignment.center,
+            margin: EdgeInsets.symmetric(horizontal: 20),
             height: 51,
             width: 372,
             decoration: BoxDecoration(
 
                 color: Color(0xffF7FAFF),
-                borderRadius:BorderRadius.circular(10)
+                borderRadius:BorderRadius.circular(10),
+                border:Border.all(color: Colors.tealAccent)
             ),
             child: Text("013743995723",
                 style:TextStyle(
@@ -123,26 +132,29 @@ class _MortagePersonState extends State<MortagePerson> {
             width: 273,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                color: Color(0xffF7FAFF)
+
+                color: Colors.tealAccent
             ),
             child: Text("5 % 100",
               style: TextStyle(
                   fontSize: 20,
                   fontFamily: "itim",
-                  color: Colors.black
+                  color: Colors.white
               ),),
           ),
           SizedBox(height: 20,),
 
           Container(
-            alignment: Alignment.centerLeft,
+            alignment: Alignment.center,
+            margin: EdgeInsets.symmetric(horizontal: 20),
             height: 51,
             width: 372,
             decoration: BoxDecoration(
                 color: Color(0xffF7FAFF),
-                borderRadius:BorderRadius.circular(10)
+                borderRadius:BorderRadius.circular(10),
+                border:Border.all(color: Colors.tealAccent)
             ),
-            child: Text("1.Neckless       2b        ",
+            child: Text("1.Neckless       2b        430000Tk ",
                 style:TextStyle(
                     fontSize: 15,
                     fontFamily: "itim",
@@ -155,14 +167,16 @@ class _MortagePersonState extends State<MortagePerson> {
 
           ),
           Container(
-            alignment: Alignment.centerLeft,
+            alignment: Alignment.center,
+            margin: EdgeInsets.symmetric(horizontal: 20),
             height: 51,
             width: 372,
             decoration: BoxDecoration(
                 color: Color(0xffF7FAFF),
-                borderRadius:BorderRadius.circular(10)
+                borderRadius:BorderRadius.circular(10),
+                border:Border.all(color: Colors.tealAccent)
             ),
-            child: Text("2.Chain       2b        ",
+            child: Text("2.Neckless       2b        430000Tk",
                 style:TextStyle(
                     fontSize: 15,
                     fontFamily: "itim",
@@ -175,14 +189,16 @@ class _MortagePersonState extends State<MortagePerson> {
 
           ),
           Container(
-            alignment: Alignment.centerLeft,
+            alignment: Alignment.center,
+            margin: EdgeInsets.symmetric(horizontal: 20),
             height: 51,
             width: 372,
             decoration: BoxDecoration(
                 color: Color(0xffF7FAFF),
-                borderRadius:BorderRadius.circular(10)
+                borderRadius:BorderRadius.circular(10),
+                border:Border.all(color: Colors.tealAccent)
             ),
-            child: Text("3.Ring       1b        ",
+            child: Text("3.Neckless       2b        430000Tk",
                 style:TextStyle(
                     fontSize: 15,
                     fontFamily: "itim",
@@ -190,15 +206,20 @@ class _MortagePersonState extends State<MortagePerson> {
                 )),
 
           ),
+          SizedBox(
+            height:20
+          ),
           Container(
-            alignment: Alignment.centerLeft,
+            alignment: Alignment.center,
+            margin: EdgeInsets.symmetric(horizontal: 20),
             height: 51,
             width: 372,
             decoration: BoxDecoration(
                 color: Color(0xffF7FAFF),
-                borderRadius:BorderRadius.circular(10)
+                borderRadius:BorderRadius.circular(10),
+                border:Border.all(color: Colors.tealAccent)
             ),
-            child: Text("1.Neckless       2b        430000Tk",
+            child: Text("4.Neckless       2b        430000Tk",
                 style:TextStyle(
                     fontSize: 15,
                     fontFamily: "itim",
@@ -211,14 +232,16 @@ class _MortagePersonState extends State<MortagePerson> {
 
           ),
           Container(
-            alignment: Alignment.centerLeft,
+            alignment: Alignment.center,
+            margin: EdgeInsets.symmetric(horizontal: 20),
             height: 51,
             width: 372,
             decoration: BoxDecoration(
                 color: Color(0xffF7FAFF),
-                borderRadius:BorderRadius.circular(10)
+                borderRadius:BorderRadius.circular(10),
+                border:Border.all(color: Colors.tealAccent)
             ),
-            child: Text("2.Chain       2b        43000Tk",
+            child: Text("5.Chain       2b        43000Tk",
                 style:TextStyle(
                     fontSize: 15,
                     fontFamily: "itim",
@@ -232,18 +255,20 @@ class _MortagePersonState extends State<MortagePerson> {
           ),
           Container(
             margin: EdgeInsets.symmetric(horizontal: 90),
-            alignment: Alignment.centerLeft,
+            alignment: Alignment.center,
+
             height: 51,
             width: 372,
             decoration: BoxDecoration(
-                color: Color(0xffF7FAFF),
-                borderRadius:BorderRadius.circular(10)
+                color: Colors.red,
+                borderRadius:BorderRadius.circular(10),
+
             ),
             child: Text("Total=24000Tk",
                 style:TextStyle(
                     fontSize: 15,
                     fontFamily: "itim",
-                    color: Colors.black
+                    color: Colors.white
                 )),
 
           ),

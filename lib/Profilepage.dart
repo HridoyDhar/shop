@@ -410,46 +410,35 @@ class _profilepageState extends State<profilepage> {
                 ],
               ),
               SizedBox(height: 10.h),
-              Expanded(
-                child: Container(
-                  // child: page[index],
+              // Expanded(
+              //   child: Container(
+              //       // child: page[index],
+              //       ),
+              // ),
+              Container(
+                height: 400.h,
+                child: Expanded(
+                  child: GridView.builder(
+                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount: 2,
+                        crossAxisSpacing: 10.w,
+                        mainAxisSpacing: 10.h,
+                      ),
+                      itemCount: 10,
+                      itemBuilder: ((context, index) {
+                        return Container(
+                            child: Image.asset(
+                                "assets/Gold-plated-antique-pendant-chian-queens-e1462452869148.jpg"));
+                      })),
                 ),
-              ),
-              SizedBox(
-                height: 40.h,
-              ),
-              Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-                Container(
-                    height: 165.h,
-                    width: 175.w,
-                    child: Image.asset(
-                        "assets/Gold-plated-antique-pendant-chian-queens-e1462452869148.jpg")),
-                Container(
-                    height: 165.h,
-                    width: 175.w,
-                    child: Image.asset(
-                        "assets/Gold-plated-antique-pendant-chian-queens-e1462452869148.jpg")),
-                // SizedBox(
-                //   height: 40.h,
-                // ),
-                // Container(
-                //     height: 165.h,
-                //     width: 175.w,
-                //     child: Image.asset("assets/Rectangle 11.png")),
-                // Container(
-                //     height: 165.h,
-                //     width: 175.w,
-                //     child: Image.asset("assets/Rectangle 11.png")),
-                // Container(
-                //     height: 165.h,
-                //     width: 175.w,
-                //     child: Image.asset("assets/Rectangle 11.png")),
-              ])
-            ],
-          ),
+              )
 
+
+
+]
         ),
       ),
+      )
     );
   }
 }

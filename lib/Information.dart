@@ -21,9 +21,9 @@ class _InformationState extends State<Information> {
               alignment: Alignment.center,
               child: Text("Any information call us",
                   style: TextStyle(
-                      color: Colors.green, fontFamily: "Iner", fontSize: 20))),
+                      color: Colors.green, fontFamily: "Iner", fontSize: 30))),
           SizedBox(
-            height: 40,
+            height: 50,
           ),
           Card(
               child: Container(
@@ -43,7 +43,7 @@ class _InformationState extends State<Information> {
                           style: TextStyle(
                               color: Colors.blue,
                               fontFamily: "itim",
-                              fontSize: 20)),
+                              fontSize: 30)),
                     ),
                     SizedBox(
                       height: 30,
@@ -52,7 +52,7 @@ class _InformationState extends State<Information> {
                       child: Text(
                         "Name: Hridoy Dhar",
                         style: TextStyle(
-                            fontFamily: "itim", fontSize: 15, color: Colors.black),
+                            fontFamily: "itim", fontSize: 20, color: Colors.black),
                       ),
                     ),
                     SizedBox(
@@ -62,7 +62,7 @@ class _InformationState extends State<Information> {
                       child: Text(
                         "Address: New marker,Chittagong",
                         style: TextStyle(
-                            color: Colors.black, fontFamily: "itim", fontSize: 15),
+                            color: Colors.black, fontFamily: "itim", fontSize: 20),
                       ),
                     ),
                     SizedBox(
@@ -72,7 +72,7 @@ class _InformationState extends State<Information> {
                       child: Text(
                         "Phone: 0128849932",
                         style: TextStyle(
-                            color: Colors.black, fontFamily: "itim", fontSize: 15),
+                            color: Colors.black, fontFamily: "itim", fontSize: 20),
                       ),
                     ),
                   ],

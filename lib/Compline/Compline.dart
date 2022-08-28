@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:goldshop/Home_page.dart';
 class Compline extends StatefulWidget {
   const Compline({Key? key}) : super(key: key);
 
@@ -20,9 +21,7 @@ class _ComplineState extends State<Compline> {
           Container(
             height: 225,
             width: 265,
-            child: CircleAvatar(
-                backgroundImage:
-                AssetImage("assets/58918-legal-statement.gif")),
+            child: Image.asset("assets/58918-legal-statement.gif")
           ),
           SizedBox(
             height: 15,
@@ -131,18 +130,43 @@ class _ComplineState extends State<Compline> {
             ),
           ),
           SizedBox(
-            height: 13,
+            height: 30,
           ),
           Container(
-              margin: EdgeInsets.symmetric(horizontal: 250),
-              alignment: Alignment.center,
-              height: 55,
-              width: 142,
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10), color: Colors.amber),
-              child: Text("Enter",
-                  style: TextStyle(
-                      fontFamily: "itim", fontSize: 20, color: Colors.white)))
+            height: 52,
+            width: 379,
+            alignment: Alignment.centerLeft,
+            margin: EdgeInsets.symmetric(horizontal: 30),
+            child: TextField(
+              decoration: InputDecoration(
+                hintText: "Write your compline and telling what you facer",
+                labelText: "Compline",
+                border: OutlineInputBorder(
+                  // color: Colors.blue,
+                  borderRadius: BorderRadius.circular(10),
+                ),
+              ),
+            ),
+          ),
+
+          SizedBox(
+            height: 13,
+          ),
+          InkWell(
+            onTap:(){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>Home_page()));
+            },
+            child: Container(
+                margin: EdgeInsets.symmetric(horizontal: 100),
+                alignment: Alignment.center,
+                height: 55,
+
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10), color: Colors.amber),
+                child: Text("Enter",
+                    style: TextStyle(
+                        fontFamily: "itim", fontSize: 20, color: Colors.white))),
+          )
         ],
       ),
     );
