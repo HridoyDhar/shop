@@ -11,6 +11,7 @@ import 'package:goldshop/DetailsList/DetailsList.dart';
 import 'package:goldshop/Home_page.dart';
 import 'package:goldshop/Likepage.dart';
 import 'package:goldshop/Notifi_cation.dart';
+import 'package:goldshop/Perpost/PerPost.dart';
 import 'package:goldshop/Postyou.dart';
 import 'package:goldshop/Savepost.dart';
 import 'package:goldshop/ShopLocation.dart';
@@ -415,21 +416,26 @@ class _profilepageState extends State<profilepage> {
               //       // child: page[index],
               //       ),
               // ),
-              Container(
-                height: 400.h,
-                child: Expanded(
-                  child: GridView.builder(
-                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                        crossAxisCount: 2,
-                        crossAxisSpacing: 10.w,
-                        mainAxisSpacing: 10.h,
-                      ),
-                      itemCount: 10,
-                      itemBuilder: ((context, index) {
-                        return Container(
-                            child: Image.asset(
-                                "assets/Gold-plated-antique-pendant-chian-queens-e1462452869148.jpg"));
-                      })),
+              InkWell(
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>PerPost()));
+                },
+                child: Container(
+                  height: 400.h,
+                  child: Expanded(
+                    child: GridView.builder(
+                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                          crossAxisCount: 2,
+                          crossAxisSpacing: 10.w,
+                          mainAxisSpacing: 10.h,
+                        ),
+                        itemCount: 10,
+                        itemBuilder: ((context, index) {
+                          return Container(
+                              child: Image.asset(
+                                  "assets/Gold-plated-antique-pendant-chian-queens-e1462452869148.jpg"));
+                        })),
+                  ),
                 ),
               )
 
