@@ -14,6 +14,7 @@ class _JobapplyState extends State<Jobapply> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
         body: ListView(
           children: [
             SizedBox(

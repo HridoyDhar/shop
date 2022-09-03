@@ -17,7 +17,7 @@ class _ChoscegmailState extends State<Choscegmail> {
       body: ListView(
         children: [
           SizedBox(
-            height: 180,
+            height: 80,
           ),
           Card(
             child: Container(
@@ -36,7 +36,7 @@ class _ChoscegmailState extends State<Choscegmail> {
                     child: Text(
                       "Gold Shop",
                       style: TextStyle(
-                        fontSize: 20,
+                        fontSize: 30,
                         fontFamily: "itim",
                         color: Colors.black,
                       ),
@@ -49,84 +49,97 @@ class _ChoscegmailState extends State<Choscegmail> {
                     child: Text(
                       "Please confirm your email you want to add .",
                       style: TextStyle(
-                        fontSize: 10,
+                        fontSize: 20,
                         fontFamily: "itim",
                         color: Colors.black,
                       ),
                     ),
                   ),
                   SizedBox(
-                    height: 40,
+                    height: 30,
                   ),
                   InkWell(
-                    onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => Home_page()));
+                    onTap: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=>Home_page()));
                     },
-                  ),
-                  Container(
-                    height: 28,
-                    width: 198,
-                    decoration: BoxDecoration(color: Color(0xffFFFFFF)),
-                    child: Text(
-                      "Hridyojsd23@gmail.com",
-                      style: TextStyle(
-                        fontFamily: "Jomolhari",
-                        fontSize: 10,
-                        color: Colors.black,
+                    child: Container(
+                      height: 35,
+                      width: 250,
+                      alignment: Alignment.center,
+                      margin: EdgeInsets.symmetric(horizontal: 20),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Colors.white
+                      ),
+                      child: Text(
+                        "HridoyDhar@gmail.com",
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontFamily: "itim",
+                          color: Colors.black,
+                        ),
                       ),
                     ),
                   ),
                   SizedBox(
-                    height: 40,
+                    height: 20,
                   ),
                   InkWell(
-                    onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => Home_page()));
+                    onTap: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=>Home_page()));
                     },
-                  ),
-                  Container(
-                    height: 28,
-                    width: 198,
-                    decoration: BoxDecoration(color: Color(0xffFFFFFF)),
-                    child: Text(
-                      "Hridyojsd23@gmail.com",
-                      style: TextStyle(
-                        fontFamily: "Jomolhari",
-                        fontSize: 10,
-                        color: Colors.black,
+                    child: Container(
+                      height: 35,
+                      width: 250,
+                      alignment: Alignment.center,
+                      margin: EdgeInsets.symmetric(horizontal: 20),
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: Colors.white
+                      ),
+                      child: Text(
+                        "HridoyDhar@gmail.com",
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontFamily: "itim",
+                          color: Colors.black,
+                        ),
                       ),
                     ),
                   ),
                   SizedBox(
-                    height: 40,
+                    height: 30,
                   ),
                   InkWell(
-                    onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => Home_page()));
+                    onTap: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=>Home_page()));
                     },
-                  ),
-                  Container(
-                    height: 28,
-                    width: 198,
-                    decoration: BoxDecoration(color: Color(0xffFFFFFF)),
-                    child: Text(
-                      "Hridyojsd23@gmail.com",
-                      style: TextStyle(
-                        fontFamily: "Jomolhari",
-                        fontSize: 10,
-                        color: Colors.black,
+                    child: Container(
+                      height: 35,
+                      width: 250,
+                      alignment: Alignment.center,
+                      margin: EdgeInsets.symmetric(horizontal: 20),
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: Colors.white
+                      ),
+                      child: Text(
+                        "HridoyDhar@gmail.com",
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontFamily: "itim",
+                          color: Colors.black,
+                        ),
                       ),
                     ),
                   ),
-                ],
-              ),
-            ),
-          )
-        ],
-      ),
+
+
+
+    ])
+    )
+          )])
+
     );
   }
 }

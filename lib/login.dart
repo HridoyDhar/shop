@@ -82,7 +82,7 @@ class _loginState extends State<login> {
                   child: Text(
                     "Forget password?",
                     style: TextStyle(
-                        fontSize: 13.sp,
+                        fontSize: 15.sp,
                         fontWeight: FontWeight.w800,
                         color: Colors.blue),
                     textAlign: TextAlign.right,
@@ -100,8 +100,8 @@ class _loginState extends State<login> {
                 child: Container(
                   margin: EdgeInsets.symmetric(horizontal: 110.w),
                   alignment: Alignment.center,
-                  width: 150.w,
-                  height: 60.h,
+                  width: 300.w,
+                  height: 50.h,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10.r),
                       color: Color(0xffFE8178)),
@@ -114,60 +114,42 @@ class _loginState extends State<login> {
                   ),
                 ),
               ),
+        SizedBox(
+          height: 20.h,
+        ),
+        Container(
+          margin: EdgeInsets.symmetric(horizontal: 20.w),
+          height: 40.h,
+          width: 200.w,
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10.r),
+
+              border: Border.all(color: Colors.cyan)),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(
+                Icons.face,
+                color: Colors.blue,
+              ),
               SizedBox(
-                height: 35.h,
+                width: 15.w,
               ),
               Container(
-                margin: EdgeInsets.symmetric(horizontal: 20.w),
-                height: 50.h,
-                width: 100.w,
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10.r),
-                    border: Border.all(color: Colors.blue)),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(
-                      Icons.book_online,
-                      color: Colors.blue,
-                    ),
-                    SizedBox(
-                      width: 15.w,
-                    ),
-                    InkWell(
-                      onTap: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Choscegmail()));
-                      },
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Container(
-                        height: 51.h,
-                        width: 353.w,
-                        decoration: BoxDecoration(
-                          border: Border.all(
-                            color: Colors.blueGrey
-                          ),
-                          borderRadius: BorderRadius.circular(10)
-                        ),
-                        child: Text(
-
-                          "SignUp with Google",
-                          style: TextStyle(
-                            fontFamily: "itim",
-                              fontSize: 15.sp,
-                              fontWeight: FontWeight.w700,
-                              color: Colors.black),
-                        ),
-                      ),
-                    ),
-                  ],
+                child: Text(
+                  "SingUp with google",
+                  style: TextStyle(
+                      fontSize: 15.sp,
+                      fontWeight: FontWeight.w700,
+                      color: Colors.black),
                 ),
-              )
-
+              ),
             ],
-          )
-    );
+          ),
+        )])
+
+              );
+
+
   }
 }

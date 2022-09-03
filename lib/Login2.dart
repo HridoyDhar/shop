@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:goldshop/Chocegmail/Choscegmail.dart';
 import 'package:goldshop/HomePage2.dart';
 import 'package:goldshop/Home_page.dart';
 import 'package:goldshop/VerificationCode.dart';
@@ -39,7 +40,7 @@ class _Login2State extends State<Login2> {
                   hintText: "Enter your email or number",
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10.r)),
-                  prefixIcon: Icon(
+                  prefixIcon:Icon(
                     Icons.email,
                     color: Colors.blue,
                   )),
@@ -106,6 +107,44 @@ class _Login2State extends State<Login2> {
                     fontSize: 15.sp,
                     fontWeight: FontWeight.w700,
                     color: Colors.white),
+              ),
+            ),
+          ),
+          SizedBox(
+            height: 20.h,
+          ),
+          InkWell(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>Choscegmail()));
+            },
+            child: Container(
+              margin: EdgeInsets.symmetric(horizontal: 20.w),
+              height: 40.h,
+              width: 200.w,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10.r),
+
+                  border: Border.all(color: Colors.cyan)),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.face,
+                    color: Colors.blue,
+                  ),
+                  SizedBox(
+                    width: 15.w,
+                  ),
+                  Container(
+                    child: Text(
+                      "SingUp with google",
+                      style: TextStyle(
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
+                    ),
+                  ),
+                ],
               ),
             ),
           ),

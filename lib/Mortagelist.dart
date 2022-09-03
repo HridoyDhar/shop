@@ -13,302 +13,264 @@ class _MortagelistState extends State<Mortagelist> {
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: Colors.white,
-        body:ListView(
+        body: ListView(
           children: [
-            SizedBox(
-              height: 20,
-            ),
-            Container(
-              alignment: Alignment.center,
-              child: Text("Selllist",
-                  style: TextStyle(
-                      fontSize: 30,
-                      fontFamily: "itim",
-                      color: Colors.blue
-                  )),
-            ),
             SizedBox(
               height: 40,
             ),
             Container(
                 alignment: Alignment.center,
                 margin: EdgeInsets.symmetric(horizontal: 100),
-                height: 32,
-                width: 130,
+                height: 50,
+                width: 300,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
-                    border: Border.all(color: Colors.tealAccent),
-                    color: Color(0xffF7FAFF)
-                ),
+                    border: Border.all(color: Colors.blue)),
                 child: Text("10-03-29",
                     style: TextStyle(
                         fontSize: 15,
                         fontFamily: "itim",
-                        color: Colors.black
-                    ))
-            ),
+                        color: Colors.black))),
             SizedBox(
               height: 20,
             ),
-
             InkWell(
-              onTap: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>MortagePerson()));
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => MortagePerson()));
               },
-              child: Container(
-                  alignment: Alignment.center,
-                  margin: EdgeInsets.symmetric(horizontal: 20),
-                  height: 51,
-                  width: 360,
-                  decoration: BoxDecoration(
-                      border: Border.all(color: Colors.tealAccent),
+              child: Card(
+                child: Container(
+                    alignment: Alignment.center,
+                    margin: EdgeInsets.symmetric(horizontal: 20),
+                    height: 51,
+                    width: 360,
+                    decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      color: Color(0xffF7FAFF)
-                  ),
-                  child: Text("1. Mr.rahul         23.4b          4569000Tk",
-                      style: TextStyle
-                        (
-                          fontFamily: "itim",
-                          fontSize: 20,
-                          color: Colors.black
-                      ))
+                    ),
+                    child: Text("1. Mr.rahul         23.4b          4569000Tk",
+                        style: TextStyle(
+                            fontFamily: "itim",
+                            fontSize: 20,
+                            color: Colors.black))),
               ),
             ),
             SizedBox(
               height: 20,
-            )          ,
+            ),
             InkWell(
-              onTap: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>MortagePerson()));
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => MortagePerson()));
               },
-              child:Container(
-                  alignment: Alignment.center,
-                  margin: EdgeInsets.symmetric(horizontal: 20),
-
-                  height: 51,
-                  width: 360,
-                  decoration: BoxDecoration(
+              child: Card(
+                child: Container(
+                    alignment: Alignment.center,
+                    margin: EdgeInsets.symmetric(horizontal: 20),
+                    height: 51,
+                    width: 360,
+                    decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      border: Border.all(color: Colors.tealAccent),
-                      color: Color(0xffF7FAFF)
-                  ),
-                  child: Text("1. Mr.rahul         23.4b          4569000Tk",
-                      style: TextStyle
-                        (
-                          fontFamily: "itim",
-                          fontSize: 20,
-                          color: Colors.black
-                      ))
+                    ),
+                    child: Text("1. Mr.rahul         23.4b          4569000Tk",
+                        style: TextStyle(
+                            fontFamily: "itim",
+                            fontSize: 20,
+                            color: Colors.black))),
               ),
-            ),SizedBox(
-              height: 20,
-            )          ,
-            InkWell(
-              onTap: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>MortagePerson()));
-              },
-              child:
-              Container(
-                  alignment: Alignment.center,
-                  margin: EdgeInsets.symmetric(horizontal: 20),
-
-                  height: 51,
-                  width: 360,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      border: Border.all(color: Colors.tealAccent),
-                      color: Color(0xffF7FAFF)
-                  ),
-                  child: Text("2r. Mr.rahul         23.4b          4569000Tk",
-                      style: TextStyle
-                        (
-                          fontFamily: "itim",
-                          fontSize: 20,
-                          color: Colors.black
-                      ))
-              ),),
-            SizedBox(
-              height: 20,
-            )          ,
-            InkWell(
-              onTap: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>MortagePerson()));
-              },
-              child:
-              Container(
-                  alignment: Alignment.center,
-                  margin: EdgeInsets.symmetric(horizontal: 20),
-                  height: 51,
-                  width: 360,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      border: Border.all(color: Colors.tealAccent),
-                      color: Color(0xffF7FAFF)
-                  ),
-                  child: Text("3. Mr.rahul         23.4b          4569000Tk",
-                      style: TextStyle
-                        (
-                          fontFamily: "itim",
-                          fontSize: 20,
-                          color: Colors.black
-                      ))
-              ),),
+            ),
             SizedBox(
               height: 20,
             ),
             InkWell(
-              onTap: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>MortagePerson()));
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => MortagePerson()));
               },
-              child:
-              Container(
-                  alignment: Alignment.center,
-                  margin: EdgeInsets.symmetric(horizontal: 20),
-                  height: 51,
-                  width: 360,
-                  decoration: BoxDecoration(
+              child: Card(
+                child: Container(
+                    alignment: Alignment.center,
+                    margin: EdgeInsets.symmetric(horizontal: 20),
+                    height: 51,
+                    width: 360,
+                    decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      border: Border.all(color: Colors.tealAccent),
-                      color: Color(0xffF7FAFF)
-                  ),
-                  child: Text("3. Mr.rahul         23.4b          4569000Tk",
-                      style: TextStyle
-                        (
-                          fontFamily: "itim",
-                          fontSize: 20,
-                          color: Colors.black
-                      ))
-              ),),
+                    ),
+                    child: Text("2r. Mr.rahul         23.4b          4569000Tk",
+                        style: TextStyle(
+                            fontFamily: "itim",
+                            fontSize: 20,
+                            color: Colors.black))),
+              ),
+            ),
             SizedBox(
               height: 20,
             ),
             InkWell(
-              onTap: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>MortagePerson()));
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => MortagePerson()));
               },
-              child:
-              Container(
-                  alignment: Alignment.center,
-                  margin: EdgeInsets.symmetric(horizontal: 20),
-                  height: 51,
-                  width: 360,
-                  decoration: BoxDecoration(
+              child: Card(
+                child: Container(
+                    alignment: Alignment.center,
+                    margin: EdgeInsets.symmetric(horizontal: 20),
+                    height: 51,
+                    width: 360,
+                    decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      border: Border.all(color: Colors.tealAccent),
-                      color: Color(0xffF7FAFF)
-                  ),
-                  child: Text("3. Mr.rahul         23.4b          4569000Tk",
-                      style: TextStyle
-                        (
-                          fontFamily: "itim",
-                          fontSize: 20,
-                          color: Colors.black
-                      ))
-              ),),
+                    ),
+                    child: Text("3. Mr.rahul         23.4b          4569000Tk",
+                        style: TextStyle(
+                            fontFamily: "itim",
+                            fontSize: 20,
+                            color: Colors.black))),
+              ),
+            ),
             SizedBox(
               height: 20,
             ),
             InkWell(
-              onTap: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>MortagePerson()));
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => MortagePerson()));
               },
-              child:
-              Container(
-                  alignment: Alignment.center,
-                  margin: EdgeInsets.symmetric(horizontal: 20),
-                  height: 51,
-                  width: 360,
-                  decoration: BoxDecoration(
+              child: Card(
+                child: Container(
+                    alignment: Alignment.center,
+                    margin: EdgeInsets.symmetric(horizontal: 20),
+                    height: 51,
+                    width: 360,
+                    decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      border: Border.all(color: Colors.tealAccent),
-                      color: Color(0xffF7FAFF)
-                  ),
-                  child: Text("3. Mr.rahul         23.4b          4569000Tk",
-                      style: TextStyle
-                        (
-                          fontFamily: "itim",
-                          fontSize: 20,
-                          color: Colors.black
-                      ))
-              ),),
+                    ),
+                    child: Text("3. Mr.rahul         23.4b          4569000Tk",
+                        style: TextStyle(
+                            fontFamily: "itim",
+                            fontSize: 20,
+                            color: Colors.black))),
+              ),
+            ),
             SizedBox(
               height: 20,
             ),
             InkWell(
-              onTap: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>MortagePerson()));
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => MortagePerson()));
               },
-              child:
-              Container(
-                  alignment: Alignment.center,
-                  margin: EdgeInsets.symmetric(horizontal: 20),
-                  height: 51,
-                  width: 360,
-                  decoration: BoxDecoration(
+              child: Card(
+                child: Container(
+                    alignment: Alignment.center,
+                    margin: EdgeInsets.symmetric(horizontal: 20),
+                    height: 51,
+                    width: 360,
+                    decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      border: Border.all(color: Colors.tealAccent),
-                      color: Color(0xffF7FAFF)
-                  ),
-                  child: Text("3. Mr.rahul         23.4b          4569000Tk",
-                      style: TextStyle
-                        (
-                          fontFamily: "itim",
-                          fontSize: 20,
-                          color: Colors.black
-                      ))
-              ),),
+                    ),
+                    child: Text("3. Mr.rahul         23.4b          4569000Tk",
+                        style: TextStyle(
+                            fontFamily: "itim",
+                            fontSize: 20,
+                            color: Colors.black))),
+              ),
+            ),
             SizedBox(
               height: 20,
             ),
             InkWell(
-              onTap: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>MortagePerson()));
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => MortagePerson()));
               },
-              child:
-              Container(
-                  alignment: Alignment.center,
-                  margin: EdgeInsets.symmetric(horizontal: 20),
-                  height: 51,
-                  width: 360,
-                  decoration: BoxDecoration(
+              child: Card(
+                child: Container(
+                    alignment: Alignment.center,
+                    margin: EdgeInsets.symmetric(horizontal: 20),
+                    height: 51,
+                    width: 360,
+                    decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      border: Border.all(color: Colors.tealAccent),
-                      color: Color(0xffF7FAFF)
-                  ),
-                  child: Text("3. Mr.rahul         23.4b          4569000Tk",
-                      style: TextStyle
-                        (
-                          fontFamily: "itim",
-                          fontSize: 20,
-                          color: Colors.black
-                      ))
-              ),),
+                    ),
+                    child: Text("3. Mr.rahul         23.4b          4569000Tk",
+                        style: TextStyle(
+                            fontFamily: "itim",
+                            fontSize: 20,
+                            color: Colors.black))),
+              ),
+            ),
             SizedBox(
               height: 20,
             ),
             InkWell(
-              onTap: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>MortagePerson()));
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => MortagePerson()));
               },
-              child:
-              Container(
-                  alignment: Alignment.center,
-                  margin: EdgeInsets.symmetric(horizontal: 20),
-                  height: 51,
-                  width: 360,
-                  decoration: BoxDecoration(
+              child: Card(
+                child: Container(
+                    alignment: Alignment.center,
+                    margin: EdgeInsets.symmetric(horizontal: 20),
+                    height: 51,
+                    width: 360,
+                    decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      border: Border.all(color: Colors.tealAccent),
-                      color: Color(0xffF7FAFF)
-                  ),
-                  child: Text("3. Mr.rahul         23.4b          4569000Tk",
-                      style: TextStyle
-                        (
-                          fontFamily: "itim",
-                          fontSize: 20,
-                          color: Colors.black
-                      ))
-              ),),
+                    ),
+                    child: Text("3. Mr.rahul         23.4b          4569000Tk",
+                        style: TextStyle(
+                            fontFamily: "itim",
+                            fontSize: 20,
+                            color: Colors.black))),
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            InkWell(
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => MortagePerson()));
+              },
+              child: Card(
+                child: Container(
+                    alignment: Alignment.center,
+                    margin: EdgeInsets.symmetric(horizontal: 20),
+                    height: 51,
+                    width: 360,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: Text("3. Mr.rahul         23.4b          4569000Tk",
+                        style: TextStyle(
+                            fontFamily: "itim",
+                            fontSize: 20,
+                            color: Colors.black))),
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            InkWell(
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => MortagePerson()));
+              },
+              child: Card(
+                child: Container(
+                    alignment: Alignment.center,
+                    margin: EdgeInsets.symmetric(horizontal: 20),
+                    height: 51,
+                    width: 360,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: Text("3. Mr.rahul         23.4b          4569000Tk",
+                        style: TextStyle(
+                            fontFamily: "itim",
+                            fontSize: 20,
+                            color: Colors.black))),
+              ),
+            ),
             SizedBox(
               height: 20,
             ),
@@ -318,20 +280,15 @@ class _MortagelistState extends State<Mortagelist> {
                 height: 51,
                 width: 360,
                 decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-
-                    color: Colors.red
+                  color: Color(0xffF7FAFF),
+                  borderRadius: BorderRadius.circular(10),
                 ),
                 child: Text("Total: 8569000Tk",
-                    style: TextStyle
-                      (
+                    style: TextStyle(
                         fontFamily: "itim",
                         fontSize: 20,
-                        color: Colors.white
-                    ))
-            ),
+                        color: Colors.black))),
           ],
-        )
-    );
+        ));
   }
 }

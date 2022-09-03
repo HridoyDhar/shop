@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:goldshop/AutoCalculator/AutoCalculate.dart';
 import 'package:goldshop/Calculator/Calculator.dart';
+
 class DayIncome extends StatefulWidget {
   const DayIncome({Key? key}) : super(key: key);
 
@@ -16,131 +17,118 @@ class _DayIncomeState extends State<DayIncome> {
       body: ListView(
         children: [
           SizedBox(
-            height:
-            20,
+            height: 20,
           ),
           Container(
-            margin: EdgeInsets.symmetric(horizontal: 90),
+            margin: EdgeInsets.symmetric(horizontal: 150),
             alignment: Alignment.center,
-            height: 32,
-            width: 130,
+            height: 50,
+            width: 300,
             decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                border: Border.all(color: Colors.black),
-                color: Color(0xffF7FAFF)
+              borderRadius: BorderRadius.circular(10),
+              border: Border.all(color: Colors.black),
             ),
-            child: Text("23-05-63",
+            child: Text(
+              "23-05-63",
               style: TextStyle(
-                  fontSize: 20,
-                  fontFamily: "itim",color: Colors.black
-              ),),
+                  fontSize: 20, fontFamily: "itim", color: Colors.black),
+            ),
           ),
           SizedBox(
-            height:
-            20,
+            height: 20,
           ),
-          Container(
-
-            alignment: Alignment.center,
-            height: 51,
-            width: 374,
-            margin: EdgeInsets.symmetric(horizontal: 20),
-            decoration: BoxDecoration(
+          Card(
+            child: Container(
+              alignment: Alignment.center,
+              height: 51,
+              width: 374,
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                border: Border.all(color: Colors.black),
-                color: Color(0xffF7FAFF)
+              ),
+              child: Text(
+                "Money                  4500000Tk",
+                style: TextStyle(
+                    fontSize: 20, fontFamily: "itim", color: Colors.black),
+              ),
             ),
-            child: Text("Money                  4500000Tk",
-              style: TextStyle(
-                  fontSize: 20,
-                  fontFamily: "itim",color: Colors.black
-              ),),
           ),
           SizedBox(
-            height:
-            20,
+            height: 20,
           ),
-          Container(
-
-            alignment: Alignment.center,
-            height: 51,
-            width: 374,
-            margin: EdgeInsets.symmetric(horizontal: 20),
-            decoration: BoxDecoration(
+          Card(
+            child: Container(
+              alignment: Alignment.center,
+              height: 51,
+              width: 374,
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                border: Border.all(color: Colors.black),
-                color: Color(0xffF7FAFF)
+              ),
+              child: Text(
+                "Sell                  45000Tk",
+                style: TextStyle(
+                    fontSize: 20, fontFamily: "itim", color: Colors.black),
+              ),
             ),
-            child: Text("Sell                  45000Tk",
-              style: TextStyle(
-                  fontSize: 20,
-                  fontFamily: "itim",color: Colors.black
-              ),),
           ),
           SizedBox(
-            height:
-            20,
+            height: 20,
           ),
-          Container(
-
-            alignment: Alignment.center,
-            height: 51,
-            width: 374,
-
-            margin: EdgeInsets.symmetric(horizontal: 20),
-            decoration: BoxDecoration(
+          Card(
+            child: Container(
+              alignment: Alignment.center,
+              height: 51,
+              width: 374,
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                border: Border.all(color: Colors.black),
-                color: Color(0xffF7FAFF)
+              ),
+              child: Text(
+                "Mortage                  50000Tk",
+                style: TextStyle(
+                    fontSize: 20, fontFamily: "itim", color: Colors.black),
+              ),
             ),
-            child: Text("Mortage                  50000Tk",
-              style: TextStyle(
-                  fontSize: 20,
-                  fontFamily: "itim",color: Colors.black
-              ),),
           ),
           SizedBox(
-            height:
-            20,
+            height: 20,
           ),
-          Container(
-
-            alignment: Alignment.center,
-            height: 51,
-            margin: EdgeInsets.symmetric(horizontal: 20),
-            width: 374,
-            decoration: BoxDecoration(
+          Card(
+            child: Container(
+              alignment: Alignment.center,
+              height: 51,
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              width: 374,
+              decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                border: Border.all(color: Colors.black),
-                color: Color(0xffF7FAFF)
+              ),
+              child: Text(
+                "Cost                  1000Tk",
+                style: TextStyle(
+                    fontSize: 20, fontFamily: "itim", color: Colors.black),
+              ),
             ),
-            child: Text("Cost                  1000Tk",
-              style: TextStyle(
-                  fontSize: 20,
-                  fontFamily: "itim",color: Colors.black
-              ),),
           ),
           SizedBox(
-            height:
-            20,
+            height: 20,
           ),
 
-          Container(
-
-            alignment: Alignment.center,
-            height: 51,
-            width: 281,
-            margin: EdgeInsets.symmetric(horizontal: 20),
-            decoration: BoxDecoration(
+          Card(
+            child: Container(
+              alignment: Alignment.center,
+              height: 51,
+              width: 281,
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                border: Border.all(color: Colors.black),
-                color: Color(0xffF7FAFF)
+              ),
+              child: Text(
+                "Earn                  500000Tk",
+                style: TextStyle(
+                    fontSize: 20, fontFamily: "itim", color: Colors.black),
+              ),
             ),
-            child: Text("Earn                  500000Tk",
-              style: TextStyle(
-                  fontSize: 20,
-                  fontFamily: "itim",color: Colors.black
-              ),),
           ),
           // Card(
           //   child: Container(
@@ -160,91 +148,82 @@ class _DayIncomeState extends State<DayIncome> {
           //   ),
           // ),
           SizedBox(
-            height:
-            20,
+            height: 20,
           ),
-          Container(
-
-            alignment: Alignment.center,
-            height: 51,
-            width: 374,
-            margin: EdgeInsets.symmetric(horizontal: 20),
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                border: Border.all(color: Colors.black),
-                color: Color(0xffF7FAFF)
+          Card(
+            child: Container(
+              alignment: Alignment.center,
+              height: 51,
+              width: 374,
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              decoration: BoxDecoration(),
+              child: Text(
+                "Mortage                  60000Tk",
+                style: TextStyle(
+                    fontSize: 20, fontFamily: "itim", color: Colors.black),
+              ),
             ),
-            child: Text("Mortage                  60000Tk",
-              style: TextStyle(
-                  fontSize: 20,
-                  fontFamily: "itim",color: Colors.black
-              ),),
           ),
           SizedBox(
-            height:
-            20,
+            height: 20,
           ),
-          Container(
-
-            alignment: Alignment.center,
-            height: 51,
-            width: 374,
-            margin: EdgeInsets.symmetric(horizontal: 20),
-            decoration: BoxDecoration(
+          Card(
+            child: Container(
+              alignment: Alignment.center,
+              height: 51,
+              width: 374,
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                border: Border.all(color: Colors.black),
-                color: Color(0xffF7FAFF)
+              ),
+              child: Text(
+                "Big mortage                  400000Tk",
+                style: TextStyle(
+                    fontSize: 20, fontFamily: "itim", color: Colors.black),
+              ),
             ),
-            child: Text("Big mortage                  400000Tk",
-              style: TextStyle(
-                  fontSize: 20,
-                  fontFamily: "itim",color: Colors.black
-              ),),
           ),
           SizedBox(
-            height:
-            20,
+            height: 20,
           ),
-          Container(
-
-            alignment: Alignment.center,
-            height: 51,
-            margin: EdgeInsets.symmetric(horizontal: 20),
-            width: 374,
-            decoration: BoxDecoration(
+          Card(
+            child: Container(
+              alignment: Alignment.center,
+              height: 51,
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              width: 374,
+              decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                border: Border.all(color: Colors.black),
-                color: Color(0xffF7FAFF)
+              ),
+              child: Text(
+                "Sell                  4500000Tk",
+                style: TextStyle(
+                    fontSize: 20, fontFamily: "itim", color: Colors.black),
+              ),
             ),
-            child: Text("Sell                  4500000Tk",
-              style: TextStyle(
-                  fontSize: 20,
-                  fontFamily: "itim",color: Colors.black
-              ),),
           ),
           SizedBox(
             height: 20,
           ),
           InkWell(
-            onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=> Calculator()));
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => Calculator()));
             },
             child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 80),
+              margin: EdgeInsets.symmetric(horizontal: 150),
               alignment: Alignment.center,
               height: 43,
               width: 153,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Colors.black
-              ),
-              child: Text(""
-                  "Calculate",
+                  border: Border.all(color: Colors.black)),
+              child: Text(
+                ""
+                "Calculate",
                 style: TextStyle(
-                    fontFamily: "itim",
-                    fontSize: 20,
-                    color: Colors.white
-                ),),
+                    fontFamily: "itim", fontSize: 20, color: Colors.black),
+              ),
             ),
           )
         ],

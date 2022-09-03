@@ -23,7 +23,7 @@ class _CalculatorState extends State<Calculator> {
           ),
 
           SizedBox(
-            height: 20,
+            height: 10,
           ),
           Center(
             child: Container(
@@ -32,8 +32,8 @@ class _CalculatorState extends State<Calculator> {
               alignment: Alignment.center,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                border: Border.all(color: Colors.blue),
-                color: Color(0xffF7FAFF)
+                // border: Border.all(color: Colors.blue),
+                color: Colors.lightGreenAccent
                  ,
 
               ),
@@ -48,7 +48,7 @@ class _CalculatorState extends State<Calculator> {
             ),
           ),
           SizedBox(
-            height: 20,
+            height: 50,
           ),
           Center(
             child: Container(
@@ -60,7 +60,7 @@ class _CalculatorState extends State<Calculator> {
     children: [
     Container(
     height: 40,
-   width: 80,
+   width: 60,
    margin: EdgeInsets.symmetric(horizontal: 20),
    alignment: Alignment.center,
 
@@ -72,11 +72,11 @@ class _CalculatorState extends State<Calculator> {
    ),
    ),
     ),
-    SizedBox(height: 10,),
+    SizedBox(height: 5,),
     Container(
     height: 40,
-    width: 80,
-    margin: EdgeInsets.symmetric(horizontal: 50),
+    width: 60,
+    margin: EdgeInsets.symmetric(horizontal: 20),
     alignment: Alignment.center,
 
     child: TextField(
@@ -88,6 +88,22 @@ class _CalculatorState extends State<Calculator> {
       ),
     ),
     ),
+      SizedBox(height: 5,),
+      Container(
+        height: 40,
+        width: 120,
+        margin: EdgeInsets.symmetric(horizontal: 20),
+        alignment: Alignment.center,
+
+        child: TextField(
+          decoration: InputDecoration(
+              labelText: "Vori",
+              border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10)
+              )
+          ),
+        ),
+      ),
 
 
     ],
@@ -109,7 +125,7 @@ class _CalculatorState extends State<Calculator> {
                   children: [
                     Container(
                       height: 40,
-                      width: 80,
+                      width: 60,
                       margin: EdgeInsets.symmetric(horizontal: 20),
                       alignment: Alignment.center,
 
@@ -121,11 +137,27 @@ class _CalculatorState extends State<Calculator> {
                       ),
                       ),
                     ),
-                    SizedBox(height: 10,),
+                    SizedBox(height: 5,),
                     Container(
                       height: 40,
-                      width: 80,
-                      margin: EdgeInsets.symmetric(horizontal: 50),
+                      width: 60,
+                      margin: EdgeInsets.symmetric(horizontal: 20),
+                      alignment: Alignment.center,
+
+                      child: TextField(
+                        decoration: InputDecoration(
+                            labelText: "Ana",
+                            border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(10)
+                            )
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 5,),
+                    Container(
+                      height: 40,
+                      width: 120,
+                      margin: EdgeInsets.symmetric(horizontal: 20),
                       alignment: Alignment.center,
 
                       child: TextField(
@@ -154,7 +186,7 @@ class _CalculatorState extends State<Calculator> {
             children: [
             Container(
             height: 40,
-              width: 80,
+              width: 60,
               margin: EdgeInsets.symmetric(horizontal: 20),
               alignment: Alignment.center,
 
@@ -166,11 +198,11 @@ class _CalculatorState extends State<Calculator> {
               ),
               ),
             ),
-            SizedBox(height: 10,),
+            SizedBox(height: 5,),
             Container(
               height: 40,
-              width: 80,
-              margin: EdgeInsets.symmetric(horizontal: 50),
+              width: 60,
+              margin: EdgeInsets.symmetric(horizontal: 20),
               alignment: Alignment.center,
 
               child: TextField(
@@ -182,6 +214,22 @@ class _CalculatorState extends State<Calculator> {
                 ),
               ),
             ),
+              SizedBox(height: 10,),
+              Container(
+                height: 40,
+                width: 120,
+                margin: EdgeInsets.symmetric(horizontal: 20),
+                alignment: Alignment.center,
+
+                child: TextField(
+                  decoration: InputDecoration(
+                      labelText: "Rohti",
+                      border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(10)
+                      )
+                  ),
+                ),
+              )
         ]
     )]
     )
@@ -199,7 +247,7 @@ class _CalculatorState extends State<Calculator> {
                           children: [
                             Container(
                               height: 40,
-                              width: 80,
+                              width: 60,
                               margin: EdgeInsets.symmetric(horizontal: 20),
                               alignment: Alignment.center,
 
@@ -211,11 +259,11 @@ class _CalculatorState extends State<Calculator> {
                               ),
                               ),
                             ),
-                            SizedBox(height: 10,),
+                            SizedBox(height: 5,),
                             Container(
                               height: 40,
-                              width: 80,
-                              margin: EdgeInsets.symmetric(horizontal: 50),
+                              width: 60,
+                              margin: EdgeInsets.symmetric(horizontal: 20),
                               alignment: Alignment.center,
 
                               child: TextField(
@@ -227,6 +275,22 @@ class _CalculatorState extends State<Calculator> {
                                 ),
                               ),
                             ),
+                            SizedBox(height: 10,),
+                            Container(
+                              height: 40,
+                              width: 120,
+                              margin: EdgeInsets.symmetric(horizontal: 20),
+                              alignment: Alignment.center,
+
+                              child: TextField(
+                                decoration: InputDecoration(
+                                    labelText: "Rohti",
+                                    border: OutlineInputBorder(
+                                        borderRadius: BorderRadius.circular(10)
+                                    )
+                                ),
+                              ),
+                            )
                           ]
                       )
                     ]
@@ -234,17 +298,17 @@ class _CalculatorState extends State<Calculator> {
             ),
           ),
           SizedBox(
-            height: 20,
+            height: 50,
           ),
           Container(
-            height: 30,
-            width: 100,
+            height: 50,
+            width: 300,
             margin: EdgeInsets.symmetric(horizontal: 100),
             alignment: Alignment.center,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
-              border: Border.all(color: Colors.black),
-              color: Color(0xffF7FAFF)
+
+              color: Colors.lightGreenAccent
             ),
             child: Text("Enter",
             style: TextStyle(

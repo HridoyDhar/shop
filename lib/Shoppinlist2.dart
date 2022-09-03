@@ -2,17 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:goldshop/AutoCalculator/AutoCalculate.dart';
+import 'package:goldshop/Calculate/Calculate.dart';
+import 'package:goldshop/Shopinformation/ShopInformation.dart';
 
 
 
-class ShoppingList2 extends StatefulWidget {
-  const ShoppingList2({Key? key}) : super(key: key);
+class buyList extends StatefulWidget {
+  const buyList({Key? key}) : super(key: key);
 
   @override
-  State<ShoppingList2> createState() => _ShoppingList2State();
+  State<buyList> createState() => _buyListState();
 }
 
-class _ShoppingList2State extends State<ShoppingList2> {
+class _buyListState extends State<buyList> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,25 +32,47 @@ class _ShoppingList2State extends State<ShoppingList2> {
             SizedBox(
               height: 5,
             ),
-            Container(
-              // Center Text
-              margin: EdgeInsets.symmetric(),
-              child: Text(
-                "Krishna Gold Shop  Contact: 0347628323",
-                style: TextStyle(
-                  color: Colors.black,
-                  fontFamily: "itim",
-                  fontSize: 20,
+            Center(
+              child: Container(
+                // Center Text
+                margin: EdgeInsets.symmetric(),
+                child: Text(
+                  "Krishna Gold Shop  ",
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontFamily: "itim",
+                    fontSize: 20,
+                  ),
                 ),
               ),
             ),
-            SizedBox(height: 30),
+            SizedBox(
+              height: 5,
+            ),
+            Center(
+              child: Container(
+
+                // Center Text
+                margin: EdgeInsets.symmetric(),
+                child: Text(
+                  "  Contact: 0347628323",
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontFamily: "itim",
+                    fontSize: 20,
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(height: 20),
             Container(
               alignment: Alignment.center,
               height: 51,
               width: 406,
               margin: EdgeInsets.symmetric(horizontal: 20),
               decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                border: Border.all(color: Colors.lightBlue),
                 color: Color(0xffF6FAFF),
               ),
               child: Text(
@@ -57,52 +81,60 @@ class _ShoppingList2State extends State<ShoppingList2> {
                     color: Colors.black, fontFamily: "Itim", fontSize: 15),
               ),
             ),
-            SizedBox(height: 30),
+            SizedBox(height: 20),
             Container(
               alignment: Alignment.center,
               height: 51,
               width: 406,
               margin: EdgeInsets.symmetric(horizontal: 20),
               decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                border: Border.all(color: Colors.lightBlue),
                 color: Color(0xffF6FAFF),
               ),
               child: Text("2.Neckless           4ps        6500 ",
                   style: TextStyle(
                       color: Colors.black, fontFamily: "Itim", fontSize: 15)),
             ),
-            SizedBox(height: 30),
+            SizedBox(height: 20),
             Container(
               alignment: Alignment.center,
               height: 51,
               width: 406,
               margin: EdgeInsets.symmetric(horizontal: 20),
               decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                border: Border.all(color: Colors.lightBlue),
                 color: Color(0xffF6FAFF),
               ),
               child: Text("3.Neckless           4ps        6500 ",
                   style: TextStyle(
                       color: Colors.black, fontFamily: "Itim", fontSize: 15)),
             ),
-            SizedBox(height: 30),
+            SizedBox(height: 20),
             Container(
               alignment: Alignment.center,
               height: 51,
               width: 406,
               margin: EdgeInsets.symmetric(horizontal: 20),
               decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                border: Border.all(color: Colors.lightBlue),
                 color: Color(0xffF6FAFF),
               ),
               child: Text("4.Neckless           4ps        6500 ",
                   style: TextStyle(
                       color: Colors.black, fontFamily: "Itim", fontSize: 15)),
             ),
-            SizedBox(height: 30),
+            SizedBox(height: 20),
             Container(
               alignment: Alignment.center,
               height: 51,
               width: 406,
               margin: EdgeInsets.symmetric(horizontal: 20),
               decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                border: Border.all(color: Colors.lightBlue),
                 color: Color(0xffF6FAFF),
               ),
               child: Text("5.Neckless           4ps        6500 ",
@@ -114,12 +146,14 @@ class _ShoppingList2State extends State<ShoppingList2> {
             ),
             Container(
               alignment: Alignment.center,
-              margin: EdgeInsets.symmetric(horizontal: 200),
-              height: 52,
-              width: 230,
+              margin: EdgeInsets.symmetric(horizontal: 100),
+              height: 50,
+              width: 300,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
+                  border: Border.all(color: Colors.lightBlue),
                   color: Color(0xffF6FAFF)),
+
               child: Text("Discount   2000",
                   style: TextStyle(
                       color: Colors.black, fontFamily: "itim", fontSize: 15)),
@@ -129,41 +163,65 @@ class _ShoppingList2State extends State<ShoppingList2> {
             ),
             Container(
               alignment: Alignment.center,
-              margin: EdgeInsets.symmetric(horizontal: 200),
-              height: 52,
-              width: 230,
+              margin: EdgeInsets.symmetric(horizontal: 100),
+              height: 50,
+
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
+                  border: Border.all(color: Colors.lightBlue),
                   color: Color(0xffF6FAFF)),
               child: Text("Total   762000",
                   style: TextStyle(
                       color: Colors.black, fontFamily: "itim", fontSize: 15)),
             ),
             SizedBox(
-              height: 30,
+              height: 20,
+            ),
+            InkWell(
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>ShopInformation()));
+              },
+              child: Container(
+                alignment: Alignment.center,
+                margin: EdgeInsets.symmetric(horizontal: 100),
+                height: 50,
+
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(color: Colors.lightBlue),
+                    color: Color(0xffF6FAFF)),
+                child: Text("Buy",
+                    style: TextStyle(
+                        color: Colors.black, fontFamily: "itim", fontSize: 15)),
+              ),
+            ),
+            SizedBox(
+              height: 5,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Container(
-                  child: Text("Do you want to calculate? ",
-                      style: TextStyle(
-                          color: Colors.black,
-                          fontFamily: "Inter",
-                          fontSize: 10)),
+                Center(
+                  child: Container(
+                    child: Text("Do you want to calculate? ",
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontFamily: "Inter",
+                            fontSize: 20)),
+                  ),
                 ),
                 InkWell(
                   onTap: () {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => Autocalculate()));
+                            builder: (context) => Calculate()));
                   },
                   child: Container(
                       child: Text("Click here",
                           style: TextStyle(
                               fontFamily: "Inter",
-                              fontSize: 10,
+                              fontSize: 20,
                               color: Colors.blue))),
                 )
               ],

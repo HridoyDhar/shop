@@ -19,401 +19,368 @@ class _IncomeListState extends State<IncomeList> {
             height: 20,
           ),
           Container(
-            margin: EdgeInsets.symmetric(horizontal: 80),
+            margin: EdgeInsets.symmetric(horizontal: 150),
             alignment: Alignment.center,
-            height: 32,
-            width: 130,
+            height: 50,
+            width: 300,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-
-
-                color: Color(0xffF7FAFF),
-              border: Border.all(color: Colors.black)
-            ),
-            child: Text("20-05-35",
+                border: Border.all(color: Colors.black)),
+            child: Text(
+              "20-05-35",
               style: TextStyle(
-                  fontFamily: "itim",
-                  fontSize: 20,
-                  color: Colors.black
-              ),),
-          ),
-          SizedBox(
-            height: 10,
-          ),
-          InkWell(
-            onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>DayIncome()));
-            },
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              alignment: Alignment.center,
-              height: 51,
-              width: 353,
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  border: Border.all(color: Colors.black),
-                  color: Color(0xffF7FAFF)
-              ),
-              child: Text("Income                3450000Tk",
-                style: TextStyle(
-                    fontFamily: "itim",
-                    fontSize: 20,
-                    color: Colors.black
-                ),),
+                  fontFamily: "itim", fontSize: 20, color: Colors.black),
             ),
           ),
           SizedBox(
             height: 10,
           ),
           InkWell(
-              onTap: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>DayIncome()));
-              },
-              child:
-              Container(
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => DayIncome()));
+            },
+            child: Card(
+              child: Container(
                 margin: EdgeInsets.symmetric(horizontal: 20),
                 alignment: Alignment.center,
                 height: 51,
                 width: 353,
                 decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    border: Border.all(color: Colors.black),
-                    color: Color(0xffF7FAFF)
+                  borderRadius: BorderRadius.circular(10),
                 ),
-                child: Text("Income                3450000Tk",
+                child: Text(
+                  "Income                3450000Tk",
                   style: TextStyle(
-                      fontFamily: "itim",
-                      fontSize: 20,
-                      color: Colors.black
-                  ),),
+                      fontFamily: "itim", fontSize: 20, color: Colors.black),
+                ),
+              ),
+            ),
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          InkWell(
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => DayIncome()));
+              },
+              child: Card(
+                child: Container(
+                  margin: EdgeInsets.symmetric(horizontal: 20),
+                  alignment: Alignment.center,
+                  height: 51,
+                  width: 353,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Text(
+                    "Income                3450000Tk",
+                    style: TextStyle(
+                        fontFamily: "itim", fontSize: 20, color: Colors.black),
+                  ),
+                ),
               )),
           SizedBox(
             height: 10,
           ),
           InkWell(
-            onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>DayIncome()));
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => DayIncome()));
             },
-            child:
-            Container(
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              alignment: Alignment.center,
-              height: 51,
-              width: 353,
-
-              decoration: BoxDecoration(
+            child: Card(
+              child: Container(
+                margin: EdgeInsets.symmetric(horizontal: 20),
+                alignment: Alignment.center,
+                height: 51,
+                width: 353,
+                decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  border: Border.all(color: Colors.black),
-
-                  color: Color(0xffF7FAFF)
+                ),
+                child: Text(
+                  "Income                3450000Tk",
+                  style: TextStyle(
+                      fontFamily: "itim", fontSize: 20, color: Colors.black),
+                ),
               ),
-              child: Text("Income                3450000Tk",
-                style: TextStyle(
-                    fontFamily: "itim",
-                    fontSize: 20,
-                    color: Colors.black
-                ),),
-            ),),
+            ),
+          ),
           SizedBox(
             height: 10,
           ),
           InkWell(
-            onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>DayIncome()));
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => DayIncome()));
             },
-            child:
-            Container(
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              alignment: Alignment.center,
-              height: 51,
-              width: 353,
-
-              decoration: BoxDecoration(
+            child: Card(
+              child: Container(
+                margin: EdgeInsets.symmetric(horizontal: 20),
+                alignment: Alignment.center,
+                height: 51,
+                width: 353,
+                decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  border: Border.all(color: Colors.black),
-
-                  color: Color(0xffF7FAFF)
+                ),
+                child: Text(
+                  "Income                3450000Tk",
+                  style: TextStyle(
+                      fontFamily: "itim", fontSize: 20, color: Colors.black),
+                ),
               ),
-              child: Text("Income                3450000Tk",
-                style: TextStyle(
-                    fontFamily: "itim",
-                    fontSize: 20,
-                    color: Colors.black
-                ),),
-            ),),
+            ),
+          ),
           SizedBox(
             height: 10,
           ),
           InkWell(
-            onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>DayIncome()));
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => DayIncome()));
             },
-            child:
-            Container(
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              alignment: Alignment.center,
-              height: 51,
-              width: 353,
-
-              decoration: BoxDecoration(
+            child: Card(
+              child: Container(
+                margin: EdgeInsets.symmetric(horizontal: 20),
+                alignment: Alignment.center,
+                height: 51,
+                width: 353,
+                decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  border: Border.all(color: Colors.black),
-
-                  color: Color(0xffF7FAFF)
+                ),
+                child: Text(
+                  "Income                3450000Tk",
+                  style: TextStyle(
+                      fontFamily: "itim", fontSize: 20, color: Colors.black),
+                ),
               ),
-              child: Text("Income                3450000Tk",
-                style: TextStyle(
-                    fontFamily: "itim",
-                    fontSize: 20,
-                    color: Colors.black
-                ),),
-            ),),
+            ),
+          ),
           SizedBox(
             height: 10,
           ),
           InkWell(
-            onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>DayIncome()));
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => DayIncome()));
             },
-            child:
-            Container(
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              alignment: Alignment.center,
-              height: 51,
-              width: 353,
-
-              decoration: BoxDecoration(
+            child: Card(
+              child: Container(
+                margin: EdgeInsets.symmetric(horizontal: 20),
+                alignment: Alignment.center,
+                height: 51,
+                width: 353,
+                decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  border: Border.all(color: Colors.black),
-
-                  color: Color(0xffF7FAFF)
+                ),
+                child: Text(
+                  "Income                3450000Tk",
+                  style: TextStyle(
+                      fontFamily: "itim", fontSize: 20, color: Colors.black),
+                ),
               ),
-              child: Text("Income                3450000Tk",
-                style: TextStyle(
-                    fontFamily: "itim",
-                    fontSize: 20,
-                    color: Colors.black
-                ),),
-            ),),
+            ),
+          ),
           SizedBox(
             height: 10,
           ),
           InkWell(
-            onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>DayIncome()));
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => DayIncome()));
             },
-            child:
-            Container(
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              alignment: Alignment.center,
-              height: 51,
-              width: 353,
-
-              decoration: BoxDecoration(
+            child: Card(
+              child: Container(
+                margin: EdgeInsets.symmetric(horizontal: 20),
+                alignment: Alignment.center,
+                height: 51,
+                width: 353,
+                decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  border: Border.all(color: Colors.black),
-
-                  color: Color(0xffF7FAFF)
+                ),
+                child: Text(
+                  "Income                3450000Tk",
+                  style: TextStyle(
+                      fontFamily: "itim", fontSize: 20, color: Colors.black),
+                ),
               ),
-              child: Text("Income                3450000Tk",
-                style: TextStyle(
-                    fontFamily: "itim",
-                    fontSize: 20,
-                    color: Colors.black
-                ),),
-            ),),
+            ),
+          ),
           SizedBox(
             height: 10,
           ),
           InkWell(
-            onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>DayIncome()));
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => DayIncome()));
             },
-            child:
-            Container(
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              alignment: Alignment.center,
-              height: 51,
-              width: 353,
-
-              decoration: BoxDecoration(
+            child: Card(
+              child: Container(
+                margin: EdgeInsets.symmetric(horizontal: 20),
+                alignment: Alignment.center,
+                height: 51,
+                width: 353,
+                decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  border: Border.all(color: Colors.black),
-
-                  color: Color(0xffF7FAFF)
+                ),
+                child: Text(
+                  "Income                3450000Tk",
+                  style: TextStyle(
+                      fontFamily: "itim", fontSize: 20, color: Colors.black),
+                ),
               ),
-              child: Text("Income                3450000Tk",
-                style: TextStyle(
-                    fontFamily: "itim",
-                    fontSize: 20,
-                    color: Colors.black
-                ),),
-            ),),
+            ),
+          ),
           SizedBox(
             height: 10,
           ),
           InkWell(
-            onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>DayIncome()));
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => DayIncome()));
             },
-            child:
-            Container(
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              alignment: Alignment.center,
-              height: 51,
-              width: 353,
-
-              decoration: BoxDecoration(
+            child: Card(
+              child: Container(
+                margin: EdgeInsets.symmetric(horizontal: 20),
+                alignment: Alignment.center,
+                height: 51,
+                width: 353,
+                decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  border: Border.all(color: Colors.black),
-
-                  color: Color(0xffF7FAFF)
+                ),
+                child: Text(
+                  "Income                3450000Tk",
+                  style: TextStyle(
+                      fontFamily: "itim", fontSize: 20, color: Colors.black),
+                ),
               ),
-              child: Text("Income                3450000Tk",
-                style: TextStyle(
-                    fontFamily: "itim",
-                    fontSize: 20,
-                    color: Colors.black
-                ),),
-            ),),
+            ),
+          ),
           SizedBox(
             height: 10,
           ),
           InkWell(
-            onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>DayIncome()));
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => DayIncome()));
             },
-            child:
-            Container(
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              alignment: Alignment.center,
-              height: 51,
-              width: 353,
-
-              decoration: BoxDecoration(
+            child: Card(
+              child: Container(
+                margin: EdgeInsets.symmetric(horizontal: 20),
+                alignment: Alignment.center,
+                height: 51,
+                width: 353,
+                decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  border: Border.all(color: Colors.black),
-
-                  color: Color(0xffF7FAFF)
+                ),
+                child: Text(
+                  "Income                3450000Tk",
+                  style: TextStyle(
+                      fontFamily: "itim", fontSize: 20, color: Colors.black),
+                ),
               ),
-              child: Text("Income                3450000Tk",
-                style: TextStyle(
-                    fontFamily: "itim",
-                    fontSize: 20,
-                    color: Colors.black
-                ),),
-            ),),
+            ),
+          ),
           SizedBox(
             height: 10,
           ),
           InkWell(
-            onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>DayIncome()));
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => DayIncome()));
             },
-            child:
-            Container(
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              alignment: Alignment.center,
-              height: 51,
-              width: 353,
-
-              decoration: BoxDecoration(
+            child: Card(
+              child: Container(
+                margin: EdgeInsets.symmetric(horizontal: 20),
+                alignment: Alignment.center,
+                height: 51,
+                width: 353,
+                decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  border: Border.all(color: Colors.black),
-
-                  color: Color(0xffF7FAFF)
+                ),
+                child: Text(
+                  "Income                3450000Tk",
+                  style: TextStyle(
+                      fontFamily: "itim", fontSize: 20, color: Colors.black),
+                ),
               ),
-              child: Text("Income                3450000Tk",
-                style: TextStyle(
-                    fontFamily: "itim",
-                    fontSize: 20,
-                    color: Colors.black
-                ),),
-            ),),
+            ),
+          ),
           SizedBox(
             height: 10,
           ),
           InkWell(
-            onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>DayIncome()));
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => DayIncome()));
             },
-            child:
-            Container(
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              alignment: Alignment.center,
-              height: 51,
-              width: 353,
-
-              decoration: BoxDecoration(
+            child: Card(
+              child: Container(
+                margin: EdgeInsets.symmetric(horizontal: 20),
+                alignment: Alignment.center,
+                height: 51,
+                width: 353,
+                decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  border: Border.all(color: Colors.black),
-
-                  color: Color(0xffF7FAFF)
+                ),
+                child: Text(
+                  "Income                3450000Tk",
+                  style: TextStyle(
+                      fontFamily: "itim", fontSize: 20, color: Colors.black),
+                ),
               ),
-              child: Text("Income                3450000Tk",
-                style: TextStyle(
-                    fontFamily: "itim",
-                    fontSize: 20,
-                    color: Colors.black
-                ),),
-            ),),
+            ),
+          ),
           SizedBox(
             height: 10,
           ),
           InkWell(
-            onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>DayIncome()));
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => DayIncome()));
             },
-            child:
-            Container(
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              alignment: Alignment.center,
-              height: 51,
-              width: 353,
-
-              decoration: BoxDecoration(
+            child: Card(
+              child: Container(
+                margin: EdgeInsets.symmetric(horizontal: 20),
+                alignment: Alignment.center,
+                height: 51,
+                width: 353,
+                decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  border: Border.all(color: Colors.black),
-
-                  color: Color(0xffF7FAFF)
+                ),
+                child: Text(
+                  "Income                3450000Tk",
+                  style: TextStyle(
+                      fontFamily: "itim", fontSize: 20, color: Colors.black),
+                ),
               ),
-              child: Text("Income                3450000Tk",
-                style: TextStyle(
-                    fontFamily: "itim",
-                    fontSize: 20,
-                    color: Colors.black
-                ),),
-            ),),
+            ),
+          ),
           SizedBox(
             height: 10,
           ),
           InkWell(
-            onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>DayIncome()));
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => DayIncome()));
             },
-            child:
-            Container(
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              alignment: Alignment.center,
-              height: 51,
-              width: 353,
-
-              decoration: BoxDecoration(
+            child: Card(
+              child: Container(
+                margin: EdgeInsets.symmetric(horizontal: 20),
+                alignment: Alignment.center,
+                height: 51,
+                width: 353,
+                decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  border: Border.all(color: Colors.black),
-
-                  color: Color(0xffF7FAFF)
+                ),
+                child: Text(
+                  "Income                3450000Tk",
+                  style: TextStyle(
+                      fontFamily: "itim", fontSize: 20, color: Colors.black),
+                ),
               ),
-              child: Text("Income                3450000Tk",
-                style: TextStyle(
-                    fontFamily: "itim",
-                    fontSize: 20,
-                    color: Colors.black
-                ),),
-            ),),
-
-
-
+            ),
+          ),
         ],
       ),
     );

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 class ShopProduct extends StatefulWidget {
   const ShopProduct({Key? key}) : super(key: key);
 
@@ -14,37 +13,24 @@ class _ShopProductState extends State<ShopProduct> {
       body: ListView(
         children: [
           SizedBox(
-            height: 20,
+            height: 700,
           ),
-      Card(
-        child: Container(
-          decoration: BoxDecoration(
-            color: Color(0xffF7FAFF),
-          ),
-          child: Column(
-            children: [
-              Row(
-                children: [
-                  Container(
-                    padding:
-                    EdgeInsets.symmetric(horizontal: 5.w),
-
-
-
-
-                child: Image.asset("assets/ring.png"),
-        )
-
-                ],
-              ),
-    ])
-
-    )
-        ),
-
-
-
-
+          Container(
+            margin: EdgeInsets.symmetric(horizontal: 20),
+            alignment: Alignment.center,
+            height: 50,
+            width: 300,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10),
+              color: Color(0xffFF928E)
+            ),
+            child: Text("Add to cart",
+            style: TextStyle(
+              fontSize: 20,
+              fontFamily: "itim",
+              color: Colors.white
+            ),),
+          )
         ],
       ),
     );

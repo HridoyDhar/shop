@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class ComplilnePerson extends StatefulWidget {
   const ComplilnePerson({Key? key}) : super(key: key);
 
@@ -16,91 +17,76 @@ class _ComplilnePersonState extends State<ComplilnePerson> {
           SizedBox(
             height: 20,
           ),
-
           Container(
-
             alignment: Alignment.center,
-
             margin: EdgeInsets.symmetric(horizontal: 90),
-           height: 50,
+            height: 50,
             width: 300,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                color: Colors.black
-            ),
-            child: Text("18-07-22",
+                border: Border.all(color: Colors.blueAccent)),
+            child: Text(
+              "18-07-22",
               style: TextStyle(
-                  fontSize: 20,
-                  fontFamily: "itim",
-                  color: Colors.white
-              ),),
-          ),
-
-          SizedBox(
-            height: 20,
-          ),
-          Container(
-
-            alignment: Alignment.center,
-
-            margin: EdgeInsets.symmetric(horizontal: 20),
-            height: 51,
-            width: 373,
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                color: Color(0xffF7FAFF),
-              border: Border.all(color: Colors.yellowAccent)
+                  fontSize: 20, fontFamily: "itim", color: Colors.black),
             ),
-            child: Text("Mr.rahul              ",
-              style: TextStyle(
-                  fontSize: 15,
-                  fontFamily: "itim",
-                  color: Colors.black
-              ),),
           ),
           SizedBox(
             height: 20,
           ),
-          Container(
-
-            alignment: Alignment.center,
-
-            margin: EdgeInsets.symmetric(horizontal: 20),
-            height: 51,
-            width: 373,
-            decoration: BoxDecoration(
+          Card(
+            child: Container(
+              alignment: Alignment.center,
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              height: 51,
+              width: 373,
+              decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                color: Color(0xffF7FAFF),
-                border: Border.all(color: Colors.yellowAccent)
+              ),
+              child: Text(
+                "Mr.rahul              ",
+                style: TextStyle(
+                    fontSize: 15, fontFamily: "itim", color: Colors.black),
+              ),
             ),
-            child: Text("01783634923",
-              style: TextStyle(
-                  fontSize: 15,
-                  fontFamily: "itim",
-                  color: Colors.black
-              ),),
           ),
           SizedBox(
             height: 20,
           ),
-          Container(
-
-            alignment: Alignment.center,
-
-            margin: EdgeInsets.symmetric(horizontal: 20),
-            height: 51,
-            width: 373,
-            decoration: BoxDecoration(
+          Card(
+            child: Container(
+              alignment: Alignment.center,
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              height: 51,
+              width: 373,
+              decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                color: Color(0xffF7FAFF),
-                border: Border.all(color: Colors.yellowAccent)
+              ),
+              child: Text(
+                "01783634923",
+                style: TextStyle(
+                    fontSize: 15, fontFamily: "itim", color: Colors.black),
+              ),
             ),
-            child: Text("New market,Dhaka",
-              style: TextStyle(
-                  fontSize: 15,
-                  fontFamily: "itim",
-                  color: Colors.black
-              ),),
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          Card(
+            child: Container(
+              alignment: Alignment.center,
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              height: 51,
+              width: 373,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Text(
+                "New market,Dhaka",
+                style: TextStyle(
+                    fontSize: 15, fontFamily: "itim", color: Colors.black),
+              ),
+            ),
           ),
         ],
       ),

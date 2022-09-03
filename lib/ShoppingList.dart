@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+
 class ShoppingList extends StatefulWidget {
   const ShoppingList({Key? key}) : super(key: key);
 
@@ -16,7 +17,7 @@ class _ShoppingListState extends State<ShoppingList> {
         body: ListView(
           children: [
             SizedBox(
-              height: 40,
+              height: 20,
             ),
             Container(
               height: 178,
@@ -31,9 +32,7 @@ class _ShoppingListState extends State<ShoppingList> {
                 // Center Text
 
                 child: Text(
-                  "Krishna Gold Shop "
-
-                  ,
+                  "Krishna Gold Shop ",
                   style: TextStyle(
                     color: Colors.black,
                     fontFamily: "itim",
@@ -47,13 +46,10 @@ class _ShoppingListState extends State<ShoppingList> {
             ),
             Center(
               child: Container(
-
                 // Center Text
 
                 child: Text(
-
-                      " Contact: 0347628323"
-                  ,
+                  " Contact: 0347628323",
                   style: TextStyle(
                     color: Colors.black,
                     fontFamily: "itim",
@@ -63,77 +59,71 @@ class _ShoppingListState extends State<ShoppingList> {
               ),
             ),
             SizedBox(height: 30),
-            Container(
-              alignment: Alignment.center,
-              height: 51,
-              width: 406,
-              margin: EdgeInsets.symmetric(horizontal: 20),
-
-              decoration: BoxDecoration(
-                color: Color(0xffF6FAFF),
-                border: Border.all(color: Colors.black)
-              ),
-              child: Text(
-                "1.Neckless             2ps        6500 ",
-                style: TextStyle(
-                    color: Colors.black, fontFamily: "Itim", fontSize: 15),
+            Card(
+              child: Container(
+                alignment: Alignment.center,
+                height: 51,
+                width: 406,
+                margin: EdgeInsets.symmetric(horizontal: 20),
+                decoration: BoxDecoration(),
+                child: Text(
+                  "1.Neckless             2ps        6500 ",
+                  style: TextStyle(
+                      color: Colors.black, fontFamily: "Itim", fontSize: 15),
+                ),
               ),
             ),
             SizedBox(height: 30),
-            Container(
-              alignment: Alignment.center,
-              height: 51,
-              width: 406,
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              decoration: BoxDecoration(
-                color: Color(0xffF6FAFF),
-                border: Border.all(color: Colors.black),
+            Card(
+              child: Container(
+                alignment: Alignment.center,
+                height: 51,
+                width: 406,
+                margin: EdgeInsets.symmetric(horizontal: 20),
+                decoration: BoxDecoration(),
+                child: Text("2.Neckless           4ps        6500 ",
+                    style: TextStyle(
+                        color: Colors.black, fontFamily: "Itim", fontSize: 15)),
               ),
-              child: Text("2.Neckless           4ps        6500 ",
-                  style: TextStyle(
-                      color: Colors.black, fontFamily: "Itim", fontSize: 15)),
             ),
             SizedBox(height: 30),
-            Container(
-              alignment: Alignment.center,
-              height: 51,
-              width: 406,
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              decoration: BoxDecoration(
-                color: Color(0xffF6FAFF),
-                border: Border.all(color: Colors.black),
+            Card(
+              child: Container(
+                alignment: Alignment.center,
+                height: 51,
+                width: 406,
+                margin: EdgeInsets.symmetric(horizontal: 20),
+                decoration: BoxDecoration(),
+                child: Text("3.Neckless           4ps        6500 ",
+                    style: TextStyle(
+                        color: Colors.black, fontFamily: "Itim", fontSize: 15)),
               ),
-              child: Text("3.Neckless           4ps        6500 ",
-                  style: TextStyle(
-                      color: Colors.black, fontFamily: "Itim", fontSize: 15)),
             ),
             SizedBox(height: 30),
-            Container(
-              alignment: Alignment.center,
-              height: 51,
-              width: 406,
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              decoration: BoxDecoration(
-                color: Color(0xffF6FAFF),
-                border: Border.all(color: Colors.black),
+            Card(
+              child: Container(
+                alignment: Alignment.center,
+                height: 51,
+                width: 406,
+                margin: EdgeInsets.symmetric(horizontal: 20),
+                decoration: BoxDecoration(),
+                child: Text("4.Neckless           4ps        6500 ",
+                    style: TextStyle(
+                        color: Colors.black, fontFamily: "Itim", fontSize: 15)),
               ),
-              child: Text("4.Neckless           4ps        6500 ",
-                  style: TextStyle(
-                      color: Colors.black, fontFamily: "Itim", fontSize: 15)),
             ),
             SizedBox(height: 30),
-            Container(
-              alignment: Alignment.center,
-              height: 51,
-              width: 406,
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              decoration: BoxDecoration(
-                border: Border.all(color: Colors.black),
-                color: Color(0xffF6FAFF),
+            Card(
+              child: Container(
+                alignment: Alignment.center,
+                height: 51,
+                width: 406,
+                margin: EdgeInsets.symmetric(horizontal: 20),
+                decoration: BoxDecoration(),
+                child: Text("5.Neckless           4ps        6500 ",
+                    style: TextStyle(
+                        color: Colors.black, fontFamily: "Itim", fontSize: 15)),
               ),
-              child: Text("5.Neckless           4ps        6500 ",
-                  style: TextStyle(
-                      color: Colors.black, fontFamily: "Itim", fontSize: 15)),
             ),
             SizedBox(
               height: 20,
@@ -142,9 +132,7 @@ class _ShoppingListState extends State<ShoppingList> {
               alignment: Alignment.center,
               margin: EdgeInsets.symmetric(horizontal: 100),
               height: 50,
-
               decoration: BoxDecoration(
-                  border: Border.all(color: Colors.black),
                   borderRadius: BorderRadius.circular(10),
                   color: Color(0xffF6FAFF)),
               child: Text("Discount   2000",
@@ -158,9 +146,7 @@ class _ShoppingListState extends State<ShoppingList> {
               alignment: Alignment.center,
               margin: EdgeInsets.symmetric(horizontal: 100),
               height: 50,
-
               decoration: BoxDecoration(
-                  border: Border.all(color: Colors.black),
                   borderRadius: BorderRadius.circular(10),
                   color: Color(0xffF6FAFF)),
               child: Text("Total   762000",

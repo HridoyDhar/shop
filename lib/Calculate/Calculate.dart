@@ -1,10 +1,4 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
-
-
 class Calculate extends StatefulWidget {
   const Calculate({Key? key}) : super(key: key);
 
@@ -16,134 +10,342 @@ class _CalculateState extends State<Calculate> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: Colors.white,
         body: ListView(
-          children: [
-            SizedBox(
-              height: 20,
-            ),
-            Container(
-              height: 279,
-              width: 289,
-              child: Image.asset("assets/"),
-            ),
-            SizedBox(
-              height: 30,
-            ),
-            Container(
-              height: 51,
-              alignment: Alignment.center,
-              margin: EdgeInsets.symmetric(horizontal: 150),
-              width: 152,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                color: Color(0xffF6FAFF),
+            children: [
+              SizedBox(
+                height: 20,
               ),
-              child: Text(
-                "234545",
-                style: TextStyle(
-                    fontFamily: "itim", fontSize: 20, color: Colors.black),
+              Container(
+                height: 300,
+                width: 300,
+                child: Image.asset("assets/96208-carbon-calculator.gif"),
               ),
-            ),
-            SizedBox(
-              height: 15,
-            ),
-            Container(
-              width: 200,
-              child: Column(
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Container(
-                        alignment: Alignment.center,
-                        margin: EdgeInsets.symmetric(horizontal: 200),
-                        height: 51,
-                        width: 50,
-                        child: TextField(
-                          decoration: InputDecoration(
-                            labelText: "Amount",
-                          ),
-                        ),
-                      ),
-                      Container(
-                        padding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-                        height: 50,
-                        width: 50,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            color: Color(0xffF6FAFF)),
-                        child: Text(
-                          "X2b",
-                          style: TextStyle(
-                              fontFamily: "itim",
-                              fontSize: 15,
-                              color: Colors.black),
-                        ),
-                      ),
-                      Container(
-                        padding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-                        height: 50,
-                        width: 50,
-                        child: Text(
-                          "=4563739",
-                          style: TextStyle(
-                              fontFamily: "itim",
-                              fontSize: 15,
-                              color: Colors.black),
-                        ),
-                      ),
-                    ],
-                  )
-                ],
+
+              SizedBox(
+                height: 10,
               ),
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Container(
+              Center(
+                child: Container(
+                  height: 40,
+                  margin: EdgeInsets.symmetric(horizontal: 50),
                   alignment: Alignment.center,
-                  margin: EdgeInsets.symmetric(horizontal: 200),
-                  height: 51,
-                  width: 50,
-                  child: TextField(
-                    decoration: InputDecoration(labelText: "3455623"),
-                  ),
-                ),
-                Container(
-                  alignment: Alignment.center,
-                  margin: EdgeInsets.symmetric(horizontal: 200),
-                  height: 51,
-                  width: 50,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
-                    color: Color(0xffF6FAFF),
+                    // border: Border.all(color: Colors.blue),
+                    color: Colors.lightGreenAccent
+                    ,
+
                   ),
-                  child: Text(
-                    "X6",
+                  child: Text("76830",
                     style: TextStyle(
-                        fontFamily: "itim", fontSize: 15, color: Colors.black),
+                        fontSize: 20,
+                        fontFamily: "itim"
+                        ,color: Colors.black
+                    ),),
+
+
+                ),
+              ),
+              SizedBox(
+                height: 50,
+              ),
+              Center(
+                child: Container(
+                  width: 400,
+                  child: Column(
+                    children: [
+                      Row(
+                        // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Container(
+                            height: 40,
+                            width: 60,
+                            margin: EdgeInsets.symmetric(horizontal: 20),
+                            alignment: Alignment.center,
+
+                            child: TextField(decoration: InputDecoration(
+                                labelText: "money",
+                                border: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(10)
+                                )
+                            ),
+                            ),
+                          ),
+                          SizedBox(height: 5,),
+                          Container(
+                            height: 40,
+                            width: 60,
+                            margin: EdgeInsets.symmetric(horizontal: 20),
+                            alignment: Alignment.center,
+
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              color: Colors.cyanAccent
+                            ),
+                            child: Text("1b",
+                            style: TextStyle(
+                              fontFamily: "itim",
+                              fontSize: 15,
+                              color: Colors.black
+                            ),),
+                          ),
+                          SizedBox(height: 5,),
+                          Container(
+                            height: 40,
+                            width: 120,
+                            margin: EdgeInsets.symmetric(horizontal: 20),
+                            alignment: Alignment.center,
+
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(10),
+                                color: Colors.cyanAccent
+                            ),
+                            child: Text("400000",
+                              style: TextStyle(
+                                  fontFamily: "itim",
+                                  fontSize: 15,
+                                  color: Colors.black
+                              ),),
+                          ),
+
+
+                        ],
+                      ),
+
+                    ],
                   ),
                 ),
-                Container(
-                  margin: EdgeInsets.symmetric(horizontal: 200),
-                  alignment: Alignment.center,
-                  height: 51,
-                  width: 50,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      color: Color(0xffF6FAFF)),
-                  child: Text(
-                    "=876378",
-                    style: TextStyle(
-                        color: Colors.black, fontFamily: "itim", fontSize: 15),
-                  ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Container(
+                width: 400,
+                child: Column(
+                  children: [
+                    Row(
+                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Container(
+                          height: 40,
+                          width: 60,
+                          margin: EdgeInsets.symmetric(horizontal: 20),
+                          alignment: Alignment.center,
+
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              color: Colors.cyanAccent
+                          ),
+                          child: Text("6080",
+                            style: TextStyle(
+                                fontFamily: "itim",
+                                fontSize: 15,
+                                color: Colors.black
+                            ),),
+                        ),
+                        SizedBox(height: 5,),
+                        Container(
+                          height: 40,
+                          width: 60,
+                          margin: EdgeInsets.symmetric(horizontal: 20),
+                          alignment: Alignment.center,
+
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              color: Colors.cyanAccent
+                          ),
+                          child: Text("4a",
+                            style: TextStyle(
+                                fontFamily: "itim",
+                                fontSize: 15,
+                                color: Colors.black
+                            ),),
+                        ),
+                        SizedBox(height: 5,),
+                        Container(
+                          height: 40,
+                          width: 120,
+                          margin: EdgeInsets.symmetric(horizontal: 20),
+                          alignment: Alignment.center,
+
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              color: Colors.cyanAccent
+                          ),
+                          child: Text("24000",
+                            style: TextStyle(
+                                fontFamily: "itim",
+                                fontSize: 15,
+                                color: Colors.black
+                            ),),
+                        ),
+                      ],
+                    ),
+                  ],
                 ),
-              ],
-            )
-          ],
-        ));
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Container(
+                  width: 400,
+                  child: Column(
+                      children: [
+                        Row(
+                          // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Container(
+                                height: 40,
+                                width: 60,
+                                margin: EdgeInsets.symmetric(horizontal: 20),
+                                alignment: Alignment.center,
+
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(10),
+                                    color: Colors.cyanAccent
+                                ),
+                                child: Text("6000",
+                                  style: TextStyle(
+                                      fontFamily: "itim",
+                                      fontSize: 15,
+                                      color: Colors.black
+                                  ),),
+                              ),
+                              SizedBox(height: 5,),
+                              Container(
+                                height: 40,
+                                width: 60,
+                                margin: EdgeInsets.symmetric(horizontal: 20),
+                                alignment: Alignment.center,
+
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(10),
+                                    color: Colors.cyanAccent
+                                ),
+                                child: Text("6r",
+                                  style: TextStyle(
+                                      fontFamily: "itim",
+                                      fontSize: 15,
+                                      color: Colors.black
+                                  ),),
+                              ),
+                              SizedBox(height: 10,),
+                              Container(
+                                height: 40,
+                                width: 120,
+                                margin: EdgeInsets.symmetric(horizontal: 20),
+                                alignment: Alignment.center,
+
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(10),
+                                    color: Colors.cyanAccent
+                                ),
+                                child: Text("5300",
+                                  style: TextStyle(
+                                      fontFamily: "itim",
+                                      fontSize: 15,
+                                      color: Colors.black
+                                  ),),
+                              )
+                            ]
+                        )]
+                  )
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Center(
+                child: Container(
+                    width: 400,
+                    child: Column(
+                        children: [
+                          Row(
+                            // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Container(
+                                  height: 40,
+                                  width: 60,
+                                  margin: EdgeInsets.symmetric(horizontal: 20),
+                                  alignment: Alignment.center,
+
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(10),
+                                      color: Colors.cyanAccent
+                                  ),
+                                  child: Text("5000",
+                                    style: TextStyle(
+                                        fontFamily: "itim",
+                                        fontSize: 15,
+                                        color: Colors.black
+                                    ),),
+                                ),
+                                SizedBox(height: 5,),
+                                Container(
+                                  height: 40,
+                                  width: 60,
+                                  margin: EdgeInsets.symmetric(horizontal: 20),
+                                  alignment: Alignment.center,
+
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(10),
+                                      color: Colors.cyanAccent
+                                  ),
+                                  child: Text("8p",
+                                    style: TextStyle(
+                                        fontFamily: "itim",
+                                        fontSize: 15,
+                                        color: Colors.black
+                                    ),),
+                                ),
+                                SizedBox(height: 10,),
+                                Container(
+                                  height: 40,
+                                  width: 120,
+                                  margin: EdgeInsets.symmetric(horizontal: 20),
+                                  alignment: Alignment.center,
+
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(10),
+                                      color: Colors.cyanAccent
+                                  ),
+                                  child: Text("560",
+                                    style: TextStyle(
+                                        fontFamily: "itim",
+                                        fontSize: 15,
+                                        color: Colors.black
+                                    ),),
+                                )
+                              ]
+                          )
+                        ]
+                    )
+                ),
+              ),
+              SizedBox(
+                height: 50,
+              ),
+              Container(
+                height: 50,
+                width: 300,
+                margin: EdgeInsets.symmetric(horizontal: 100),
+                alignment: Alignment.center,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+
+                    color: Colors.lightGreenAccent
+                ),
+                child: Text("Enter",
+                  style: TextStyle(
+                      fontFamily: "itim",
+                      fontSize: 20,
+                      color: Colors.black
+                  ),),
+              ),
+
+
+            ]
+        )
+    );
   }
 }
