@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:goldshop/CustomersellDetails/CustomersellDetails.dart';
+import 'package:goldshop/Sellperson/Sell_person.dart';
 
 class Selllist extends StatefulWidget {
   const Selllist({Key? key}) : super(key: key);
@@ -9,6 +11,12 @@ class Selllist extends StatefulWidget {
 }
 
 class _SelllistState extends State<Selllist> {
+  final ScrollController _controller = ScrollController();
+  double _scrollOffset = 0;
+
+  // The maximum scroll offset
+  // In other words, this means the user has reached the bottom of the list view
+  double? _maxOffset;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,9 +40,18 @@ class _SelllistState extends State<Selllist> {
             Container(
               alignment: Alignment.center,
               margin: EdgeInsets.symmetric(horizontal: 120),
-              height: 50,
-              width: 300,
+              height: 50.h,
+              width: 340.w,
               decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey.withOpacity(0.5),
+                      spreadRadius: 5,
+                      blurRadius: 7,
+                      offset: Offset(0, 3), // changes position of shadow
+                    ),
+                  ],
+                  color: Colors.white,
                   borderRadius: BorderRadius.circular(10),
                   // boxShadow: [
                   //   BoxShadow(
@@ -61,29 +78,36 @@ class _SelllistState extends State<Selllist> {
                     MaterialPageRoute(
                         builder: (context) => CustomersellDetails()));
               },
-              child: Card(
-                child: Container(
-                    alignment: Alignment.center,
-                    margin: EdgeInsets.symmetric(horizontal: 50),
-                    height: 51,
-                    width: 360,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      // boxShadow: [
-                      //   BoxShadow(
-                      //     color: Colors.grey.withOpacity(0.5),
-                      //     spreadRadius: 5,
-                      //     blurRadius: 7,
-                      //     offset: Offset(0, 3), // changes position of shadow
-                      //   ),
-                      // ],
-                    ),
-                    child: Text("1. Mr.rahul         23.4b          4569000Tk",
-                        style: TextStyle(
-                            fontFamily: "itim",
-                            fontSize: 20,
-                            color: Colors.black))),
-              ),
+              child: Container(
+                  alignment: Alignment.center,
+                  margin: EdgeInsets.symmetric(horizontal: 20),
+                  height: 50.h,
+                  width: 340.w,
+                  decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.withOpacity(0.5),
+                        spreadRadius: 5,
+                        blurRadius: 7,
+                        offset: Offset(0, 3), // changes position of shadow
+                      ),
+                    ],
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(10),
+                    // boxShadow: [
+                    //   BoxShadow(
+                    //     color: Colors.grey.withOpacity(0.5),
+                    //     spreadRadius: 5,
+                    //     blurRadius: 7,
+                    //     offset: Offset(0, 3), // changes position of shadow
+                    //   ),
+                    // ],
+                  ),
+                  child: Text("1. Mr.rahul         23.4b          4569000Tk",
+                      style: TextStyle(
+                          fontFamily: "itim",
+                          fontSize: 20,
+                          color: Colors.black))),
             ),
             SizedBox(
               height: 20,
@@ -95,21 +119,28 @@ class _SelllistState extends State<Selllist> {
                     MaterialPageRoute(
                         builder: (context) => CustomersellDetails()));
               },
-              child: Card(
-                child: Container(
-                    alignment: Alignment.center,
-                    margin: EdgeInsets.symmetric(horizontal: 40),
-                    height: 51,
-                    width: 360,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: Text("1. Mr.rahul         23.4b          4569000Tk",
-                        style: TextStyle(
-                            fontFamily: "itim",
-                            fontSize: 20,
-                            color: Colors.black))),
-              ),
+              child: Container(
+                  alignment: Alignment.center,
+                  margin: EdgeInsets.symmetric(horizontal: 20),
+                  height: 50.h,
+                  width: 340.w,
+                  decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.withOpacity(0.5),
+                        spreadRadius: 5,
+                        blurRadius: 7,
+                        offset: Offset(0, 3), // changes position of shadow
+                      ),
+                    ],
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Text("1. Mr.rahul         23.4b          4569000Tk",
+                      style: TextStyle(
+                          fontFamily: "itim",
+                          fontSize: 20,
+                          color: Colors.black))),
             ),
             SizedBox(height: 20),
             InkWell(
@@ -119,21 +150,28 @@ class _SelllistState extends State<Selllist> {
                     MaterialPageRoute(
                         builder: (context) => CustomersellDetails()));
               },
-              child: Card(
-                child: Container(
-                    alignment: Alignment.center,
-                    margin: EdgeInsets.symmetric(horizontal: 20),
-                    height: 51,
-                    width: 360,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: Text("2. Mr.rahul         23.4b          4569000Tk",
-                        style: TextStyle(
-                            fontFamily: "itim",
-                            fontSize: 20,
-                            color: Colors.black))),
-              ),
+              child: Container(
+                  alignment: Alignment.center,
+                  margin: EdgeInsets.symmetric(horizontal: 20),
+                  height: 50.h,
+                  width: 340.w,
+                  decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.withOpacity(0.5),
+                        spreadRadius: 5,
+                        blurRadius: 7,
+                        offset: Offset(0, 3), // changes position of shadow
+                      ),
+                    ],
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Text("2. Mr.rahul         23.4b          4569000Tk",
+                      style: TextStyle(
+                          fontFamily: "itim",
+                          fontSize: 20,
+                          color: Colors.black))),
             ),
             SizedBox(
               height: 20,
@@ -145,21 +183,28 @@ class _SelllistState extends State<Selllist> {
                     MaterialPageRoute(
                         builder: (context) => CustomersellDetails()));
               },
-              child: Card(
-                child: Container(
-                    alignment: Alignment.center,
-                    margin: EdgeInsets.symmetric(horizontal: 20),
-                    height: 51,
-                    width: 360,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: Text("3. Mr.rahul         23.4b          4569000Tk",
-                        style: TextStyle(
-                            fontFamily: "itim",
-                            fontSize: 20,
-                            color: Colors.black))),
-              ),
+              child: Container(
+                  alignment: Alignment.center,
+                  margin: EdgeInsets.symmetric(horizontal: 20),
+                  height: 50.h,
+                  width: 340.w,
+                  decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.withOpacity(0.5),
+                        spreadRadius: 5,
+                        blurRadius: 7,
+                        offset: Offset(0, 3), // changes position of shadow
+                      ),
+                    ],
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Text("3. Mr.rahul         23.4b          4569000Tk",
+                      style: TextStyle(
+                          fontFamily: "itim",
+                          fontSize: 20,
+                          color: Colors.black))),
             ),
             SizedBox(
               height: 20,
@@ -171,21 +216,28 @@ class _SelllistState extends State<Selllist> {
                     MaterialPageRoute(
                         builder: (context) => CustomersellDetails()));
               },
-              child: Card(
-                child: Container(
-                    alignment: Alignment.center,
-                    margin: EdgeInsets.symmetric(horizontal: 20),
-                    height: 51,
-                    width: 360,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: Text("3. Mr.rahul         23.4b          4569000Tk",
-                        style: TextStyle(
-                            fontFamily: "itim",
-                            fontSize: 20,
-                            color: Colors.black))),
-              ),
+              child: Container(
+                  alignment: Alignment.center,
+                  margin: EdgeInsets.symmetric(horizontal: 20),
+                  height: 50.h,
+                  width: 340.w,
+                  decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.withOpacity(0.5),
+                        spreadRadius: 5,
+                        blurRadius: 7,
+                        offset: Offset(0, 3), // changes position of shadow
+                      ),
+                    ],
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Text("3. Mr.rahul         23.4b          4569000Tk",
+                      style: TextStyle(
+                          fontFamily: "itim",
+                          fontSize: 20,
+                          color: Colors.black))),
             ),
             SizedBox(
               height: 20,
@@ -197,21 +249,28 @@ class _SelllistState extends State<Selllist> {
                     MaterialPageRoute(
                         builder: (context) => CustomersellDetails()));
               },
-              child: Card(
-                child: Container(
-                    alignment: Alignment.center,
-                    margin: EdgeInsets.symmetric(horizontal: 20),
-                    height: 51,
-                    width: 360,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: Text("3. Mr.rahul         23.4b          4569000Tk",
-                        style: TextStyle(
-                            fontFamily: "itim",
-                            fontSize: 20,
-                            color: Colors.black))),
-              ),
+              child: Container(
+                  alignment: Alignment.center,
+                  margin: EdgeInsets.symmetric(horizontal: 20),
+                  height: 50.h,
+                  width: 340.w,
+                  decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.withOpacity(0.5),
+                        spreadRadius: 5,
+                        blurRadius: 7,
+                        offset: Offset(0, 3), // changes position of shadow
+                      ),
+                    ],
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Text("3. Mr.rahul         23.4b          4569000Tk",
+                      style: TextStyle(
+                          fontFamily: "itim",
+                          fontSize: 20,
+                          color: Colors.black))),
             ),
             SizedBox(
               height: 20,
@@ -223,21 +282,28 @@ class _SelllistState extends State<Selllist> {
                     MaterialPageRoute(
                         builder: (context) => CustomersellDetails()));
               },
-              child: Card(
-                child: Container(
-                    alignment: Alignment.center,
-                    margin: EdgeInsets.symmetric(horizontal: 20),
-                    height: 51,
-                    width: 360,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: Text("3. Mr.rahul         23.4b          4569000Tk",
-                        style: TextStyle(
-                            fontFamily: "itim",
-                            fontSize: 20,
-                            color: Colors.black))),
-              ),
+              child: Container(
+                  alignment: Alignment.center,
+                  margin: EdgeInsets.symmetric(horizontal: 20),
+                  height: 50.h,
+                  width: 340.w,
+                  decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.withOpacity(0.5),
+                        spreadRadius: 5,
+                        blurRadius: 7,
+                        offset: Offset(0, 3), // changes position of shadow
+                      ),
+                    ],
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Text("3. Mr.rahul         23.4b          4569000Tk",
+                      style: TextStyle(
+                          fontFamily: "itim",
+                          fontSize: 20,
+                          color: Colors.black))),
             ),
             SizedBox(
               height: 20,
@@ -249,21 +315,28 @@ class _SelllistState extends State<Selllist> {
                     MaterialPageRoute(
                         builder: (context) => CustomersellDetails()));
               },
-              child: Card(
-                child: Container(
-                    alignment: Alignment.center,
-                    margin: EdgeInsets.symmetric(horizontal: 20),
-                    height: 51,
-                    width: 360,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: Text("3. Mr.rahul         23.4b          4569000Tk",
-                        style: TextStyle(
-                            fontFamily: "itim",
-                            fontSize: 20,
-                            color: Colors.black))),
-              ),
+              child: Container(
+                  alignment: Alignment.center,
+                  margin: EdgeInsets.symmetric(horizontal: 20),
+                  height: 50.h,
+                  width: 340.w,
+                  decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.withOpacity(0.5),
+                        spreadRadius: 5,
+                        blurRadius: 7,
+                        offset: Offset(0, 3), // changes position of shadow
+                      ),
+                    ],
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Text("3. Mr.rahul         23.4b          4569000Tk",
+                      style: TextStyle(
+                          fontFamily: "itim",
+                          fontSize: 20,
+                          color: Colors.black))),
             ),
             SizedBox(
               height: 20,
@@ -275,21 +348,28 @@ class _SelllistState extends State<Selllist> {
                     MaterialPageRoute(
                         builder: (context) => CustomersellDetails()));
               },
-              child: Card(
-                child: Container(
-                    alignment: Alignment.center,
-                    margin: EdgeInsets.symmetric(horizontal: 20),
-                    height: 51,
-                    width: 360,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: Text("3. Mr.rahul         23.4b          4569000Tk",
-                        style: TextStyle(
-                            fontFamily: "itim",
-                            fontSize: 20,
-                            color: Colors.black))),
-              ),
+              child: Container(
+                  alignment: Alignment.center,
+                  margin: EdgeInsets.symmetric(horizontal: 20),
+                  height: 50.h,
+                  width: 340.w,
+                  decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.withOpacity(0.5),
+                        spreadRadius: 5,
+                        blurRadius: 7,
+                        offset: Offset(0, 3), // changes position of shadow
+                      ),
+                    ],
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Text("3. Mr.rahul         23.4b          4569000Tk",
+                      style: TextStyle(
+                          fontFamily: "itim",
+                          fontSize: 20,
+                          color: Colors.black))),
             ),
             SizedBox(
               height: 20,
@@ -301,21 +381,28 @@ class _SelllistState extends State<Selllist> {
                     MaterialPageRoute(
                         builder: (context) => CustomersellDetails()));
               },
-              child: Card(
-                child: Container(
-                    alignment: Alignment.center,
-                    margin: EdgeInsets.symmetric(horizontal: 20),
-                    height: 51,
-                    width: 360,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: Text("3. Mr.rahul         23.4b          4569000Tk",
-                        style: TextStyle(
-                            fontFamily: "itim",
-                            fontSize: 20,
-                            color: Colors.black))),
-              ),
+              child: Container(
+                  alignment: Alignment.center,
+                  margin: EdgeInsets.symmetric(horizontal: 20),
+                  height: 50.h,
+                  width: 340.w,
+                  decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.withOpacity(0.5),
+                        spreadRadius: 5,
+                        blurRadius: 7,
+                        offset: Offset(0, 3), // changes position of shadow
+                      ),
+                    ],
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Text("3. Mr.rahul         23.4b          4569000Tk",
+                      style: TextStyle(
+                          fontFamily: "itim",
+                          fontSize: 20,
+                          color: Colors.black))),
             ),
             SizedBox(
               height: 20,
@@ -327,21 +414,28 @@ class _SelllistState extends State<Selllist> {
                     MaterialPageRoute(
                         builder: (context) => CustomersellDetails()));
               },
-              child: Card(
-                child: Container(
-                    alignment: Alignment.center,
-                    margin: EdgeInsets.symmetric(horizontal: 20),
-                    height: 51,
-                    width: 360,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: Text("3. Mr.rahul         23.4b          4569000Tk",
-                        style: TextStyle(
-                            fontFamily: "itim",
-                            fontSize: 20,
-                            color: Colors.black))),
-              ),
+              child: Container(
+                  alignment: Alignment.center,
+                  margin: EdgeInsets.symmetric(horizontal: 20),
+                  height: 50.h,
+                  width: 340.w,
+                  decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.withOpacity(0.5),
+                        spreadRadius: 5,
+                        blurRadius: 7,
+                        offset: Offset(0, 3), // changes position of shadow
+                      ),
+                    ],
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Text("3. Mr.rahul         23.4b          4569000Tk",
+                      style: TextStyle(
+                          fontFamily: "itim",
+                          fontSize: 20,
+                          color: Colors.black))),
             ),
             SizedBox(
               height: 20,
@@ -353,21 +447,28 @@ class _SelllistState extends State<Selllist> {
                     MaterialPageRoute(
                         builder: (context) => CustomersellDetails()));
               },
-              child: Card(
-                child: Container(
-                    alignment: Alignment.center,
-                    margin: EdgeInsets.symmetric(horizontal: 20),
-                    height: 51,
-                    width: 360,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: Text("3. Mr.rahul         23.4b          4569000Tk",
-                        style: TextStyle(
-                            fontFamily: "itim",
-                            fontSize: 20,
-                            color: Colors.black))),
-              ),
+              child: Container(
+                  alignment: Alignment.center,
+                  margin: EdgeInsets.symmetric(horizontal: 20),
+                  height: 50.h,
+                  width: 340.w,
+                  decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.withOpacity(0.5),
+                        spreadRadius: 5,
+                        blurRadius: 7,
+                        offset: Offset(0, 3), // changes position of shadow
+                      ),
+                    ],
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Text("3. Mr.rahul         23.4b          4569000Tk",
+                      style: TextStyle(
+                          fontFamily: "itim",
+                          fontSize: 20,
+                          color: Colors.black))),
             ),
             SizedBox(
               height: 20,
@@ -379,21 +480,28 @@ class _SelllistState extends State<Selllist> {
                     MaterialPageRoute(
                         builder: (context) => CustomersellDetails()));
               },
-              child: Card(
-                child: Container(
-                    alignment: Alignment.center,
-                    margin: EdgeInsets.symmetric(horizontal: 20),
-                    height: 51,
-                    width: 360,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: Text("3. Mr.rahul         23.4b          4569000Tk",
-                        style: TextStyle(
-                            fontFamily: "itim",
-                            fontSize: 20,
-                            color: Colors.black))),
-              ),
+              child: Container(
+                  alignment: Alignment.center,
+                  margin: EdgeInsets.symmetric(horizontal: 20),
+                  height: 50.h,
+                  width: 340.w,
+                  decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.withOpacity(0.5),
+                        spreadRadius: 5,
+                        blurRadius: 7,
+                        offset: Offset(0, 3), // changes position of shadow
+                      ),
+                    ],
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Text("3. Mr.rahul         23.4b          4569000Tk",
+                      style: TextStyle(
+                          fontFamily: "itim",
+                          fontSize: 20,
+                          color: Colors.black))),
             ),
             SizedBox(
               height: 20,
@@ -405,47 +513,59 @@ class _SelllistState extends State<Selllist> {
                     MaterialPageRoute(
                         builder: (context) => CustomersellDetails()));
               },
-              child: Card(
-                child: Container(
-                    alignment: Alignment.center,
-                    margin: EdgeInsets.symmetric(horizontal: 40),
-                    height: 51,
-                    width: 360,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: Text("3. Mr.rahul         23.4b          4569000Tk",
-                        style: TextStyle(
-                            fontFamily: "itim",
-                            fontSize: 20,
-                            color: Colors.black))),
-              ),
+              child: Container(
+                  alignment: Alignment.center,
+                  margin: EdgeInsets.symmetric(horizontal: 20),
+                  height: 50.h,
+                  width: 340.w,
+                  decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.withOpacity(0.5),
+                        spreadRadius: 5,
+                        blurRadius: 7,
+                        offset: Offset(0, 3), // changes position of shadow
+                      ),
+                    ],
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Text("3. Mr.rahul         23.4b          4569000Tk",
+                      style: TextStyle(
+                          fontFamily: "itim",
+                          fontSize: 20,
+                          color: Colors.black))),
             ),
             SizedBox(
               height: 20,
             ),
             InkWell(
               onTap: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => CustomersellDetails()));
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Sell_person()));
               },
-              child: Card(
-                child: Container(
-                    alignment: Alignment.center,
-                    margin: EdgeInsets.symmetric(horizontal: 20),
-                    height: 51,
-                    width: 360,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: Text("3. Mr.rahul         23.4b          4569000Tk",
-                        style: TextStyle(
-                            fontFamily: "itim",
-                            fontSize: 20,
-                            color: Colors.black))),
-              ),
+              child: Container(
+                  alignment: Alignment.center,
+                  margin: EdgeInsets.symmetric(horizontal: 20),
+                  height: 50.h,
+                  width: 340.w,
+                  decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.withOpacity(0.5),
+                        spreadRadius: 5,
+                        blurRadius: 7,
+                        offset: Offset(0, 3), // changes position of shadow
+                      ),
+                    ],
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Text("3. Mr.rahul         23.4b          4569000Tk",
+                      style: TextStyle(
+                          fontFamily: "itim",
+                          fontSize: 20,
+                          color: Colors.black))),
             ),
             SizedBox(
               height: 20,
@@ -453,11 +573,20 @@ class _SelllistState extends State<Selllist> {
             Container(
                 alignment: Alignment.center,
                 margin: EdgeInsets.symmetric(horizontal: 120),
-                height: 51,
-                width: 360,
+                height: 50.h,
+                width: 340.w,
                 decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    color: Color(0xffF7FAFF)),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey.withOpacity(0.5),
+                      spreadRadius: 5,
+                      blurRadius: 7,
+                      offset: Offset(0, 3), // changes position of shadow
+                    ),
+                  ],
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(10),
+                ),
                 child: Text("Total: 8569000Tk",
                     style: TextStyle(
                         fontFamily: "itim",

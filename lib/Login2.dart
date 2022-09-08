@@ -24,8 +24,7 @@ class _Login2State extends State<Login2> {
           Container(
             height: 328,
             width: 375,
-            child:
-            Center(child: Image.asset("assets/Login.gif")),
+            child: Center(child: Image.asset("assets/Login.gif")),
           ),
           SizedBox(
             height: 40.h,
@@ -40,7 +39,7 @@ class _Login2State extends State<Login2> {
                   hintText: "Enter your email or number",
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10.r)),
-                  prefixIcon:Icon(
+                  prefixIcon: Icon(
                     Icons.email,
                     color: Colors.blue,
                   )),
@@ -96,8 +95,8 @@ class _Login2State extends State<Login2> {
             child: Container(
               margin: EdgeInsets.symmetric(horizontal: 110.w),
               alignment: Alignment.center,
-              width: 150.w,
-              height: 60.h,
+              height: 50.h,
+              width: 340.w,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10.r),
                   color: Color(0xffFE8178)),
@@ -114,8 +113,9 @@ class _Login2State extends State<Login2> {
             height: 20.h,
           ),
           InkWell(
-            onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>Choscegmail()));
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => Choscegmail()));
             },
             child: Container(
               margin: EdgeInsets.symmetric(horizontal: 20.w),
@@ -123,7 +123,6 @@ class _Login2State extends State<Login2> {
               width: 200.w,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10.r),
-
                   border: Border.all(color: Colors.cyan)),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -148,12 +147,8 @@ class _Login2State extends State<Login2> {
               ),
             ),
           ),
-
-
-
-              ],
-            ),
-          );
-
+        ],
+      ),
+    );
   }
 }

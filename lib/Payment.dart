@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:goldshop/Paymentcard.dart';
 
 class Payment extends StatefulWidget {
@@ -47,8 +48,8 @@ class _PaymentState extends State<Payment> {
             }),
           ),
           Container(
-            height: 51,
-            width: 354,
+            height: 50.h,
+            width: 340.w,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
                 border: Border.all(color: Color(0xff4DC300))),
@@ -69,8 +70,8 @@ class _PaymentState extends State<Payment> {
             }),
           ),
           Container(
-            height: 51,
-            width: 354,
+            height: 50.h,
+            width: 340.w,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
                 border: Border.all(color: Color(0xff4DC300))),
@@ -91,8 +92,8 @@ class _PaymentState extends State<Payment> {
             }),
           ),
           Container(
-            height: 51,
-            width: 354,
+            height: 50.h,
+            width: 340.w,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
                 border: Border.all(color: Color(0xff4DC300))),
@@ -113,8 +114,8 @@ class _PaymentState extends State<Payment> {
             }),
           ),
           Container(
-            height: 51,
-            width: 354,
+            height: 50.h,
+            width: 340.w,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
                 border: Border.all(color: Color(0xff4DC300))),

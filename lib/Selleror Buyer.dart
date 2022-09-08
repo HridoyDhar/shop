@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:goldshop/LoginorSingup.dart';
 import 'package:goldshop/Savechange.dart';
+
 class SellerorBuyer extends StatefulWidget {
   const SellerorBuyer({Key? key}) : super(key: key);
 
@@ -15,61 +17,60 @@ class _SellerorBuyerState extends State<SellerorBuyer> {
       body: ListView(
         children: [
           SizedBox(
-            height: 200
-            ,
+            height: 200,
           ),
           Container(
             alignment: Alignment.center,
-
-            child: Text("Are you a seller or buyer."
-                "If you want's you sell or buy then click here.",style: TextStyle(
-              fontSize: 30,
-              fontFamily: "itim",
-              color: Colors.black
-            ),),
+            child: Text(
+              "Are you a seller or buyer."
+              "If you want's you sell or buy then click here.",
+              style: TextStyle(
+                  fontSize: 30, fontFamily: "itim", color: Colors.black),
+            ),
           ),
           SizedBox(
             height: 150,
           ),
           InkWell(
-            onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>LoginorSingup()));
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => LoginorSingup()));
             },
             child: Container(
               margin: EdgeInsets.symmetric(horizontal: 20),
               alignment: Alignment.center,
-              height: 50,
-              width: 340,
+              height: 50.h,
+              width: 340.w,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                color: Colors.blue
+                  borderRadius: BorderRadius.circular(10), color: Colors.blue),
+              child: Text(
+                "Seller",
+                style: TextStyle(
+                    fontFamily: "itim", fontSize: 20, color: Colors.white),
               ),
-              child: Text("Seller",
-              style: TextStyle(fontFamily: "itim",
-              fontSize: 20,
-              color: Colors.white),),
             ),
           ),
           SizedBox(
             height: 20,
           ),
           InkWell(
-            onTap:() {
+            onTap: () {
               Navigator.push(context,
                   MaterialPageRoute(builder: (context) => Savechange()));
-            },          child: Container(
-              height: 50,
-              width: 340,
+            },
+            child: Container(
+              height: 50.h,
+              width: 340.w,
               margin: EdgeInsets.symmetric(horizontal: 20),
               alignment: Alignment.center,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Colors.greenAccent
+                  color: Colors.greenAccent),
+              child: Text(
+                "Buyer",
+                style: TextStyle(
+                    fontFamily: "itim", fontSize: 20, color: Colors.white),
               ),
-              child: Text("Buyer",
-                style: TextStyle(fontFamily: "itim",
-                    fontSize: 20,
-                    color: Colors.white),),
             ),
           )
         ],

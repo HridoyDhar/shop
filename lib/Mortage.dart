@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class Mortage extends StatefulWidget {
   const Mortage({Key? key}) : super(key: key);
@@ -22,8 +23,8 @@ class _MortageState extends State<Mortage> {
           Container(
             alignment: Alignment.center,
             margin: EdgeInsets.symmetric(horizontal: 70),
-            height: 42,
-            width: 406,
+            height: 50.h,
+            width: 340.w,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
               color: Colors.black,
@@ -43,8 +44,8 @@ class _MortageState extends State<Mortage> {
           Container(
             alignment: Alignment.center,
             margin: EdgeInsets.symmetric(horizontal: 150),
-            height: 32,
-            width: 130,
+            height: 50.h,
+            width: 340.w,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10), color: Colors.black),
             child: Text(
@@ -57,8 +58,8 @@ class _MortageState extends State<Mortage> {
           Container(
             margin: EdgeInsets.symmetric(horizontal: 20),
             alignment: Alignment.centerLeft,
-            height: 51,
-            width: 406,
+            height: 50.h,
+            width: 340.w,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
                 color: Color(0xff0000000)),
@@ -72,8 +73,8 @@ class _MortageState extends State<Mortage> {
           Container(
             alignment: Alignment.centerLeft,
             margin: EdgeInsets.symmetric(horizontal: 20),
-            height: 51,
-            width: 406,
+            height: 50.h,
+            width: 340.w,
             decoration: BoxDecoration(
               color: Color(0xff000000),
               borderRadius: BorderRadius.circular(10),
@@ -89,8 +90,8 @@ class _MortageState extends State<Mortage> {
           Container(
             alignment: Alignment.centerLeft,
             margin: EdgeInsets.symmetric(horizontal: 20),
-            height: 51,
-            width: 406,
+            height: 50.h,
+            width: 340.w,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
                 color: Color(0xff000000)),
@@ -104,8 +105,8 @@ class _MortageState extends State<Mortage> {
           Container(
             alignment: Alignment.center,
             margin: EdgeInsets.symmetric(horizontal: 150),
-            height: 51,
-            width: 273,
+            height: 50.h,
+            width: 340.w,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10), color: Colors.black),
             child: Text(
@@ -118,8 +119,8 @@ class _MortageState extends State<Mortage> {
           Container(
             alignment: Alignment.center,
             margin: EdgeInsets.symmetric(horizontal: 200),
-            height: 51,
-            width: 273,
+            height: 50.h,
+            width: 340.w,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10), color: Colors.black),
             child: Text(
@@ -132,8 +133,8 @@ class _MortageState extends State<Mortage> {
           Container(
             alignment: Alignment.centerLeft,
             margin: EdgeInsets.symmetric(horizontal: 20),
-            height: 51,
-            width: 273,
+            height: 50.h,
+            width: 340.w,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10), color: Colors.black),
             child: Text(
@@ -146,8 +147,8 @@ class _MortageState extends State<Mortage> {
           Container(
             alignment: Alignment.centerLeft,
             margin: EdgeInsets.symmetric(horizontal: 20),
-            height: 51,
-            width: 273,
+            height: 50.h,
+            width: 340.w,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10), color: Colors.black),
             child: Text(
@@ -160,8 +161,8 @@ class _MortageState extends State<Mortage> {
           Container(
             alignment: Alignment.centerLeft,
             margin: EdgeInsets.symmetric(horizontal: 20),
-            height: 51,
-            width: 273,
+            height: 50.h,
+            width: 340.w,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10), color: Colors.white),
             child: Text(
@@ -174,8 +175,8 @@ class _MortageState extends State<Mortage> {
           Container(
             alignment: Alignment.centerLeft,
             margin: EdgeInsets.symmetric(horizontal: 20),
-            height: 51,
-            width: 273,
+            height: 50.h,
+            width: 340.w,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10), color: Colors.black),
             child: Text(
@@ -186,8 +187,8 @@ class _MortageState extends State<Mortage> {
           ),
           SizedBox(height: 10),
           Container(
-            height: 40,
-            width: 151,
+            height: 50.h,
+            width: 340.w,
             alignment: Alignment.center,
             margin: EdgeInsets.symmetric(horizontal: 150),
             decoration: BoxDecoration(
@@ -204,8 +205,8 @@ class _MortageState extends State<Mortage> {
           Container(
             alignment: Alignment.center,
             margin: EdgeInsets.symmetric(horizontal: 200),
-            height: 51,
-            width: 273,
+            height: 50.h,
+            width: 340.w,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10), color: Colors.black),
             child: Text(
@@ -218,8 +219,8 @@ class _MortageState extends State<Mortage> {
           Container(
             alignment: Alignment.center,
             margin: EdgeInsets.symmetric(horizontal: 220),
-            height: 40,
-            width: 151,
+            height: 50.h,
+            width: 340.w,
             decoration: BoxDecoration(
                 color: Color(0xffFF928E),
                 borderRadius: BorderRadius.circular(10)),

@@ -67,7 +67,7 @@ class _Home_pageState extends State<Home_page> {
               itemBuilder: (context, index) {
                 return Padding(
                   padding:
-                  EdgeInsets.symmetric(horizontal: 20.w, vertical: 10.h),
+                      EdgeInsets.symmetric(horizontal: 20.w, vertical: 10.h),
                   child: Container(
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(30.r)),
@@ -82,12 +82,12 @@ class _Home_pageState extends State<Home_page> {
                               children: [
                                 Container(
                                   padding:
-                                  EdgeInsets.symmetric(horizontal: 5.w),
+                                      EdgeInsets.symmetric(horizontal: 5.w),
                                   child: Center(
                                     child: CircleAvatar(
                                         radius: 35.r,
                                         backgroundImage:
-                                        AssetImage("assets/Person.png")),
+                                            AssetImage("assets/Person.png")),
                                   ),
                                 ),
                                 SizedBox(
@@ -165,7 +165,7 @@ class _Home_pageState extends State<Home_page> {
                               children: [
                                 Container(
                                   padding:
-                                  EdgeInsets.symmetric(horizontal: 5.w),
+                                      EdgeInsets.symmetric(horizontal: 5.w),
                                   child: IconButton(
                                       onPressed: () {},
                                       icon: Icon(
@@ -185,7 +185,7 @@ class _Home_pageState extends State<Home_page> {
                                 ),
                                 Container(
                                   padding:
-                                  EdgeInsets.symmetric(horizontal: 5.w),
+                                      EdgeInsets.symmetric(horizontal: 5.w),
                                   child: IconButton(
                                       onPressed: () {},
                                       icon: Icon(
@@ -205,7 +205,7 @@ class _Home_pageState extends State<Home_page> {
                                 ),
                                 Container(
                                   padding:
-                                  EdgeInsets.symmetric(horizontal: 5.w),
+                                      EdgeInsets.symmetric(horizontal: 5.w),
                                   child: IconButton(
                                       onPressed: () {},
                                       icon: Icon(
@@ -232,80 +232,137 @@ class _Home_pageState extends State<Home_page> {
               }),
         )
       ]),
-      bottomNavigationBar: BottomNavigationBar(
-        items: [
-          BottomNavigationBarItem(
-              icon: IconButton(
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Home_page()));
-                },
-                icon: Icon(Icons.home),
-                color: Colors.blue,
+      bottomNavigationBar: BottomAppBar(
+        color: Colors.blueAccent,
+        // this creates a notch in the center of the bottom bar
+        shape: const CircularNotchedRectangle(),
+        notchMargin: 8,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            IconButton(
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Home_page()));
+              },
+              icon: const Icon(
+                Icons.home,
+                color: Colors.white,
               ),
-              label: "Home"),
-          BottomNavigationBarItem(
-              icon: IconButton(
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Likepage()));
-                },
-                icon: Icon(Icons.logo_dev),
-                color: Colors.blue,
+            ),
+            IconButton(
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => ShopLocation()));
+              },
+              icon: const Icon(
+                Icons.shop,
+                color: Colors.white,
               ),
-              label: "like"),
-          BottomNavigationBarItem(
-              icon: IconButton(
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Postyou()));
-                },
-                icon: Icon(Icons.post_add),
-                color: Colors.blue,
+            ),
+            IconButton(
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Notifi_cation()));
+              },
+              icon: const Icon(
+                Icons.notifications,
+                color: Colors.white,
               ),
-              label: "Post"),
-          BottomNavigationBarItem(
-              icon: IconButton(
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Commentpeople()));
-                },
-                icon: Icon(Icons.comment),
-                color: Colors.blue,
+            ),
+            IconButton(
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => profilepage()));
+              },
+              icon: const Icon(
+                Icons.person,
+                color: Colors.white,
               ),
-              label: "Comment"),
-          BottomNavigationBarItem(
-              icon: IconButton(
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Notifi_cation()));
-                },
-                icon: Icon(Icons.notifications),
-                color: Colors.blue,
-              ),
-              label: "Notification"),
-          BottomNavigationBarItem(
-              icon: IconButton(
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => ShopLocation()));
-                },
-                icon: Icon(Icons.shopping_bag),
-                color: Colors.blue,
-              ),
-              label: "Shop"),
-          BottomNavigationBarItem(
-              icon: IconButton(
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => profilepage()));
-                },
-                icon: Icon(Icons.person),
-                color: Colors.blue,
-              ),
-              label: "Person"),
-        ],
+            ),
+          ],
+        ),
       ),
+      // implement the floating button
+      floatingActionButton: FloatingActionButton(
+          onPressed: () {},
+          backgroundColor: Colors.amber,
+          child: const Icon(Icons.add)),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      // bottomNavigationBar: BottomNavigationBar(
+      //   items: [
+      //     BottomNavigationBarItem(
+      //         icon: IconButton(
+      //           onPressed: () {
+      //             Navigator.push(context,
+      //                 MaterialPageRoute(builder: (context) => Home_page()));
+      //           },
+      //           icon: Icon(Icons.home),
+      //           color: Colors.blue,
+      //         ),
+      //         label: "Home"),
+      //     BottomNavigationBarItem(
+      //         icon: IconButton(
+      //           onPressed: () {
+      //             Navigator.push(context,
+      //                 MaterialPageRoute(builder: (context) => Likepage()));
+      //           },
+      //           icon: Icon(Icons.logo_dev),
+      //           color: Colors.blue,
+      //         ),
+      //         label: "like"),
+      //     BottomNavigationBarItem(
+      //         icon: IconButton(
+      //           onPressed: () {
+      //             Navigator.push(context,
+      //                 MaterialPageRoute(builder: (context) => Postyou()));
+      //           },
+      //           icon: Icon(Icons.post_add),
+      //           color: Colors.blue,
+      //         ),
+      //         label: "Post"),
+      //     BottomNavigationBarItem(
+      //         icon: IconButton(
+      //           onPressed: () {
+      //             Navigator.push(context,
+      //                 MaterialPageRoute(builder: (context) => Commentpeople()));
+      //           },
+      //           icon: Icon(Icons.comment),
+      //           color: Colors.blue,
+      //         ),
+      //         label: "Comment"),
+      //     BottomNavigationBarItem(
+      //         icon: IconButton(
+      //           onPressed: () {
+      //             Navigator.push(context,
+      //                 MaterialPageRoute(builder: (context) => Notifi_cation()));
+      //           },
+      //           icon: Icon(Icons.notifications),
+      //           color: Colors.blue,
+      //         ),
+      //         label: "Notification"),
+      //     BottomNavigationBarItem(
+      //         icon: IconButton(
+      //           onPressed: () {
+      //             Navigator.push(context,
+      //                 MaterialPageRoute(builder: (context) => ShopLocation()));
+      //           },
+      //           icon: Icon(Icons.shopping_bag),
+      //           color: Colors.blue,
+      //         ),
+      //         label: "Shop"),
+      //     BottomNavigationBarItem(
+      //         icon: IconButton(
+      //           onPressed: () {
+      //             Navigator.push(context,
+      //                 MaterialPageRoute(builder: (context) => profilepage()));
+      //           },
+      //           icon: Icon(Icons.person),
+      //           color: Colors.blue,
+      //         ),
+      //         label: "Person"),
+      //   ],
+      // ),
     );
   }
 }

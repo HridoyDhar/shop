@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class Paymentlist extends StatefulWidget {
   const Paymentlist({Key? key}) : super(key: key);
@@ -21,8 +22,8 @@ class _PaymentlistState extends State<Paymentlist> {
               child: Container(
                   alignment: Alignment.center,
                   margin: EdgeInsets.symmetric(horizontal: 100),
-                  height: 32,
-                  width: 130,
+                  height: 50.h,
+                  width: 340.w,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
                   ),
@@ -37,8 +38,8 @@ class _PaymentlistState extends State<Paymentlist> {
             ),
             Card(
               child: Container(
-                  height: 33,
-                  width: 340,
+                  height: 50.h,
+                  width: 340.w,
                   child: TextField(
                     decoration: InputDecoration(
                         labelText: "Search",
@@ -55,8 +56,8 @@ class _PaymentlistState extends State<Paymentlist> {
               child: Container(
                   alignment: Alignment.centerLeft,
                   margin: EdgeInsets.symmetric(horizontal: 20),
-                  height: 51,
-                  width: 350,
+                  height: 50.h,
+                  width: 340.w,
                   decoration: BoxDecoration(
                     border: Border.all(color: Colors.black),
                     borderRadius: BorderRadius.circular(10),
@@ -71,8 +72,8 @@ class _PaymentlistState extends State<Paymentlist> {
               child: Container(
                   alignment: Alignment.centerLeft,
                   margin: EdgeInsets.symmetric(horizontal: 20),
-                  height: 51,
-                  width: 350,
+                  height: 50.h,
+                  width: 340.w,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
                     border: Border.all(color: Colors.black),
@@ -87,8 +88,8 @@ class _PaymentlistState extends State<Paymentlist> {
               child: Container(
                   alignment: Alignment.centerLeft,
                   margin: EdgeInsets.symmetric(horizontal: 20),
-                  height: 51,
-                  width: 350,
+                  height: 50.h,
+                  width: 340.w,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
                     border: Border.all(color: Colors.black),
@@ -103,8 +104,8 @@ class _PaymentlistState extends State<Paymentlist> {
               child: Container(
                   alignment: Alignment.centerLeft,
                   margin: EdgeInsets.symmetric(horizontal: 20),
-                  height: 51,
-                  width: 350,
+                  height: 50.h,
+                  width: 340.w,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
                     border: Border.all(color: Colors.black),
@@ -119,8 +120,8 @@ class _PaymentlistState extends State<Paymentlist> {
               child: Container(
                   alignment: Alignment.centerLeft,
                   margin: EdgeInsets.symmetric(horizontal: 20),
-                  height: 51,
-                  width: 350,
+                  height: 50.h,
+                  width: 340.w,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
                     border: Border.all(color: Colors.black),
@@ -135,8 +136,8 @@ class _PaymentlistState extends State<Paymentlist> {
               child: Container(
                   alignment: Alignment.centerLeft,
                   margin: EdgeInsets.symmetric(horizontal: 20),
-                  height: 51,
-                  width: 350,
+                  height: 50.h,
+                  width: 340.w,
                   decoration: BoxDecoration(
                     border: Border.all(color: Colors.black),
                     borderRadius: BorderRadius.circular(10),
@@ -151,8 +152,8 @@ class _PaymentlistState extends State<Paymentlist> {
               child: Container(
                   alignment: Alignment.center,
                   margin: EdgeInsets.symmetric(horizontal: 100),
-                  height: 51,
-                  width: 350,
+                  height: 50.h,
+                  width: 340.w,
                   decoration: BoxDecoration(
                     border: Border.all(color: Colors.black),
                     borderRadius: BorderRadius.circular(10),

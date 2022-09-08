@@ -9,6 +9,7 @@ import 'package:goldshop/Notifi_cation.dart';
 import 'package:goldshop/Postyou.dart';
 import 'package:goldshop/Profilepage.dart';
 import 'package:goldshop/ShopLocation.dart';
+
 class Commentpeople extends StatefulWidget {
   const Commentpeople({Key? key}) : super(key: key);
 
@@ -21,86 +22,63 @@ class _CommentpeopleState extends State<Commentpeople> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        bottomNavigationBar: BottomNavigationBar(
-          items: [
-            BottomNavigationBarItem(
-                icon: IconButton(
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Home_page()));
-                  },
-                  icon: Icon(Icons.home),
-                  color: Colors.blue,
+        bottomNavigationBar: BottomAppBar(
+          color: Colors.blueAccent,
+          // this creates a notch in the center of the bottom bar
+          shape: const CircularNotchedRectangle(),
+          notchMargin: 8,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              IconButton(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Home_page()));
+                },
+                icon: const Icon(
+                  Icons.home,
+                  color: Colors.white,
                 ),
-                label: "Home"),
-            BottomNavigationBarItem(
-                icon: IconButton(
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Likepage()));
-                  },
-                  icon: Icon(Icons.logo_dev),
-                  color: Colors.blue,
+              ),
+              IconButton(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => ShopLocation()));
+                },
+                icon: const Icon(
+                  Icons.shop,
+                  color: Colors.white,
                 ),
-                label: "like"),
-            BottomNavigationBarItem(
-                icon: IconButton(
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Postyou()));
-                  },
-                  icon: Icon(Icons.post_add),
-                  color: Colors.blue,
+              ),
+              IconButton(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Notifi_cation()));
+                },
+                icon: const Icon(
+                  Icons.notifications,
+                  color: Colors.white,
                 ),
-                label: "Post"),
-            BottomNavigationBarItem(
-                icon: IconButton(
-                  onPressed: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => Commentpeople()));
-                  },
-                  icon: Icon(Icons.comment),
-                  color: Colors.blue,
+              ),
+              IconButton(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => profilepage()));
+                },
+                icon: const Icon(
+                  Icons.person,
+                  color: Colors.white,
                 ),
-                label: "Comment"),
-            BottomNavigationBarItem(
-                icon: IconButton(
-                  onPressed: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => Notifi_cation()));
-                  },
-                  icon: Icon(Icons.notifications),
-                  color: Colors.blue,
-                ),
-                label: "Notification"),
-            BottomNavigationBarItem(
-                icon: IconButton(
-                  onPressed: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => ShopLocation()));
-                  },
-                  icon: Icon(Icons.shopping_bag),
-                  color: Colors.blue,
-                ),
-                label: "Shop"),
-            BottomNavigationBarItem(
-                icon: IconButton(
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => profilepage()));
-                  },
-                  icon: Icon(Icons.person),
-                  color: Colors.blue,
-                ),
-                label: "Person"),
-          ],
+              ),
+            ],
+          ),
         ),
+        // implement the floating button
+        floatingActionButton: FloatingActionButton(
+            onPressed: () {},
+            backgroundColor: Colors.amber,
+            child: const Icon(Icons.add)),
+        floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
         body: Padding(
           padding: EdgeInsets.only(top: 20.h),
           child: ListView.builder(
@@ -112,9 +90,9 @@ class _CommentpeopleState extends State<Commentpeople> {
                   child: ListTile(
                     leading: Container(
                         child: CircleAvatar(
-                          backgroundImage: AssetImage("assets/Ellipse60.png"),
-                          radius: 50.r,
-                        )),
+                      backgroundImage: AssetImage("assets/Ellipse60.png"),
+                      radius: 50.r,
+                    )),
                     title: Text("Algibentna comment on your post",
                         style: TextStyle(
                           fontFamily: "itim",

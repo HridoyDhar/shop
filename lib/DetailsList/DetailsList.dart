@@ -31,80 +31,63 @@ class _DetailsListState extends State<DetailsList> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: BottomNavigationBar(
-        items: [
-          BottomNavigationBarItem(
-              icon: IconButton(
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Home_page()));
-                },
-                icon: Icon(Icons.home),
-                color: Colors.blue,
+      bottomNavigationBar: BottomAppBar(
+        color: Colors.blueAccent,
+        // this creates a notch in the center of the bottom bar
+        shape: const CircularNotchedRectangle(),
+        notchMargin: 8,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            IconButton(
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Home_page()));
+              },
+              icon: const Icon(
+                Icons.home,
+                color: Colors.white,
               ),
-              label: "Home"),
-          BottomNavigationBarItem(
-              icon: IconButton(
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Likepage()));
-                },
-                icon: Icon(Icons.logo_dev),
-                color: Colors.blue,
+            ),
+            IconButton(
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => ShopLocation()));
+              },
+              icon: const Icon(
+                Icons.shop,
+                color: Colors.white,
               ),
-              label: "like"),
-          BottomNavigationBarItem(
-              icon: IconButton(
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Postyou()));
-                },
-                icon: Icon(Icons.post_add),
-                color: Colors.blue,
+            ),
+            IconButton(
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Notifi_cation()));
+              },
+              icon: const Icon(
+                Icons.notifications,
+                color: Colors.white,
               ),
-              label: "Post"),
-          BottomNavigationBarItem(
-              icon: IconButton(
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Commentpeople()));
-                },
-                icon: Icon(Icons.comment),
-                color: Colors.blue,
+            ),
+            IconButton(
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => profilepage()));
+              },
+              icon: const Icon(
+                Icons.person,
+                color: Colors.white,
               ),
-              label: "Comment"),
-          BottomNavigationBarItem(
-              icon: IconButton(
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Notifi_cation()));
-                },
-                icon: Icon(Icons.notifications),
-                color: Colors.blue,
-              ),
-              label: "Notification"),
-          BottomNavigationBarItem(
-              icon: IconButton(
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => ShopLocation()));
-                },
-                icon: Icon(Icons.shopping_bag),
-                color: Colors.blue,
-              ),
-              label: "Shop"),
-          BottomNavigationBarItem(
-              icon: IconButton(
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => profilepage()));
-                },
-                icon: Icon(Icons.person),
-                color: Colors.blue,
-              ),
-              label: "Person"),
-        ],
+            ),
+          ],
+        ),
       ),
+      // implement the floating button
+      floatingActionButton: FloatingActionButton(
+          onPressed: () {},
+          backgroundColor: Colors.amber,
+          child: const Icon(Icons.add)),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       body: Container(
           padding: EdgeInsets.symmetric(horizontal: 10),
           child: ListView(children: [
@@ -400,8 +383,8 @@ class _DetailsListState extends State<DetailsList> {
               child: Card(
                 child: Container(
                   margin: EdgeInsets.symmetric(horizontal: 20.w),
-                  height: 40.h,
-                  width: 200.w,
+                  height: 50.h,
+                  width: 340.w,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10.r),
                   ),
@@ -440,8 +423,8 @@ class _DetailsListState extends State<DetailsList> {
               child: Card(
                 child: Container(
                   margin: EdgeInsets.symmetric(horizontal: 20.w),
-                  height: 40.h,
-                  width: 200.w,
+                  height: 50.h,
+                  width: 340.w,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10.r),
                   ),
@@ -480,8 +463,8 @@ class _DetailsListState extends State<DetailsList> {
               child: Card(
                 child: Container(
                   margin: EdgeInsets.symmetric(horizontal: 20.w),
-                  height: 40.h,
-                  width: 200.w,
+                  height: 50.h,
+                  width: 340.w,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10.r),
                   ),
@@ -520,9 +503,18 @@ class _DetailsListState extends State<DetailsList> {
               child: Card(
                 child: Container(
                   margin: EdgeInsets.symmetric(horizontal: 20.w),
-                  height: 40.h,
-                  width: 200.w,
+                  height: 50.h,
+                  width: 340.w,
                   decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.withOpacity(0.5),
+                        spreadRadius: 5,
+                        blurRadius: 7,
+                        offset: Offset(0, 3), // changes position of shadow
+                      ),
+                    ],
+                    color: Colors.white,
                     borderRadius: BorderRadius.circular(10.r),
                   ),
                   child: Row(
@@ -560,8 +552,8 @@ class _DetailsListState extends State<DetailsList> {
               child: Card(
                 child: Container(
                   margin: EdgeInsets.symmetric(horizontal: 20.w),
-                  height: 40.h,
-                  width: 200.w,
+                  height: 50.h,
+                  width: 340.w,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10.r),
                   ),
@@ -600,8 +592,8 @@ class _DetailsListState extends State<DetailsList> {
               child: Card(
                 child: Container(
                   margin: EdgeInsets.symmetric(horizontal: 20.w),
-                  height: 40.h,
-                  width: 200.w,
+                  height: 50.h,
+                  width: 340.w,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10.r),
                   ),
@@ -640,8 +632,8 @@ class _DetailsListState extends State<DetailsList> {
               child: Card(
                 child: Container(
                   margin: EdgeInsets.symmetric(horizontal: 20.w),
-                  height: 40.h,
-                  width: 200.w,
+                  height: 50.h,
+                  width: 340.w,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10.r),
                   ),
@@ -680,8 +672,8 @@ class _DetailsListState extends State<DetailsList> {
               child: Card(
                 child: Container(
                   margin: EdgeInsets.symmetric(horizontal: 20.w),
-                  height: 40.h,
-                  width: 200.w,
+                  height: 50.h,
+                  width: 340.w,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10.r),
                   ),

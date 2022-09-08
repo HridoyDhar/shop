@@ -13,6 +13,7 @@ import 'package:goldshop/Profilepage.dart';
 import 'package:goldshop/Savepost.dart';
 import 'package:goldshop/ShopLocation.dart';
 import 'package:goldshop/StarMark.dart';
+
 class Profilepost extends StatefulWidget {
   const Profilepost({Key? key}) : super(key: key);
 
@@ -25,94 +26,71 @@ class _ProfilepostState extends State<Profilepost> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        bottomNavigationBar: BottomNavigationBar(
-          items: [
-            BottomNavigationBarItem(
-                icon: IconButton(
+          bottomNavigationBar: BottomAppBar(
+            color: Colors.blueAccent,
+            // this creates a notch in the center of the bottom bar
+            shape: const CircularNotchedRectangle(),
+            notchMargin: 8,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                IconButton(
                   onPressed: () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) => Home_page()));
                   },
-                  icon: Icon(Icons.home),
-                  color: Colors.blue,
+                  icon: const Icon(
+                    Icons.home,
+                    color: Colors.white,
+                  ),
                 ),
-                label: "Home"),
-            BottomNavigationBarItem(
-                icon: IconButton(
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Likepage()));
-                  },
-                  icon: Icon(Icons.logo_dev),
-                  color: Colors.blue,
-                ),
-                label: "like"),
-            BottomNavigationBarItem(
-                icon: IconButton(
-                  onPressed: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => Postyou()));
-                  },
-                  icon: Icon(Icons.post_add),
-                  color: Colors.blue,
-                ),
-                label: "Post"),
-            BottomNavigationBarItem(
-                icon: IconButton(
-                  onPressed: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => Commentpeople()));
-                  },
-                  icon: Icon(Icons.comment),
-                  color: Colors.blue,
-                ),
-                label: "Comment"),
-            BottomNavigationBarItem(
-                icon: IconButton(
-                  onPressed: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => Notifi_cation()));
-                  },
-                  icon: Icon(Icons.notifications),
-                  color: Colors.blue,
-                ),
-                label: "Notification"),
-            BottomNavigationBarItem(
-                icon: IconButton(
+                IconButton(
                   onPressed: () {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
                             builder: (context) => ShopLocation()));
                   },
-                  icon: Icon(Icons.shopping_bag),
-                  color: Colors.blue,
+                  icon: const Icon(
+                    Icons.shop,
+                    color: Colors.white,
+                  ),
                 ),
-                label: "Shop"),
-            BottomNavigationBarItem(
-                icon: IconButton(
+                IconButton(
                   onPressed: () {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => profilepage()));
+                            builder: (context) => Notifi_cation()));
                   },
-                  icon: Icon(Icons.person),
-                  color: Colors.blue,
+                  icon: const Icon(
+                    Icons.notifications,
+                    color: Colors.white,
+                  ),
                 ),
-                label: "Person"),
-          ],
-        ),
-        body: Container(
-          padding: EdgeInsets.symmetric(horizontal: 10.w),
-          child: ListView(
-            children: [
+                IconButton(
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => profilepage()));
+                  },
+                  icon: const Icon(
+                    Icons.person,
+                    color: Colors.white,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          // implement the floating button
+          floatingActionButton: FloatingActionButton(
+              onPressed: () {},
+              backgroundColor: Colors.amber,
+              child: const Icon(Icons.add)),
+          floatingActionButtonLocation:
+              FloatingActionButtonLocation.centerDocked,
+          body: Container(
+            padding: EdgeInsets.symmetric(horizontal: 10.w),
+            child: ListView(children: [
               SizedBox(
                 height: 15.h,
               ),
@@ -123,7 +101,6 @@ class _ProfilepostState extends State<Profilepost> {
                     // width: 94.w,
                     child: CircleAvatar(
                       backgroundImage: AssetImage("assets/Ellipse60.png"),
-
                       radius: 50.r,
                     ),
                   ),
@@ -345,10 +322,8 @@ class _ProfilepostState extends State<Profilepost> {
                   ),
                   InkWell(
                     onTap: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => StarMark()));
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => StarMark()));
                     },
                     child: Container(
                       width: 70.w,
@@ -427,11 +402,8 @@ class _ProfilepostState extends State<Profilepost> {
                       })),
                 ),
               )
-    ]
-      ),
-    )
-      ),
-
+            ]),
+          )),
     );
   }
 }

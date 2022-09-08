@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:goldshop/login.dart';
 
 class Savechange extends StatefulWidget {
@@ -113,8 +114,8 @@ class _SavechangeState extends State<Savechange> {
                     },
                     child: Container(
                       alignment: Alignment.center,
-                      width: 307,
-                      height: 46,
+                      height: 50.h,
+                      width: 340.w,
                       decoration: BoxDecoration(
                           color: Color(0xffFF928E),
                           borderRadius: BorderRadius.circular(9)),

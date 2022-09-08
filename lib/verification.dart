@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:goldshop/Home_page.dart';
-
 
 class verification extends StatefulWidget {
   const verification({Key? key}) : super(key: key);
@@ -29,7 +29,7 @@ class _verificationState extends State<verification> {
                 labelText: "New password",
                 hintText: "Enter your new password",
                 border:
-                OutlineInputBorder(borderRadius: BorderRadius.circular(20)),
+                    OutlineInputBorder(borderRadius: BorderRadius.circular(20)),
 
                 prefixIcon: Icon(
                   Icons.panorama_fish_eye,
@@ -51,8 +51,8 @@ class _verificationState extends State<verification> {
             },
           ),
           Container(
-              height: 52,
-              width: 100,
+              height: 50.h,
+              width: 340.w,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
                   color: Color(0xff000000)),

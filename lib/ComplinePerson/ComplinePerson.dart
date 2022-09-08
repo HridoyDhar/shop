@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class ComplilnePerson extends StatefulWidget {
   const ComplilnePerson({Key? key}) : super(key: key);
@@ -20,8 +21,8 @@ class _ComplilnePersonState extends State<ComplilnePerson> {
           Container(
             alignment: Alignment.center,
             margin: EdgeInsets.symmetric(horizontal: 90),
-            height: 50,
-            width: 300,
+            height: 50.h,
+            width: 340.w,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
                 border: Border.all(color: Colors.blueAccent)),
@@ -38,8 +39,8 @@ class _ComplilnePersonState extends State<ComplilnePerson> {
             child: Container(
               alignment: Alignment.center,
               margin: EdgeInsets.symmetric(horizontal: 20),
-              height: 51,
-              width: 373,
+              height: 50.h,
+              width: 340.w,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
               ),
@@ -57,8 +58,8 @@ class _ComplilnePersonState extends State<ComplilnePerson> {
             child: Container(
               alignment: Alignment.center,
               margin: EdgeInsets.symmetric(horizontal: 20),
-              height: 51,
-              width: 373,
+              height: 50.h,
+              width: 340.w,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
               ),
@@ -76,8 +77,8 @@ class _ComplilnePersonState extends State<ComplilnePerson> {
             child: Container(
               alignment: Alignment.center,
               margin: EdgeInsets.symmetric(horizontal: 20),
-              height: 51,
-              width: 373,
+              height: 50.h,
+              width: 340.w,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
               ),

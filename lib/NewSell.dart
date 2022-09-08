@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class NewSell extends StatefulWidget {
   const NewSell({Key? key}) : super(key: key);
@@ -19,9 +20,18 @@ class _NewSellState extends State<NewSell> {
         Container(
           alignment: Alignment.center,
           margin: EdgeInsets.symmetric(horizontal: 20),
-          height: 51,
-          width: 368,
+          height: 50.h,
+          width: 340.w,
           decoration: BoxDecoration(
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.grey.withOpacity(0.5),
+                  spreadRadius: 5,
+                  blurRadius: 7,
+                  offset: Offset(0, 3), // changes position of shadow
+                ),
+              ],
+              color: Colors.white,
               borderRadius: BorderRadius.circular(10),
               border: Border.all(color: Colors.blue)),
           child: Text(
@@ -36,9 +46,18 @@ class _NewSellState extends State<NewSell> {
         Container(
           margin: EdgeInsets.symmetric(horizontal: 80),
           alignment: Alignment.center,
-          height: 50,
-          width: 300,
+          height: 50.h,
+          width: 340.w,
           decoration: BoxDecoration(
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.grey.withOpacity(0.5),
+                  spreadRadius: 5,
+                  blurRadius: 7,
+                  offset: Offset(0, 3), // changes position of shadow
+                ),
+              ],
+              color: Colors.white,
               borderRadius: BorderRadius.circular(10),
               border: Border.all(color: Colors.blue)),
           child: Text(
@@ -505,11 +524,20 @@ class _NewSellState extends State<NewSell> {
           height: 20,
         ),
         Container(
-          height: 50,
-          width: 300,
+          height: 50.h,
+          width: 340.w,
           alignment: Alignment.center,
           margin: EdgeInsets.symmetric(horizontal: 80),
           decoration: BoxDecoration(
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.grey.withOpacity(0.5),
+                  spreadRadius: 5,
+                  blurRadius: 7,
+                  offset: Offset(0, 3), // changes position of shadow
+                ),
+              ],
+              color: Colors.white,
               borderRadius: BorderRadius.circular(10),
               border: Border.all(color: Colors.blue)),
           child: Text(

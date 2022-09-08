@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomersellDetails extends StatefulWidget {
   const CustomersellDetails({Key? key}) : super(key: key);
@@ -20,9 +21,18 @@ class _CustomersellDetailsState extends State<CustomersellDetails> {
           Container(
               alignment: Alignment.center,
               margin: EdgeInsets.symmetric(horizontal: 20),
-              height: 42,
-              width: 376,
+              height: 50.h,
+              width: 340.w,
               decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey.withOpacity(0.5),
+                      spreadRadius: 5,
+                      blurRadius: 7,
+                      offset: Offset(0, 3), // changes position of shadow
+                    ),
+                  ],
+                  color: Colors.white,
                   borderRadius: BorderRadius.circular(10),
                   border: Border.all(color: Colors.blue)),
               child: Text("Krishna Gold Shop",
@@ -34,9 +44,18 @@ class _CustomersellDetailsState extends State<CustomersellDetails> {
           Container(
             margin: EdgeInsets.symmetric(horizontal: 100),
             alignment: Alignment.center,
-            height: 50,
-            width: 300,
+            height: 50.h,
+            width: 340.w,
             decoration: BoxDecoration(
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.grey.withOpacity(0.5),
+                  spreadRadius: 5,
+                  blurRadius: 7,
+                  offset: Offset(0, 3), // changes position of shadow
+                ),
+              ],
+              color: Colors.white,
               border: Border.all(color: Colors.blue),
               borderRadius: BorderRadius.circular(10),
             ),
@@ -51,8 +70,8 @@ class _CustomersellDetailsState extends State<CustomersellDetails> {
             child: Container(
               alignment: Alignment.center,
               margin: EdgeInsets.symmetric(horizontal: 20),
-              height: 51,
-              width: 372,
+              height: 50.h,
+              width: 340.w,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
               ),
@@ -68,8 +87,8 @@ class _CustomersellDetailsState extends State<CustomersellDetails> {
             child: Container(
               alignment: Alignment.center,
               margin: EdgeInsets.symmetric(horizontal: 20),
-              height: 51,
-              width: 372,
+              height: 50.h,
+              width: 340.w,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
               ),
@@ -85,8 +104,8 @@ class _CustomersellDetailsState extends State<CustomersellDetails> {
             child: Container(
               alignment: Alignment.center,
               margin: EdgeInsets.symmetric(horizontal: 20),
-              height: 51,
-              width: 372,
+              height: 50.h,
+              width: 340.w,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
               ),
@@ -102,8 +121,8 @@ class _CustomersellDetailsState extends State<CustomersellDetails> {
             child: Container(
               alignment: Alignment.center,
               margin: EdgeInsets.symmetric(horizontal: 20),
-              height: 51,
-              width: 372,
+              height: 50.h,
+              width: 340.w,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
               ),
@@ -119,8 +138,8 @@ class _CustomersellDetailsState extends State<CustomersellDetails> {
             child: Container(
               alignment: Alignment.center,
               margin: EdgeInsets.symmetric(horizontal: 20),
-              height: 51,
-              width: 372,
+              height: 50.h,
+              width: 340.w,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
               ),
@@ -136,9 +155,10 @@ class _CustomersellDetailsState extends State<CustomersellDetails> {
             child: Container(
               alignment: Alignment.center,
               margin: EdgeInsets.symmetric(horizontal: 20),
-              height: 51,
-              width: 372,
+              height: 50.h,
+              width: 340.w,
               decoration: BoxDecoration(
+                color: Colors.white,
                 borderRadius: BorderRadius.circular(10),
               ),
               child: Text("3.Ring       2b        30000Tk",
@@ -153,8 +173,8 @@ class _CustomersellDetailsState extends State<CustomersellDetails> {
             child: Container(
               margin: EdgeInsets.symmetric(horizontal: 80),
               alignment: Alignment.center,
-              height: 50,
-              width: 300,
+              height: 50.h,
+              width: 340.w,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
               ),
@@ -169,9 +189,18 @@ class _CustomersellDetailsState extends State<CustomersellDetails> {
           Container(
             margin: EdgeInsets.symmetric(horizontal: 100),
             alignment: Alignment.center,
-            height: 50,
-            width: 300,
+            height: 50.h,
+            width: 340.w,
             decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 5,
+                    blurRadius: 7,
+                    offset: Offset(0, 3), // changes position of shadow
+                  ),
+                ],
+                color: Colors.white,
                 borderRadius: BorderRadius.circular(10),
                 border: Border.all(color: Colors.blue)),
             child: Text("Total=5674300Tk",

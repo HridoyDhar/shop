@@ -23,6 +23,15 @@ class _MortagePersonState extends State<MortagePerson> {
             width: 300,
             margin: EdgeInsets.symmetric(horizontal: 20),
             decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 5,
+                    blurRadius: 7,
+                    offset: Offset(0, 3), // changes position of shadow
+                  ),
+                ],
+                color: Colors.white,
                 borderRadius: BorderRadius.circular(10),
                 border: Border.all(color: Colors.blue)),
             child: Text(
@@ -40,6 +49,15 @@ class _MortagePersonState extends State<MortagePerson> {
             height: 50,
             width: 300,
             decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 5,
+                    blurRadius: 7,
+                    offset: Offset(0, 3), // changes position of shadow
+                  ),
+                ],
+                color: Colors.white,
                 borderRadius: BorderRadius.circular(10),
                 border: Border.all(color: Colors.blue)),
             child: Text("19-03-23",
@@ -49,53 +67,74 @@ class _MortagePersonState extends State<MortagePerson> {
           SizedBox(
             height: 30,
           ),
-          Card(
-            child: Container(
-              alignment: Alignment.center,
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              height: 51,
-              width: 372,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: Text("Mr.Rahul",
-                  style: TextStyle(
-                      fontSize: 15, fontFamily: "itim", color: Colors.black)),
+          Container(
+            alignment: Alignment.center,
+            margin: EdgeInsets.symmetric(horizontal: 20),
+            height: 51,
+            width: 372,
+            decoration: BoxDecoration(
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.grey.withOpacity(0.5),
+                  spreadRadius: 5,
+                  blurRadius: 7,
+                  offset: Offset(0, 3), // changes position of shadow
+                ),
+              ],
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(10),
             ),
+            child: Text("Mr.Rahul",
+                style: TextStyle(
+                    fontSize: 15, fontFamily: "itim", color: Colors.black)),
           ),
           SizedBox(
             height: 20,
           ),
-          Card(
-            child: Container(
-              alignment: Alignment.center,
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              height: 51,
-              width: 372,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: Text("Mew towner aros ,chiigltonk",
-                  style: TextStyle(
-                      fontSize: 15, fontFamily: "itim", color: Colors.black)),
+          Container(
+            alignment: Alignment.center,
+            margin: EdgeInsets.symmetric(horizontal: 20),
+            height: 51,
+            width: 372,
+            decoration: BoxDecoration(
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.grey.withOpacity(0.5),
+                  spreadRadius: 5,
+                  blurRadius: 7,
+                  offset: Offset(0, 3), // changes position of shadow
+                ),
+              ],
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(10),
             ),
+            child: Text("Mew towner aros ,chiigltonk",
+                style: TextStyle(
+                    fontSize: 15, fontFamily: "itim", color: Colors.black)),
           ),
           SizedBox(
             height: 20,
           ),
-          Card(
-            child: Container(
-              alignment: Alignment.center,
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              height: 51,
-              width: 372,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: Text("013743995723",
-                  style: TextStyle(
-                      fontSize: 15, fontFamily: "itim", color: Colors.black)),
+          Container(
+            alignment: Alignment.center,
+            margin: EdgeInsets.symmetric(horizontal: 20),
+            height: 51,
+            width: 372,
+            decoration: BoxDecoration(
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.grey.withOpacity(0.5),
+                  spreadRadius: 5,
+                  blurRadius: 7,
+                  offset: Offset(0, 3), // changes position of shadow
+                ),
+              ],
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(10),
             ),
+            child: Text("013743995723",
+                style: TextStyle(
+                    fontSize: 15, fontFamily: "itim", color: Colors.black)),
           ),
           SizedBox(
             height: 20,
@@ -106,6 +145,15 @@ class _MortagePersonState extends State<MortagePerson> {
             height: 51,
             width: 273,
             decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 5,
+                    blurRadius: 7,
+                    offset: Offset(0, 3), // changes position of shadow
+                  ),
+                ],
+                color: Colors.white,
                 borderRadius: BorderRadius.circular(10),
                 border: Border.all(color: Colors.blue)),
             child: Text(
@@ -117,85 +165,120 @@ class _MortagePersonState extends State<MortagePerson> {
           SizedBox(
             height: 20,
           ),
-          Card(
-            child: Container(
-              alignment: Alignment.center,
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              height: 51,
-              width: 372,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: Text("1.Neckless       2b        430000Tk ",
-                  style: TextStyle(
-                      fontSize: 15, fontFamily: "itim", color: Colors.black)),
+          Container(
+            alignment: Alignment.center,
+            margin: EdgeInsets.symmetric(horizontal: 20),
+            height: 51,
+            width: 372,
+            decoration: BoxDecoration(
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.grey.withOpacity(0.5),
+                  spreadRadius: 5,
+                  blurRadius: 7,
+                  offset: Offset(0, 3), // changes position of shadow
+                ),
+              ],
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(10),
             ),
+            child: Text("1.Neckless       2b        430000Tk ",
+                style: TextStyle(
+                    fontSize: 15, fontFamily: "itim", color: Colors.black)),
           ),
           SizedBox(
             height: 20,
           ),
-          Card(
-            child: Container(
-              alignment: Alignment.center,
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              height: 51,
-              width: 372,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: Text("2.Neckless       2b        430000Tk",
-                  style: TextStyle(
-                      fontSize: 15, fontFamily: "itim", color: Colors.black)),
+          Container(
+            alignment: Alignment.center,
+            margin: EdgeInsets.symmetric(horizontal: 20),
+            height: 51,
+            width: 372,
+            decoration: BoxDecoration(
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.grey.withOpacity(0.5),
+                  spreadRadius: 5,
+                  blurRadius: 7,
+                  offset: Offset(0, 3), // changes position of shadow
+                ),
+              ],
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(10),
             ),
+            child: Text("2.Neckless       2b        430000Tk",
+                style: TextStyle(
+                    fontSize: 15, fontFamily: "itim", color: Colors.black)),
           ),
           SizedBox(
             height: 20,
           ),
-          Card(
-            child: Container(
-              alignment: Alignment.center,
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              height: 51,
-              width: 372,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: Text("3.Neckless       2b        430000Tk",
-                  style: TextStyle(
-                      fontSize: 15, fontFamily: "itim", color: Colors.black)),
+          Container(
+            alignment: Alignment.center,
+            margin: EdgeInsets.symmetric(horizontal: 20),
+            height: 51,
+            width: 372,
+            decoration: BoxDecoration(
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.grey.withOpacity(0.5),
+                  spreadRadius: 5,
+                  blurRadius: 7,
+                  offset: Offset(0, 3), // changes position of shadow
+                ),
+              ],
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(10),
             ),
+            child: Text("3.Neckless       2b        430000Tk",
+                style: TextStyle(
+                    fontSize: 15, fontFamily: "itim", color: Colors.black)),
           ),
           SizedBox(height: 20),
-          Card(
-            child: Container(
-              alignment: Alignment.center,
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              height: 51,
-              width: 372,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: Text("4.Neckless       2b        430000Tk",
-                  style: TextStyle(
-                      fontSize: 15, fontFamily: "itim", color: Colors.black)),
+          Container(
+            alignment: Alignment.center,
+            margin: EdgeInsets.symmetric(horizontal: 20),
+            height: 51,
+            width: 372,
+            decoration: BoxDecoration(
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.grey.withOpacity(0.5),
+                  spreadRadius: 5,
+                  blurRadius: 7,
+                  offset: Offset(0, 3), // changes position of shadow
+                ),
+              ],
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(10),
             ),
+            child: Text("4.Neckless       2b        430000Tk",
+                style: TextStyle(
+                    fontSize: 15, fontFamily: "itim", color: Colors.black)),
           ),
           SizedBox(
             height: 20,
           ),
-          Card(
-            child: Container(
-              alignment: Alignment.center,
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              height: 51,
-              width: 372,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: Text("5.Chain       2b        43000Tk",
-                  style: TextStyle(
-                      fontSize: 15, fontFamily: "itim", color: Colors.black)),
+          Container(
+            alignment: Alignment.center,
+            margin: EdgeInsets.symmetric(horizontal: 20),
+            height: 51,
+            width: 372,
+            decoration: BoxDecoration(
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.grey.withOpacity(0.5),
+                  spreadRadius: 5,
+                  blurRadius: 7,
+                  offset: Offset(0, 3), // changes position of shadow
+                ),
+              ],
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(10),
             ),
+            child: Text("5.Chain       2b        43000Tk",
+                style: TextStyle(
+                    fontSize: 15, fontFamily: "itim", color: Colors.black)),
           ),
           SizedBox(
             height: 20,
@@ -206,6 +289,15 @@ class _MortagePersonState extends State<MortagePerson> {
             height: 51,
             width: 372,
             decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 5,
+                    blurRadius: 7,
+                    offset: Offset(0, 3), // changes position of shadow
+                  ),
+                ],
+                color: Colors.white,
                 borderRadius: BorderRadius.circular(10),
                 border: Border.all(color: Colors.blue)),
             child: Text("Total=24000Tk",

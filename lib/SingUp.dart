@@ -20,17 +20,13 @@ class _SingUpState extends State<SingUp> {
         backgroundColor: Colors.white,
         body: ListView(
           children: [
-            SizedBox(
-                height: 70
-            ),
+            SizedBox(height: 70),
             Container(
               alignment: Alignment.centerLeft,
-              child: Text("Create Account",
+              child: Text(
+                "Create Account",
                 style: TextStyle(
-                    fontSize: 30,
-                    fontFamily: "itim",
-                    color: Colors.black
-                ),
+                    fontSize: 30, fontFamily: "itim", color: Colors.black),
               ),
             ),
             SizedBox(
@@ -45,15 +41,9 @@ class _SingUpState extends State<SingUp> {
                           borderRadius: BorderRadius.circular(10.r)),
                       labelText: "Name",
                       hintText: "Enter your name",
-                      prefixIcon: Icon(Icons.person,
-                          color: Colors.blue)
-
-                  )
-              ),
+                      prefixIcon: Icon(Icons.person, color: Colors.blue))),
             ),
-            SizedBox(
-                height: 20
-            ),
+            SizedBox(height: 20),
             Container(
               height: 45,
               margin: EdgeInsets.symmetric(horizontal: 20),
@@ -63,15 +53,9 @@ class _SingUpState extends State<SingUp> {
                           borderRadius: BorderRadius.circular(10.r)),
                       labelText: "Address",
                       hintText: "Enter your address",
-                      prefixIcon: Icon(Icons.home,
-                          color: Colors.blue)
-
-                  )
-              ),
+                      prefixIcon: Icon(Icons.home, color: Colors.blue))),
             ),
-            SizedBox(
-                height: 20
-            ),
+            SizedBox(height: 20),
             Container(
               height: 45,
               margin: EdgeInsets.symmetric(horizontal: 20),
@@ -81,15 +65,9 @@ class _SingUpState extends State<SingUp> {
                           borderRadius: BorderRadius.circular(10.r)),
                       labelText: "Number",
                       hintText: "Enter your number",
-                      prefixIcon: Icon(Icons.phone,
-                          color: Colors.blue)
-
-                  )
-              ),
+                      prefixIcon: Icon(Icons.phone, color: Colors.blue))),
             ),
-            SizedBox(
-                height: 20
-            ),
+            SizedBox(height: 20),
             Container(
               height: 45,
               margin: EdgeInsets.symmetric(horizontal: 20),
@@ -99,15 +77,9 @@ class _SingUpState extends State<SingUp> {
                           borderRadius: BorderRadius.circular(10.r)),
                       labelText: "Password",
                       hintText: "Enter your password",
-                      prefixIcon: Icon(Icons.lock,
-                          color: Colors.blue)
-
-                  )
-              ),
+                      prefixIcon: Icon(Icons.lock, color: Colors.blue))),
             ),
-            SizedBox(
-                height: 20
-            ),
+            SizedBox(height: 20),
             Container(
               height: 45,
               margin: EdgeInsets.symmetric(horizontal: 20),
@@ -117,15 +89,9 @@ class _SingUpState extends State<SingUp> {
                           borderRadius: BorderRadius.circular(10.r)),
                       labelText: "Confirm password",
                       hintText: "Enter your confirm password",
-                      prefixIcon: Icon(Icons.lock,
-                          color: Colors.blue)
-
-                  )
-              ),
+                      prefixIcon: Icon(Icons.lock, color: Colors.blue))),
             ),
-            SizedBox(
-                height: 20
-            ),
+            SizedBox(height: 20),
             Container(
               height: 45,
               margin: EdgeInsets.symmetric(horizontal: 20),
@@ -135,15 +101,10 @@ class _SingUpState extends State<SingUp> {
                           borderRadius: BorderRadius.circular(10.r)),
                       labelText: "Nid Card number",
                       hintText: "Enter your nid card number",
-                      prefixIcon: Icon(Icons.card_membership,
-                          color: Colors.blue)
-
-                  )
-              ),
+                      prefixIcon:
+                          Icon(Icons.card_membership, color: Colors.blue))),
             ),
-            SizedBox(
-                height: 20
-            ),
+            SizedBox(height: 20),
             Container(
               height: 45,
               margin: EdgeInsets.symmetric(horizontal: 20),
@@ -153,15 +114,10 @@ class _SingUpState extends State<SingUp> {
                           borderRadius: BorderRadius.circular(10)),
                       labelText: "Taxt number",
                       hintText: "Enter your taxt number",
-                      prefixIcon: Icon(Icons.card_membership,
-                          color: Colors.blue)
-
-                  )
-              ),
+                      prefixIcon:
+                          Icon(Icons.card_membership, color: Colors.blue))),
             ),
-            SizedBox(
-                height: 20
-            ),
+            SizedBox(height: 20),
             Container(
               height: 45,
               margin: EdgeInsets.symmetric(horizontal: 20),
@@ -171,41 +127,32 @@ class _SingUpState extends State<SingUp> {
                           borderRadius: BorderRadius.circular(10.r)),
                       labelText: "Licence number",
                       hintText: "Enter your licence number",
-                      prefixIcon: Icon(Icons.card_membership,
-                          color: Colors.blue)
-
-                  )
-              ),
+                      prefixIcon:
+                          Icon(Icons.card_membership, color: Colors.blue))),
             ),
             SizedBox(
               height: 20,
-
             ),
             InkWell(
-              onTap: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>verification2()));
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => verification2()));
               },
-              child: Container
-                (
+              child: Container(
                 alignment: Alignment.center,
                 margin: EdgeInsets.symmetric(horizontal: 100),
-                height: 70,
-                width: 235,
+                height: 50.h,
+                width: 340.w,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
                   color: Colors.black,
                 ),
                 child: Text("SingUp",
                     style: TextStyle(
-                        fontFamily: "itim",
-                        fontSize: 20,
-                        color: Colors.white
-                    )),
+                        fontFamily: "itim", fontSize: 20, color: Colors.white)),
               ),
             )
-
           ],
-        )
-    );
+        ));
   }
 }

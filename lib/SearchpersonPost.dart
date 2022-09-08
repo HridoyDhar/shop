@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -8,10 +6,14 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:goldshop/Commentpeople/Commentpeople.dart';
 
 import 'package:goldshop/Home_page.dart';
+import 'package:goldshop/Likepage.dart';
+import 'package:goldshop/Notifi_cation.dart';
 import 'package:goldshop/Postyou.dart';
 import 'package:goldshop/Profilepage.dart';
 import 'package:goldshop/SearchpersonRate.dart';
+import 'package:goldshop/ShopLocation.dart';
 import 'package:goldshop/ShopProfile.dart';
+
 class SearchpersonPost extends StatefulWidget {
   const SearchpersonPost({Key? key}) : super(key: key);
 
@@ -24,88 +26,70 @@ class _SearchpersonPostState extends State<SearchpersonPost> {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
-            bottomNavigationBar: BottomNavigationBar(
-              items: [
-                BottomNavigationBarItem(
-                    icon: IconButton(
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Home_page()));
-                      },
-                      icon: Icon(Icons.home),
-                      color: Colors.blue,
+            bottomNavigationBar: BottomAppBar(
+              color: Colors.blueAccent,
+              // this creates a notch in the center of the bottom bar
+              shape: const CircularNotchedRectangle(),
+              notchMargin: 8,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  IconButton(
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => Home_page()));
+                    },
+                    icon: const Icon(
+                      Icons.home,
+                      color: Colors.white,
                     ),
-                    label: "Home"),
-                BottomNavigationBarItem(
-                    icon: IconButton(
-                      onPressed: () {
-                        //
-                      },
-                      icon: Icon(Icons.logo_dev),
-                      color: Colors.blue,
+                  ),
+                  IconButton(
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => ShopLocation()));
+                    },
+                    icon: const Icon(
+                      Icons.shop,
+                      color: Colors.white,
                     ),
-                    label: "like"),
-                BottomNavigationBarItem(
-                    icon: IconButton(
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Postyou()));
-                      },
-                      icon: Icon(Icons.post_add),
-                      color: Colors.blue,
+                  ),
+                  IconButton(
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => Notifi_cation()));
+                    },
+                    icon: const Icon(
+                      Icons.notifications,
+                      color: Colors.white,
                     ),
-                    label: "Post"),
-                BottomNavigationBarItem(
-                    icon: IconButton(
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Commentpeople()));
-                      },
-                      icon: Icon(Icons.comment),
-                      color: Colors.blue,
+                  ),
+                  IconButton(
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => profilepage()));
+                    },
+                    icon: const Icon(
+                      Icons.person,
+                      color: Colors.white,
                     ),
-                    label: "Comment"),
-                BottomNavigationBarItem(
-                    icon: IconButton(
-                      onPressed: () {
-                      //
-                      },
-                      icon: Icon(Icons.notifications),
-                      color: Colors.blue,
-                    ),
-                    label: "Notification"),
-                BottomNavigationBarItem(
-                    icon: IconButton(
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => ShopProfile()));
-                      },
-                      icon: Icon(Icons.shopping_bag),
-                      color: Colors.blue,
-                    ),
-                    label: "Shop"),
-                BottomNavigationBarItem(
-                    icon: IconButton(
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => profilepage()));
-                      },
-                      icon: Icon(Icons.person),
-                      color: Colors.blue,
-                    ),
-                    label: "Person"),
-              ],
+                  ),
+                ],
+              ),
             ),
+            // implement the floating button
+            floatingActionButton: FloatingActionButton(
+                onPressed: () {},
+                backgroundColor: Colors.amber,
+                child: const Icon(Icons.add)),
+            floatingActionButtonLocation:
+                FloatingActionButtonLocation.centerDocked,
             body: Container(
                 padding: EdgeInsets.symmetric(horizontal: 10.w),
                 child: ListView(children: [
@@ -154,8 +138,7 @@ class _SearchpersonPostState extends State<SearchpersonPost> {
                               ),
                             ],
                           ),
-                        ]
-                        ),
+                        ]),
                       ),
                       SizedBox(
                         width: 10.h,
@@ -336,8 +319,7 @@ class _SearchpersonPostState extends State<SearchpersonPost> {
                           Icons.star,
                           color: Colors.amber,
                         ),
-                      ]
-                  ),
+                      ]),
                   SizedBox(
                     height: 20,
                   ),
@@ -345,7 +327,8 @@ class _SearchpersonPostState extends State<SearchpersonPost> {
                     height: 400.h,
                     child: Expanded(
                       child: GridView.builder(
-                          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                          gridDelegate:
+                              SliverGridDelegateWithFixedCrossAxisCount(
                             crossAxisCount: 2,
                             crossAxisSpacing: 10.w,
                             mainAxisSpacing: 10.h,
@@ -358,10 +341,6 @@ class _SearchpersonPostState extends State<SearchpersonPost> {
                           })),
                     ),
                   )
-                ]
-                )
-            )
-        )
-    );
+                ]))));
   }
 }

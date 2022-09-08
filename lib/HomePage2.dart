@@ -10,6 +10,7 @@ import 'package:goldshop/Mortagelist.dart';
 import 'package:goldshop/NewMortage.dart';
 import 'package:goldshop/NewSell.dart';
 import 'package:goldshop/Newemployee/New_employee.dart';
+import 'package:goldshop/SellIteam/Sell_iteam.dart';
 import 'package:goldshop/Selllist.dart';
 
 class HomePage2 extends StatefulWidget {
@@ -339,21 +340,29 @@ class _HomePage2State extends State<HomePage2> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    Container(
-                      alignment: Alignment.center,
-                      height: 50,
-                      width: 100,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          // border: Border.all(color: Colors.black),
-                          color: Color(0xffF7FAFF)),
-                      child: Text(
-                        "Marketing",
-                        style: TextStyle(
-                            fontSize: 15.sp,
-                            fontWeight: FontWeight.w700,
-                            fontFamily: "Manjari",
-                            color: Colors.black),
+                    InkWell(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Sell_iteam()));
+                      },
+                      child: Container(
+                        alignment: Alignment.center,
+                        height: 50,
+                        width: 100,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            // border: Border.all(color: Colors.black),
+                            color: Color(0xffF7FAFF)),
+                        child: Text(
+                          "Marketing",
+                          style: TextStyle(
+                              fontSize: 15.sp,
+                              fontWeight: FontWeight.w700,
+                              fontFamily: "Manjari",
+                              color: Colors.black),
+                        ),
                       ),
                     ),
                     SizedBox(
