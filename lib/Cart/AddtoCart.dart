@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:goldshop/Payment.dart';
 import 'package:goldshop/ShopProductOne.dart';
 import 'package:goldshop/ShoppingList.dart';
 
@@ -41,7 +42,7 @@ class _AddToCardState extends State<AddToCard> {
                                     builder: (context) => ShopProductOne()));
                           },
                           child: Container(
-                            height: 150,
+                            height: 100,
                             child: Image.asset(
                               'assets/1489-d60e20.jpg',
                               fit: BoxFit.fitHeight,
@@ -49,7 +50,7 @@ class _AddToCardState extends State<AddToCard> {
                           ),
                         ),
                         SizedBox(
-                          height: 30,
+                          height: 10,
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -111,13 +112,19 @@ class _AddToCardState extends State<AddToCard> {
                 SizedBox(
                   width: 15.w,
                 ),
-                Container(
-                  child: Text(
-                    "Add to cart",
-                    style: TextStyle(
-                      fontSize: 15.sp,
-                      fontWeight: FontWeight.w700,
-                      color: Colors.white,
+                InkWell(
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Payment()));
+                  },
+                  child: Container(
+                    child: Text(
+                      "Add to cart",
+                      style: TextStyle(
+                        fontSize: 15.sp,
+                        fontWeight: FontWeight.w700,
+                        color: Colors.white,
+                      ),
                     ),
                   ),
                 )

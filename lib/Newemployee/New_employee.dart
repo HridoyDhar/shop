@@ -21,8 +21,8 @@ class _New_employeeState extends State<New_employee> {
             height: 80,
           ),
           Container(
-              height: 50,
-              width: 300,
+              height: 40.h,
+              width: 300.w,
               margin: EdgeInsets.symmetric(horizontal: 20),
               child: TextField(
                 decoration: InputDecoration(
@@ -36,9 +36,9 @@ class _New_employeeState extends State<New_employee> {
             height: 20,
           ),
           Container(
-              height: 50,
+              height: 40.h,
+              width: 300.w,
               margin: EdgeInsets.symmetric(horizontal: 20),
-              width: 300,
               child: TextField(
                 decoration: InputDecoration(
                     labelText: "Address",
@@ -51,9 +51,9 @@ class _New_employeeState extends State<New_employee> {
             height: 20,
           ),
           Container(
-              height: 50,
               margin: EdgeInsets.symmetric(horizontal: 20),
-              width: 300,
+              height: 40.h,
+              width: 300.w,
               child: TextField(
                 decoration: InputDecoration(
                     labelText: "Number",
@@ -66,8 +66,8 @@ class _New_employeeState extends State<New_employee> {
             height: 20,
           ),
           Container(
-              height: 50,
-              width: 300,
+              height: 40.h,
+              width: 300.w,
               margin: EdgeInsets.symmetric(horizontal: 20),
               child: TextField(
                 decoration: InputDecoration(
@@ -82,8 +82,8 @@ class _New_employeeState extends State<New_employee> {
             height: 20,
           ),
           Container(
-              height: 50,
-              width: 300,
+              height: 40.h,
+              width: 300.w,
               margin: EdgeInsets.symmetric(horizontal: 20),
               child: TextField(
                 decoration: InputDecoration(
@@ -98,8 +98,8 @@ class _New_employeeState extends State<New_employee> {
             height: 20,
           ),
           Container(
-              height: 50,
-              width: 300,
+              height: 40.h,
+              width: 300.w,
               margin: EdgeInsets.symmetric(horizontal: 20),
               child: TextField(
                 decoration: InputDecoration(
@@ -115,8 +115,8 @@ class _New_employeeState extends State<New_employee> {
           ),
           Center(
             child: Container(
-              height: 50,
-              width: 300,
+              height: 40.h,
+              width: 300.w,
               alignment: Alignment.center,
               margin: EdgeInsets.symmetric(horizontal: 200),
               decoration: BoxDecoration(

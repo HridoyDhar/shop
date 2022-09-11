@@ -33,18 +33,9 @@ class _CompineListState extends State<CompineList> {
           Container(
             alignment: Alignment.center,
             margin: EdgeInsets.symmetric(horizontal: 90),
-            height: 50.h,
-            width: 340.w,
+            height: 40.h,
+            width: 300.w,
             decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.5),
-                    spreadRadius: 5,
-                    blurRadius: 7,
-                    offset: Offset(0, 3), // changes position of shadow
-                  ),
-                ],
-                color: Colors.white,
                 borderRadius: BorderRadius.circular(10),
                 border: Border.all(color: Colors.blue)),
             child: Text(
@@ -64,8 +55,8 @@ class _CompineListState extends State<CompineList> {
             child: Container(
               alignment: Alignment.center,
               margin: EdgeInsets.symmetric(horizontal: 20),
-              height: 50.h,
-              width: 340.w,
+              height: 40.h,
+              width: 300.w,
               decoration: BoxDecoration(
                 boxShadow: [
                   BoxShadow(
@@ -96,8 +87,8 @@ class _CompineListState extends State<CompineList> {
             child: Container(
               alignment: Alignment.center,
               margin: EdgeInsets.symmetric(horizontal: 20),
-              height: 50.h,
-              width: 340.w,
+              height: 40.h,
+              width: 300.w,
               decoration: BoxDecoration(
                 boxShadow: [
                   BoxShadow(
@@ -128,8 +119,8 @@ class _CompineListState extends State<CompineList> {
               child: Container(
                 alignment: Alignment.center,
                 margin: EdgeInsets.symmetric(horizontal: 20),
-                height: 50.h,
-                width: 340.w,
+                height: 40.h,
+                width: 300.w,
                 decoration: BoxDecoration(
                   boxShadow: [
                     BoxShadow(
@@ -159,8 +150,8 @@ class _CompineListState extends State<CompineList> {
             child: Container(
               alignment: Alignment.center,
               margin: EdgeInsets.symmetric(horizontal: 20),
-              height: 50.h,
-              width: 340.w,
+              height: 40.h,
+              width: 300.w,
               decoration: BoxDecoration(
                 boxShadow: [
                   BoxShadow(
@@ -191,8 +182,8 @@ class _CompineListState extends State<CompineList> {
             child: Container(
               alignment: Alignment.center,
               margin: EdgeInsets.symmetric(horizontal: 20),
-              height: 50.h,
-              width: 340.w,
+              height: 40.h,
+              width: 300.w,
               decoration: BoxDecoration(
                 boxShadow: [
                   BoxShadow(
@@ -223,8 +214,8 @@ class _CompineListState extends State<CompineList> {
             child: Container(
               alignment: Alignment.center,
               margin: EdgeInsets.symmetric(horizontal: 20),
-              height: 50.h,
-              width: 340.w,
+              height: 40.h,
+              width: 300.w,
               decoration: BoxDecoration(
                 boxShadow: [
                   BoxShadow(
@@ -255,8 +246,8 @@ class _CompineListState extends State<CompineList> {
             child: Container(
               alignment: Alignment.center,
               margin: EdgeInsets.symmetric(horizontal: 20),
-              height: 50.h,
-              width: 340.w,
+              height: 40.h,
+              width: 300.w,
               decoration: BoxDecoration(
                 boxShadow: [
                   BoxShadow(
@@ -287,8 +278,8 @@ class _CompineListState extends State<CompineList> {
             child: Container(
               alignment: Alignment.center,
               margin: EdgeInsets.symmetric(horizontal: 20),
-              height: 50.h,
-              width: 340.w,
+              height: 40.h,
+              width: 300.w,
               decoration: BoxDecoration(
                 boxShadow: [
                   BoxShadow(
@@ -319,8 +310,8 @@ class _CompineListState extends State<CompineList> {
             child: Container(
               alignment: Alignment.center,
               margin: EdgeInsets.symmetric(horizontal: 20),
-              height: 50.h,
-              width: 340.w,
+              height: 40.h,
+              width: 300.w,
               decoration: BoxDecoration(
                 boxShadow: [
                   BoxShadow(
@@ -348,29 +339,27 @@ class _CompineListState extends State<CompineList> {
               Navigator.push(context,
                   MaterialPageRoute(builder: (context) => ComplilnePerson()));
             },
-            child: Card(
-              child: Container(
-                alignment: Alignment.center,
-                margin: EdgeInsets.symmetric(horizontal: 20),
-                height: 51,
-                width: 373,
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.withOpacity(0.5),
-                      spreadRadius: 5,
-                      blurRadius: 7,
-                      offset: Offset(0, 3), // changes position of shadow
-                    ),
-                  ],
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Text(
-                  "Mr.rahul                4567330Tk",
-                  style: TextStyle(
-                      fontSize: 15, fontFamily: "itim", color: Colors.black),
-                ),
+            child: Container(
+              alignment: Alignment.center,
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              height: 40.h,
+              width: 300.w,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 5,
+                    blurRadius: 7,
+                    offset: Offset(0, 3), // changes position of shadow
+                  ),
+                ],
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Text(
+                "Mr.rahul                4567330Tk",
+                style: TextStyle(
+                    fontSize: 15, fontFamily: "itim", color: Colors.black),
               ),
             ),
           ),
@@ -382,29 +371,27 @@ class _CompineListState extends State<CompineList> {
               Navigator.push(context,
                   MaterialPageRoute(builder: (context) => ComplilnePerson()));
             },
-            child: Card(
-              child: Container(
-                alignment: Alignment.center,
-                margin: EdgeInsets.symmetric(horizontal: 20),
-                height: 51,
-                width: 373,
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.withOpacity(0.5),
-                      spreadRadius: 5,
-                      blurRadius: 7,
-                      offset: Offset(0, 3), // changes position of shadow
-                    ),
-                  ],
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Text(
-                  "Mr.rahul                4567330Tk",
-                  style: TextStyle(
-                      fontSize: 15, fontFamily: "itim", color: Colors.black),
-                ),
+            child: Container(
+              alignment: Alignment.center,
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              height: 40.h,
+              width: 300.w,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 5,
+                    blurRadius: 7,
+                    offset: Offset(0, 3), // changes position of shadow
+                  ),
+                ],
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Text(
+                "Mr.rahul                4567330Tk",
+                style: TextStyle(
+                    fontSize: 15, fontFamily: "itim", color: Colors.black),
               ),
             ),
           ),
@@ -416,29 +403,27 @@ class _CompineListState extends State<CompineList> {
               Navigator.push(context,
                   MaterialPageRoute(builder: (context) => ComplilnePerson()));
             },
-            child: Card(
-              child: Container(
-                alignment: Alignment.center,
-                margin: EdgeInsets.symmetric(horizontal: 20),
-                height: 51,
-                width: 373,
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.withOpacity(0.5),
-                      spreadRadius: 5,
-                      blurRadius: 7,
-                      offset: Offset(0, 3), // changes position of shadow
-                    ),
-                  ],
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Text(
-                  "Mr.rahul                4567330Tk",
-                  style: TextStyle(
-                      fontSize: 15, fontFamily: "itim", color: Colors.black),
-                ),
+            child: Container(
+              alignment: Alignment.center,
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              height: 40.h,
+              width: 300.w,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 5,
+                    blurRadius: 7,
+                    offset: Offset(0, 3), // changes position of shadow
+                  ),
+                ],
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Text(
+                "Mr.rahul                4567330Tk",
+                style: TextStyle(
+                    fontSize: 15, fontFamily: "itim", color: Colors.black),
               ),
             ),
           ),
@@ -450,29 +435,27 @@ class _CompineListState extends State<CompineList> {
               Navigator.push(context,
                   MaterialPageRoute(builder: (context) => ComplilnePerson()));
             },
-            child: Card(
-              child: Container(
-                alignment: Alignment.center,
-                margin: EdgeInsets.symmetric(horizontal: 20),
-                height: 51,
-                width: 373,
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.withOpacity(0.5),
-                      spreadRadius: 5,
-                      blurRadius: 7,
-                      offset: Offset(0, 3), // changes position of shadow
-                    ),
-                  ],
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Text(
-                  "Mr.rahul                4567330Tk",
-                  style: TextStyle(
-                      fontSize: 15, fontFamily: "itim", color: Colors.black),
-                ),
+            child: Container(
+              alignment: Alignment.center,
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              height: 40.h,
+              width: 300.w,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 5,
+                    blurRadius: 7,
+                    offset: Offset(0, 3), // changes position of shadow
+                  ),
+                ],
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Text(
+                "Mr.rahul                4567330Tk",
+                style: TextStyle(
+                    fontSize: 15, fontFamily: "itim", color: Colors.black),
               ),
             ),
           ),
@@ -484,29 +467,27 @@ class _CompineListState extends State<CompineList> {
               Navigator.push(context,
                   MaterialPageRoute(builder: (context) => ComplilnePerson()));
             },
-            child: Card(
-              child: Container(
-                alignment: Alignment.center,
-                margin: EdgeInsets.symmetric(horizontal: 20),
-                height: 50.h,
-                width: 340.w,
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.withOpacity(0.5),
-                      spreadRadius: 5,
-                      blurRadius: 7,
-                      offset: Offset(0, 3), // changes position of shadow
-                    ),
-                  ],
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Text(
-                  "Mr.rahul                4567330Tk",
-                  style: TextStyle(
-                      fontSize: 15, fontFamily: "itim", color: Colors.black),
-                ),
+            child: Container(
+              alignment: Alignment.center,
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              height: 40.h,
+              width: 300.w,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 5,
+                    blurRadius: 7,
+                    offset: Offset(0, 3), // changes position of shadow
+                  ),
+                ],
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Text(
+                "Mr.rahul                4567330Tk",
+                style: TextStyle(
+                    fontSize: 15, fontFamily: "itim", color: Colors.black),
               ),
             ),
           ),
@@ -518,29 +499,27 @@ class _CompineListState extends State<CompineList> {
               Navigator.push(context,
                   MaterialPageRoute(builder: (context) => ComplilnePerson()));
             },
-            child: Card(
-              child: Container(
-                alignment: Alignment.center,
-                margin: EdgeInsets.symmetric(horizontal: 20),
-                height: 50.h,
-                width: 340.w,
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.withOpacity(0.5),
-                      spreadRadius: 5,
-                      blurRadius: 7,
-                      offset: Offset(0, 3), // changes position of shadow
-                    ),
-                  ],
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Text(
-                  "Mr.rahul                4567330Tk",
-                  style: TextStyle(
-                      fontSize: 15, fontFamily: "itim", color: Colors.black),
-                ),
+            child: Container(
+              alignment: Alignment.center,
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              height: 40.h,
+              width: 300.w,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 5,
+                    blurRadius: 7,
+                    offset: Offset(0, 3), // changes position of shadow
+                  ),
+                ],
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Text(
+                "Mr.rahul                4567330Tk",
+                style: TextStyle(
+                    fontSize: 15, fontFamily: "itim", color: Colors.black),
               ),
             ),
           ),
@@ -552,29 +531,27 @@ class _CompineListState extends State<CompineList> {
               Navigator.push(context,
                   MaterialPageRoute(builder: (context) => ComplilnePerson()));
             },
-            child: Card(
-              child: Container(
-                alignment: Alignment.center,
-                margin: EdgeInsets.symmetric(horizontal: 20),
-                height: 50.h,
-                width: 340.w,
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.withOpacity(0.5),
-                      spreadRadius: 5,
-                      blurRadius: 7,
-                      offset: Offset(0, 3), // changes position of shadow
-                    ),
-                  ],
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Text(
-                  "Mr.rahul                4567330Tk",
-                  style: TextStyle(
-                      fontSize: 15, fontFamily: "itim", color: Colors.black),
-                ),
+            child: Container(
+              alignment: Alignment.center,
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              height: 40.h,
+              width: 300.w,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 5,
+                    blurRadius: 7,
+                    offset: Offset(0, 3), // changes position of shadow
+                  ),
+                ],
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Text(
+                "Mr.rahul                4567330Tk",
+                style: TextStyle(
+                    fontSize: 15, fontFamily: "itim", color: Colors.black),
               ),
             ),
           ),

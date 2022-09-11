@@ -9,6 +9,7 @@ import 'package:goldshop/DetailsList/DetailsList.dart';
 import 'package:goldshop/Home_page.dart';
 import 'package:goldshop/Likepage.dart';
 import 'package:goldshop/Notifi_cation.dart';
+import 'package:goldshop/Postcomment/Post_commend.dart';
 import 'package:goldshop/Postyou.dart';
 import 'package:goldshop/Profilepage.dart';
 import 'package:goldshop/Savepost.dart';
@@ -60,7 +61,7 @@ class _SearchpersonState extends State<Searchperson> {
             IconButton(
               onPressed: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => Notifi_cation()));
+                    MaterialPageRoute(builder: (context) => Post_Commend()));
               },
               icon: const Icon(
                 Icons.notifications,
@@ -92,167 +93,98 @@ class _SearchpersonState extends State<Searchperson> {
           SizedBox(
             height: 15.h,
           ),
-          Row(
-            children: [
-              Container(
-                // height: 94.h,
-                // width: 94.w,
-                child: CircleAvatar(
-                  backgroundImage: AssetImage("assets/Ellipse60.png"),
-                  radius: 50.r,
+          Center(
+            child: Container(
+              // height: 94.h,
+              // width: 94.w,
+              child: CircleAvatar(
+                backgroundImage: AssetImage("assets/Ellipse60.png"),
+                radius: 50.r,
+              ),
+            ),
+          ),
+          SizedBox(
+            height: 10.w,
+          ),
+          Container(
+            width: 230.w,
+            child: Column(
+              children: [
+                Center(
+                  child: Container(
+                    child: Text(
+                      "Angelina Dcis",
+                      style: TextStyle(
+                          fontSize: 18.sp,
+                          fontWeight: FontWeight.w700,
+                          fontFamily: "Manjari"),
+                    ),
+                  ),
                 ),
-              ),
-              SizedBox(
-                width: 10.w,
-              ),
-              Container(
-                width: 230.w,
-                child: Column(
+                SizedBox(
+                  height: 15.h,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Container(
-                          child: Text(
-                            "Angelina Dcis",
-                            style: TextStyle(
-                                fontSize: 15.sp,
-                                fontWeight: FontWeight.w700,
-                                fontFamily: "Manjari"),
-                          ),
-                        ),
-                        Container(
-                          padding: EdgeInsets.symmetric(
-                              horizontal: 10.w, vertical: 5.h),
-                          decoration: BoxDecoration(
-                            border: Border.all(width: 1.w),
-                          ),
-                          child: Text(
-                            "Edit profile",
-                            style: TextStyle(
-                                fontSize: 13.sp,
-                                fontWeight: FontWeight.w700,
-                                fontFamily: "Manjari"),
-                          ),
-                        ),
-                      ],
+                    Container(
+                      child: Text(
+                        "10",
+                        style: TextStyle(
+                            fontSize: 18.sp,
+                            fontWeight: FontWeight.w700,
+                            fontFamily: "Manjari"),
+                      ),
                     ),
-                    SizedBox(
-                      height: 15.h,
+                    Container(
+                      child: Text(
+                        "Post",
+                        style: TextStyle(
+                            fontSize: 18.sp,
+                            fontWeight: FontWeight.w700,
+                            fontFamily: "Manjari"),
+                      ),
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Container(
-                          child: Text(
-                            "10",
-                            style: TextStyle(
-                                fontSize: 13.sp,
-                                fontWeight: FontWeight.w700,
-                                fontFamily: "Manjari"),
-                          ),
-                        ),
-                        Container(
-                          child: Text(
-                            "Post",
-                            style: TextStyle(
-                                fontSize: 13.sp,
-                                fontWeight: FontWeight.w700,
-                                fontFamily: "Manjari"),
-                          ),
-                        ),
-                        Container(
-                          child: Text(
-                            "2k",
-                            style: TextStyle(
-                                fontSize: 13.sp,
-                                fontWeight: FontWeight.w700,
-                                fontFamily: "Manjari"),
-                          ),
-                        ),
-                        Container(
-                          child: Text(
-                            "Follower",
-                            style: TextStyle(
-                                fontSize: 13.sp,
-                                fontWeight: FontWeight.w700,
-                                fontFamily: "Manjari"),
-                          ),
-                        ),
-                        Container(
-                          child: Text(
-                            "15",
-                            style: TextStyle(
-                                fontSize: 11.sp,
-                                fontWeight: FontWeight.w700,
-                                fontFamily: "Manjari"),
-                          ),
-                        ),
-                        Container(
-                          child: Text(
-                            "Following",
-                            style: TextStyle(
-                                fontSize: 13.sp,
-                                fontWeight: FontWeight.w700,
-                                fontFamily: "Manjari"),
-                          ),
-                        ),
-                      ],
+                    Container(
+                      child: Text(
+                        "2k",
+                        style: TextStyle(
+                            fontSize: 18.sp,
+                            fontWeight: FontWeight.w700,
+                            fontFamily: "Manjari"),
+                      ),
                     ),
-                    SizedBox(
-                      height: 15.h,
+                    Container(
+                      child: Text(
+                        "Follower",
+                        style: TextStyle(
+                            fontSize: 18.sp,
+                            fontWeight: FontWeight.w700,
+                            fontFamily: "Manjari"),
+                      ),
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Container(
-                          child: Icon(Icons.facebook,
-                              color: Colors.blue, size: 18.h),
-                        ),
-                        Container(
-                          child: Text(
-                            "Angelina ",
-                            style: TextStyle(
-                                fontSize: 9.sp,
-                                color: Colors.black,
-                                fontWeight: FontWeight.w400,
-                                fontFamily: "Manjari"),
-                          ),
-                        ),
-                        Container(
-                          child: Icon(Icons.facebook,
-                              color: Colors.red, size: 18.h),
-                        ),
-                        Container(
-                          child: Text(
-                            "Angelina ",
-                            style: TextStyle(
-                                fontSize: 9.sp,
-                                fontWeight: FontWeight.w400,
-                                fontFamily: "Manjari",
-                                color: Colors.red),
-                          ),
-                        ),
-                        Container(
-                          child: Icon(Icons.facebook,
-                              color: Color(0xffe95950), size: 18.h),
-                        ),
-                        Container(
-                          child: Text(
-                            "Angelina ",
-                            style: TextStyle(
-                                fontSize: 9.sp,
-                                fontWeight: FontWeight.w400,
-                                fontFamily: "Manjari",
-                                color: Color(0xffcd486b)),
-                          ),
-                        ),
-                      ],
+                    Container(
+                      child: Text(
+                        "15",
+                        style: TextStyle(
+                            fontSize: 18.sp,
+                            fontWeight: FontWeight.w700,
+                            fontFamily: "Manjari"),
+                      ),
+                    ),
+                    Container(
+                      child: Text(
+                        "Following",
+                        style: TextStyle(
+                            fontSize: 18.sp,
+                            fontWeight: FontWeight.w700,
+                            fontFamily: "Manjari"),
+                      ),
                     ),
                   ],
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
           SizedBox(
             height: 30.h,
@@ -275,7 +207,7 @@ class _SearchpersonState extends State<Searchperson> {
                         child: Text(
                           "Post",
                           style: TextStyle(
-                              fontSize: 9.sp,
+                              fontSize: 18.sp,
                               fontWeight: FontWeight.w400,
                               fontFamily: "Manjari"),
                         ),
@@ -306,7 +238,7 @@ class _SearchpersonState extends State<Searchperson> {
                         child: Text(
                           "Rate",
                           style: TextStyle(
-                              fontSize: 9.sp,
+                              fontSize: 18.sp,
                               fontWeight: FontWeight.w400,
                               fontFamily: "Manjari"),
                         ),

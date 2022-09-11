@@ -21,8 +21,8 @@ class _ComplilnePersonState extends State<ComplilnePerson> {
           Container(
             alignment: Alignment.center,
             margin: EdgeInsets.symmetric(horizontal: 90),
-            height: 50.h,
-            width: 340.w,
+            height: 40.h,
+            width: 300.w,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
                 border: Border.all(color: Colors.blueAccent)),
@@ -39,8 +39,8 @@ class _ComplilnePersonState extends State<ComplilnePerson> {
             child: Container(
               alignment: Alignment.center,
               margin: EdgeInsets.symmetric(horizontal: 20),
-              height: 50.h,
-              width: 340.w,
+              height: 40.h,
+              width: 300.w,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
               ),
@@ -58,8 +58,8 @@ class _ComplilnePersonState extends State<ComplilnePerson> {
             child: Container(
               alignment: Alignment.center,
               margin: EdgeInsets.symmetric(horizontal: 20),
-              height: 50.h,
-              width: 340.w,
+              height: 40.h,
+              width: 300.w,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
               ),
@@ -77,8 +77,8 @@ class _ComplilnePersonState extends State<ComplilnePerson> {
             child: Container(
               alignment: Alignment.center,
               margin: EdgeInsets.symmetric(horizontal: 20),
-              height: 50.h,
-              width: 340.w,
+              height: 40.h,
+              width: 300.w,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
               ),

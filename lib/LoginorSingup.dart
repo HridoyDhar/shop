@@ -22,65 +22,54 @@ class _LoginorSingupState extends State<LoginorSingup> {
             height: 20.h,
           ),
           Container(
-
-            height:340.h ,
+            height: 340.h,
             width: 440.w,
             child: Image.asset("assets/63787-secure-login.gif"),
-
           ),
           SizedBox(
             height: 40.h,
           ),
           InkWell(
-            onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>Login2()));
+            onTap: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => Login2()));
             },
             child: Container(
                 alignment: Alignment.center,
                 margin: EdgeInsets.symmetric(horizontal: 20),
-                height: 50.h,
-                width:340.w,
+                height: 40.h,
+                width: 300.w,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
                   color: Color(0xff35396D),
-
                 ),
                 child: Text(
                   "Login",
                   style: TextStyle(
-                      fontSize: 20,
-                      fontFamily: "itim",
-                      color: Colors.white
-                  ),
-                )
-
-
-            ),
+                      fontSize: 20, fontFamily: "itim", color: Colors.white),
+                )),
           ),
           SizedBox(
             height: 20.h,
           ),
           InkWell(
-            onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=> SingUp()));
+            onTap: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => SingUp()));
             },
             child: Container(
                 alignment: Alignment.center,
                 margin: EdgeInsets.symmetric(horizontal: 20),
-                height: 50.h,
-                width: 340.w,
+                height: 40.h,
+                width: 300.w,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
-                    color: Colors.black
-                ),
-                child: Text("SingUp",
+                    color: Colors.black),
+                child: Text(
+                  "SingUp",
                   style: TextStyle(
-                      fontFamily: "itim",
-                      fontSize: 20,
-                      color: Colors.white
-                  ),
-                )
-            ),
+                      fontFamily: "itim", fontSize: 20, color: Colors.white),
+                )),
           )
         ],
       ),

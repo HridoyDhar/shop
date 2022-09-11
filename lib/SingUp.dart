@@ -33,7 +33,8 @@ class _SingUpState extends State<SingUp> {
               height: 20,
             ),
             Container(
-              height: 45,
+              height: 40.h,
+              width: 300.w,
               margin: EdgeInsets.symmetric(horizontal: 20),
               child: TextField(
                   decoration: InputDecoration(
@@ -57,7 +58,8 @@ class _SingUpState extends State<SingUp> {
             ),
             SizedBox(height: 20),
             Container(
-              height: 45,
+              height: 40.h,
+              width: 300.w,
               margin: EdgeInsets.symmetric(horizontal: 20),
               child: TextField(
                   decoration: InputDecoration(
@@ -69,7 +71,8 @@ class _SingUpState extends State<SingUp> {
             ),
             SizedBox(height: 20),
             Container(
-              height: 45,
+              height: 40.h,
+              width: 300.w,
               margin: EdgeInsets.symmetric(horizontal: 20),
               child: TextField(
                   decoration: InputDecoration(
@@ -93,7 +96,8 @@ class _SingUpState extends State<SingUp> {
             ),
             SizedBox(height: 20),
             Container(
-              height: 45,
+              height: 40.h,
+              width: 300.w,
               margin: EdgeInsets.symmetric(horizontal: 20),
               child: TextField(
                   decoration: InputDecoration(
@@ -106,7 +110,8 @@ class _SingUpState extends State<SingUp> {
             ),
             SizedBox(height: 20),
             Container(
-              height: 45,
+              height: 40.h,
+              width: 300.w,
               margin: EdgeInsets.symmetric(horizontal: 20),
               child: TextField(
                   decoration: InputDecoration(
@@ -119,7 +124,8 @@ class _SingUpState extends State<SingUp> {
             ),
             SizedBox(height: 20),
             Container(
-              height: 45,
+              height: 40.h,
+              width: 300.w,
               margin: EdgeInsets.symmetric(horizontal: 20),
               child: TextField(
                   decoration: InputDecoration(
@@ -141,8 +147,8 @@ class _SingUpState extends State<SingUp> {
               child: Container(
                 alignment: Alignment.center,
                 margin: EdgeInsets.symmetric(horizontal: 100),
-                height: 50.h,
-                width: 340.w,
+                height: 40.h,
+                width: 300.w,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
                   color: Colors.black,

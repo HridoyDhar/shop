@@ -8,6 +8,7 @@ import 'package:goldshop/Commentpeople/Commentpeople.dart';
 import 'package:goldshop/Home_page.dart';
 import 'package:goldshop/Likepage.dart';
 import 'package:goldshop/Notifi_cation.dart';
+import 'package:goldshop/Postcomment/Post_commend.dart';
 import 'package:goldshop/Postyou.dart';
 import 'package:goldshop/Profilepage.dart';
 import 'package:goldshop/ShopProfile.dart';
@@ -61,7 +62,7 @@ class _ShopLocationState extends State<ShopLocation> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => Notifi_cation()));
+                              builder: (context) => Post_Commend()));
                     },
                     icon: const Icon(
                       Icons.notifications,
@@ -130,8 +131,8 @@ class _ShopLocationState extends State<ShopLocation> {
                 child: Card(
                   child: Container(
                     margin: EdgeInsets.symmetric(horizontal: 20.w),
-                    height: 50.h,
-                    width: 340.w,
+                    height: 40.h,
+                    width: 300.w,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10.r),
                     ),
@@ -170,8 +171,8 @@ class _ShopLocationState extends State<ShopLocation> {
                 child: Card(
                   child: Container(
                     margin: EdgeInsets.symmetric(horizontal: 20.w),
-                    height: 50.h,
-                    width: 340.w,
+                    height: 40.h,
+                    width: 300.w,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10.r),
                     ),
@@ -210,8 +211,8 @@ class _ShopLocationState extends State<ShopLocation> {
                 child: Card(
                   child: Container(
                     margin: EdgeInsets.symmetric(horizontal: 20.w),
-                    height: 50.h,
-                    width: 340.w,
+                    height: 40.h,
+                    width: 300.w,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10.r),
                     ),
@@ -250,8 +251,8 @@ class _ShopLocationState extends State<ShopLocation> {
                 child: Card(
                   child: Container(
                     margin: EdgeInsets.symmetric(horizontal: 20.w),
-                    height: 50.h,
-                    width: 340.w,
+                    height: 40.h,
+                    width: 300.w,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10.r),
                     ),
@@ -290,8 +291,8 @@ class _ShopLocationState extends State<ShopLocation> {
                 child: Card(
                   child: Container(
                     margin: EdgeInsets.symmetric(horizontal: 20.w),
-                    height: 50.h,
-                    width: 340.w,
+                    height: 40.h,
+                    width: 300.w,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10.r),
                     ),
@@ -330,8 +331,8 @@ class _ShopLocationState extends State<ShopLocation> {
                 child: Card(
                   child: Container(
                     margin: EdgeInsets.symmetric(horizontal: 20.w),
-                    height: 50.h,
-                    width: 340.w,
+                    height: 40.h,
+                    width: 300.w,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10.r),
                     ),
@@ -370,8 +371,8 @@ class _ShopLocationState extends State<ShopLocation> {
                 child: Card(
                   child: Container(
                     margin: EdgeInsets.symmetric(horizontal: 20.w),
-                    height: 50.h,
-                    width: 340.w,
+                    height: 40.h,
+                    width: 300.w,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10.r),
                     ),

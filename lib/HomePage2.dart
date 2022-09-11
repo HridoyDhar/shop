@@ -10,6 +10,7 @@ import 'package:goldshop/Mortagelist.dart';
 import 'package:goldshop/NewMortage.dart';
 import 'package:goldshop/NewSell.dart';
 import 'package:goldshop/Newemployee/New_employee.dart';
+import 'package:goldshop/Paymentlist.dart';
 import 'package:goldshop/SellIteam/Sell_iteam.dart';
 import 'package:goldshop/Selllist.dart';
 
@@ -419,6 +420,97 @@ class _HomePage2State extends State<HomePage2> {
                         ),
                       ),
                     ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+          Container(
+            width: 230.w,
+            child: Column(
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    InkWell(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Paymentlist()));
+                      },
+                      child: Container(
+                        alignment: Alignment.center,
+                        height: 50,
+                        width: 100,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            // border: Border.all(color: Colors.black),
+                            color: Color(0xffF7FAFF)),
+                        child: Text(
+                          "Payment",
+                          style: TextStyle(
+                              fontSize: 15.sp,
+                              fontWeight: FontWeight.w700,
+                              fontFamily: "Manjari",
+                              color: Colors.black),
+                        ),
+                      ),
+                    ),
+                    // SizedBox(
+                    //   width: 20,
+                    // ),
+                    // InkWell(
+                    //   onTap: () {
+                    //     Navigator.push(
+                    //         context,
+                    //         MaterialPageRoute(
+                    //             builder: (context) => New_employee()));
+                    //   },
+                    //   child: Container(
+                    //     alignment: Alignment.center,
+                    //     height: 50,
+                    //     width: 100,
+                    //     decoration: BoxDecoration(
+                    //         // border: Border.all(color: Colors.black),
+                    //         borderRadius: BorderRadius.circular(10),
+                    //         color: Color(0xffF7FAFF)),
+                    //     child: Text(
+                    //       "New employee",
+                    //       style: TextStyle(
+                    //           fontSize: 13.sp,
+                    //           fontWeight: FontWeight.w700,
+                    //           fontFamily: "Manjari"),
+                    //     ),
+                    //   ),
+                    // ),
+                    // SizedBox(
+                    //   width: 20,
+                    // ),
+                    // InkWell(
+                    //   onTap: () {
+                    //     Navigator.push(
+                    //         context,
+                    //         MaterialPageRoute(
+                    //             builder: (context) => EmployeList()));
+                    //   },
+                    //   child: Container(
+                    //     alignment: Alignment.center,
+                    //     height: 50,
+                    //     width: 100,
+                    //     decoration: BoxDecoration(
+                    //         // border: Border.all(color: Colors.black),
+                    //         borderRadius: BorderRadius.circular(10),
+                    //         color: Color(0xffF7FAFF)),
+                    //     child: Text(
+                    //       "Employee",
+                    //       style: TextStyle(
+                    //           fontSize: 13.sp,
+                    //           fontWeight: FontWeight.w700,
+                    //           fontFamily: "Manjari"),
+                    //     ),
+                    //   ),
+                    // ),
                   ],
                 ),
               ],

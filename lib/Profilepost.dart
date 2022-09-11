@@ -14,6 +14,8 @@ import 'package:goldshop/Savepost.dart';
 import 'package:goldshop/ShopLocation.dart';
 import 'package:goldshop/StarMark.dart';
 
+import 'Postcomment/Post_commend.dart';
+
 class Profilepost extends StatefulWidget {
   const Profilepost({Key? key}) : super(key: key);
 
@@ -61,7 +63,7 @@ class _ProfilepostState extends State<Profilepost> {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => Notifi_cation()));
+                            builder: (context) => Post_Commend()));
                   },
                   icon: const Icon(
                     Icons.notifications,

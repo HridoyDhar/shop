@@ -94,284 +94,238 @@ class _DetailsListState extends State<DetailsList> {
             SizedBox(
               height: 15,
             ),
-            Row(
-              children: [
-                Container(
-                  // height: 94.h,
-                  // width: 94.w,
-                  child: CircleAvatar(
-                    backgroundImage: AssetImage("assets/Ellipse60.png"),
-                    radius: 50.r,
-                  ),
+            Center(
+              child: Container(
+                // height: 94.h,
+                // width: 94.w,
+                child: CircleAvatar(
+                  backgroundImage: AssetImage("assets/Ellipse60.png"),
+                  radius: 50.r,
                 ),
-                SizedBox(
-                  width: 10.w,
-                ),
-                Container(
-                  width: 230,
-                  child: Column(
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Container(
-                            child: Text(
-                              "Angelina Dcis",
-                              style: TextStyle(
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.w700,
-                                  fontFamily: "Manjari"),
-                            ),
-                          ),
-                          Container(
-                            padding: EdgeInsets.symmetric(
-                                horizontal: 10, vertical: 5),
-                            decoration: BoxDecoration(
-                              border: Border.all(width: 1),
-                            ),
-                            child: Text(
-                              "Edit profile",
-                              style: TextStyle(
-                                  fontSize: 13,
-                                  fontWeight: FontWeight.w700,
-                                  fontFamily: "Manjari"),
-                            ),
-                          ),
-                        ],
-                      ),
-                      SizedBox(
-                        height: 15,
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Container(
-                            child: Text(
-                              "10",
-                              style: TextStyle(
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.w700,
-                                  fontFamily: "Manjari"),
-                            ),
-                          ),
-                          Container(
-                            child: Text(
-                              "Post",
-                              style: TextStyle(
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.w700,
-                                  fontFamily: "Manjari"),
-                            ),
-                          ),
-                          Container(
-                            child: Text(
-                              "2k",
-                              style: TextStyle(
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.w700,
-                                  fontFamily: "Manjari"),
-                            ),
-                          ),
-                          Container(
-                            child: Text(
-                              "Follower",
-                              style: TextStyle(
-                                  fontSize: 15.sp,
-                                  fontWeight: FontWeight.w700,
-                                  fontFamily: "Manjari"),
-                            ),
-                          ),
-                          Container(
-                            child: Text(
-                              "15",
-                              style: TextStyle(
-                                  fontSize: 15.sp,
-                                  fontWeight: FontWeight.w700,
-                                  fontFamily: "Manjari"),
-                            ),
-                          ),
-                          Container(
-                            child: Text(
-                              "Following",
-                              style: TextStyle(
-                                  fontSize: 15.sp,
-                                  fontWeight: FontWeight.w700,
-                                  fontFamily: "Manjari"),
-                            ),
-                          ),
-                        ],
-                      ),
-                      SizedBox(
-                        height: 15.h,
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Container(
-                            child: Icon(Icons.facebook,
-                                color: Colors.blue, size: 18.h),
-                          ),
-                          Container(
-                            child: Text(
-                              "Angelina ",
-                              style: TextStyle(
-                                  fontSize: 9.sp,
-                                  color: Colors.black,
-                                  fontWeight: FontWeight.w400,
-                                  fontFamily: "Manjari"),
-                            ),
-                          ),
-                          Container(
-                            child: Icon(Icons.facebook,
-                                color: Colors.red, size: 18.h),
-                          ),
-                          Container(
-                            child: Text(
-                              "Angelina ",
-                              style: TextStyle(
-                                  fontSize: 9.sp,
-                                  fontWeight: FontWeight.w400,
-                                  fontFamily: "Manjari"),
-                            ),
-                          ),
-                          Container(
-                            child: Icon(Icons.facebook,
-                                color: Colors.orange, size: 18.h),
-                          ),
-                          Container(
-                            child: Text(
-                              "Angelina ",
-                              style: TextStyle(
-                                  fontSize: 9.sp,
-                                  fontWeight: FontWeight.w400,
-                                  fontFamily: "Manjari"),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
-              ],
+              ),
             ),
             SizedBox(
-              height: 30.h,
+              width: 10.w,
             ),
-            Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-              Container(
-                width: 70.w,
-                child: Row(
+            Center(
+              child: Container(
+                width: 230.w,
+                child: Column(
                   children: [
-                    InkWell(
-                      onTap: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Postyou()));
-                      },
-                      child: Container(
-                        child: Text(
-                          "Post",
-                          style: TextStyle(
-                              fontSize: 9.sp,
-                              fontWeight: FontWeight.w400,
-                              fontFamily: "Manjari"),
-                        ),
+                    Container(
+                      child: Text(
+                        "Angelina Dcis",
+                        style: TextStyle(
+                            fontSize: 18.sp,
+                            fontWeight: FontWeight.w700,
+                            fontFamily: "Manjari"),
                       ),
                     ),
                     SizedBox(
-                      width: 5.w,
+                      height: 15.h,
                     ),
-                    Icon(
-                      Icons.post_add,
-                      color: Colors.green,
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Container(
+                          child: Text(
+                            "10",
+                            style: TextStyle(
+                                fontSize: 18.sp,
+                                fontWeight: FontWeight.w700,
+                                fontFamily: "Manjari"),
+                          ),
+                        ),
+                        Container(
+                          child: Text(
+                            "Post",
+                            style: TextStyle(
+                                fontSize: 18.sp,
+                                fontWeight: FontWeight.w700,
+                                fontFamily: "Manjari"),
+                          ),
+                        ),
+                        Container(
+                          child: Text(
+                            "2k",
+                            style: TextStyle(
+                                fontSize: 18.sp,
+                                fontWeight: FontWeight.w700,
+                                fontFamily: "Manjari"),
+                          ),
+                        ),
+                        Container(
+                          child: Text(
+                            "Follower",
+                            style: TextStyle(
+                                fontSize: 18.sp,
+                                fontWeight: FontWeight.w700,
+                                fontFamily: "Manjari"),
+                          ),
+                        ),
+                        Container(
+                          child: Text(
+                            "15",
+                            style: TextStyle(
+                                fontSize: 18.sp,
+                                fontWeight: FontWeight.w700,
+                                fontFamily: "Manjari"),
+                          ),
+                        ),
+                        Container(
+                          child: Text(
+                            "Following",
+                            style: TextStyle(
+                                fontSize: 18.sp,
+                                fontWeight: FontWeight.w700,
+                                fontFamily: "Manjari"),
+                          ),
+                        ),
+                      ],
                     ),
                   ],
                 ),
               ),
-              InkWell(
-                onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Savepost()));
-                },
-                child: Container(
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              alignment: Alignment.center,
+              height: 20,
+              width: 400,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10), color: Colors.white),
+              child: Text(
+                "Edit profile",
+                style: TextStyle(
+                    fontFamily: "itim", fontSize: 15, color: Colors.blue),
+              ),
+            ),
+            SizedBox(
+              height: 30.h,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Container(
                   width: 70.w,
                   child: Row(
                     children: [
-                      Container(
-                        child: Text(
-                          "Save",
-                          style: TextStyle(
-                              fontSize: 9.sp,
-                              fontWeight: FontWeight.w400,
-                              fontFamily: "Manjari"),
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Postyou()));
+                        },
+                        child: Container(
+                          child: Text(
+                            "Post",
+                            style: TextStyle(
+                                fontSize: 18.sp,
+                                fontWeight: FontWeight.w400,
+                                fontFamily: "Manjari"),
+                          ),
                         ),
                       ),
                       SizedBox(
                         width: 5.w,
                       ),
                       Icon(
-                        Icons.save,
-                        color: Colors.blue,
+                        Icons.post_add,
+                        color: Colors.green,
                       ),
                     ],
                   ),
                 ),
-              ),
-              InkWell(
-                onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => StarMark()));
-                },
-                child: Container(
-                  width: 70.w,
-                  child: Row(
-                    children: [
-                      Container(
-                        child: Text(
-                          "Rate",
-                          style: TextStyle(
-                              fontSize: 9.sp,
-                              fontWeight: FontWeight.w400,
-                              fontFamily: "Manjari"),
+                InkWell(
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Savepost()));
+                  },
+                  child: Container(
+                    width: 70.w,
+                    child: Row(
+                      children: [
+                        Container(
+                          child: Text(
+                            "Save",
+                            style: TextStyle(
+                                fontSize: 18.sp,
+                                fontWeight: FontWeight.w400,
+                                fontFamily: "Manjari"),
+                          ),
                         ),
-                      ),
-                      SizedBox(
-                        width: 5.w,
-                      ),
-                      Icon(
-                        Icons.star,
-                        color: Colors.yellowAccent,
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              InkWell(
-                onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => DetailsList()));
-                },
-                child: Container(
-                  width: 70.w,
-                  child: Row(
-                    children: [
-                      Container(
-                        child: Text(
-                          "List",
-                          style: TextStyle(
-                              fontSize: 9.sp,
-                              fontWeight: FontWeight.w400,
-                              fontFamily: "Manjari"),
+                        SizedBox(
+                          width: 5.w,
                         ),
-                      ),
-                      SizedBox(
-                        width: 5.w,
-                      ),
-                      Icon(Icons.list),
-                    ],
+                        Icon(
+                          Icons.save,
+                          color: Colors.blue,
+                        ),
+                      ],
+                    ),
                   ),
                 ),
-              ),
-            ]),
+                InkWell(
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => StarMark()));
+                  },
+                  child: Container(
+                    width: 70.w,
+                    child: Row(
+                      children: [
+                        Container(
+                          child: Text(
+                            "Rate",
+                            style: TextStyle(
+                                fontSize: 18.sp,
+                                fontWeight: FontWeight.w400,
+                                fontFamily: "Manjari"),
+                          ),
+                        ),
+                        SizedBox(
+                          width: 5.w,
+                        ),
+                        Icon(
+                          Icons.star,
+                          color: Colors.yellowAccent,
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                InkWell(
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => DetailsList()));
+                  },
+                  child: Container(
+                    width: 70.w,
+                    child: Row(
+                      children: [
+                        Container(
+                          child: Text(
+                            "List",
+                            style: TextStyle(
+                                fontSize: 18.sp,
+                                fontWeight: FontWeight.w400,
+                                fontFamily: "Manjari"),
+                          ),
+                        ),
+                        SizedBox(
+                          width: 5.w,
+                        ),
+                        Icon(Icons.list),
+                      ],
+                    ),
+                  ),
+                )
+              ],
+            ),
             SizedBox(
               height: 20.h,
             ),
@@ -383,8 +337,8 @@ class _DetailsListState extends State<DetailsList> {
               child: Card(
                 child: Container(
                   margin: EdgeInsets.symmetric(horizontal: 20.w),
-                  height: 50.h,
-                  width: 340.w,
+                  height: 40.h,
+                  width: 300.w,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10.r),
                   ),
@@ -423,8 +377,8 @@ class _DetailsListState extends State<DetailsList> {
               child: Card(
                 child: Container(
                   margin: EdgeInsets.symmetric(horizontal: 20.w),
-                  height: 50.h,
-                  width: 340.w,
+                  height: 40.h,
+                  width: 300.w,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10.r),
                   ),
@@ -463,8 +417,8 @@ class _DetailsListState extends State<DetailsList> {
               child: Card(
                 child: Container(
                   margin: EdgeInsets.symmetric(horizontal: 20.w),
-                  height: 50.h,
-                  width: 340.w,
+                  height: 40.h,
+                  width: 300.w,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10.r),
                   ),
@@ -503,17 +457,9 @@ class _DetailsListState extends State<DetailsList> {
               child: Card(
                 child: Container(
                   margin: EdgeInsets.symmetric(horizontal: 20.w),
-                  height: 50.h,
-                  width: 340.w,
+                  height: 40.h,
+                  width: 300.w,
                   decoration: BoxDecoration(
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.grey.withOpacity(0.5),
-                        spreadRadius: 5,
-                        blurRadius: 7,
-                        offset: Offset(0, 3), // changes position of shadow
-                      ),
-                    ],
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(10.r),
                   ),
@@ -552,8 +498,8 @@ class _DetailsListState extends State<DetailsList> {
               child: Card(
                 child: Container(
                   margin: EdgeInsets.symmetric(horizontal: 20.w),
-                  height: 50.h,
-                  width: 340.w,
+                  height: 40.h,
+                  width: 300.w,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10.r),
                   ),
@@ -592,8 +538,8 @@ class _DetailsListState extends State<DetailsList> {
               child: Card(
                 child: Container(
                   margin: EdgeInsets.symmetric(horizontal: 20.w),
-                  height: 50.h,
-                  width: 340.w,
+                  height: 40.h,
+                  width: 300.w,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10.r),
                   ),
@@ -632,8 +578,8 @@ class _DetailsListState extends State<DetailsList> {
               child: Card(
                 child: Container(
                   margin: EdgeInsets.symmetric(horizontal: 20.w),
-                  height: 50.h,
-                  width: 340.w,
+                  height: 40.h,
+                  width: 300.w,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10.r),
                   ),
@@ -672,8 +618,8 @@ class _DetailsListState extends State<DetailsList> {
               child: Card(
                 child: Container(
                   margin: EdgeInsets.symmetric(horizontal: 20.w),
-                  height: 50.h,
-                  width: 340.w,
+                  height: 40.h,
+                  width: 300.w,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10.r),
                   ),

@@ -6,6 +6,7 @@ import 'package:goldshop/Findperson.dart';
 import 'package:goldshop/Likepage.dart';
 
 import 'package:goldshop/Notifi_cation.dart';
+import 'package:goldshop/Postcomment/Post_commend.dart';
 import 'package:goldshop/Postyou.dart';
 import 'package:goldshop/Profilepage.dart';
 import 'package:goldshop/ShopLocation.dart';
@@ -263,7 +264,7 @@ class _Home_pageState extends State<Home_page> {
             IconButton(
               onPressed: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => Notifi_cation()));
+                    MaterialPageRoute(builder: (context) => Post_Commend()));
               },
               icon: const Icon(
                 Icons.notifications,

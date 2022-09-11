@@ -20,17 +20,9 @@ class _NewSellState extends State<NewSell> {
         Container(
           alignment: Alignment.center,
           margin: EdgeInsets.symmetric(horizontal: 20),
-          height: 50.h,
-          width: 340.w,
+          height: 40.h,
+          width: 300.w,
           decoration: BoxDecoration(
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.grey.withOpacity(0.5),
-                  spreadRadius: 5,
-                  blurRadius: 7,
-                  offset: Offset(0, 3), // changes position of shadow
-                ),
-              ],
               color: Colors.white,
               borderRadius: BorderRadius.circular(10),
               border: Border.all(color: Colors.blue)),
@@ -46,17 +38,9 @@ class _NewSellState extends State<NewSell> {
         Container(
           margin: EdgeInsets.symmetric(horizontal: 80),
           alignment: Alignment.center,
-          height: 50.h,
-          width: 340.w,
+          height: 40.h,
+          width: 300.w,
           decoration: BoxDecoration(
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.grey.withOpacity(0.5),
-                  spreadRadius: 5,
-                  blurRadius: 7,
-                  offset: Offset(0, 3), // changes position of shadow
-                ),
-              ],
               color: Colors.white,
               borderRadius: BorderRadius.circular(10),
               border: Border.all(color: Colors.blue)),
@@ -70,7 +54,8 @@ class _NewSellState extends State<NewSell> {
           height: 20,
         ),
         Container(
-          height: 51,
+          height: 40.h,
+          width: 300.w,
           margin: EdgeInsets.symmetric(horizontal: 20),
           child: TextField(
             decoration: InputDecoration(
@@ -88,7 +73,8 @@ class _NewSellState extends State<NewSell> {
           height: 20,
         ),
         Container(
-          height: 51,
+          height: 40.h,
+          width: 300.w,
           margin: EdgeInsets.symmetric(horizontal: 20),
           child: TextField(
             decoration: InputDecoration(
@@ -106,7 +92,8 @@ class _NewSellState extends State<NewSell> {
           height: 20,
         ),
         Container(
-          height: 51,
+          height: 40.h,
+          width: 300.w,
           margin: EdgeInsets.symmetric(horizontal: 20),
           child: TextField(
             decoration: InputDecoration(
@@ -496,6 +483,8 @@ class _NewSellState extends State<NewSell> {
           height: 20,
         ),
         Container(
+          height: 40.h,
+          width: 300.w,
           alignment: Alignment.center,
           margin: EdgeInsets.symmetric(horizontal: 80),
           child: TextField(
@@ -509,8 +498,8 @@ class _NewSellState extends State<NewSell> {
           height: 20,
         ),
         Container(
-          height: 50,
-          width: 300,
+          height: 40.h,
+          width: 300.w,
           alignment: Alignment.center,
           margin: EdgeInsets.symmetric(horizontal: 80),
           child: TextField(
@@ -524,19 +513,11 @@ class _NewSellState extends State<NewSell> {
           height: 20,
         ),
         Container(
-          height: 50.h,
-          width: 340.w,
+          height: 40.h,
+          width: 300.w,
           alignment: Alignment.center,
           margin: EdgeInsets.symmetric(horizontal: 80),
           decoration: BoxDecoration(
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.grey.withOpacity(0.5),
-                  spreadRadius: 5,
-                  blurRadius: 7,
-                  offset: Offset(0, 3), // changes position of shadow
-                ),
-              ],
               color: Colors.white,
               borderRadius: BorderRadius.circular(10),
               border: Border.all(color: Colors.blue)),

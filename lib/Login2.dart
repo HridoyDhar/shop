@@ -30,7 +30,8 @@ class _Login2State extends State<Login2> {
             height: 40.h,
           ),
           Container(
-            height: 45.h,
+            height: 40.h,
+            width: 300.w,
             margin: EdgeInsets.symmetric(horizontal: 20.w),
             child: TextField(
               // controller: phone,
@@ -49,7 +50,8 @@ class _Login2State extends State<Login2> {
             height: 25.h,
           ),
           Container(
-            height: 45.h,
+            height: 40.h,
+            width: 300.w,
             margin: EdgeInsets.symmetric(horizontal: 20.w),
             child: TextField(
               // controller: password,
@@ -95,8 +97,8 @@ class _Login2State extends State<Login2> {
             child: Container(
               margin: EdgeInsets.symmetric(horizontal: 110.w),
               alignment: Alignment.center,
-              height: 50.h,
-              width: 340.w,
+              height: 40.h,
+              width: 300.w,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10.r),
                   color: Color(0xffFE8178)),
@@ -120,7 +122,7 @@ class _Login2State extends State<Login2> {
             child: Container(
               margin: EdgeInsets.symmetric(horizontal: 20.w),
               height: 40.h,
-              width: 200.w,
+              width: 300.w,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10.r),
                   border: Border.all(color: Colors.cyan)),
@@ -128,8 +130,8 @@ class _Login2State extends State<Login2> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Icon(
-                    Icons.face,
-                    color: Colors.blue,
+                    Icons.email,
+                    color: Colors.greenAccent,
                   ),
                   SizedBox(
                     width: 15.w,

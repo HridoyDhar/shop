@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class MortagePerson extends StatefulWidget {
   const MortagePerson({Key? key}) : super(key: key);
@@ -12,75 +13,51 @@ class _MortagePersonState extends State<MortagePerson> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: ListView(
-        children: [
-          SizedBox(
-            height: 20,
+      body: ListView(children: [
+        SizedBox(
+          height: 20,
+        ),
+        Container(
+          alignment: Alignment.center,
+          height: 40.h,
+          width: 300.w,
+          margin: EdgeInsets.symmetric(horizontal: 20),
+          decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(10),
+              border: Border.all(color: Colors.blue)),
+          child: Text(
+            "Krishna Gold Shop",
+            style: TextStyle(
+                fontFamily: "itim", fontSize: 20, color: Colors.black),
           ),
-          Container(
-            alignment: Alignment.center,
-            height: 50,
-            width: 300,
-            margin: EdgeInsets.symmetric(horizontal: 20),
-            decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.5),
-                    spreadRadius: 5,
-                    blurRadius: 7,
-                    offset: Offset(0, 3), // changes position of shadow
-                  ),
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10),
-                border: Border.all(color: Colors.blue)),
-            child: Text(
-              "Krishna Gold Shop",
+        ),
+        SizedBox(
+          height: 20,
+        ),
+        Container(
+          margin: EdgeInsets.symmetric(horizontal: 100),
+          alignment: Alignment.center,
+          height: 40.h,
+          width: 200.w,
+          decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(10),
+              border: Border.all(color: Colors.blue)),
+          child: Text("19-03-23",
               style: TextStyle(
-                  fontFamily: "itim", fontSize: 20, color: Colors.black),
-            ),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          Container(
-            margin: EdgeInsets.symmetric(horizontal: 100),
-            alignment: Alignment.center,
-            height: 50,
-            width: 300,
-            decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.5),
-                    spreadRadius: 5,
-                    blurRadius: 7,
-                    offset: Offset(0, 3), // changes position of shadow
-                  ),
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10),
-                border: Border.all(color: Colors.blue)),
-            child: Text("19-03-23",
-                style: TextStyle(
-                    fontFamily: "itim", fontSize: 15, color: Colors.black)),
-          ),
-          SizedBox(
-            height: 30,
-          ),
-          Container(
-            alignment: Alignment.center,
+                  fontFamily: "itim", fontSize: 15, color: Colors.black)),
+        ),
+        SizedBox(
+          height: 30,
+        ),
+        Card(
+          child: Container(
+            alignment: Alignment.centerLeft,
             margin: EdgeInsets.symmetric(horizontal: 20),
-            height: 51,
-            width: 372,
+            height: 20.h,
+            width: 700.w,
             decoration: BoxDecoration(
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.grey.withOpacity(0.5),
-                  spreadRadius: 5,
-                  blurRadius: 7,
-                  offset: Offset(0, 3), // changes position of shadow
-                ),
-              ],
               color: Colors.white,
               borderRadius: BorderRadius.circular(10),
             ),
@@ -88,23 +65,17 @@ class _MortagePersonState extends State<MortagePerson> {
                 style: TextStyle(
                     fontSize: 15, fontFamily: "itim", color: Colors.black)),
           ),
-          SizedBox(
-            height: 20,
-          ),
-          Container(
-            alignment: Alignment.center,
+        ),
+        SizedBox(
+          height: 20,
+        ),
+        Card(
+          child: Container(
+            alignment: Alignment.centerLeft,
             margin: EdgeInsets.symmetric(horizontal: 20),
-            height: 51,
-            width: 372,
+            height: 20.h,
+            width: 200.w,
             decoration: BoxDecoration(
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.grey.withOpacity(0.5),
-                  spreadRadius: 5,
-                  blurRadius: 7,
-                  offset: Offset(0, 3), // changes position of shadow
-                ),
-              ],
               color: Colors.white,
               borderRadius: BorderRadius.circular(10),
             ),
@@ -112,23 +83,17 @@ class _MortagePersonState extends State<MortagePerson> {
                 style: TextStyle(
                     fontSize: 15, fontFamily: "itim", color: Colors.black)),
           ),
-          SizedBox(
-            height: 20,
-          ),
-          Container(
-            alignment: Alignment.center,
+        ),
+        SizedBox(
+          height: 20,
+        ),
+        Card(
+          child: Container(
+            alignment: Alignment.centerLeft,
             margin: EdgeInsets.symmetric(horizontal: 20),
-            height: 51,
-            width: 372,
+            height: 20.h,
+            width: 200.w,
             decoration: BoxDecoration(
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.grey.withOpacity(0.5),
-                  spreadRadius: 5,
-                  blurRadius: 7,
-                  offset: Offset(0, 3), // changes position of shadow
-                ),
-              ],
               color: Colors.white,
               borderRadius: BorderRadius.circular(10),
             ),
@@ -136,176 +101,120 @@ class _MortagePersonState extends State<MortagePerson> {
                 style: TextStyle(
                     fontSize: 15, fontFamily: "itim", color: Colors.black)),
           ),
-          SizedBox(
-            height: 20,
-          ),
-          Container(
-            alignment: Alignment.center,
-            margin: EdgeInsets.symmetric(horizontal: 100),
-            height: 51,
-            width: 273,
-            decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.5),
-                    spreadRadius: 5,
-                    blurRadius: 7,
-                    offset: Offset(0, 3), // changes position of shadow
-                  ),
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10),
-                border: Border.all(color: Colors.blue)),
-            child: Text(
-              "5 % 100",
-              style: TextStyle(
-                  fontSize: 20, fontFamily: "itim", color: Colors.black),
-            ),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          Container(
-            alignment: Alignment.center,
-            margin: EdgeInsets.symmetric(horizontal: 20),
-            height: 51,
-            width: 372,
-            decoration: BoxDecoration(
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.grey.withOpacity(0.5),
-                  spreadRadius: 5,
-                  blurRadius: 7,
-                  offset: Offset(0, 3), // changes position of shadow
-                ),
-              ],
+        ),
+        SizedBox(
+          height: 20,
+        ),
+        Container(
+          alignment: Alignment.center,
+          margin: EdgeInsets.symmetric(horizontal: 100),
+          height: 40.h,
+          width: 200.w,
+          decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(10),
-            ),
-            child: Text("1.Neckless       2b        430000Tk ",
-                style: TextStyle(
-                    fontSize: 15, fontFamily: "itim", color: Colors.black)),
+              border: Border.all(color: Colors.blue)),
+          child: Text(
+            "5 % 100",
+            style: TextStyle(
+                fontSize: 20, fontFamily: "itim", color: Colors.black),
           ),
-          SizedBox(
-            height: 20,
-          ),
-          Container(
-            alignment: Alignment.center,
-            margin: EdgeInsets.symmetric(horizontal: 20),
-            height: 51,
-            width: 372,
-            decoration: BoxDecoration(
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.grey.withOpacity(0.5),
-                  spreadRadius: 5,
-                  blurRadius: 7,
-                  offset: Offset(0, 3), // changes position of shadow
-                ),
-              ],
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(10),
-            ),
-            child: Text("2.Neckless       2b        430000Tk",
-                style: TextStyle(
-                    fontSize: 15, fontFamily: "itim", color: Colors.black)),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          Container(
-            alignment: Alignment.center,
-            margin: EdgeInsets.symmetric(horizontal: 20),
-            height: 51,
-            width: 372,
-            decoration: BoxDecoration(
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.grey.withOpacity(0.5),
-                  spreadRadius: 5,
-                  blurRadius: 7,
-                  offset: Offset(0, 3), // changes position of shadow
-                ),
-              ],
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(10),
-            ),
-            child: Text("3.Neckless       2b        430000Tk",
-                style: TextStyle(
-                    fontSize: 15, fontFamily: "itim", color: Colors.black)),
-          ),
-          SizedBox(height: 20),
-          Container(
-            alignment: Alignment.center,
-            margin: EdgeInsets.symmetric(horizontal: 20),
-            height: 51,
-            width: 372,
-            decoration: BoxDecoration(
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.grey.withOpacity(0.5),
-                  spreadRadius: 5,
-                  blurRadius: 7,
-                  offset: Offset(0, 3), // changes position of shadow
-                ),
-              ],
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(10),
-            ),
-            child: Text("4.Neckless       2b        430000Tk",
-                style: TextStyle(
-                    fontSize: 15, fontFamily: "itim", color: Colors.black)),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          Container(
-            alignment: Alignment.center,
-            margin: EdgeInsets.symmetric(horizontal: 20),
-            height: 51,
-            width: 372,
-            decoration: BoxDecoration(
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.grey.withOpacity(0.5),
-                  spreadRadius: 5,
-                  blurRadius: 7,
-                  offset: Offset(0, 3), // changes position of shadow
-                ),
-              ],
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(10),
-            ),
-            child: Text("5.Chain       2b        43000Tk",
-                style: TextStyle(
-                    fontSize: 15, fontFamily: "itim", color: Colors.black)),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          Container(
-            margin: EdgeInsets.symmetric(horizontal: 90),
-            alignment: Alignment.center,
-            height: 51,
-            width: 372,
-            decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.5),
-                    spreadRadius: 5,
-                    blurRadius: 7,
-                    offset: Offset(0, 3), // changes position of shadow
-                  ),
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10),
-                border: Border.all(color: Colors.blue)),
-            child: Text("Total=24000Tk",
-                style: TextStyle(
-                    fontSize: 15, fontFamily: "itim", color: Colors.black)),
-          ),
-        ],
-      ),
+        ),
+        SizedBox(
+          height: 10,
+        ),
+        DataTable(columns: [
+          DataColumn(label: Text('No')),
+          DataColumn(label: Text('Name')),
+          DataColumn(label: Text('Weigth')),
+          DataColumn(label: Text('Money')),
+        ], rows: [
+          DataRow(cells: [
+            DataCell(Text('1')),
+            DataCell(Text('Neckless')),
+            DataCell(Text('1.6b')),
+            DataCell(Text('680900Tk')),
+          ]),
+          DataRow(cells: [
+            DataCell(Text('2')),
+            DataCell(Text('Neckless')),
+            DataCell(Text('1.6b')),
+            DataCell(Text('680900Tk')),
+          ]),
+          DataRow(cells: [
+            DataCell(Text('2')),
+            DataCell(Text('Neckless')),
+            DataCell(Text('1.6b')),
+            DataCell(Text('680900Tk')),
+          ]),
+          DataRow(cells: [
+            DataCell(Text('3')),
+            DataCell(Text('Neckless')),
+            DataCell(Text('1.6b')),
+            DataCell(Text('680900Tk')),
+          ]),
+          DataRow(cells: [
+            DataCell(Text('1')),
+            DataCell(Text('Neckless')),
+            DataCell(Text('1.6b')),
+            DataCell(Text('680900Tk')),
+          ]),
+          DataRow(cells: [
+            DataCell(Text('4')),
+            DataCell(Text('Neckless')),
+            DataCell(Text('1.6b')),
+            DataCell(Text('680900Tk')),
+          ]),
+          DataRow(cells: [
+            DataCell(Text('1')),
+            DataCell(Text('Neckless')),
+            DataCell(Text('1.6b')),
+            DataCell(Text('680900Tk')),
+          ]),
+          DataRow(cells: [
+            DataCell(Text('5')),
+            DataCell(Text('Neckless')),
+            DataCell(Text('1.6b')),
+            DataCell(Text('680900Tk')),
+          ]),
+          DataRow(cells: [
+            DataCell(Text('6')),
+            DataCell(Text('Neckless')),
+            DataCell(Text('1.6b')),
+            DataCell(Text('680900Tk')),
+          ]),
+          DataRow(cells: [
+            DataCell(Text('7')),
+            DataCell(Text('Neckless')),
+            DataCell(Text('1.6b')),
+            DataCell(Text('680900Tk')),
+          ]),
+          DataRow(cells: [
+            DataCell(Text('8')),
+            DataCell(Text('Neckless')),
+            DataCell(Text('1.6b')),
+            DataCell(Text('680900Tk')),
+          ]),
+          DataRow(cells: [
+            DataCell(Text('9')),
+            DataCell(Text('Neckless')),
+            DataCell(Text('1.6b')),
+            DataCell(Text('680900Tk')),
+          ]),
+          DataRow(cells: [
+            DataCell(Text('10')),
+            DataCell(Text('Neckless')),
+            DataCell(Text('1.6b')),
+            DataCell(Text('680900Tk')),
+          ]),
+          DataRow(cells: [
+            DataCell(Text('')),
+            DataCell(Text('')),
+            DataCell(Text('Total')),
+            DataCell(Text('2500000Tk')),
+          ]),
+        ]),
+      ]),
     );
   }
 }

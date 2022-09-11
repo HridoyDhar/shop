@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'package:goldshop/VerificationCode.dart';
+
 class ForgetPassword extends StatefulWidget {
   const ForgetPassword({Key? key}) : super(key: key);
 
@@ -18,47 +20,43 @@ class _ForgetPasswordState extends State<ForgetPassword> {
           SizedBox(
             height: 20,
           ),
-          Container
-
-            (
+          Container(
             height: 200,
             width: 200,
             child: Image.asset("assets/"),
           ),
           SizedBox(height: 20),
           Container(
-
             height: 45,
             margin: EdgeInsets.symmetric(horizontal: 20),
             child: TextField(
               decoration: InputDecoration(
-                  labelText:"Email/Number" ,
+                  labelText: "Email/Number",
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10),
-                  )
-              ),
+                  )),
             ),
           ),
           SizedBox(
             height: 20,
           ),
           InkWell(
-            onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>VerificationCode()));
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => VerificationCode()));
             },
             child: Container(
               alignment: Alignment.center,
-              height: 30,
-              width: 120,
+              height: 50.h,
+              width: 340.w,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Color(0xffF7FAFF)            ),
-              child: Text("Send mail or code ",
+                  color: Color(0xffF7FAFF)),
+              child: Text(
+                "Send mail or code ",
                 style: TextStyle(
-                    fontFamily: "itim",
-                    fontSize: 15,
-                    color: Colors.black
-                ),),
+                    fontFamily: "itim", fontSize: 15, color: Colors.black),
+              ),
             ),
           )
         ],

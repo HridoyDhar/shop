@@ -39,8 +39,8 @@ class _SellerorBuyerState extends State<SellerorBuyer> {
             child: Container(
               margin: EdgeInsets.symmetric(horizontal: 20),
               alignment: Alignment.center,
-              height: 50.h,
-              width: 340.w,
+              height: 40.h,
+              width: 300.w,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10), color: Colors.blue),
               child: Text(
@@ -59,8 +59,8 @@ class _SellerorBuyerState extends State<SellerorBuyer> {
                   MaterialPageRoute(builder: (context) => Savechange()));
             },
             child: Container(
-              height: 50.h,
-              width: 340.w,
+              height: 40.h,
+              width: 300.w,
               margin: EdgeInsets.symmetric(horizontal: 20),
               alignment: Alignment.center,
               decoration: BoxDecoration(

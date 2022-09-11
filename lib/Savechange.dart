@@ -101,6 +101,15 @@ class _SavechangeState extends State<Savechange> {
                           ),
                           child: Image.asset("assets/email.png"),
                         ),
+                        Container(
+                          height: 50,
+                          width: 50,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          child: Image.asset("assets/email.png"),
+                        ),
                       ],
                     ),
                   ),
@@ -114,8 +123,8 @@ class _SavechangeState extends State<Savechange> {
                     },
                     child: Container(
                       alignment: Alignment.center,
-                      height: 50.h,
-                      width: 340.w,
+                      height: 40.h,
+                      width: 300.w,
                       decoration: BoxDecoration(
                           color: Color(0xffFF928E),
                           borderRadius: BorderRadius.circular(9)),

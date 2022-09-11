@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:goldshop/Home_page.dart';
+
 class Compline extends StatefulWidget {
   const Compline({Key? key}) : super(key: key);
 
@@ -19,10 +21,9 @@ class _ComplineState extends State<Compline> {
             height: 10,
           ),
           Container(
-            height: 225,
-            width: 265,
-            child: Image.asset("assets/58918-legal-statement.gif")
-          ),
+              height: 225,
+              width: 265,
+              child: Image.asset("assets/58918-legal-statement.gif")),
           SizedBox(
             height: 15,
           ),
@@ -38,8 +39,8 @@ class _ComplineState extends State<Compline> {
             height: 30,
           ),
           Container(
-            height: 52,
-            width: 379,
+            height: 40.h,
+            width: 300.w,
             alignment: Alignment.centerLeft,
             margin: EdgeInsets.symmetric(horizontal: 30),
             child: TextField(
@@ -48,7 +49,7 @@ class _ComplineState extends State<Compline> {
                 labelText: "Shop Name",
                 border: OutlineInputBorder(
 
-                  // color: Colors.blue,
+                    // color: Colors.blue,
                     borderRadius: BorderRadius.circular(10)),
               ),
             ),
@@ -57,8 +58,8 @@ class _ComplineState extends State<Compline> {
             height: 30,
           ),
           Container(
-            height: 52,
-            width: 379,
+            height: 40.h,
+            width: 300.w,
             alignment: Alignment.centerLeft,
             margin: EdgeInsets.symmetric(horizontal: 30),
             child: TextField(
@@ -67,7 +68,7 @@ class _ComplineState extends State<Compline> {
                 labelText: "Contract Number",
                 border: OutlineInputBorder(
 
-                  // color: Colors.blue,
+                    // color: Colors.blue,
                     borderRadius: BorderRadius.circular(10)),
               ),
             ),
@@ -76,8 +77,8 @@ class _ComplineState extends State<Compline> {
             height: 30,
           ),
           Container(
-            height: 52,
-            width: 379,
+            height: 40.h,
+            width: 300.w,
             alignment: Alignment.centerLeft,
             margin: EdgeInsets.symmetric(horizontal: 30),
             child: TextField(
@@ -86,7 +87,7 @@ class _ComplineState extends State<Compline> {
                 labelText: "Tax Number",
                 border: OutlineInputBorder(
 
-                  // color: Colors.blue,
+                    // color: Colors.blue,
                     borderRadius: BorderRadius.circular(10)),
               ),
             ),
@@ -95,8 +96,8 @@ class _ComplineState extends State<Compline> {
             height: 30,
           ),
           Container(
-            height: 52,
-            width: 379,
+            height: 40.h,
+            width: 300.w,
             alignment: Alignment.centerLeft,
             margin: EdgeInsets.symmetric(horizontal: 30),
             child: TextField(
@@ -105,7 +106,7 @@ class _ComplineState extends State<Compline> {
                 labelText: "Licence Numbe",
                 border: OutlineInputBorder(
 
-                  // color: Colors.blue,
+                    // color: Colors.blue,
                     borderRadius: BorderRadius.circular(10)),
               ),
             ),
@@ -114,8 +115,8 @@ class _ComplineState extends State<Compline> {
             height: 30,
           ),
           Container(
-            height: 52,
-            width: 379,
+            height: 40.h,
+            width: 300.w,
             alignment: Alignment.centerLeft,
             margin: EdgeInsets.symmetric(horizontal: 30),
             child: TextField(
@@ -133,8 +134,8 @@ class _ComplineState extends State<Compline> {
             height: 30,
           ),
           Container(
-            height: 52,
-            width: 379,
+            height: 40.h,
+            width: 300.w,
             alignment: Alignment.centerLeft,
             margin: EdgeInsets.symmetric(horizontal: 30),
             child: TextField(
@@ -148,24 +149,27 @@ class _ComplineState extends State<Compline> {
               ),
             ),
           ),
-
           SizedBox(
             height: 13,
           ),
           InkWell(
-            onTap:(){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>Home_page()));
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => Home_page()));
             },
             child: Container(
                 margin: EdgeInsets.symmetric(horizontal: 100),
                 alignment: Alignment.center,
-                height: 55,
-
+                height: 40.h,
+                width: 300.w,
                 decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10), color: Colors.amber),
+                    borderRadius: BorderRadius.circular(10),
+                    color: Colors.amber),
                 child: Text("Enter",
                     style: TextStyle(
-                        fontFamily: "itim", fontSize: 20, color: Colors.white))),
+                        fontFamily: "itim",
+                        fontSize: 20,
+                        color: Colors.white))),
           )
         ],
       ),

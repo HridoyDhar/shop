@@ -14,296 +14,121 @@ class _DayIncomeState extends State<DayIncome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
-      body: ListView(
-        children: [
+        backgroundColor: Colors.white,
+        body: ListView(children: [
           SizedBox(
             height: 20,
           ),
           Container(
             margin: EdgeInsets.symmetric(horizontal: 150),
             alignment: Alignment.center,
-            height: 50.h,
-            width: 340.w,
+            height: 40.h,
+            width: 400.w,
             decoration: BoxDecoration(
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.grey.withOpacity(0.5),
-                  spreadRadius: 5,
-                  blurRadius: 7,
-                  offset: Offset(0, 3), // changes position of shadow
-                ),
-              ],
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(10),
-              border: Border.all(color: Colors.black),
-            ),
+                borderRadius: BorderRadius.circular(10),
+                border: Border.all(color: Colors.blue)),
             child: Text(
               "23-05-63",
               style: TextStyle(
-                  fontSize: 20, fontFamily: "itim", color: Colors.black),
+                  fontSize: 15, fontFamily: "itim", color: Colors.black),
             ),
           ),
           SizedBox(
             height: 20,
           ),
-          Container(
-            alignment: Alignment.center,
-            height: 50.h,
-            width: 340.w,
-            margin: EdgeInsets.symmetric(horizontal: 20),
-            decoration: BoxDecoration(
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.grey.withOpacity(0.5),
-                  spreadRadius: 5,
-                  blurRadius: 7,
-                  offset: Offset(0, 3), // changes position of shadow
-                ),
-              ],
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(10),
-            ),
-            child: Text(
-              "Money                  4500000Tk",
-              style: TextStyle(
-                  fontSize: 20, fontFamily: "itim", color: Colors.black),
-            ),
-          ),
+          DataTable(columns: [
+            DataColumn(label: Text('Name')),
+            DataColumn(label: Text('Money')),
+          ], rows: [
+            DataRow(cells: [
+              DataCell(Text('Total')),
+              DataCell(Text('700000Tk')),
+            ]),
+            DataRow(cells: [
+              DataCell(Text('Sell')),
+              DataCell(Text('25000Tk')),
+            ]),
+            DataRow(cells: [
+              DataCell(Text('Buy')),
+              DataCell(Text('64000Tk')),
+            ]),
+            DataRow(cells: [
+              DataCell(Text('Mortage')),
+              DataCell(Text('25000Tk')),
+            ]),
+            DataRow(cells: [
+              DataCell(Text('Big Mortage')),
+              DataCell(Text('25000Tk')),
+            ]),
+            DataRow(cells: [
+              DataCell(Text('Cost')),
+              DataCell(Text('25000Tk')),
+            ]),
+            DataRow(cells: [
+              DataCell(Text('Now Money')),
+              DataCell(Text('890000Tk')),
+            ]),
+          ]),
           SizedBox(
             height: 20,
           ),
-          Container(
-            alignment: Alignment.center,
-            height: 50.h,
-            width: 340.w,
-            margin: EdgeInsets.symmetric(horizontal: 20),
-            decoration: BoxDecoration(
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.grey.withOpacity(0.5),
-                  spreadRadius: 5,
-                  blurRadius: 7,
-                  offset: Offset(0, 3), // changes position of shadow
-                ),
-              ],
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(10),
-            ),
-            child: Text(
-              "Sell                  45000Tk",
-              style: TextStyle(
-                  fontSize: 20, fontFamily: "itim", color: Colors.black),
-            ),
-          ),
+          DataTable(columns: [
+            DataColumn(label: Text('Name')),
+            DataColumn(label: Text('Money')),
+          ], rows: [
+            DataRow(cells: [
+              DataCell(Text('Mortage')),
+              DataCell(Text('54000Tk')),
+            ]),
+            DataRow(cells: [
+              DataCell(Text('Big Mortage')),
+              DataCell(Text('70000Tk')),
+            ]),
+            DataRow(cells: [
+              DataCell(Text('Total')),
+              DataCell(Text('8900000Tk')),
+            ]),
+          ]),
           SizedBox(
             height: 20,
           ),
-          Container(
-            alignment: Alignment.center,
-            height: 50.h,
-            width: 340.w,
-            margin: EdgeInsets.symmetric(horizontal: 20),
-            decoration: BoxDecoration(
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.grey.withOpacity(0.5),
-                  spreadRadius: 5,
-                  blurRadius: 7,
-                  offset: Offset(0, 3), // changes position of shadow
-                ),
-              ],
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(10),
-            ),
-            child: Text(
-              "Mortage                  50000Tk",
-              style: TextStyle(
-                  fontSize: 20, fontFamily: "itim", color: Colors.black),
-            ),
-          ),
+          DataTable(columns: [
+            DataColumn(label: Text('Name')),
+            DataColumn(label: Text('Money')),
+          ], rows: [
+            DataRow(cells: [
+              DataCell(Text('Sell')),
+              DataCell(Text('90000Tk')),
+            ]),
+            DataRow(cells: [
+              DataCell(Text('Tax')),
+              DataCell(Text('6000Tk')),
+            ]),
+            DataRow(cells: [
+              DataCell(Text('Total')),
+              DataCell(Text('30000Tk')),
+            ]),
+          ]),
           SizedBox(
             height: 20,
           ),
-          Container(
-            alignment: Alignment.center,
-            height: 50.h,
-            width: 340.w,
-            margin: EdgeInsets.symmetric(horizontal: 20),
-            decoration: BoxDecoration(
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.grey.withOpacity(0.5),
-                  spreadRadius: 5,
-                  blurRadius: 7,
-                  offset: Offset(0, 3), // changes position of shadow
-                ),
-              ],
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(10),
-            ),
-            child: Text(
-              "Cost                  1000Tk",
-              style: TextStyle(
-                  fontSize: 20, fontFamily: "itim", color: Colors.black),
-            ),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-
-          Container(
-            alignment: Alignment.center,
-            height: 50.h,
-            width: 340.w,
-            margin: EdgeInsets.symmetric(horizontal: 20),
-            decoration: BoxDecoration(
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.grey.withOpacity(0.5),
-                  spreadRadius: 5,
-                  blurRadius: 7,
-                  offset: Offset(0, 3), // changes position of shadow
-                ),
-              ],
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(10),
-            ),
-            child: Text(
-              "Earn                  500000Tk",
-              style: TextStyle(
-                  fontSize: 20, fontFamily: "itim", color: Colors.black),
-            ),
-          ),
-          // Card(
-          //   child: Container(
-          //
-          //     alignment: Alignment.centerLeft,
-          //     height: 51,
-          //     width: 374,
-          //     decoration: BoxDecoration(
-          //         borderRadius: BorderRadius.circular(10),
-          //         color: Color(0xffF7FAFF)
-          //     ),
-          //     child: Text("Money                  4500000Tk",
-          //       style: TextStyle(
-          //           fontSize: 20,
-          //           fontFamily: "itim",color: Colors.black
-          //       ),),
-          //   ),
-          // ),
-          SizedBox(
-            height: 20,
-          ),
-          Container(
-            alignment: Alignment.center,
-            height: 50.h,
-            width: 340.w,
-            margin: EdgeInsets.symmetric(horizontal: 20),
-            decoration: BoxDecoration(
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.grey.withOpacity(0.5),
-                  spreadRadius: 5,
-                  blurRadius: 7,
-                  offset: Offset(0, 3), // changes position of shadow
-                ),
-              ],
-              color: Colors.white,
-            ),
-            child: Text(
-              "Mortage                  60000Tk",
-              style: TextStyle(
-                  fontSize: 20, fontFamily: "itim", color: Colors.black),
-            ),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          Container(
-            alignment: Alignment.center,
-            height: 50.h,
-            width: 340.w,
-            margin: EdgeInsets.symmetric(horizontal: 20),
-            decoration: BoxDecoration(
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.grey.withOpacity(0.5),
-                  spreadRadius: 5,
-                  blurRadius: 7,
-                  offset: Offset(0, 3), // changes position of shadow
-                ),
-              ],
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(10),
-            ),
-            child: Text(
-              "Big mortage                  400000Tk",
-              style: TextStyle(
-                  fontSize: 20, fontFamily: "itim", color: Colors.black),
-            ),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          Container(
-            alignment: Alignment.center,
-            height: 50.h,
-            width: 340.w,
-            margin: EdgeInsets.symmetric(horizontal: 20),
-            decoration: BoxDecoration(
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.grey.withOpacity(0.5),
-                  spreadRadius: 5,
-                  blurRadius: 7,
-                  offset: Offset(0, 3), // changes position of shadow
-                ),
-              ],
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(10),
-            ),
-            child: Text(
-              "Sell                  4500000Tk",
-              style: TextStyle(
-                  fontSize: 20, fontFamily: "itim", color: Colors.black),
-            ),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => Calculator()));
-            },
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 150),
-              alignment: Alignment.center,
-              height: 50.h,
-              width: 340.w,
-              decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.withOpacity(0.5),
-                      spreadRadius: 5,
-                      blurRadius: 7,
-                      offset: Offset(0, 3), // changes position of shadow
-                    ),
-                  ],
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(10),
-                  border: Border.all(color: Colors.black)),
-              child: Text(
-                ""
-                "Calculate",
-                style: TextStyle(
-                    fontFamily: "itim", fontSize: 20, color: Colors.black),
-              ),
-            ),
-          )
-        ],
-      ),
-    );
+          DataTable(columns: [
+            DataColumn(label: Text('Name')),
+            DataColumn(label: Text('Money')),
+          ], rows: [
+            DataRow(cells: [
+              DataCell(Text('Buy')),
+              DataCell(Text('20000Tk')),
+            ]),
+            DataRow(cells: [
+              DataCell(Text('Cost')),
+              DataCell(Text('1900Tk')),
+            ]),
+            DataRow(cells: [
+              DataCell(Text('Total')),
+              DataCell(Text('21000Tk')),
+            ]),
+          ])
+        ]));
   }
 }
