@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class ShopProduct extends StatefulWidget {
   const ShopProduct({Key? key}) : super(key: key);
 
@@ -21,15 +22,13 @@ class _ShopProductState extends State<ShopProduct> {
             height: 50,
             width: 300,
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10),
-              color: Color(0xffFF928E)
+                borderRadius: BorderRadius.circular(10),
+                color: Color(0xffFF928E)),
+            child: Text(
+              "Add to cart",
+              style: TextStyle(
+                  fontSize: 20, fontFamily: "itim", color: Colors.white),
             ),
-            child: Text("Add to cart",
-            style: TextStyle(
-              fontSize: 20,
-              fontFamily: "itim",
-              color: Colors.white
-            ),),
           )
         ],
       ),

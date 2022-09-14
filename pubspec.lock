@@ -158,6 +158,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  horizontal_list:
+    dependency: "direct main"
+    description:
+      name: horizontal_list
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.0.5"
   iconly:
     dependency: "direct main"
     description:

@@ -194,7 +194,7 @@ class _profilepageState extends State<profilepage> {
             margin: EdgeInsets.symmetric(horizontal: 20),
             alignment: Alignment.center,
             height: 20,
-            width: 400,
+            width: 320,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10), color: Colors.white),
             child: Text(

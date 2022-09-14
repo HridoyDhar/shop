@@ -58,7 +58,7 @@ class _PaymentlistState extends State<Paymentlist> {
                           borderRadius: BorderRadius.circular(10))),
                 )),
             SizedBox(
-              height: 10,
+              height: 20,
             ),
             Container(
               margin: EdgeInsets.symmetric(horizontal: 20.w),
@@ -79,7 +79,7 @@ class _PaymentlistState extends State<Paymentlist> {
               child: Row(
                 children: [
                   Container(
-                    alignment: Alignment.centerLeft,
+                    alignment: Alignment.center,
                     child: Text(
                       "1.Rimon          460000Tk",
                       style: TextStyle(
@@ -101,7 +101,7 @@ class _PaymentlistState extends State<Paymentlist> {
               ),
             ),
             SizedBox(
-              height: 10,
+              height: 20,
             ),
             Container(
               margin: EdgeInsets.symmetric(horizontal: 20.w),
@@ -122,7 +122,7 @@ class _PaymentlistState extends State<Paymentlist> {
               child: Row(
                 children: [
                   Container(
-                    alignment: Alignment.centerLeft,
+                    alignment: Alignment.center,
                     child: Text(
                       "1.Rimon          460000Tk",
                       style: TextStyle(
@@ -144,7 +144,7 @@ class _PaymentlistState extends State<Paymentlist> {
               ),
             ),
             SizedBox(
-              height: 10,
+              height: 20,
             ),
             Container(
               margin: EdgeInsets.symmetric(horizontal: 20.w),
@@ -165,7 +165,7 @@ class _PaymentlistState extends State<Paymentlist> {
               child: Row(
                 children: [
                   Container(
-                    alignment: Alignment.centerLeft,
+                    alignment: Alignment.center,
                     child: Text(
                       "1.Rimon          460000Tk",
                       style: TextStyle(
@@ -187,7 +187,7 @@ class _PaymentlistState extends State<Paymentlist> {
               ),
             ),
             SizedBox(
-              height: 10,
+              height: 20,
             ),
             Container(
               margin: EdgeInsets.symmetric(horizontal: 20.w),
@@ -208,7 +208,7 @@ class _PaymentlistState extends State<Paymentlist> {
               child: Row(
                 children: [
                   Container(
-                    alignment: Alignment.centerLeft,
+                    alignment: Alignment.center,
                     child: Text(
                       "1.Rimon          460000Tk",
                       style: TextStyle(
@@ -230,7 +230,7 @@ class _PaymentlistState extends State<Paymentlist> {
               ),
             ),
             SizedBox(
-              height: 10,
+              height: 20,
             ),
             Container(
               margin: EdgeInsets.symmetric(horizontal: 20.w),
@@ -251,7 +251,7 @@ class _PaymentlistState extends State<Paymentlist> {
               child: Row(
                 children: [
                   Container(
-                    alignment: Alignment.centerLeft,
+                    alignment: Alignment.center,
                     child: Text(
                       "1.Rimon          460000Tk",
                       style: TextStyle(
