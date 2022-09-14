@@ -6,7 +6,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:goldshop/Home_page.dart';
 import 'package:goldshop/Likepage.dart';
 import 'package:goldshop/Notifi_cation.dart';
-import 'package:goldshop/Postyou.dart';
 import 'package:goldshop/Profilepage.dart';
 import 'package:goldshop/ShopLocation.dart';
 

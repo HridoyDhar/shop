@@ -90,46 +90,39 @@ class _AddToCardState extends State<AddToCard> {
           SizedBox(
             height: 20.h,
           ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => ShoppingList()));
-            },
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 20.w),
-              height: 40.h,
-              width: 200.w,
-              decoration: BoxDecoration(
-                color: Color(0xffFF928E),
-                borderRadius: BorderRadius.circular(10.r),
+          Container(
+            margin: EdgeInsets.symmetric(horizontal: 20.w),
+            height: 40.h,
+            width: 200.w,
+            decoration: BoxDecoration(
+              color: Color(0xffFF928E),
+              borderRadius: BorderRadius.circular(10.r),
+            ),
+            child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+              Icon(
+                Icons.shop,
+                color: Colors.white,
               ),
-              child:
-                  Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-                Icon(
-                  Icons.shop,
-                  color: Colors.white,
-                ),
-                SizedBox(
-                  width: 15.w,
-                ),
-                InkWell(
-                  onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Payment()));
-                  },
-                  child: Container(
-                    child: Text(
-                      "Add to cart",
-                      style: TextStyle(
-                        fontSize: 15.sp,
-                        fontWeight: FontWeight.w700,
-                        color: Colors.white,
-                      ),
+              SizedBox(
+                width: 15.w,
+              ),
+              InkWell(
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Payment()));
+                },
+                child: Container(
+                  child: Text(
+                    "Add to cart",
+                    style: TextStyle(
+                      fontSize: 15.sp,
+                      fontWeight: FontWeight.w700,
+                      color: Colors.white,
                     ),
                   ),
-                )
-              ]),
-            ),
+                ),
+              )
+            ]),
           ),
         ],
       ),

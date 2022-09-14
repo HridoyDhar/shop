@@ -63,30 +63,29 @@ class _IncomeListState extends State<IncomeList> {
                     offset: Offset(0, 3), // changes position of shadow
                   ),
                 ],
+                color: Colors.white,
                 borderRadius: BorderRadius.circular(10.r),
               ),
-              child: Card(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(
-                      Icons.money,
-                      color: Colors.greenAccent,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.money,
+                    color: Colors.greenAccent,
+                  ),
+                  SizedBox(
+                    width: 15.w,
+                  ),
+                  Container(
+                    child: Text(
+                      "4.Income                                                    569000",
+                      style: TextStyle(
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
                     ),
-                    SizedBox(
-                      width: 15.w,
-                    ),
-                    Container(
-                      child: Text(
-                        "4.Income                                                    569000",
-                        style: TextStyle(
-                            fontSize: 15.sp,
-                            fontWeight: FontWeight.w700,
-                            color: Colors.black),
-                      ),
-                    ),
-                  ],
-                ),
+                  ),
+                ],
               ),
             ),
           ),
@@ -111,30 +110,29 @@ class _IncomeListState extends State<IncomeList> {
                     offset: Offset(0, 3), // changes position of shadow
                   ),
                 ],
+                color: Colors.white,
                 borderRadius: BorderRadius.circular(10.r),
               ),
-              child: Card(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(
-                      Icons.money,
-                      color: Colors.greenAccent,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.money,
+                    color: Colors.greenAccent,
+                  ),
+                  SizedBox(
+                    width: 15.w,
+                  ),
+                  Container(
+                    child: Text(
+                      "4.Income                                                    569000",
+                      style: TextStyle(
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
                     ),
-                    SizedBox(
-                      width: 15.w,
-                    ),
-                    Container(
-                      child: Text(
-                        "4.Income                                                    569000",
-                        style: TextStyle(
-                            fontSize: 15.sp,
-                            fontWeight: FontWeight.w700,
-                            color: Colors.black),
-                      ),
-                    ),
-                  ],
-                ),
+                  ),
+                ],
               ),
             ),
           ),
@@ -159,30 +157,29 @@ class _IncomeListState extends State<IncomeList> {
                     offset: Offset(0, 3), // changes position of shadow
                   ),
                 ],
+                color: Colors.white,
                 borderRadius: BorderRadius.circular(10.r),
               ),
-              child: Card(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(
-                      Icons.money,
-                      color: Colors.greenAccent,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.money,
+                    color: Colors.greenAccent,
+                  ),
+                  SizedBox(
+                    width: 15.w,
+                  ),
+                  Container(
+                    child: Text(
+                      "4.Income                                                    569000",
+                      style: TextStyle(
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
                     ),
-                    SizedBox(
-                      width: 15.w,
-                    ),
-                    Container(
-                      child: Text(
-                        "4.Income                                                    569000",
-                        style: TextStyle(
-                            fontSize: 15.sp,
-                            fontWeight: FontWeight.w700,
-                            color: Colors.black),
-                      ),
-                    ),
-                  ],
-                ),
+                  ),
+                ],
               ),
             ),
           ),
@@ -207,30 +204,29 @@ class _IncomeListState extends State<IncomeList> {
                     offset: Offset(0, 3), // changes position of shadow
                   ),
                 ],
+                color: Colors.white,
                 borderRadius: BorderRadius.circular(10.r),
               ),
-              child: Card(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(
-                      Icons.money,
-                      color: Colors.greenAccent,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.money,
+                    color: Colors.greenAccent,
+                  ),
+                  SizedBox(
+                    width: 15.w,
+                  ),
+                  Container(
+                    child: Text(
+                      "4.Income                                                    569000",
+                      style: TextStyle(
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
                     ),
-                    SizedBox(
-                      width: 15.w,
-                    ),
-                    Container(
-                      child: Text(
-                        "4.Income                                                    569000",
-                        style: TextStyle(
-                            fontSize: 15.sp,
-                            fontWeight: FontWeight.w700,
-                            color: Colors.black),
-                      ),
-                    ),
-                  ],
-                ),
+                  ),
+                ],
               ),
             ),
           ),
@@ -255,30 +251,29 @@ class _IncomeListState extends State<IncomeList> {
                     offset: Offset(0, 3), // changes position of shadow
                   ),
                 ],
+                color: Colors.white,
                 borderRadius: BorderRadius.circular(10.r),
               ),
-              child: Card(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(
-                      Icons.money,
-                      color: Colors.greenAccent,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.money,
+                    color: Colors.greenAccent,
+                  ),
+                  SizedBox(
+                    width: 15.w,
+                  ),
+                  Container(
+                    child: Text(
+                      "4.Income                                                    569000",
+                      style: TextStyle(
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
                     ),
-                    SizedBox(
-                      width: 15.w,
-                    ),
-                    Container(
-                      child: Text(
-                        "4.Income                                                    569000",
-                        style: TextStyle(
-                            fontSize: 15.sp,
-                            fontWeight: FontWeight.w700,
-                            color: Colors.black),
-                      ),
-                    ),
-                  ],
-                ),
+                  ),
+                ],
               ),
             ),
           ),
@@ -303,30 +298,29 @@ class _IncomeListState extends State<IncomeList> {
                     offset: Offset(0, 3), // changes position of shadow
                   ),
                 ],
+                color: Colors.white,
                 borderRadius: BorderRadius.circular(10.r),
               ),
-              child: Card(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(
-                      Icons.money,
-                      color: Colors.greenAccent,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.money,
+                    color: Colors.greenAccent,
+                  ),
+                  SizedBox(
+                    width: 15.w,
+                  ),
+                  Container(
+                    child: Text(
+                      "4.Income                                                    569000",
+                      style: TextStyle(
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
                     ),
-                    SizedBox(
-                      width: 15.w,
-                    ),
-                    Container(
-                      child: Text(
-                        "4.Income                                                    569000",
-                        style: TextStyle(
-                            fontSize: 15.sp,
-                            fontWeight: FontWeight.w700,
-                            color: Colors.black),
-                      ),
-                    ),
-                  ],
-                ),
+                  ),
+                ],
               ),
             ),
           ),
@@ -351,30 +345,29 @@ class _IncomeListState extends State<IncomeList> {
                     offset: Offset(0, 3), // changes position of shadow
                   ),
                 ],
+                color: Colors.white,
                 borderRadius: BorderRadius.circular(10.r),
               ),
-              child: Card(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(
-                      Icons.money,
-                      color: Colors.greenAccent,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.money,
+                    color: Colors.greenAccent,
+                  ),
+                  SizedBox(
+                    width: 15.w,
+                  ),
+                  Container(
+                    child: Text(
+                      "4.Income                                                    569000",
+                      style: TextStyle(
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
                     ),
-                    SizedBox(
-                      width: 15.w,
-                    ),
-                    Container(
-                      child: Text(
-                        "4.Income                                                    569000",
-                        style: TextStyle(
-                            fontSize: 15.sp,
-                            fontWeight: FontWeight.w700,
-                            color: Colors.black),
-                      ),
-                    ),
-                  ],
-                ),
+                  ),
+                ],
               ),
             ),
           ),
@@ -399,30 +392,29 @@ class _IncomeListState extends State<IncomeList> {
                     offset: Offset(0, 3), // changes position of shadow
                   ),
                 ],
+                color: Colors.white,
                 borderRadius: BorderRadius.circular(10.r),
               ),
-              child: Card(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(
-                      Icons.money,
-                      color: Colors.greenAccent,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.money,
+                    color: Colors.greenAccent,
+                  ),
+                  SizedBox(
+                    width: 15.w,
+                  ),
+                  Container(
+                    child: Text(
+                      "4.Income                                                    569000",
+                      style: TextStyle(
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
                     ),
-                    SizedBox(
-                      width: 15.w,
-                    ),
-                    Container(
-                      child: Text(
-                        "4.Income                                                    569000",
-                        style: TextStyle(
-                            fontSize: 15.sp,
-                            fontWeight: FontWeight.w700,
-                            color: Colors.black),
-                      ),
-                    ),
-                  ],
-                ),
+                  ),
+                ],
               ),
             ),
           ),
@@ -447,30 +439,29 @@ class _IncomeListState extends State<IncomeList> {
                     offset: Offset(0, 3), // changes position of shadow
                   ),
                 ],
+                color: Colors.white,
                 borderRadius: BorderRadius.circular(10.r),
               ),
-              child: Card(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(
-                      Icons.money,
-                      color: Colors.greenAccent,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.money,
+                    color: Colors.greenAccent,
+                  ),
+                  SizedBox(
+                    width: 15.w,
+                  ),
+                  Container(
+                    child: Text(
+                      "4.Income                                                    569000",
+                      style: TextStyle(
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
                     ),
-                    SizedBox(
-                      width: 15.w,
-                    ),
-                    Container(
-                      child: Text(
-                        "4.Income                                                    569000",
-                        style: TextStyle(
-                            fontSize: 15.sp,
-                            fontWeight: FontWeight.w700,
-                            color: Colors.black),
-                      ),
-                    ),
-                  ],
-                ),
+                  ),
+                ],
               ),
             ),
           ),

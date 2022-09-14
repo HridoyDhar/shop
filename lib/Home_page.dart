@@ -7,7 +7,6 @@ import 'package:goldshop/Likepage.dart';
 
 import 'package:goldshop/Notifi_cation.dart';
 import 'package:goldshop/Postcomment/Post_commend.dart';
-import 'package:goldshop/Postyou.dart';
 import 'package:goldshop/Profilepage.dart';
 import 'package:goldshop/ShopLocation.dart';
 
@@ -30,7 +29,7 @@ class _Home_pageState extends State<Home_page> {
             onPressed: () {},
             icon: Icon(
               Icons.search,
-              color: Colors.cyanAccent,
+              color: Colors.blue,
             )),
         actions: [
           IconButton(
@@ -38,7 +37,7 @@ class _Home_pageState extends State<Home_page> {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => Findperson()));
               },
-              icon: Icon(Icons.person, color: Colors.cyanAccent)),
+              icon: Icon(Icons.person, color: Colors.blue)),
         ],
       ),
       body: Column(children: [
@@ -135,94 +134,96 @@ class _Home_pageState extends State<Home_page> {
                             SizedBox(
                               height: 10.h,
                             ),
-                            Container(
+                            // Container(
+                            //   child: Row(
+                            //     mainAxisAlignment: MainAxisAlignment.end,
+                            //     children: [
+                            //       Icon(
+                            //         Icons.star,
+                            //         color: Colors.yellow,
+                            //       ),
+                            //       Icon(
+                            //         Icons.star,
+                            //         color: Colors.yellow,
+                            //       ),
+                            //       Icon(
+                            //         Icons.star,
+                            //         color: Colors.yellow,
+                            //       ),
+                            //       Icon(
+                            //         Icons.star,
+                            //         color: Colors.yellow,
+                            //       ),
+                            //       Icon(
+                            //         Icons.star,
+                            //         color: Colors.yellow,
+                            //       )
+                            //     ],
+                            //   ),
+                            // ),
+                            Center(
                               child: Row(
-                                mainAxisAlignment: MainAxisAlignment.end,
                                 children: [
-                                  Icon(
-                                    Icons.star,
-                                    color: Colors.yellow,
+                                  Container(
+                                    padding:
+                                        EdgeInsets.symmetric(horizontal: 5.w),
+                                    child: IconButton(
+                                        onPressed: () {},
+                                        icon: Icon(
+                                          Icons.favorite_border,
+                                          color: Colors.red,
+                                        )),
                                   ),
-                                  Icon(
-                                    Icons.star,
-                                    color: Colors.yellow,
+                                  Text(
+                                    "${4}k",
+                                    style: TextStyle(
+                                        fontSize: 13.sp,
+                                        fontWeight: FontWeight.w500,
+                                        color: Colors.black),
                                   ),
-                                  Icon(
-                                    Icons.star,
-                                    color: Colors.yellow,
+                                  SizedBox(
+                                    width: 10.w,
                                   ),
-                                  Icon(
-                                    Icons.star,
-                                    color: Colors.yellow,
+                                  Container(
+                                    padding:
+                                        EdgeInsets.symmetric(horizontal: 5.w),
+                                    child: IconButton(
+                                        onPressed: () {},
+                                        icon: Icon(
+                                          Icons.messenger,
+                                          color: Colors.blue,
+                                        )),
                                   ),
-                                  Icon(
-                                    Icons.star,
-                                    color: Colors.yellow,
-                                  )
+                                  Text(
+                                    "${4}k",
+                                    style: TextStyle(
+                                        fontSize: 13.sp,
+                                        fontWeight: FontWeight.w500,
+                                        color: Colors.black),
+                                  ),
+                                  SizedBox(
+                                    width: 10.w,
+                                  ),
+                                  Container(
+                                    padding:
+                                        EdgeInsets.symmetric(horizontal: 5.w),
+                                    child: IconButton(
+                                        onPressed: () {},
+                                        icon: Icon(
+                                          Icons.share,
+                                          color: Colors.green,
+                                          size: 25.h,
+                                        )),
+                                  ),
+                                  Text(
+                                    "${5}",
+                                    style: TextStyle(
+                                        fontSize: 13.sp,
+                                        fontWeight: FontWeight.w500,
+                                        color: Colors.black),
+                                  ),
                                 ],
                               ),
-                            ),
-                            Row(
-                              children: [
-                                Container(
-                                  padding:
-                                      EdgeInsets.symmetric(horizontal: 5.w),
-                                  child: IconButton(
-                                      onPressed: () {},
-                                      icon: Icon(
-                                        Icons.favorite_border,
-                                        color: Colors.red,
-                                      )),
-                                ),
-                                Text(
-                                  "${4}k",
-                                  style: TextStyle(
-                                      fontSize: 13.sp,
-                                      fontWeight: FontWeight.w500,
-                                      color: Colors.black),
-                                ),
-                                SizedBox(
-                                  width: 30.w,
-                                ),
-                                Container(
-                                  padding:
-                                      EdgeInsets.symmetric(horizontal: 5.w),
-                                  child: IconButton(
-                                      onPressed: () {},
-                                      icon: Icon(
-                                        Icons.messenger,
-                                        color: Colors.blue,
-                                      )),
-                                ),
-                                Text(
-                                  "${4}k",
-                                  style: TextStyle(
-                                      fontSize: 13.sp,
-                                      fontWeight: FontWeight.w500,
-                                      color: Colors.black),
-                                ),
-                                SizedBox(
-                                  width: 30.w,
-                                ),
-                                Container(
-                                  padding:
-                                      EdgeInsets.symmetric(horizontal: 5.w),
-                                  child: IconButton(
-                                      onPressed: () {},
-                                      icon: Icon(
-                                        Icons.start,
-                                        color: Colors.green,
-                                        size: 25.h,
-                                      )),
-                                ),
-                                Text(
-                                  "${5}",
-                                  style: TextStyle(
-                                      fontSize: 13.sp,
-                                      fontWeight: FontWeight.w500,
-                                      color: Colors.black),
-                                ),
-                              ],
                             ),
                           ],
                         ),

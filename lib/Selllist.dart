@@ -91,30 +91,29 @@ class _SelllistState extends State<Selllist> {
                       offset: Offset(0, 3), // changes position of shadow
                     ),
                   ],
+                  color: Colors.white,
                   borderRadius: BorderRadius.circular(10.r),
                 ),
-                child: Card(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(
-                        Icons.person,
-                        color: Colors.greenAccent,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      Icons.person,
+                      color: Colors.greenAccent,
+                    ),
+                    SizedBox(
+                      width: 15.w,
+                    ),
+                    Container(
+                      child: Text(
+                        "4.Mr                                                          Rahul",
+                        style: TextStyle(
+                            fontSize: 15.sp,
+                            fontWeight: FontWeight.w700,
+                            color: Colors.black),
                       ),
-                      SizedBox(
-                        width: 15.w,
-                      ),
-                      Container(
-                        child: Text(
-                          "4.Mr                                                          Rahul",
-                          style: TextStyle(
-                              fontSize: 15.sp,
-                              fontWeight: FontWeight.w700,
-                              color: Colors.black),
-                        ),
-                      ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ),
             ),
@@ -141,30 +140,29 @@ class _SelllistState extends State<Selllist> {
                       offset: Offset(0, 3), // changes position of shadow
                     ),
                   ],
+                  color: Colors.white,
                   borderRadius: BorderRadius.circular(10.r),
                 ),
-                child: Card(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(
-                        Icons.person,
-                        color: Colors.greenAccent,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      Icons.person,
+                      color: Colors.greenAccent,
+                    ),
+                    SizedBox(
+                      width: 15.w,
+                    ),
+                    Container(
+                      child: Text(
+                        "4.Mr                                                          Rahul",
+                        style: TextStyle(
+                            fontSize: 15.sp,
+                            fontWeight: FontWeight.w700,
+                            color: Colors.black),
                       ),
-                      SizedBox(
-                        width: 15.w,
-                      ),
-                      Container(
-                        child: Text(
-                          "4.Mr                                                          Rahul",
-                          style: TextStyle(
-                              fontSize: 15.sp,
-                              fontWeight: FontWeight.w700,
-                              color: Colors.black),
-                        ),
-                      ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ),
             ),
@@ -191,30 +189,29 @@ class _SelllistState extends State<Selllist> {
                       offset: Offset(0, 3), // changes position of shadow
                     ),
                   ],
+                  color: Colors.white,
                   borderRadius: BorderRadius.circular(10.r),
                 ),
-                child: Card(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(
-                        Icons.person,
-                        color: Colors.greenAccent,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      Icons.person,
+                      color: Colors.greenAccent,
+                    ),
+                    SizedBox(
+                      width: 15.w,
+                    ),
+                    Container(
+                      child: Text(
+                        "4.Mr                                                          Rahul",
+                        style: TextStyle(
+                            fontSize: 15.sp,
+                            fontWeight: FontWeight.w700,
+                            color: Colors.black),
                       ),
-                      SizedBox(
-                        width: 15.w,
-                      ),
-                      Container(
-                        child: Text(
-                          "4.Mr                                                          Rahul",
-                          style: TextStyle(
-                              fontSize: 15.sp,
-                              fontWeight: FontWeight.w700,
-                              color: Colors.black),
-                        ),
-                      ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ),
             ),
@@ -241,30 +238,29 @@ class _SelllistState extends State<Selllist> {
                       offset: Offset(0, 3), // changes position of shadow
                     ),
                   ],
+                  color: Colors.white,
                   borderRadius: BorderRadius.circular(10.r),
                 ),
-                child: Card(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(
-                        Icons.person,
-                        color: Colors.greenAccent,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      Icons.person,
+                      color: Colors.greenAccent,
+                    ),
+                    SizedBox(
+                      width: 15.w,
+                    ),
+                    Container(
+                      child: Text(
+                        "4.Mr                                                          Rahul",
+                        style: TextStyle(
+                            fontSize: 15.sp,
+                            fontWeight: FontWeight.w700,
+                            color: Colors.black),
                       ),
-                      SizedBox(
-                        width: 15.w,
-                      ),
-                      Container(
-                        child: Text(
-                          "4.Mr                                                          Rahul",
-                          style: TextStyle(
-                              fontSize: 15.sp,
-                              fontWeight: FontWeight.w700,
-                              color: Colors.black),
-                        ),
-                      ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ),
             ),
@@ -291,30 +287,29 @@ class _SelllistState extends State<Selllist> {
                       offset: Offset(0, 3), // changes position of shadow
                     ),
                   ],
+                  color: Colors.white,
                   borderRadius: BorderRadius.circular(10.r),
                 ),
-                child: Card(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(
-                        Icons.person,
-                        color: Colors.greenAccent,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      Icons.person,
+                      color: Colors.greenAccent,
+                    ),
+                    SizedBox(
+                      width: 15.w,
+                    ),
+                    Container(
+                      child: Text(
+                        "4.Mr                                                          Rahul",
+                        style: TextStyle(
+                            fontSize: 15.sp,
+                            fontWeight: FontWeight.w700,
+                            color: Colors.black),
                       ),
-                      SizedBox(
-                        width: 15.w,
-                      ),
-                      Container(
-                        child: Text(
-                          "4.Mr                                                          Rahul",
-                          style: TextStyle(
-                              fontSize: 15.sp,
-                              fontWeight: FontWeight.w700,
-                              color: Colors.black),
-                        ),
-                      ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ),
             ),
@@ -341,30 +336,29 @@ class _SelllistState extends State<Selllist> {
                       offset: Offset(0, 3), // changes position of shadow
                     ),
                   ],
+                  color: Colors.white,
                   borderRadius: BorderRadius.circular(10.r),
                 ),
-                child: Card(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(
-                        Icons.person,
-                        color: Colors.greenAccent,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      Icons.person,
+                      color: Colors.greenAccent,
+                    ),
+                    SizedBox(
+                      width: 15.w,
+                    ),
+                    Container(
+                      child: Text(
+                        "4.Mr                                                          Rahul",
+                        style: TextStyle(
+                            fontSize: 15.sp,
+                            fontWeight: FontWeight.w700,
+                            color: Colors.black),
                       ),
-                      SizedBox(
-                        width: 15.w,
-                      ),
-                      Container(
-                        child: Text(
-                          "4.Mr                                                          Rahul",
-                          style: TextStyle(
-                              fontSize: 15.sp,
-                              fontWeight: FontWeight.w700,
-                              color: Colors.black),
-                        ),
-                      ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ),
             ),
@@ -391,30 +385,29 @@ class _SelllistState extends State<Selllist> {
                       offset: Offset(0, 3), // changes position of shadow
                     ),
                   ],
+                  color: Colors.white,
                   borderRadius: BorderRadius.circular(10.r),
                 ),
-                child: Card(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(
-                        Icons.person,
-                        color: Colors.greenAccent,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      Icons.person,
+                      color: Colors.greenAccent,
+                    ),
+                    SizedBox(
+                      width: 15.w,
+                    ),
+                    Container(
+                      child: Text(
+                        "4.Mr                                                          Rahul",
+                        style: TextStyle(
+                            fontSize: 15.sp,
+                            fontWeight: FontWeight.w700,
+                            color: Colors.black),
                       ),
-                      SizedBox(
-                        width: 15.w,
-                      ),
-                      Container(
-                        child: Text(
-                          "4.Mr                                                          Rahul",
-                          style: TextStyle(
-                              fontSize: 15.sp,
-                              fontWeight: FontWeight.w700,
-                              color: Colors.black),
-                        ),
-                      ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ),
             ),
@@ -441,30 +434,29 @@ class _SelllistState extends State<Selllist> {
                       offset: Offset(0, 3), // changes position of shadow
                     ),
                   ],
+                  color: Colors.white,
                   borderRadius: BorderRadius.circular(10.r),
                 ),
-                child: Card(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(
-                        Icons.person,
-                        color: Colors.greenAccent,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      Icons.person,
+                      color: Colors.greenAccent,
+                    ),
+                    SizedBox(
+                      width: 15.w,
+                    ),
+                    Container(
+                      child: Text(
+                        "4.Mr                                                          Rahul",
+                        style: TextStyle(
+                            fontSize: 15.sp,
+                            fontWeight: FontWeight.w700,
+                            color: Colors.black),
                       ),
-                      SizedBox(
-                        width: 15.w,
-                      ),
-                      Container(
-                        child: Text(
-                          "4.Mr                                                          Rahul",
-                          style: TextStyle(
-                              fontSize: 15.sp,
-                              fontWeight: FontWeight.w700,
-                              color: Colors.black),
-                        ),
-                      ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ),
             ),
@@ -491,30 +483,29 @@ class _SelllistState extends State<Selllist> {
                       offset: Offset(0, 3), // changes position of shadow
                     ),
                   ],
+                  color: Colors.white,
                   borderRadius: BorderRadius.circular(10.r),
                 ),
-                child: Card(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(
-                        Icons.person,
-                        color: Colors.greenAccent,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      Icons.person,
+                      color: Colors.greenAccent,
+                    ),
+                    SizedBox(
+                      width: 15.w,
+                    ),
+                    Container(
+                      child: Text(
+                        "4.Mr                                                          Rahul",
+                        style: TextStyle(
+                            fontSize: 15.sp,
+                            fontWeight: FontWeight.w700,
+                            color: Colors.black),
                       ),
-                      SizedBox(
-                        width: 15.w,
-                      ),
-                      Container(
-                        child: Text(
-                          "4.Mr                                                          Rahul",
-                          style: TextStyle(
-                              fontSize: 15.sp,
-                              fontWeight: FontWeight.w700,
-                              color: Colors.black),
-                        ),
-                      ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ),
             ),
@@ -541,30 +532,29 @@ class _SelllistState extends State<Selllist> {
                       offset: Offset(0, 3), // changes position of shadow
                     ),
                   ],
+                  color: Colors.white,
                   borderRadius: BorderRadius.circular(10.r),
                 ),
-                child: Card(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(
-                        Icons.person,
-                        color: Colors.greenAccent,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      Icons.person,
+                      color: Colors.greenAccent,
+                    ),
+                    SizedBox(
+                      width: 15.w,
+                    ),
+                    Container(
+                      child: Text(
+                        "4.Mr                                                          Rahul",
+                        style: TextStyle(
+                            fontSize: 15.sp,
+                            fontWeight: FontWeight.w700,
+                            color: Colors.black),
                       ),
-                      SizedBox(
-                        width: 15.w,
-                      ),
-                      Container(
-                        child: Text(
-                          "4.Mr                                                          Rahul",
-                          style: TextStyle(
-                              fontSize: 15.sp,
-                              fontWeight: FontWeight.w700,
-                              color: Colors.black),
-                        ),
-                      ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ),
             ),
@@ -591,30 +581,29 @@ class _SelllistState extends State<Selllist> {
                       offset: Offset(0, 3), // changes position of shadow
                     ),
                   ],
+                  color: Colors.white,
                   borderRadius: BorderRadius.circular(10.r),
                 ),
-                child: Card(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(
-                        Icons.person,
-                        color: Colors.greenAccent,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      Icons.person,
+                      color: Colors.greenAccent,
+                    ),
+                    SizedBox(
+                      width: 15.w,
+                    ),
+                    Container(
+                      child: Text(
+                        "4.Mr                                                          Rahul",
+                        style: TextStyle(
+                            fontSize: 15.sp,
+                            fontWeight: FontWeight.w700,
+                            color: Colors.black),
                       ),
-                      SizedBox(
-                        width: 15.w,
-                      ),
-                      Container(
-                        child: Text(
-                          "4.Mr                                                          Rahul",
-                          style: TextStyle(
-                              fontSize: 15.sp,
-                              fontWeight: FontWeight.w700,
-                              color: Colors.black),
-                        ),
-                      ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ),
             ),
@@ -641,30 +630,29 @@ class _SelllistState extends State<Selllist> {
                       offset: Offset(0, 3), // changes position of shadow
                     ),
                   ],
+                  color: Colors.white,
                   borderRadius: BorderRadius.circular(10.r),
                 ),
-                child: Card(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(
-                        Icons.person,
-                        color: Colors.greenAccent,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      Icons.person,
+                      color: Colors.greenAccent,
+                    ),
+                    SizedBox(
+                      width: 15.w,
+                    ),
+                    Container(
+                      child: Text(
+                        "4.Mr                                                          Rahul",
+                        style: TextStyle(
+                            fontSize: 15.sp,
+                            fontWeight: FontWeight.w700,
+                            color: Colors.black),
                       ),
-                      SizedBox(
-                        width: 15.w,
-                      ),
-                      Container(
-                        child: Text(
-                          "4.Mr                                                          Rahul",
-                          style: TextStyle(
-                              fontSize: 15.sp,
-                              fontWeight: FontWeight.w700,
-                              color: Colors.black),
-                        ),
-                      ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ),
             ),
@@ -691,30 +679,29 @@ class _SelllistState extends State<Selllist> {
                       offset: Offset(0, 3), // changes position of shadow
                     ),
                   ],
+                  color: Colors.white,
                   borderRadius: BorderRadius.circular(10.r),
                 ),
-                child: Card(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(
-                        Icons.person,
-                        color: Colors.greenAccent,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      Icons.person,
+                      color: Colors.greenAccent,
+                    ),
+                    SizedBox(
+                      width: 15.w,
+                    ),
+                    Container(
+                      child: Text(
+                        "4.Mr                                                          Rahul",
+                        style: TextStyle(
+                            fontSize: 15.sp,
+                            fontWeight: FontWeight.w700,
+                            color: Colors.black),
                       ),
-                      SizedBox(
-                        width: 15.w,
-                      ),
-                      Container(
-                        child: Text(
-                          "4.Mr                                                          Rahul",
-                          style: TextStyle(
-                              fontSize: 15.sp,
-                              fontWeight: FontWeight.w700,
-                              color: Colors.black),
-                        ),
-                      ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ),
             ),

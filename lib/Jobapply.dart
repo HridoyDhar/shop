@@ -3,6 +3,7 @@ import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:goldshop/Information.dart';
+
 class Jobapply extends StatefulWidget {
   const Jobapply({Key? key}) : super(key: key);
 
@@ -14,7 +15,7 @@ class _JobapplyState extends State<Jobapply> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+        backgroundColor: Colors.white,
         body: ListView(
           children: [
             SizedBox(
@@ -29,7 +30,8 @@ class _JobapplyState extends State<Jobapply> {
               height: 50,
             ),
             Container(
-              height: 45.h,
+              height: 40.h,
+              width: 300.w,
               margin: EdgeInsets.symmetric(horizontal: 20.w),
               child: TextField(
                 decoration: InputDecoration(
@@ -47,7 +49,8 @@ class _JobapplyState extends State<Jobapply> {
               height: 20,
             ),
             Container(
-              height: 45.h,
+              height: 40.h,
+              width: 300.w,
               margin: EdgeInsets.symmetric(horizontal: 20.w),
               child: TextField(
                 decoration: InputDecoration(
@@ -65,7 +68,8 @@ class _JobapplyState extends State<Jobapply> {
               height: 20,
             ),
             Container(
-              height: 45.h,
+              height: 40.h,
+              width: 300.w,
               margin: EdgeInsets.symmetric(horizontal: 20.w),
               child: TextField(
                 decoration: InputDecoration(
@@ -83,7 +87,8 @@ class _JobapplyState extends State<Jobapply> {
               height: 20,
             ),
             Container(
-              height: 45.h,
+              height: 40.h,
+              width: 300.w,
               margin: EdgeInsets.symmetric(horizontal: 20.w),
               child: TextField(
                 decoration: InputDecoration(
@@ -101,7 +106,8 @@ class _JobapplyState extends State<Jobapply> {
               height: 20,
             ),
             Container(
-              height: 45.h,
+              height: 40.h,
+              width: 300.w,
               margin: EdgeInsets.symmetric(horizontal: 20.w),
               child: TextField(
                 decoration: InputDecoration(
@@ -119,7 +125,8 @@ class _JobapplyState extends State<Jobapply> {
               height: 20,
             ),
             Container(
-              height: 45.h,
+              height: 40.h,
+              width: 300.w,
               margin: EdgeInsets.symmetric(horizontal: 20.w),
               child: TextField(
                 decoration: InputDecoration(
@@ -137,7 +144,8 @@ class _JobapplyState extends State<Jobapply> {
               height: 20,
             ),
             Container(
-              height: 45.h,
+              height: 40.h,
+              width: 300.w,
               margin: EdgeInsets.symmetric(horizontal: 20.w),
               child: TextField(
                 decoration: InputDecoration(
@@ -162,8 +170,8 @@ class _JobapplyState extends State<Jobapply> {
               child: Container(
                 margin: EdgeInsets.symmetric(horizontal: 110.w),
                 alignment: Alignment.center,
-                width: 150.w,
-                height: 60.h,
+                height: 40.h,
+                width: 300.w,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10.r),
                     color: Color(0xffFE8178)),

@@ -41,6 +41,7 @@ dependencies:
   icons_plus: ^1.0.2
   iconly: ^1.0.1
   awesome_icons: ^1.1.0
+  fl_chart: ^0.55.1
 
 dev_dependencies:
   flutter_test:

@@ -11,14 +11,14 @@ import 'package:goldshop/Compline/Compline.dart';
 import 'package:goldshop/Home_page.dart';
 import 'package:goldshop/Joblist.dart';
 import 'package:goldshop/Likepage.dart';
+import 'package:goldshop/Mypost/My_post.dart';
+import 'package:goldshop/Mysavepost/My_savepost.dart';
 import 'package:goldshop/Notifi_cation.dart';
-import 'package:goldshop/Postyou.dart';
 import 'package:goldshop/Profilepage.dart';
-import 'package:goldshop/Savepost.dart';
 import 'package:goldshop/ShopLocation.dart';
 import 'package:goldshop/ShoppingList.dart';
 import 'package:goldshop/Shoppinlist2.dart';
-import 'package:goldshop/StarMark.dart';
+import 'package:goldshop/worldRating/World_rating.dart';
 
 class DetailsList extends StatefulWidget {
   const DetailsList({Key? key}) : super(key: key);
@@ -218,7 +218,7 @@ class _DetailsListState extends State<DetailsList> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => Postyou()));
+                                  builder: (context) => My_post()));
                         },
                         child: Container(
                           child: Text(
@@ -243,7 +243,7 @@ class _DetailsListState extends State<DetailsList> {
                 InkWell(
                   onTap: () {
                     Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Savepost()));
+                        MaterialPageRoute(builder: (context) => My_savepost()));
                   },
                   child: Container(
                     width: 70.w,
@@ -271,8 +271,10 @@ class _DetailsListState extends State<DetailsList> {
                 ),
                 InkWell(
                   onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => StarMark()));
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => World_rating()));
                   },
                   child: Container(
                     width: 70.w,

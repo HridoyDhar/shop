@@ -1,33 +1,27 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
+import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
-import 'package:goldshop/Commentpeople/Commentpeople.dart';
 import 'package:goldshop/DetailsList/DetailsList.dart';
-
 import 'package:goldshop/Home_page.dart';
-import 'package:goldshop/Likepage.dart';
-import 'package:goldshop/Mypost/My_post.dart';
 import 'package:goldshop/Mysavepost/My_savepost.dart';
-import 'package:goldshop/Notifi_cation.dart';
 import 'package:goldshop/Perpost/PerPost.dart';
 import 'package:goldshop/Postcomment/Post_commend.dart';
-
 import 'package:goldshop/Profilepage.dart';
-import 'package:goldshop/SearchpersonPost.dart';
-import 'package:goldshop/SearchpersonRate.dart';
+
 import 'package:goldshop/ShopLocation.dart';
+
 import 'package:goldshop/worldRating/World_rating.dart';
 
-class Searchperson extends StatefulWidget {
-  const Searchperson({Key? key}) : super(key: key);
+class My_post extends StatefulWidget {
+  const My_post({super.key});
 
   @override
-  State<Searchperson> createState() => _SearchpersonState();
+  State<My_post> createState() => _My_postState();
 }
 
-class _SearchpersonState extends State<Searchperson> {
+class _My_postState extends State<My_post> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -188,27 +182,23 @@ class _SearchpersonState extends State<Searchperson> {
               ),
             ),
           ),
+
           SizedBox(
             height: 10,
           ),
-          Center(
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 150),
-              alignment: Alignment.center,
-              height: 40,
-              width: 300,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                color: Colors.blue,
-              ),
-              child: Text(
-                "Follow",
-                style: TextStyle(
-                    fontFamily: "itim", fontSize: 20, color: Colors.white),
-              ),
+          Container(
+            margin: EdgeInsets.symmetric(horizontal: 20),
+            alignment: Alignment.center,
+            height: 20,
+            width: 400,
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10), color: Colors.white),
+            child: Text(
+              "Edit profile",
+              style: TextStyle(
+                  fontFamily: "itim", fontSize: 15, color: Colors.blue),
             ),
           ),
-
           SizedBox(
             height: 30.h,
           ),
@@ -221,10 +211,8 @@ class _SearchpersonState extends State<Searchperson> {
                   children: [
                     InkWell(
                       onTap: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => SearchpersonPost()));
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => My_post()));
                       },
                       child: Container(
                         child: Text(
@@ -248,10 +236,37 @@ class _SearchpersonState extends State<Searchperson> {
               ),
               InkWell(
                 onTap: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => SearchpersonRate()));
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => My_savepost()));
+                },
+                child: Container(
+                  width: 70.w,
+                  child: Row(
+                    children: [
+                      Container(
+                        child: Text(
+                          "Save",
+                          style: TextStyle(
+                              fontSize: 18.sp,
+                              fontWeight: FontWeight.w400,
+                              fontFamily: "Manjari"),
+                        ),
+                      ),
+                      SizedBox(
+                        width: 5.w,
+                      ),
+                      Icon(
+                        Icons.save,
+                        color: Colors.blue,
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              InkWell(
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => World_rating()));
                 },
                 child: Container(
                   width: 70.w,
@@ -277,6 +292,32 @@ class _SearchpersonState extends State<Searchperson> {
                   ),
                 ),
               ),
+              InkWell(
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => DetailsList()));
+                },
+                child: Container(
+                  width: 70.w,
+                  child: Row(
+                    children: [
+                      Container(
+                        child: Text(
+                          "List",
+                          style: TextStyle(
+                              fontSize: 18.sp,
+                              fontWeight: FontWeight.w400,
+                              fontFamily: "Manjari"),
+                        ),
+                      ),
+                      SizedBox(
+                        width: 5.w,
+                      ),
+                      Icon(Icons.list),
+                    ],
+                  ),
+                ),
+              )
             ],
           ),
           SizedBox(height: 10.h),

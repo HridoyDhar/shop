@@ -9,7 +9,6 @@ import 'package:goldshop/Home_page.dart';
 import 'package:goldshop/Likepage.dart';
 import 'package:goldshop/Notifi_cation.dart';
 import 'package:goldshop/Postcomment/Post_commend.dart';
-import 'package:goldshop/Postyou.dart';
 import 'package:goldshop/Profilepage.dart';
 import 'package:goldshop/ShopProfile.dart';
 

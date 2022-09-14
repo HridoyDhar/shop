@@ -5,7 +5,7 @@ import 'package:goldshop/HomePage2.dart';
 
 import 'package:goldshop/Home_page.dart';
 import 'package:goldshop/Newprofile/New_profile.dart';
-import 'package:goldshop/forgetpassword.dart';
+import 'package:goldshop/Passwordforget/Password_forget.dart';
 
 class login extends StatefulWidget {
   const login({Key? key}) : super(key: key);
@@ -74,7 +74,7 @@ class _loginState extends State<login> {
             GestureDetector(
               onTap: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => forgetpassword()));
+                    MaterialPageRoute(builder: (context) => Password_forget()));
               },
               child: Padding(
                 padding: EdgeInsets.only(right: 25.w),
@@ -127,19 +127,27 @@ class _loginState extends State<login> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Icon(
-                    Icons.face,
+                    Icons.email,
                     color: Colors.blue,
                   ),
                   SizedBox(
                     width: 15.w,
                   ),
-                  Container(
-                    child: Text(
-                      "SingUp with google",
-                      style: TextStyle(
-                          fontSize: 15.sp,
-                          fontWeight: FontWeight.w700,
-                          color: Colors.black),
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => Choscegmail()));
+                    },
+                    child: Container(
+                      child: Text(
+                        "SingUp with google",
+                        style: TextStyle(
+                            fontSize: 15.sp,
+                            fontWeight: FontWeight.w700,
+                            color: Colors.black),
+                      ),
                     ),
                   ),
                 ],

@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:goldshop/HomePage2.dart';
 import 'package:goldshop/VerificationCode.dart';
-import 'package:goldshop/verification.dart';
 import 'package:goldshop/verification2.dart';
 
 class SingUp extends StatefulWidget {

@@ -49,72 +49,23 @@ class _PaymentState extends State<Payment> {
               Navigator.push(context,
                   MaterialPageRoute(builder: (context) => Paymentcard()));
             }),
-          ),
-          Container(
-            height: 50.h,
-            width: 340.w,
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                border: Border.all(color: Color(0xff4DC300))),
-            margin: EdgeInsets.symmetric(horizontal: 30),
-            child: Text(
-              "      Visa",
-              style: TextStyle(
-                  color: Colors.black, fontFamily: "Itim", fontSize: 20),
+            child: Container(
+              height: 40,
+              width: 300,
+              alignment: Alignment.center,
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  border: Border.all(color: Colors.blue)),
+              child: Text(
+                "Card",
+                style: TextStyle(
+                    fontFamily: "itim", fontSize: 20, color: Colors.black),
+              ),
             ),
           ),
           SizedBox(
-            height: 24,
-          ),
-          InkWell(
-            onTap: (() {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => Paymentcard()));
-            }),
-          ),
-          Container(
-            height: 50.h,
-            width: 340.w,
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                border: Border.all(color: Color(0xff4DC300))),
-            margin: EdgeInsets.symmetric(horizontal: 30),
-            child: Text(
-              "      Mastercard",
-              style: TextStyle(
-                  color: Colors.black, fontFamily: "Itim", fontSize: 20),
-            ),
-          ),
-          SizedBox(
-            height: 24,
-          ),
-          InkWell(
-            onTap: (() {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => Paymentcard()));
-            }),
-          ),
-          Container(
-            height: 50.h,
-            width: 340.w,
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                border: Border.all(color: Color(0xff4DC300))),
-            margin: EdgeInsets.symmetric(horizontal: 30),
-            child: Text(
-              "Bank",
-              style: TextStyle(
-                  color: Colors.black, fontFamily: "Itim", fontSize: 20),
-            ),
-          ),
-          SizedBox(
-            height: 24,
-          ),
-          InkWell(
-            onTap: (() {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => Paymentcard()));
-            }),
+            height: 20,
           ),
           InkWell(
             onTap: () {
@@ -122,17 +73,35 @@ class _PaymentState extends State<Payment> {
                   MaterialPageRoute(builder: (context) => Paymentbkash()));
             },
             child: Container(
-              height: 50.h,
-              width: 340.w,
+              height: 40,
+              width: 300,
+              alignment: Alignment.center,
+              margin: EdgeInsets.symmetric(horizontal: 20),
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  border: Border.all(color: Color(0xff4DC300))),
-              margin: EdgeInsets.symmetric(horizontal: 30),
+                  border: Border.all(color: Colors.pink)),
               child: Text(
-                "      Bkash",
+                "Bkash",
                 style: TextStyle(
-                    color: Colors.black, fontFamily: "Itim", fontSize: 20),
+                    fontFamily: "itim", fontSize: 20, color: Colors.black),
               ),
+            ),
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          Container(
+            height: 40,
+            width: 300,
+            alignment: Alignment.center,
+            margin: EdgeInsets.symmetric(horizontal: 20),
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                border: Border.all(color: Colors.yellow)),
+            child: Text(
+              "Nagad",
+              style: TextStyle(
+                  fontFamily: "itim", fontSize: 20, color: Colors.black),
             ),
           ),
         ],

@@ -8,12 +8,13 @@ import 'package:goldshop/DetailsList/DetailsList.dart';
 
 import 'package:goldshop/Home_page.dart';
 import 'package:goldshop/Likepage.dart';
+import 'package:goldshop/Mypost/My_post.dart';
+import 'package:goldshop/Mysavepost/My_savepost.dart';
 import 'package:goldshop/Notifi_cation.dart';
 import 'package:goldshop/Perpost/PerPost.dart';
-import 'package:goldshop/Postyou.dart';
-import 'package:goldshop/Savepost.dart';
+
 import 'package:goldshop/ShopLocation.dart';
-import 'package:goldshop/StarMark.dart';
+import 'package:goldshop/worldRating/World_rating.dart';
 
 import 'Postcomment/Post_commend.dart';
 
@@ -215,7 +216,7 @@ class _profilepageState extends State<profilepage> {
                     InkWell(
                       onTap: () {
                         Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Postyou()));
+                            MaterialPageRoute(builder: (context) => My_post()));
                       },
                       child: Container(
                         child: Text(
@@ -240,7 +241,7 @@ class _profilepageState extends State<profilepage> {
               InkWell(
                 onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Savepost()));
+                      MaterialPageRoute(builder: (context) => My_savepost()));
                 },
                 child: Container(
                   width: 70.w,
@@ -269,7 +270,7 @@ class _profilepageState extends State<profilepage> {
               InkWell(
                 onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => StarMark()));
+                      MaterialPageRoute(builder: (context) => World_rating()));
                 },
                 child: Container(
                   width: 70.w,
