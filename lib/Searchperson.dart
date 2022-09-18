@@ -193,10 +193,10 @@ class _SearchpersonState extends State<Searchperson> {
           ),
           Center(
             child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 150),
+              margin: EdgeInsets.symmetric(horizontal: 100),
               alignment: Alignment.center,
-              height: 40,
-              width: 300,
+              height: 50,
+              width: 200,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
                 color: Colors.blue,

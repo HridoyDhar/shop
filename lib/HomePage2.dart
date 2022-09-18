@@ -8,6 +8,7 @@ import 'package:goldshop/GoldPrice/Worldgold_price.dart';
 import 'package:goldshop/IncomeList.dart';
 import 'package:goldshop/Joblist.dart';
 import 'package:goldshop/Mortagelist.dart';
+
 import 'package:goldshop/NewMortage.dart';
 import 'package:goldshop/NewSell.dart';
 import 'package:goldshop/Newemployee/New_employee.dart';
@@ -32,13 +33,7 @@ class _HomePage2State extends State<HomePage2> {
             height: 40,
           ),
           Container(
-            child: CircleAvatar(
-              backgroundImage: AssetImage(
-                "assets/man.png",
-              ),
-              radius: 90,
-            ),
-          ),
+              height: 200, width: 200, child: Image.asset("assets/man.png")),
           SizedBox(
             height: 10,
           ),
@@ -488,33 +483,33 @@ class _HomePage2State extends State<HomePage2> {
                         ),
                       ),
                     ),
-                    // SizedBox(
-                    //   width: 20,
-                    // ),
-                    // InkWell(
-                    //   onTap: () {
-                    //     Navigator.push(
-                    //         context,
-                    //         MaterialPageRoute(
-                    //             builder: (context) => EmployeList()));
-                    //   },
-                    //   child: Container(
-                    //     alignment: Alignment.center,
-                    //     height: 50,
-                    //     width: 100,
-                    //     decoration: BoxDecoration(
-                    //         // border: Border.all(color: Colors.black),
-                    //         borderRadius: BorderRadius.circular(10),
-                    //         color: Color(0xffF7FAFF)),
-                    //     child: Text(
-                    //       "Employee",
-                    //       style: TextStyle(
-                    //           fontSize: 13.sp,
-                    //           fontWeight: FontWeight.w700,
-                    //           fontFamily: "Manjari"),
-                    //     ),
-                    //   ),
-                    // ),
+                    SizedBox(
+                      width: 20,
+                    ),
+                    InkWell(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Worldgold_price()));
+                      },
+                      child: Container(
+                        alignment: Alignment.center,
+                        height: 50,
+                        width: 100,
+                        decoration: BoxDecoration(
+                            // border: Border.all(color: Colors.black),
+                            borderRadius: BorderRadius.circular(10),
+                            color: Color(0xffF7FAFF)),
+                        child: Text(
+                          "World",
+                          style: TextStyle(
+                              fontSize: 13.sp,
+                              fontWeight: FontWeight.w700,
+                              fontFamily: "Manjari"),
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ],

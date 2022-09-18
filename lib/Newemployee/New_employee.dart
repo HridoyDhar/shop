@@ -3,6 +3,7 @@ import 'package:flutter/src/widgets/framework.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:goldshop/HomePage2.dart';
 
 class New_employee extends StatefulWidget {
   const New_employee({Key? key}) : super(key: key);
@@ -18,7 +19,15 @@ class _New_employeeState extends State<New_employee> {
       body: ListView(
         children: [
           SizedBox(
-            height: 80,
+            height: 50,
+          ),
+          Container(
+            height: 200,
+            width: 200,
+            child: Image.asset("assets/2454-personal-character.gif"),
+          ),
+          SizedBox(
+            height: 50,
           ),
           Container(
               height: 40.h,
@@ -111,21 +120,36 @@ class _New_employeeState extends State<New_employee> {
                         Icon(Icons.card_membership, color: Colors.blue)),
               )),
           SizedBox(
-            height: 20,
+            height: 50,
           ),
           Center(
-            child: Container(
-              height: 40.h,
-              width: 300.w,
-              alignment: Alignment.center,
-              margin: EdgeInsets.symmetric(horizontal: 200),
-              decoration: BoxDecoration(
+            child: InkWell(
+              onTap: (() {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => HomePage2()));
+              }),
+              child: Container(
+                height: 40,
+                width: 300,
+                alignment: Alignment.center,
+                margin: EdgeInsets.symmetric(horizontal: 100),
+                decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey.withOpacity(0.5),
+                      spreadRadius: 5,
+                      blurRadius: 7,
+                      offset: Offset(0, 3), // changes position of shadow
+                    ),
+                  ],
                   borderRadius: BorderRadius.circular(10),
-                  border: Border.all(color: Colors.black)),
-              child: Text(
-                "Done",
-                style: TextStyle(
-                    fontFamily: "itim", fontSize: 20, color: Colors.black),
+                  color: Color(0xffF7FAFF),
+                ),
+                child: Text(
+                  "Done",
+                  style: TextStyle(
+                      fontFamily: "itim", fontSize: 20, color: Colors.black),
+                ),
               ),
             ),
           )

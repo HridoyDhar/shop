@@ -62,22 +62,26 @@ class _ChoscegmailState extends State<Choscegmail> {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) => HomePage2()));
                   },
-                  child: Container(
-                    height: 35,
-                    width: 250,
-                    alignment: Alignment.center,
-                    margin: EdgeInsets.symmetric(horizontal: 20),
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        color: Colors.white),
-                    child: Text(
-                      "HridoyDhar@gmail.com",
-                      style: TextStyle(
-                        fontSize: 20,
-                        fontFamily: "itim",
-                        color: Colors.black,
+                  child: Row(
+                    children: [
+                      Container(
+                        height: 35,
+                        width: 250,
+                        alignment: Alignment.center,
+                        margin: EdgeInsets.symmetric(horizontal: 20),
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            color: Colors.white),
+                        child: Text(
+                          "HridoyDhar@gmail.com",
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontFamily: "itim",
+                            color: Colors.black,
+                          ),
+                        ),
                       ),
-                    ),
+                    ],
                   ),
                 ),
                 SizedBox(

@@ -119,11 +119,15 @@ class _CalculatorState extends State<Calculator> {
                       width: 60,
                       margin: EdgeInsets.symmetric(horizontal: 20),
                       alignment: Alignment.center,
-                      child: TextField(
-                        decoration: InputDecoration(
-                            labelText: "money",
-                            border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(10))),
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: Colors.cyanAccent),
+                      child: Text(
+                        "6080",
+                        style: TextStyle(
+                            fontFamily: "itim",
+                            fontSize: 15,
+                            color: Colors.black),
                       ),
                     ),
                     SizedBox(
@@ -179,11 +183,15 @@ class _CalculatorState extends State<Calculator> {
                         width: 60,
                         margin: EdgeInsets.symmetric(horizontal: 20),
                         alignment: Alignment.center,
-                        child: TextField(
-                          decoration: InputDecoration(
-                              labelText: "money",
-                              border: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(10))),
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            color: Colors.cyanAccent),
+                        child: Text(
+                          "6080",
+                          style: TextStyle(
+                              fontFamily: "itim",
+                              fontSize: 15,
+                              color: Colors.black),
                         ),
                       ),
                       SizedBox(
@@ -237,11 +245,15 @@ class _CalculatorState extends State<Calculator> {
                           width: 60,
                           margin: EdgeInsets.symmetric(horizontal: 20),
                           alignment: Alignment.center,
-                          child: TextField(
-                            decoration: InputDecoration(
-                                labelText: "money",
-                                border: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(10))),
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              color: Colors.cyanAccent),
+                          child: Text(
+                            "6080",
+                            style: TextStyle(
+                                fontFamily: "itim",
+                                fontSize: 15,
+                                color: Colors.black),
                           ),
                         ),
                         SizedBox(

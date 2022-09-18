@@ -192,7 +192,7 @@ class _SearchpersonRateState extends State<SearchpersonRate> {
               Center(
                 child: Container(
                   alignment: Alignment.center,
-                  margin: EdgeInsets.symmetric(horizontal: 150),
+                  margin: EdgeInsets.symmetric(horizontal: 100),
                   height: 40,
                   width: 300,
                   decoration: BoxDecoration(

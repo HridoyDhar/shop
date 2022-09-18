@@ -99,10 +99,11 @@ class _AddToCardState extends State<AddToCard> {
               borderRadius: BorderRadius.circular(10.r),
             ),
             child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-              Icon(
-                Icons.shop,
-                color: Colors.white,
-              ),
+              Container(
+                  height: 20,
+                  width: 20,
+                  child: Image.asset(
+                      "assets/shopping-cart-svg-png-icon-download-28.png")),
               SizedBox(
                 width: 15.w,
               ),

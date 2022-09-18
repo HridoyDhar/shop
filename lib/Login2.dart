@@ -42,7 +42,7 @@ class _Login2State extends State<Login2> {
                       borderRadius: BorderRadius.circular(10.r)),
                   prefixIcon: Icon(
                     Icons.email,
-                    color: Colors.blue,
+                    color: Color(0xff35396D),
                   )),
             ),
           ),
@@ -62,7 +62,7 @@ class _Login2State extends State<Login2> {
                       borderRadius: BorderRadius.circular(10.r)),
                   prefixIcon: Icon(
                     Icons.lock,
-                    color: Colors.blue,
+                    color: Color(0xff35396D),
                   )),
             ),
           ),
@@ -81,7 +81,7 @@ class _Login2State extends State<Login2> {
                 style: TextStyle(
                     fontSize: 13.sp,
                     fontWeight: FontWeight.w800,
-                    color: Colors.blue),
+                    color: Color(0xff35396D)),
                 textAlign: TextAlign.right,
               ),
             ),
@@ -101,7 +101,7 @@ class _Login2State extends State<Login2> {
               width: 300.w,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10.r),
-                  color: Color(0xffFE8178)),
+                  color: Color(0xff35396D)),
               child: Text(
                 "Login",
                 style: TextStyle(
@@ -125,13 +125,13 @@ class _Login2State extends State<Login2> {
               width: 300.w,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10.r),
-                  border: Border.all(color: Colors.cyan)),
+                  border: Border.all(color: Color(0xff35396D))),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Icon(
                     Icons.email,
-                    color: Colors.greenAccent,
+                    color: Color(0xff35396D),
                   ),
                   SizedBox(
                     width: 15.w,

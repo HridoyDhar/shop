@@ -15,339 +15,1225 @@ class _Worldgold_priceState extends State<Worldgold_price> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ListView(children: [
-        SizedBox(
-          height: 20,
+        body: ListView(children: [
+      SizedBox(
+        height: 50,
+      ),
+      Container(
+        height: 40,
+        width: 300,
+        margin: EdgeInsets.symmetric(horizontal: 20),
+        child: TextField(
+          decoration: InputDecoration(
+              hintText: "Country name",
+              prefixIcon: Icon(
+                Icons.search,
+                color: Colors.yellow,
+              ),
+              border:
+                  OutlineInputBorder(borderRadius: BorderRadius.circular(10))),
         ),
-        Card(
-            child: Container(
-                height: 520,
-                width: 300,
-                decoration: BoxDecoration(
-                  color: Color(0xffF4F7FA),
-                  borderRadius: BorderRadius.circular(20),
+      ),
+      SizedBox(
+        height: 50,
+      ),
+      Card(
+          child: Container(
+              height: 520,
+              width: 300,
+              decoration: BoxDecoration(
+                color: Color(0xfffE8FFFF),
+                borderRadius: BorderRadius.circular(20),
+              ),
+              child: Column(children: [
+                SizedBox(
+                  height: 20,
                 ),
-                child: Column(
+                Container(
+                  child: Text("Saudia Arabic",
+                      style: TextStyle(
+                        fontFamily: "itim",
+                        fontSize: 30,
+                        color: Colors.black,
+                      )),
+                ),
+                SizedBox(
+                  height: 50,
+                ),
+                Column(
                   children: [
-                    SizedBox(
-                      height: 20,
-                    ),
-                    Container(
-                      child: Text("Saudia Arabic",
-                          style: TextStyle(
-                            fontFamily: "itim",
-                            fontSize: 30,
-                            color: Colors.pink,
-                          )),
-                    ),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    Container(
-                      height: 70,
-                      width: 400,
-                      decoration: BoxDecoration(
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.grey.withOpacity(0.5),
-                              spreadRadius: 5,
-                              blurRadius: 7,
-                              offset:
-                                  Offset(0, 3), // changes position of shadow
-                            ),
-                          ],
-                          borderRadius: BorderRadius.circular(10),
-                          color: Colors.white),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          SizedBox(
-                            width: 5,
-                          ),
-                          Container(
-                              child: Text(
-                            "Gram 24K",
-                            style: TextStyle(
-                                fontFamily: "itim",
-                                fontSize: 25,
-                                color: Colors.black),
-                          )),
-                          SizedBox(
-                            width: 10,
-                          ),
-                          Container(
-                            child: Column(
+                    Row(children: [
+                      Container(
+                        height: 150,
+                        width: 100,
+                        decoration: BoxDecoration(
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.5),
+                                spreadRadius: 5,
+                                blurRadius: 7,
+                                offset:
+                                    Offset(0, 3), // changes position of shadow
+                              ),
+                            ],
+                            borderRadius: BorderRadius.circular(10),
+                            color: Colors.white),
+                        child: Column(
+                          children: [
+                            Column(
                               children: [
-                                Container(
-                                    child: Text("205.88",
-                                        style: TextStyle(
-                                            fontSize: 30,
-                                            fontFamily: "itim",
-                                            color: Colors.pink))),
                                 SizedBox(
-                                  height: 20,
+                                  height: 10,
                                 ),
                                 Container(
                                     child: Text(
-                                  "yesterday:206.90",
+                                  "Gram 24K",
                                   style: TextStyle(
-                                      fontSize: 20,
                                       fontFamily: "itim",
+                                      fontSize: 15,
                                       color: Colors.black),
                                 )),
+                                SizedBox(
+                                  height: 30,
+                                ),
+                                Container(
+                                  child: Column(
+                                    children: [
+                                      Container(
+                                          child: Text("205.88",
+                                              style: TextStyle(
+                                                  fontSize: 30,
+                                                  fontFamily: "itim",
+                                                  color: Colors.pink))),
+                                      SizedBox(
+                                        height: 50,
+                                      ),
+                                      Container(
+                                          child: Text(
+                                        "yesterday:206.90",
+                                        style: TextStyle(
+                                            fontSize: 10,
+                                            fontFamily: "itim",
+                                            color: Colors.black),
+                                      )),
+                                    ],
+                                  ),
+                                ),
                               ],
                             ),
-                          )
-                        ],
+                          ],
+                        ),
                       ),
-                    ),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    Container(
-                      height: 70,
-                      width: 400,
-                      decoration: BoxDecoration(
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.grey.withOpacity(0.5),
-                              spreadRadius: 5,
-                              blurRadius: 7,
-                              offset:
-                                  Offset(0, 3), // changes position of shadow
+                      SizedBox(
+                        width: 25,
+                      ),
+                      Container(
+                        height: 150,
+                        width: 100,
+                        decoration: BoxDecoration(
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.5),
+                                spreadRadius: 5,
+                                blurRadius: 7,
+                                offset:
+                                    Offset(0, 3), // changes position of shadow
+                              ),
+                            ],
+                            borderRadius: BorderRadius.circular(10),
+                            color: Colors.white),
+                        child: Column(
+                          children: [
+                            SizedBox(
+                              height: 5,
+                            ),
+                            Container(
+                                child: Text(
+                              "Gram 22k",
+                              style: TextStyle(
+                                  fontFamily: "itim",
+                                  fontSize: 15,
+                                  color: Colors.black),
+                            )),
+                            SizedBox(
+                              height: 30,
+                            ),
+                            Container(
+                              child: Column(
+                                children: [
+                                  Container(
+                                      child: Text("180.14",
+                                          style: TextStyle(
+                                              fontSize: 30,
+                                              fontFamily: "itim",
+                                              color: Colors.pink))),
+                                  SizedBox(
+                                    height: 50,
+                                  ),
+                                  Container(
+                                      child: Text(
+                                    "yesterday:181.04",
+                                    style: TextStyle(
+                                        fontSize: 10,
+                                        fontFamily: "itim",
+                                        color: Colors.black),
+                                  )),
+                                ],
+                              ),
                             ),
                           ],
-                          borderRadius: BorderRadius.circular(10),
-                          color: Colors.white),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          SizedBox(
-                            width: 5,
-                          ),
-                          Container(
-                              child: Text(
-                            "Gram 22k",
-                            style: TextStyle(
-                                fontFamily: "itim",
-                                fontSize: 25,
-                                color: Colors.black),
-                          )),
-                          SizedBox(
-                            width: 10,
-                          ),
-                          Container(
-                            child: Column(
+                        ),
+                      ),
+                      SizedBox(
+                        width: 25,
+                      ),
+                      Container(
+                        height: 150,
+                        width: 100,
+                        decoration: BoxDecoration(
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.5),
+                                spreadRadius: 5,
+                                blurRadius: 7,
+                                offset:
+                                    Offset(0, 3), // changes position of shadow
+                              ),
+                            ],
+                            borderRadius: BorderRadius.circular(10),
+                            color: Colors.white),
+                        child: Column(
+                          children: [
+                            SizedBox(
+                              height: 5,
+                            ),
+                            Container(
+                                child: Text(
+                              "Gram 22k",
+                              style: TextStyle(
+                                  fontFamily: "itim",
+                                  fontSize: 15,
+                                  color: Colors.black),
+                            )),
+                            SizedBox(
+                              height: 30,
+                            ),
+                            Container(
+                              child: Column(
+                                children: [
+                                  Container(
+                                      child: Text("180.14",
+                                          style: TextStyle(
+                                              fontSize: 30,
+                                              fontFamily: "itim",
+                                              color: Colors.pink))),
+                                  SizedBox(
+                                    height: 50,
+                                  ),
+                                  Container(
+                                      child: Text(
+                                    "yesterday:181.04",
+                                    style: TextStyle(
+                                        fontSize: 10,
+                                        fontFamily: "itim",
+                                        color: Colors.black),
+                                  )),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ]),
+                    SizedBox(
+                      height: 50,
+                    ),
+                    Row(children: [
+                      Container(
+                        height: 150,
+                        width: 100,
+                        decoration: BoxDecoration(
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.5),
+                                spreadRadius: 5,
+                                blurRadius: 7,
+                                offset:
+                                    Offset(0, 3), // changes position of shadow
+                              ),
+                            ],
+                            borderRadius: BorderRadius.circular(10),
+                            color: Colors.white),
+                        child: Column(
+                          children: [
+                            Column(
                               children: [
-                                Container(
-                                    child: Text("180.14",
-                                        style: TextStyle(
-                                            fontSize: 30,
-                                            fontFamily: "itim",
-                                            color: Colors.pink))),
                                 SizedBox(
-                                  height: 20,
+                                  height: 10,
                                 ),
                                 Container(
                                     child: Text(
-                                  "yesterday:181.04",
+                                  "Gram 24K",
                                   style: TextStyle(
-                                      fontSize: 20,
                                       fontFamily: "itim",
+                                      fontSize: 15,
                                       color: Colors.black),
                                 )),
-                              ],
-                            ),
-                          )
-                        ],
-                      ),
-                    ),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    Container(
-                      height: 70,
-                      width: 400,
-                      decoration: BoxDecoration(
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.grey.withOpacity(0.5),
-                              spreadRadius: 5,
-                              blurRadius: 7,
-                              offset:
-                                  Offset(0, 3), // changes position of shadow
-                            ),
-                          ],
-                          borderRadius: BorderRadius.circular(10),
-                          color: Colors.white),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          SizedBox(
-                            width: 5,
-                          ),
-                          Container(
-                              child: Text(
-                            "Gram 18k",
-                            style: TextStyle(
-                                fontFamily: "itim",
-                                fontSize: 25,
-                                color: Colors.black),
-                          )),
-                          SizedBox(
-                            width: 10,
-                          ),
-                          Container(
-                            child: Column(
-                              children: [
-                                Container(
-                                    child: Text("154.41",
-                                        style: TextStyle(
-                                            fontSize: 30,
-                                            fontFamily: "itim",
-                                            color: Colors.pink))),
                                 SizedBox(
-                                  height: 20,
+                                  height: 30,
                                 ),
                                 Container(
-                                    child: Text(
-                                  "yesterday:155.18",
-                                  style: TextStyle(
-                                      fontSize: 20,
-                                      fontFamily: "itim",
-                                      color: Colors.black),
-                                )),
+                                  child: Column(
+                                    children: [
+                                      Container(
+                                          child: Text("205.88",
+                                              style: TextStyle(
+                                                  fontSize: 30,
+                                                  fontFamily: "itim",
+                                                  color: Colors.pink))),
+                                      SizedBox(
+                                        height: 50,
+                                      ),
+                                      Container(
+                                          child: Text(
+                                        "yesterday:206.90",
+                                        style: TextStyle(
+                                            fontSize: 10,
+                                            fontFamily: "itim",
+                                            color: Colors.black),
+                                      )),
+                                    ],
+                                  ),
+                                ),
                               ],
-                            ),
-                          )
-                        ],
-                      ),
-                    ),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    Container(
-                      height: 70,
-                      width: 400,
-                      decoration: BoxDecoration(
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.grey.withOpacity(0.5),
-                              spreadRadius: 5,
-                              blurRadius: 7,
-                              offset:
-                                  Offset(0, 3), // changes position of shadow
                             ),
                           ],
-                          borderRadius: BorderRadius.circular(10),
-                          color: Colors.white),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          SizedBox(
-                            width: 5,
-                          ),
-                          Container(
-                              child: Text(
-                            "Ounce",
-                            style: TextStyle(
-                                fontFamily: "itim",
-                                fontSize: 25,
-                                color: Colors.black),
-                          )),
-                          SizedBox(
-                            width: 10,
-                          ),
-                          Container(
-                            child: Column(
-                              children: [
-                                Container(
-                                    child: Text("6403.72",
-                                        style: TextStyle(
-                                            fontSize: 30,
-                                            fontFamily: "itim",
-                                            color: Colors.pink))),
-                                SizedBox(
-                                  height: 20,
-                                ),
-                                Container(
-                                    child: Text(
-                                  "yesterday:6,435.50",
-                                  style: TextStyle(
-                                      fontSize: 20,
-                                      fontFamily: "itim",
-                                      color: Colors.black),
-                                )),
-                              ],
-                            ),
-                          )
-                        ],
+                        ),
                       ),
-                    ),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    Container(
-                      height: 70,
-                      width: 400,
-                      decoration: BoxDecoration(
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.grey.withOpacity(0.5),
-                              spreadRadius: 5,
-                              blurRadius: 7,
-                              offset:
-                                  Offset(0, 3), // changes position of shadow
+                      SizedBox(
+                        width: 25,
+                      ),
+                      Container(
+                        height: 150,
+                        width: 100,
+                        decoration: BoxDecoration(
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.5),
+                                spreadRadius: 5,
+                                blurRadius: 7,
+                                offset:
+                                    Offset(0, 3), // changes position of shadow
+                              ),
+                            ],
+                            borderRadius: BorderRadius.circular(10),
+                            color: Colors.white),
+                        child: Column(
+                          children: [
+                            SizedBox(
+                              height: 5,
+                            ),
+                            Container(
+                                child: Text(
+                              "Gram 22k",
+                              style: TextStyle(
+                                  fontFamily: "itim",
+                                  fontSize: 15,
+                                  color: Colors.black),
+                            )),
+                            SizedBox(
+                              height: 30,
+                            ),
+                            Container(
+                              child: Column(
+                                children: [
+                                  Container(
+                                      child: Text("180.14",
+                                          style: TextStyle(
+                                              fontSize: 30,
+                                              fontFamily: "itim",
+                                              color: Colors.pink))),
+                                  SizedBox(
+                                    height: 50,
+                                  ),
+                                  Container(
+                                      child: Text(
+                                    "yesterday:181.04",
+                                    style: TextStyle(
+                                        fontSize: 10,
+                                        fontFamily: "itim",
+                                        color: Colors.black),
+                                  )),
+                                ],
+                              ),
                             ),
                           ],
-                          borderRadius: BorderRadius.circular(10),
-                          color: Colors.white),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          SizedBox(
-                            width: 5,
-                          ),
-                          Container(
-                              child: Text(
-                            "Tola",
-                            style: TextStyle(
-                                fontFamily: "itim",
-                                fontSize: 25,
-                                color: Colors.black),
-                          )),
-                          SizedBox(
-                            width: 10,
-                          ),
-                          Container(
-                            child: Column(
-                              children: [
-                                Container(
-                                    child: Text("2401.40",
-                                        style: TextStyle(
-                                            fontSize: 30,
-                                            fontFamily: "itim",
-                                            color: Colors.pink))),
-                                SizedBox(
-                                  height: 20,
-                                ),
-                                Container(
-                                    child: Text(
-                                  "yesterday:2,413.31",
-                                  style: TextStyle(
-                                      fontSize: 20,
-                                      fontFamily: "itim",
-                                      color: Colors.black),
-                                )),
-                              ],
-                            ),
-                          )
-                        ],
+                        ),
                       ),
-                    ),
+                      SizedBox(
+                        width: 25,
+                      ),
+                      Container(
+                        height: 150,
+                        width: 100,
+                        decoration: BoxDecoration(
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.5),
+                                spreadRadius: 5,
+                                blurRadius: 7,
+                                offset:
+                                    Offset(0, 3), // changes position of shadow
+                              ),
+                            ],
+                            borderRadius: BorderRadius.circular(10),
+                            color: Colors.white),
+                        child: Column(
+                          children: [
+                            SizedBox(
+                              height: 5,
+                            ),
+                            Container(
+                                child: Text(
+                              "Gram 22k",
+                              style: TextStyle(
+                                  fontFamily: "itim",
+                                  fontSize: 15,
+                                  color: Colors.black),
+                            )),
+                            SizedBox(
+                              height: 30,
+                            ),
+                            Container(
+                              child: Column(
+                                children: [
+                                  Container(
+                                      child: Text("180.14",
+                                          style: TextStyle(
+                                              fontSize: 30,
+                                              fontFamily: "itim",
+                                              color: Colors.pink))),
+                                  SizedBox(
+                                    height: 50,
+                                  ),
+                                  Container(
+                                      child: Text(
+                                    "yesterday:181.04",
+                                    style: TextStyle(
+                                        fontSize: 10,
+                                        fontFamily: "itim",
+                                        color: Colors.black),
+                                  )),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ]),
                   ],
-                ))),
-      ]),
-    );
+                ),
+              ]))),
+      SizedBox(
+        height: 50,
+      ),
+      Card(
+          child: Container(
+              height: 520,
+              width: 300,
+              decoration: BoxDecoration(
+                color: Color(0xfffFFF4DF),
+                borderRadius: BorderRadius.circular(20),
+              ),
+              child: Column(children: [
+                SizedBox(
+                  height: 20,
+                ),
+                Container(
+                  child: Text("Saudia Arabic",
+                      style: TextStyle(
+                        fontFamily: "itim",
+                        fontSize: 30,
+                        color: Colors.black,
+                      )),
+                ),
+                SizedBox(
+                  height: 50,
+                ),
+                Column(
+                  children: [
+                    Row(children: [
+                      Container(
+                        height: 150,
+                        width: 100,
+                        decoration: BoxDecoration(
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.5),
+                                spreadRadius: 5,
+                                blurRadius: 7,
+                                offset:
+                                    Offset(0, 3), // changes position of shadow
+                              ),
+                            ],
+                            borderRadius: BorderRadius.circular(10),
+                            color: Colors.white),
+                        child: Column(
+                          children: [
+                            Column(
+                              children: [
+                                SizedBox(
+                                  height: 10,
+                                ),
+                                Container(
+                                    child: Text(
+                                  "Gram 24K",
+                                  style: TextStyle(
+                                      fontFamily: "itim",
+                                      fontSize: 15,
+                                      color: Colors.black),
+                                )),
+                                SizedBox(
+                                  height: 30,
+                                ),
+                                Container(
+                                  child: Column(
+                                    children: [
+                                      Container(
+                                          child: Text("205.88",
+                                              style: TextStyle(
+                                                  fontSize: 30,
+                                                  fontFamily: "itim",
+                                                  color: Colors.pink))),
+                                      SizedBox(
+                                        height: 50,
+                                      ),
+                                      Container(
+                                          child: Text(
+                                        "yesterday:206.90",
+                                        style: TextStyle(
+                                            fontSize: 10,
+                                            fontFamily: "itim",
+                                            color: Colors.black),
+                                      )),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 25,
+                      ),
+                      Container(
+                        height: 150,
+                        width: 100,
+                        decoration: BoxDecoration(
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.5),
+                                spreadRadius: 5,
+                                blurRadius: 7,
+                                offset:
+                                    Offset(0, 3), // changes position of shadow
+                              ),
+                            ],
+                            borderRadius: BorderRadius.circular(10),
+                            color: Colors.white),
+                        child: Column(
+                          children: [
+                            SizedBox(
+                              height: 5,
+                            ),
+                            Container(
+                                child: Text(
+                              "Gram 22k",
+                              style: TextStyle(
+                                  fontFamily: "itim",
+                                  fontSize: 15,
+                                  color: Colors.black),
+                            )),
+                            SizedBox(
+                              height: 30,
+                            ),
+                            Container(
+                              child: Column(
+                                children: [
+                                  Container(
+                                      child: Text("180.14",
+                                          style: TextStyle(
+                                              fontSize: 30,
+                                              fontFamily: "itim",
+                                              color: Colors.pink))),
+                                  SizedBox(
+                                    height: 50,
+                                  ),
+                                  Container(
+                                      child: Text(
+                                    "yesterday:181.04",
+                                    style: TextStyle(
+                                        fontSize: 10,
+                                        fontFamily: "itim",
+                                        color: Colors.black),
+                                  )),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 25,
+                      ),
+                      Container(
+                        height: 150,
+                        width: 100,
+                        decoration: BoxDecoration(
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.5),
+                                spreadRadius: 5,
+                                blurRadius: 7,
+                                offset:
+                                    Offset(0, 3), // changes position of shadow
+                              ),
+                            ],
+                            borderRadius: BorderRadius.circular(10),
+                            color: Colors.white),
+                        child: Column(
+                          children: [
+                            SizedBox(
+                              height: 5,
+                            ),
+                            Container(
+                                child: Text(
+                              "Gram 22k",
+                              style: TextStyle(
+                                  fontFamily: "itim",
+                                  fontSize: 15,
+                                  color: Colors.black),
+                            )),
+                            SizedBox(
+                              height: 30,
+                            ),
+                            Container(
+                              child: Column(
+                                children: [
+                                  Container(
+                                      child: Text("180.14",
+                                          style: TextStyle(
+                                              fontSize: 30,
+                                              fontFamily: "itim",
+                                              color: Colors.pink))),
+                                  SizedBox(
+                                    height: 50,
+                                  ),
+                                  Container(
+                                      child: Text(
+                                    "yesterday:181.04",
+                                    style: TextStyle(
+                                        fontSize: 10,
+                                        fontFamily: "itim",
+                                        color: Colors.black),
+                                  )),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ]),
+                    SizedBox(
+                      height: 50,
+                    ),
+                    Row(children: [
+                      Container(
+                        height: 150,
+                        width: 100,
+                        decoration: BoxDecoration(
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.5),
+                                spreadRadius: 5,
+                                blurRadius: 7,
+                                offset:
+                                    Offset(0, 3), // changes position of shadow
+                              ),
+                            ],
+                            borderRadius: BorderRadius.circular(10),
+                            color: Colors.white),
+                        child: Column(
+                          children: [
+                            Column(
+                              children: [
+                                SizedBox(
+                                  height: 10,
+                                ),
+                                Container(
+                                    child: Text(
+                                  "Gram 24K",
+                                  style: TextStyle(
+                                      fontFamily: "itim",
+                                      fontSize: 15,
+                                      color: Colors.black),
+                                )),
+                                SizedBox(
+                                  height: 30,
+                                ),
+                                Container(
+                                  child: Column(
+                                    children: [
+                                      Container(
+                                          child: Text("205.88",
+                                              style: TextStyle(
+                                                  fontSize: 30,
+                                                  fontFamily: "itim",
+                                                  color: Colors.pink))),
+                                      SizedBox(
+                                        height: 50,
+                                      ),
+                                      Container(
+                                          child: Text(
+                                        "yesterday:206.90",
+                                        style: TextStyle(
+                                            fontSize: 10,
+                                            fontFamily: "itim",
+                                            color: Colors.black),
+                                      )),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 25,
+                      ),
+                      Container(
+                        height: 150,
+                        width: 100,
+                        decoration: BoxDecoration(
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.5),
+                                spreadRadius: 5,
+                                blurRadius: 7,
+                                offset:
+                                    Offset(0, 3), // changes position of shadow
+                              ),
+                            ],
+                            borderRadius: BorderRadius.circular(10),
+                            color: Colors.white),
+                        child: Column(
+                          children: [
+                            SizedBox(
+                              height: 5,
+                            ),
+                            Container(
+                                child: Text(
+                              "Gram 22k",
+                              style: TextStyle(
+                                  fontFamily: "itim",
+                                  fontSize: 15,
+                                  color: Colors.black),
+                            )),
+                            SizedBox(
+                              height: 30,
+                            ),
+                            Container(
+                              child: Column(
+                                children: [
+                                  Container(
+                                      child: Text("180.14",
+                                          style: TextStyle(
+                                              fontSize: 30,
+                                              fontFamily: "itim",
+                                              color: Colors.pink))),
+                                  SizedBox(
+                                    height: 50,
+                                  ),
+                                  Container(
+                                      child: Text(
+                                    "yesterday:181.04",
+                                    style: TextStyle(
+                                        fontSize: 10,
+                                        fontFamily: "itim",
+                                        color: Colors.black),
+                                  )),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 25,
+                      ),
+                      Container(
+                        height: 150,
+                        width: 100,
+                        decoration: BoxDecoration(
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.5),
+                                spreadRadius: 5,
+                                blurRadius: 7,
+                                offset:
+                                    Offset(0, 3), // changes position of shadow
+                              ),
+                            ],
+                            borderRadius: BorderRadius.circular(10),
+                            color: Colors.white),
+                        child: Column(
+                          children: [
+                            SizedBox(
+                              height: 5,
+                            ),
+                            Container(
+                                child: Text(
+                              "Gram 22k",
+                              style: TextStyle(
+                                  fontFamily: "itim",
+                                  fontSize: 15,
+                                  color: Colors.black),
+                            )),
+                            SizedBox(
+                              height: 30,
+                            ),
+                            Container(
+                              child: Column(
+                                children: [
+                                  Container(
+                                      child: Text("180.14",
+                                          style: TextStyle(
+                                              fontSize: 30,
+                                              fontFamily: "itim",
+                                              color: Colors.pink))),
+                                  SizedBox(
+                                    height: 50,
+                                  ),
+                                  Container(
+                                      child: Text(
+                                    "yesterday:181.04",
+                                    style: TextStyle(
+                                        fontSize: 10,
+                                        fontFamily: "itim",
+                                        color: Colors.black),
+                                  )),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ]),
+                  ],
+                ),
+              ]))),
+      SizedBox(
+        height: 50,
+      ),
+      Card(
+          child: Container(
+              height: 520,
+              width: 300,
+              decoration: BoxDecoration(
+                color: Color(0xfffFFFFF3),
+                borderRadius: BorderRadius.circular(20),
+              ),
+              child: Column(children: [
+                SizedBox(
+                  height: 20,
+                ),
+                Container(
+                  child: Text("Saudia Arabic",
+                      style: TextStyle(
+                        fontFamily: "itim",
+                        fontSize: 30,
+                        color: Colors.black,
+                      )),
+                ),
+                SizedBox(
+                  height: 50,
+                ),
+                Column(
+                  children: [
+                    Row(children: [
+                      Container(
+                        height: 150,
+                        width: 100,
+                        decoration: BoxDecoration(
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.5),
+                                spreadRadius: 5,
+                                blurRadius: 7,
+                                offset:
+                                    Offset(0, 3), // changes position of shadow
+                              ),
+                            ],
+                            borderRadius: BorderRadius.circular(10),
+                            color: Colors.white),
+                        child: Column(
+                          children: [
+                            Column(
+                              children: [
+                                SizedBox(
+                                  height: 10,
+                                ),
+                                Container(
+                                    child: Text(
+                                  "Gram 24K",
+                                  style: TextStyle(
+                                      fontFamily: "itim",
+                                      fontSize: 15,
+                                      color: Colors.black),
+                                )),
+                                SizedBox(
+                                  height: 30,
+                                ),
+                                Container(
+                                  child: Column(
+                                    children: [
+                                      Container(
+                                          child: Text("205.88",
+                                              style: TextStyle(
+                                                  fontSize: 30,
+                                                  fontFamily: "itim",
+                                                  color: Colors.pink))),
+                                      SizedBox(
+                                        height: 50,
+                                      ),
+                                      Container(
+                                          child: Text(
+                                        "yesterday:206.90",
+                                        style: TextStyle(
+                                            fontSize: 10,
+                                            fontFamily: "itim",
+                                            color: Colors.black),
+                                      )),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 25,
+                      ),
+                      Container(
+                        height: 150,
+                        width: 100,
+                        decoration: BoxDecoration(
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.5),
+                                spreadRadius: 5,
+                                blurRadius: 7,
+                                offset:
+                                    Offset(0, 3), // changes position of shadow
+                              ),
+                            ],
+                            borderRadius: BorderRadius.circular(10),
+                            color: Colors.white),
+                        child: Column(
+                          children: [
+                            SizedBox(
+                              height: 5,
+                            ),
+                            Container(
+                                child: Text(
+                              "Gram 22k",
+                              style: TextStyle(
+                                  fontFamily: "itim",
+                                  fontSize: 15,
+                                  color: Colors.black),
+                            )),
+                            SizedBox(
+                              height: 30,
+                            ),
+                            Container(
+                              child: Column(
+                                children: [
+                                  Container(
+                                      child: Text("180.14",
+                                          style: TextStyle(
+                                              fontSize: 30,
+                                              fontFamily: "itim",
+                                              color: Colors.pink))),
+                                  SizedBox(
+                                    height: 50,
+                                  ),
+                                  Container(
+                                      child: Text(
+                                    "yesterday:181.04",
+                                    style: TextStyle(
+                                        fontSize: 10,
+                                        fontFamily: "itim",
+                                        color: Colors.black),
+                                  )),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 25,
+                      ),
+                      Container(
+                        height: 150,
+                        width: 100,
+                        decoration: BoxDecoration(
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.5),
+                                spreadRadius: 5,
+                                blurRadius: 7,
+                                offset:
+                                    Offset(0, 3), // changes position of shadow
+                              ),
+                            ],
+                            borderRadius: BorderRadius.circular(10),
+                            color: Colors.white),
+                        child: Column(
+                          children: [
+                            SizedBox(
+                              height: 5,
+                            ),
+                            Container(
+                                child: Text(
+                              "Gram 22k",
+                              style: TextStyle(
+                                  fontFamily: "itim",
+                                  fontSize: 15,
+                                  color: Colors.black),
+                            )),
+                            SizedBox(
+                              height: 30,
+                            ),
+                            Container(
+                              child: Column(
+                                children: [
+                                  Container(
+                                      child: Text("180.14",
+                                          style: TextStyle(
+                                              fontSize: 30,
+                                              fontFamily: "itim",
+                                              color: Colors.pink))),
+                                  SizedBox(
+                                    height: 50,
+                                  ),
+                                  Container(
+                                      child: Text(
+                                    "yesterday:181.04",
+                                    style: TextStyle(
+                                        fontSize: 10,
+                                        fontFamily: "itim",
+                                        color: Colors.black),
+                                  )),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ]),
+                    SizedBox(
+                      height: 50,
+                    ),
+                    Row(children: [
+                      Container(
+                        height: 150,
+                        width: 100,
+                        decoration: BoxDecoration(
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.5),
+                                spreadRadius: 5,
+                                blurRadius: 7,
+                                offset:
+                                    Offset(0, 3), // changes position of shadow
+                              ),
+                            ],
+                            borderRadius: BorderRadius.circular(10),
+                            color: Colors.white),
+                        child: Column(
+                          children: [
+                            Column(
+                              children: [
+                                SizedBox(
+                                  height: 10,
+                                ),
+                                Container(
+                                    child: Text(
+                                  "Gram 24K",
+                                  style: TextStyle(
+                                      fontFamily: "itim",
+                                      fontSize: 15,
+                                      color: Colors.black),
+                                )),
+                                SizedBox(
+                                  height: 30,
+                                ),
+                                Container(
+                                  child: Column(
+                                    children: [
+                                      Container(
+                                          child: Text("205.88",
+                                              style: TextStyle(
+                                                  fontSize: 30,
+                                                  fontFamily: "itim",
+                                                  color: Colors.pink))),
+                                      SizedBox(
+                                        height: 50,
+                                      ),
+                                      Container(
+                                          child: Text(
+                                        "yesterday:206.90",
+                                        style: TextStyle(
+                                            fontSize: 10,
+                                            fontFamily: "itim",
+                                            color: Colors.black),
+                                      )),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 25,
+                      ),
+                      Container(
+                        height: 150,
+                        width: 100,
+                        decoration: BoxDecoration(
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.5),
+                                spreadRadius: 5,
+                                blurRadius: 7,
+                                offset:
+                                    Offset(0, 3), // changes position of shadow
+                              ),
+                            ],
+                            borderRadius: BorderRadius.circular(10),
+                            color: Colors.white),
+                        child: Column(
+                          children: [
+                            SizedBox(
+                              height: 5,
+                            ),
+                            Container(
+                                child: Text(
+                              "Gram 22k",
+                              style: TextStyle(
+                                  fontFamily: "itim",
+                                  fontSize: 15,
+                                  color: Colors.black),
+                            )),
+                            SizedBox(
+                              height: 30,
+                            ),
+                            Container(
+                              child: Column(
+                                children: [
+                                  Container(
+                                      child: Text("180.14",
+                                          style: TextStyle(
+                                              fontSize: 30,
+                                              fontFamily: "itim",
+                                              color: Colors.pink))),
+                                  SizedBox(
+                                    height: 50,
+                                  ),
+                                  Container(
+                                      child: Text(
+                                    "yesterday:181.04",
+                                    style: TextStyle(
+                                        fontSize: 10,
+                                        fontFamily: "itim",
+                                        color: Colors.black),
+                                  )),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 25,
+                      ),
+                      Container(
+                        height: 150,
+                        width: 100,
+                        decoration: BoxDecoration(
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.5),
+                                spreadRadius: 5,
+                                blurRadius: 7,
+                                offset:
+                                    Offset(0, 3), // changes position of shadow
+                              ),
+                            ],
+                            borderRadius: BorderRadius.circular(10),
+                            color: Colors.white),
+                        child: Column(
+                          children: [
+                            SizedBox(
+                              height: 5,
+                            ),
+                            Container(
+                                child: Text(
+                              "Gram 22k",
+                              style: TextStyle(
+                                  fontFamily: "itim",
+                                  fontSize: 15,
+                                  color: Colors.black),
+                            )),
+                            SizedBox(
+                              height: 30,
+                            ),
+                            Container(
+                              child: Column(
+                                children: [
+                                  Container(
+                                      child: Text("180.14",
+                                          style: TextStyle(
+                                              fontSize: 30,
+                                              fontFamily: "itim",
+                                              color: Colors.pink))),
+                                  SizedBox(
+                                    height: 50,
+                                  ),
+                                  Container(
+                                      child: Text(
+                                    "yesterday:181.04",
+                                    style: TextStyle(
+                                        fontSize: 10,
+                                        fontFamily: "itim",
+                                        color: Colors.black),
+                                  )),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ]),
+                  ],
+                ),
+              ])))
+    ]));
   }
 }

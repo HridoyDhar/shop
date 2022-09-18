@@ -15,6 +15,16 @@ class login extends StatefulWidget {
 }
 
 class _loginState extends State<login> {
+  final emailController = TextEditingController();
+  final passwordController = TextEditingController();
+
+  // @override
+  // Void dispose() {
+  //   emailController.dispose();
+  //   passwordController.dispose();
+  //   super.dispose();
+  // }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,9 +46,10 @@ class _loginState extends State<login> {
               width: 300.w,
               margin: EdgeInsets.symmetric(horizontal: 20.w),
               child: TextField(
+                controller: emailController,
                 // controller: phone,
                 decoration: InputDecoration(
-                    labelText: "Email/Number",
+                    labelText: "Email/Phone",
                     hintText: "Enter your email or number",
                     border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10.r)),
@@ -56,6 +67,7 @@ class _loginState extends State<login> {
               width: 300.w,
               margin: EdgeInsets.symmetric(horizontal: 20.w),
               child: TextField(
+                controller: passwordController,
                 // controller: password,
                 decoration: InputDecoration(
                     labelText: "Password",
@@ -157,3 +169,10 @@ class _loginState extends State<login> {
         ));
   }
 }
+
+// Future Login() async {
+//   await FirebaseAuth.instance.signInWithEmailAndPassword(
+//     email: emailController.text.trim(),
+//     password: passowrdController.text.trim(),
+//   );
+// }

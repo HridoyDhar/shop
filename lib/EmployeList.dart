@@ -17,7 +17,7 @@ class _EmployeListState extends State<EmployeList> {
       body: ListView(
         children: [
           SizedBox(
-            height: 20,
+            height: 20.h,
           ),
           InkWell(
             onTap: () {
@@ -25,8 +25,7 @@ class _EmployeListState extends State<EmployeList> {
                   MaterialPageRoute(builder: (context) => EmployeDetails()));
             },
             child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              alignment: Alignment.center,
+              margin: EdgeInsets.symmetric(horizontal: 20.w),
               height: 40.h,
               width: 300.w,
               decoration: BoxDecoration(
@@ -39,580 +38,733 @@ class _EmployeListState extends State<EmployeList> {
                   ),
                 ],
                 color: Colors.white,
-                borderRadius: BorderRadius.circular(10),
+                borderRadius: BorderRadius.circular(10.r),
               ),
-              child: Text(
-                "Rimi dhar",
-                style: TextStyle(
-                    fontFamily: "itim", fontSize: 20, color: Colors.black),
-              ),
-            ),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => EmployeDetails()));
-            },
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              alignment: Alignment.center,
-              height: 50.h,
-              width: 340.w,
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.5),
-                    spreadRadius: 5,
-                    blurRadius: 7,
-                    offset: Offset(0, 3), // changes position of shadow
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.person,
+                    color: Colors.greenAccent,
                   ),
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: Text(
-                "Rimi dhar",
-                style: TextStyle(
-                    fontFamily: "itim", fontSize: 20, color: Colors.black),
-              ),
-            ),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => EmployeDetails()));
-            },
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              alignment: Alignment.center,
-              height: 40.h,
-              width: 300.w,
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.5),
-                    spreadRadius: 5,
-                    blurRadius: 7,
-                    offset: Offset(0, 3), // changes position of shadow
+                  SizedBox(
+                    width: 15.w,
                   ),
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: Text(
-                "Rimi dhar",
-                style: TextStyle(
-                    fontFamily: "itim", fontSize: 20, color: Colors.black),
-              ),
-            ),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => EmployeDetails()));
-            },
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              alignment: Alignment.center,
-              height: 40.h,
-              width: 300.w,
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.5),
-                    spreadRadius: 5,
-                    blurRadius: 7,
-                    offset: Offset(0, 3), // changes position of shadow
-                  ),
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: Text(
-                "Rimi dhar",
-                style: TextStyle(
-                    fontFamily: "itim", fontSize: 20, color: Colors.black),
-              ),
-            ),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => EmployeDetails()));
-            },
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              alignment: Alignment.center,
-              height: 40.h,
-              width: 300.w,
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.5),
-                    spreadRadius: 5,
-                    blurRadius: 7,
-                    offset: Offset(0, 3), // changes position of shadow
-                  ),
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: Text(
-                "Rimi dhar",
-                style: TextStyle(
-                    fontFamily: "itim", fontSize: 20, color: Colors.black),
-              ),
-            ),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => EmployeDetails()));
-            },
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              alignment: Alignment.center,
-              height: 40.h,
-              width: 300.w,
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.5),
-                    spreadRadius: 5,
-                    blurRadius: 7,
-                    offset: Offset(0, 3), // changes position of shadow
-                  ),
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: Text(
-                "Rimi dhar",
-                style: TextStyle(
-                    fontFamily: "itim", fontSize: 20, color: Colors.black),
-              ),
-            ),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => EmployeDetails()));
-            },
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              alignment: Alignment.center,
-              height: 40.h,
-              width: 300.w,
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.5),
-                    spreadRadius: 5,
-                    blurRadius: 7,
-                    offset: Offset(0, 3), // changes position of shadow
-                  ),
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: Text(
-                "Rimi dhar",
-                style: TextStyle(
-                    fontFamily: "itim", fontSize: 20, color: Colors.black),
-              ),
-            ),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => EmployeDetails()));
-            },
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              alignment: Alignment.center,
-              height: 40.h,
-              width: 300.w,
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.5),
-                    spreadRadius: 5,
-                    blurRadius: 7,
-                    offset: Offset(0, 3), // changes position of shadow
-                  ),
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: Text(
-                "Rimi dhar",
-                style: TextStyle(
-                    fontFamily: "itim", fontSize: 20, color: Colors.black),
-              ),
-            ),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => EmployeDetails()));
-            },
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              alignment: Alignment.center,
-              height: 40.h,
-              width: 300.w,
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.5),
-                    spreadRadius: 5,
-                    blurRadius: 7,
-                    offset: Offset(0, 3), // changes position of shadow
-                  ),
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: Text(
-                "Rimi dhar",
-                style: TextStyle(
-                    fontFamily: "itim", fontSize: 20, color: Colors.black),
-              ),
-            ),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => EmployeDetails()));
-            },
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              alignment: Alignment.center,
-              height: 40.h,
-              width: 300.w,
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.5),
-                    spreadRadius: 5,
-                    blurRadius: 7,
-                    offset: Offset(0, 3), // changes position of shadow
-                  ),
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: Text(
-                "Rimi dhar",
-                style: TextStyle(
-                    fontFamily: "itim", fontSize: 20, color: Colors.black),
-              ),
-            ),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => EmployeDetails()));
-            },
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              alignment: Alignment.center,
-              height: 40.h,
-              width: 300.w,
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.5),
-                    spreadRadius: 5,
-                    blurRadius: 7,
-                    offset: Offset(0, 3), // changes position of shadow
-                  ),
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: Text(
-                "Rimi dhar",
-                style: TextStyle(
-                    fontFamily: "itim", fontSize: 20, color: Colors.black),
-              ),
-            ),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => EmployeDetails()));
-            },
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              alignment: Alignment.center,
-              height: 40.h,
-              width: 300.w,
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.5),
-                    spreadRadius: 5,
-                    blurRadius: 7,
-                    offset: Offset(0, 3), // changes position of shadow
-                  ),
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: Text(
-                "Rimi dhar",
-                style: TextStyle(
-                    fontFamily: "itim", fontSize: 20, color: Colors.black),
-              ),
-            ),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => EmployeDetails()));
-            },
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              alignment: Alignment.center,
-              height: 40.h,
-              width: 300.w,
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.5),
-                    spreadRadius: 5,
-                    blurRadius: 7,
-                    offset: Offset(0, 3), // changes position of shadow
-                  ),
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: Text(
-                "Rimi dhar",
-                style: TextStyle(
-                    fontFamily: "itim", fontSize: 20, color: Colors.black),
-              ),
-            ),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => EmployeDetails()));
-            },
-            child: Card(
-              child: Container(
-                margin: EdgeInsets.symmetric(horizontal: 20),
-                alignment: Alignment.center,
-                height: 40.h,
-                width: 300.w,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Text(
-                  "Rimi dhar",
-                  style: TextStyle(
-                      fontFamily: "itim", fontSize: 20, color: Colors.black),
-                ),
-              ),
-            ),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => EmployeDetails()));
-            },
-            child: Card(
-              child: Container(
-                margin: EdgeInsets.symmetric(horizontal: 20),
-                alignment: Alignment.center,
-                height: 40.h,
-                width: 300.w,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Text(
-                  "Rimi dhar",
-                  style: TextStyle(
-                      fontFamily: "itim", fontSize: 20, color: Colors.black),
-                ),
-              ),
-            ),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => EmployeDetails()));
-            },
-            child: Card(
-              child: Container(
-                margin: EdgeInsets.symmetric(horizontal: 20),
-                alignment: Alignment.center,
-                height: 40.h,
-                width: 300.w,
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.withOpacity(0.5),
-                      spreadRadius: 5,
-                      blurRadius: 7,
-                      offset: Offset(0, 3), // changes position of shadow
+                  Container(
+                    child: Text(
+                      "4.Mr                                                          Rahul",
+                      style: TextStyle(
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
                     ),
-                  ],
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Text(
-                  "Rimi dhar",
-                  style: TextStyle(
-                      fontFamily: "itim", fontSize: 20, color: Colors.black),
-                ),
+                  ),
+                ],
               ),
             ),
           ),
           SizedBox(
-            height: 20,
+            height: 20.h,
           ),
           InkWell(
             onTap: () {
               Navigator.push(context,
                   MaterialPageRoute(builder: (context) => EmployeDetails()));
             },
-            child: Card(
-              child: Container(
-                margin: EdgeInsets.symmetric(horizontal: 20),
-                alignment: Alignment.center,
-                height: 40.h,
-                width: 300.w,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Text(
-                  "Rimi dhar",
-                  style: TextStyle(
-                      fontFamily: "itim", fontSize: 20, color: Colors.black),
-                ),
+            child: Container(
+              margin: EdgeInsets.symmetric(horizontal: 20.w),
+              height: 40.h,
+              width: 300.w,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 5,
+                    blurRadius: 7,
+                    offset: Offset(0, 3), // changes position of shadow
+                  ),
+                ],
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10.r),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.person,
+                    color: Colors.greenAccent,
+                  ),
+                  SizedBox(
+                    width: 15.w,
+                  ),
+                  Container(
+                    child: Text(
+                      "4.Mr                                                          Rahul",
+                      style: TextStyle(
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
+                    ),
+                  ),
+                ],
               ),
             ),
           ),
           SizedBox(
-            height: 20,
+            height: 20.h,
           ),
           InkWell(
             onTap: () {
               Navigator.push(context,
                   MaterialPageRoute(builder: (context) => EmployeDetails()));
             },
-            child: Card(
-              child: Container(
-                margin: EdgeInsets.symmetric(horizontal: 20),
-                alignment: Alignment.center,
-                height: 40.h,
-                width: 300.w,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Text(
-                  "Rimi dhar",
-                  style: TextStyle(
-                      fontFamily: "itim", fontSize: 20, color: Colors.black),
-                ),
+            child: Container(
+              margin: EdgeInsets.symmetric(horizontal: 20.w),
+              height: 40.h,
+              width: 300.w,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 5,
+                    blurRadius: 7,
+                    offset: Offset(0, 3), // changes position of shadow
+                  ),
+                ],
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10.r),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.person,
+                    color: Colors.greenAccent,
+                  ),
+                  SizedBox(
+                    width: 15.w,
+                  ),
+                  Container(
+                    child: Text(
+                      "4.Mr                                                          Rahul",
+                      style: TextStyle(
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
+                    ),
+                  ),
+                ],
               ),
             ),
           ),
           SizedBox(
-            height: 20,
+            height: 20.h,
           ),
           InkWell(
             onTap: () {
               Navigator.push(context,
                   MaterialPageRoute(builder: (context) => EmployeDetails()));
             },
-            child: Card(
-              child: Container(
-                margin: EdgeInsets.symmetric(horizontal: 20),
-                alignment: Alignment.center,
-                height: 40.h,
-                width: 300.w,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Text(
-                  "Rimi dhar",
-                  style: TextStyle(
-                      fontFamily: "itim", fontSize: 20, color: Colors.black),
-                ),
+            child: Container(
+              margin: EdgeInsets.symmetric(horizontal: 20.w),
+              height: 40.h,
+              width: 300.w,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 5,
+                    blurRadius: 7,
+                    offset: Offset(0, 3), // changes position of shadow
+                  ),
+                ],
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10.r),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.person,
+                    color: Colors.greenAccent,
+                  ),
+                  SizedBox(
+                    width: 15.w,
+                  ),
+                  Container(
+                    child: Text(
+                      "4.Mr                                                          Rahul",
+                      style: TextStyle(
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
+                    ),
+                  ),
+                ],
               ),
             ),
           ),
           SizedBox(
-            height: 20,
+            height: 20.h,
           ),
           InkWell(
             onTap: () {
               Navigator.push(context,
                   MaterialPageRoute(builder: (context) => EmployeDetails()));
             },
-            child: Card(
-              child: Container(
-                margin: EdgeInsets.symmetric(horizontal: 20),
-                alignment: Alignment.center,
-                height: 40.h,
-                width: 300.w,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Text(
-                  "Rimi dhar",
-                  style: TextStyle(
-                      fontFamily: "itim", fontSize: 20, color: Colors.black),
-                ),
+            child: Container(
+              margin: EdgeInsets.symmetric(horizontal: 20.w),
+              height: 40.h,
+              width: 300.w,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 5,
+                    blurRadius: 7,
+                    offset: Offset(0, 3), // changes position of shadow
+                  ),
+                ],
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10.r),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.person,
+                    color: Colors.greenAccent,
+                  ),
+                  SizedBox(
+                    width: 15.w,
+                  ),
+                  Container(
+                    child: Text(
+                      "4.Mr                                                          Rahul",
+                      style: TextStyle(
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          SizedBox(
+            height: 20.h,
+          ),
+          InkWell(
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => EmployeDetails()));
+            },
+            child: Container(
+              margin: EdgeInsets.symmetric(horizontal: 20.w),
+              height: 40.h,
+              width: 300.w,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 5,
+                    blurRadius: 7,
+                    offset: Offset(0, 3), // changes position of shadow
+                  ),
+                ],
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10.r),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.person,
+                    color: Colors.greenAccent,
+                  ),
+                  SizedBox(
+                    width: 15.w,
+                  ),
+                  Container(
+                    child: Text(
+                      "4.Mr                                                          Rahul",
+                      style: TextStyle(
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          SizedBox(
+            height: 20.h,
+          ),
+          InkWell(
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => EmployeDetails()));
+            },
+            child: Container(
+              margin: EdgeInsets.symmetric(horizontal: 20.w),
+              height: 40.h,
+              width: 300.w,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 5,
+                    blurRadius: 7,
+                    offset: Offset(0, 3), // changes position of shadow
+                  ),
+                ],
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10.r),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.person,
+                    color: Colors.greenAccent,
+                  ),
+                  SizedBox(
+                    width: 15.w,
+                  ),
+                  Container(
+                    child: Text(
+                      "4.Mr                                                          Rahul",
+                      style: TextStyle(
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          SizedBox(
+            height: 20.h,
+          ),
+          InkWell(
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => EmployeDetails()));
+            },
+            child: Container(
+              margin: EdgeInsets.symmetric(horizontal: 20.w),
+              height: 40.h,
+              width: 300.w,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 5,
+                    blurRadius: 7,
+                    offset: Offset(0, 3), // changes position of shadow
+                  ),
+                ],
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10.r),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.person,
+                    color: Colors.greenAccent,
+                  ),
+                  SizedBox(
+                    width: 15.w,
+                  ),
+                  Container(
+                    child: Text(
+                      "4.Mr                                                          Rahul",
+                      style: TextStyle(
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          SizedBox(
+            height: 20.h,
+          ),
+          InkWell(
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => EmployeDetails()));
+            },
+            child: Container(
+              margin: EdgeInsets.symmetric(horizontal: 20.w),
+              height: 40.h,
+              width: 300.w,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 5,
+                    blurRadius: 7,
+                    offset: Offset(0, 3), // changes position of shadow
+                  ),
+                ],
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10.r),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.person,
+                    color: Colors.greenAccent,
+                  ),
+                  SizedBox(
+                    width: 15.w,
+                  ),
+                  Container(
+                    child: Text(
+                      "4.Mr                                                          Rahul",
+                      style: TextStyle(
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          SizedBox(
+            height: 20.h,
+          ),
+          InkWell(
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => EmployeDetails()));
+            },
+            child: Container(
+              margin: EdgeInsets.symmetric(horizontal: 20.w),
+              height: 40.h,
+              width: 300.w,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 5,
+                    blurRadius: 7,
+                    offset: Offset(0, 3), // changes position of shadow
+                  ),
+                ],
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10.r),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.person,
+                    color: Colors.greenAccent,
+                  ),
+                  SizedBox(
+                    width: 15.w,
+                  ),
+                  Container(
+                    child: Text(
+                      "4.Mr                                                          Rahul",
+                      style: TextStyle(
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          SizedBox(
+            height: 20.h,
+          ),
+          InkWell(
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => EmployeDetails()));
+            },
+            child: Container(
+              margin: EdgeInsets.symmetric(horizontal: 20.w),
+              height: 40.h,
+              width: 300.w,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 5,
+                    blurRadius: 7,
+                    offset: Offset(0, 3), // changes position of shadow
+                  ),
+                ],
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10.r),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.person,
+                    color: Colors.greenAccent,
+                  ),
+                  SizedBox(
+                    width: 15.w,
+                  ),
+                  Container(
+                    child: Text(
+                      "4.Mr                                                          Rahul",
+                      style: TextStyle(
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          SizedBox(
+            height: 20.h,
+          ),
+          InkWell(
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => EmployeDetails()));
+            },
+            child: Container(
+              margin: EdgeInsets.symmetric(horizontal: 20.w),
+              height: 40.h,
+              width: 300.w,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 5,
+                    blurRadius: 7,
+                    offset: Offset(0, 3), // changes position of shadow
+                  ),
+                ],
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10.r),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.person,
+                    color: Colors.greenAccent,
+                  ),
+                  SizedBox(
+                    width: 15.w,
+                  ),
+                  Container(
+                    child: Text(
+                      "4.Mr                                                          Rahul",
+                      style: TextStyle(
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          SizedBox(
+            height: 20.h,
+          ),
+          InkWell(
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => EmployeDetails()));
+            },
+            child: Container(
+              margin: EdgeInsets.symmetric(horizontal: 20.w),
+              height: 40.h,
+              width: 300.w,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 5,
+                    blurRadius: 7,
+                    offset: Offset(0, 3), // changes position of shadow
+                  ),
+                ],
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10.r),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.person,
+                    color: Colors.greenAccent,
+                  ),
+                  SizedBox(
+                    width: 15.w,
+                  ),
+                  Container(
+                    child: Text(
+                      "4.Mr                                                          Rahul",
+                      style: TextStyle(
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          SizedBox(
+            height: 20.h,
+          ),
+          InkWell(
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => EmployeDetails()));
+            },
+            child: Container(
+              margin: EdgeInsets.symmetric(horizontal: 20.w),
+              height: 40.h,
+              width: 300.w,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 5,
+                    blurRadius: 7,
+                    offset: Offset(0, 3), // changes position of shadow
+                  ),
+                ],
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10.r),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.person,
+                    color: Colors.greenAccent,
+                  ),
+                  SizedBox(
+                    width: 15.w,
+                  ),
+                  Container(
+                    child: Text(
+                      "4.Mr                                                          Rahul",
+                      style: TextStyle(
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          SizedBox(
+            height: 20.h,
+          ),
+          InkWell(
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => EmployeDetails()));
+            },
+            child: Container(
+              margin: EdgeInsets.symmetric(horizontal: 20.w),
+              height: 40.h,
+              width: 300.w,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 5,
+                    blurRadius: 7,
+                    offset: Offset(0, 3), // changes position of shadow
+                  ),
+                ],
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10.r),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.person,
+                    color: Colors.greenAccent,
+                  ),
+                  SizedBox(
+                    width: 15.w,
+                  ),
+                  Container(
+                    child: Text(
+                      "4.Mr                                                          Rahul",
+                      style: TextStyle(
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          SizedBox(
+            height: 20.h,
+          ),
+          InkWell(
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => EmployeDetails()));
+            },
+            child: Container(
+              margin: EdgeInsets.symmetric(horizontal: 20.w),
+              height: 40.h,
+              width: 300.w,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 5,
+                    blurRadius: 7,
+                    offset: Offset(0, 3), // changes position of shadow
+                  ),
+                ],
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10.r),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.person,
+                    color: Colors.greenAccent,
+                  ),
+                  SizedBox(
+                    width: 15.w,
+                  ),
+                  Container(
+                    child: Text(
+                      "4.Mr                                                          Rahul",
+                      style: TextStyle(
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
+                    ),
+                  ),
+                ],
               ),
             ),
           ),
