@@ -32,66 +32,33 @@ class _Sell_iteamState extends State<Sell_iteam> {
                 child: Card(
                   child: Column(
                     children: [
-                      InkWell(
-                        onTap: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => ShopProductOne()));
-                        },
-                        child: Container(
-                          height: 110,
-                          child: Image.asset(
-                            'assets/p.jpg',
-                            fit: BoxFit.fitHeight,
-                          ),
+                      Container(
+                        height: 110,
+                        child: Image.asset(
+                          "assets/bse7114a_1___44882.jpg",
+                          fit: BoxFit.fitHeight,
                         ),
                       ),
-                      SizedBox(
-                        height: 20,
-                      ),
-                      Center(
-                        child: Container(
-                          width: 110,
-                          child: Column(
-                            children: [
-                              Container(
-                                height: 20,
-                                margin: EdgeInsets.symmetric(horizontal: 150),
-                                child: TextField(
-                                  decoration: InputDecoration(
-                                      labelText: "Caret",
-                                      border: OutlineInputBorder(
-                                        borderRadius: BorderRadius.circular(10),
-                                      )),
-                                ),
-                              ),
-                              // Container(
-                              //   height: 10,
-                              //   margin: EdgeInsets.symmetric(horizontal: 150),
-                              //   child: TextField(
-                              //     decoration: InputDecoration(
-                              //         labelText: "Caret",
-                              //         border: OutlineInputBorder(
-                              //           borderRadius: BorderRadius.circular(10),
-                              //         )),
-                              //   ),
-                              // ),
-                              // Container(
-                              //   height: 20,
-                              //   margin: EdgeInsets.symmetric(horizontal: 150),
-                              //   child: TextField(
-                              //     decoration: InputDecoration(
-                              //         labelText: "Caret",
-                              //         border: OutlineInputBorder(
-                              //           borderRadius: BorderRadius.circular(10),
-                              //         )),
-                              //   ),
-                              // ),
-                            ],
-                          ),
-                        ),
-                      )
+                      // SizedBox(
+                      //   height: 10,
+                      // ),
+                      // Container(
+                      //   height: 20,
+                      //   width: 50,
+                      //   margin: EdgeInsets.symmetric(horizontal: 100),
+                      //   alignment: Alignment.center,
+                      //   decoration: BoxDecoration(
+                      //     borderRadius: BorderRadius.circular(10),
+                      //     color: Color(0xffF7FAFF),
+                      //   ),
+                      //   child: Text(
+                      //     "Write somthing",
+                      //     style: TextStyle(
+                      //         fontFamily: "itim",
+                      //         fontSize: 10,
+                      //         color: Colors.black),
+                      //   ),
+                      // )
                     ],
                   ),
                 ),
@@ -106,7 +73,7 @@ class _Sell_iteamState extends State<Sell_iteam> {
           alignment: Alignment.center,
           height: 50.h,
           width: 340.w,
-          margin: EdgeInsets.symmetric(horizontal: 150),
+          margin: EdgeInsets.symmetric(horizontal: 100),
           decoration: BoxDecoration(
               color: Colors.blueAccent,
               borderRadius: BorderRadius.circular(10)),

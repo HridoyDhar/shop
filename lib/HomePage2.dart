@@ -33,7 +33,10 @@ class _HomePage2State extends State<HomePage2> {
             height: 40,
           ),
           Container(
-              height: 200, width: 200, child: Image.asset("assets/man.png")),
+              height: 200,
+              width: 200,
+              child: Image.asset(
+                  "assets/9994-name-profile-icon-animation-circle.gif")),
           SizedBox(
             height: 10,
           ),
@@ -42,7 +45,18 @@ class _HomePage2State extends State<HomePage2> {
             child: Text(
               "Krisna kumar",
               style: TextStyle(
-                  fontSize: 15, fontFamily: "itim", color: Colors.black),
+                  fontSize: 30, fontFamily: "itim", color: Colors.black),
+            ),
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          Container(
+            alignment: Alignment.center,
+            child: Text(
+              "Contact:0178466383",
+              style: TextStyle(
+                  fontSize: 20, fontFamily: "itim", color: Colors.black),
             ),
           ),
           SizedBox(
@@ -63,22 +77,41 @@ class _HomePage2State extends State<HomePage2> {
                             MaterialPageRoute(
                                 builder: (context) => Mortagelist()));
                       },
-                      child: Container(
-                        alignment: Alignment.center,
-                        height: 50,
-                        width: 100,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            // border: Border.all(color: Colors.black),
-                            color: Color(0xffF7FAFF)),
-                        child: Text(
-                          "Mortage",
-                          style: TextStyle(
-                              fontSize: 15.sp,
-                              fontWeight: FontWeight.w700,
-                              fontFamily: "Manjari",
-                              color: Colors.black),
-                        ),
+                      child: Row(
+                        children: [
+                          Container(
+                            alignment: Alignment.centerLeft,
+                            height: 50,
+                            width: 100,
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(10),
+                                // border: Border.all(color: Colors.black),
+                                color: Color(0xffF7FAFF)),
+                            child: Row(
+                              children: [
+                                SizedBox(
+                                  width: 5,
+                                ),
+                                Container(
+                                  height: 20,
+                                  width: 20,
+                                  child: Image.asset("assets/loan.png"),
+                                ),
+                                SizedBox(
+                                  width: 5,
+                                ),
+                                Text(
+                                  "Mortage",
+                                  style: TextStyle(
+                                      fontSize: 13.sp,
+                                      fontWeight: FontWeight.w700,
+                                      fontFamily: "Manjari",
+                                      color: Colors.black),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                     SizedBox(
@@ -118,21 +151,40 @@ class _HomePage2State extends State<HomePage2> {
                             MaterialPageRoute(
                                 builder: (context) => Selllist()));
                       },
-                      child: Container(
-                        alignment: Alignment.center,
-                        height: 50,
-                        width: 100,
-                        decoration: BoxDecoration(
-                            // border: Border.all(color: Colors.black),
-                            borderRadius: BorderRadius.circular(10),
-                            color: Color(0xffF7FAFF)),
-                        child: Text(
-                          "Sell",
-                          style: TextStyle(
-                              fontSize: 13.sp,
-                              fontWeight: FontWeight.w700,
-                              fontFamily: "Manjari"),
-                        ),
+                      child: Row(
+                        children: [
+                          Container(
+                            alignment: Alignment.center,
+                            height: 50,
+                            width: 100,
+                            decoration: BoxDecoration(
+                                // border: Border.all(color: Colors.black),
+                                borderRadius: BorderRadius.circular(10),
+                                color: Color(0xffF7FAFF)),
+                            child: Row(
+                              children: [
+                                SizedBox(
+                                  width: 10,
+                                ),
+                                Container(
+                                  height: 20,
+                                  width: 20,
+                                  child: Image.asset("assets/selling.png"),
+                                ),
+                                SizedBox(
+                                  width: 10,
+                                ),
+                                Text(
+                                  "Sell",
+                                  style: TextStyle(
+                                      fontSize: 13.sp,
+                                      fontWeight: FontWeight.w700,
+                                      fontFamily: "Manjari"),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ],
@@ -167,7 +219,7 @@ class _HomePage2State extends State<HomePage2> {
                         child: Text(
                           "New sell",
                           style: TextStyle(
-                              fontSize: 15.sp,
+                              fontSize: 13.sp,
                               fontWeight: FontWeight.w700,
                               fontFamily: "Manjari",
                               color: Colors.black),
@@ -184,21 +236,40 @@ class _HomePage2State extends State<HomePage2> {
                             MaterialPageRoute(
                                 builder: (context) => CompineList()));
                       },
-                      child: Container(
-                        alignment: Alignment.center,
-                        height: 50,
-                        width: 100,
-                        decoration: BoxDecoration(
-                            // border: Border.all(color: Colors.black),
-                            borderRadius: BorderRadius.circular(10),
-                            color: Color(0xffF7FAFF)),
-                        child: Text(
-                          "Compline",
-                          style: TextStyle(
-                              fontSize: 13.sp,
-                              fontWeight: FontWeight.w700,
-                              fontFamily: "Manjari"),
-                        ),
+                      child: Row(
+                        children: [
+                          Container(
+                            alignment: Alignment.center,
+                            height: 50,
+                            width: 100,
+                            decoration: BoxDecoration(
+                                // border: Border.all(color: Colors.black),
+                                borderRadius: BorderRadius.circular(10),
+                                color: Color(0xffF7FAFF)),
+                            child: Row(
+                              children: [
+                                SizedBox(
+                                  width: 5,
+                                ),
+                                Container(
+                                  height: 20,
+                                  width: 20,
+                                  child: Image.asset("assets/law.png"),
+                                ),
+                                SizedBox(
+                                  width: 5,
+                                ),
+                                Text(
+                                  "Compline",
+                                  style: TextStyle(
+                                      fontSize: 13.sp,
+                                      fontWeight: FontWeight.w700,
+                                      fontFamily: "Manjari"),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                     SizedBox(
@@ -209,21 +280,40 @@ class _HomePage2State extends State<HomePage2> {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => Joblist()));
                       },
-                      child: Container(
-                        alignment: Alignment.center,
-                        height: 50,
-                        width: 100,
-                        decoration: BoxDecoration(
-                            // border: Border.all(color: Colors.black),
-                            borderRadius: BorderRadius.circular(10),
-                            color: Color(0xffF7FAFF)),
-                        child: Text(
-                          "Job",
-                          style: TextStyle(
-                              fontSize: 13.sp,
-                              fontWeight: FontWeight.w700,
-                              fontFamily: "Manjari"),
-                        ),
+                      child: Row(
+                        children: [
+                          Container(
+                            alignment: Alignment.center,
+                            height: 50,
+                            width: 100,
+                            decoration: BoxDecoration(
+                                // border: Border.all(color: Colors.black),
+                                borderRadius: BorderRadius.circular(10),
+                                color: Color(0xffF7FAFF)),
+                            child: Row(
+                              children: [
+                                SizedBox(
+                                  width: 10,
+                                ),
+                                Container(
+                                  height: 20,
+                                  width: 20,
+                                  child: Image.asset("assets/job-search.png"),
+                                ),
+                                SizedBox(
+                                  width: 10,
+                                ),
+                                Text(
+                                  "Job",
+                                  style: TextStyle(
+                                      fontSize: 13.sp,
+                                      fontWeight: FontWeight.w700,
+                                      fontFamily: "Manjari"),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ],
@@ -249,22 +339,41 @@ class _HomePage2State extends State<HomePage2> {
                             MaterialPageRoute(
                                 builder: (context) => IncomeList()));
                       },
-                      child: Container(
-                        alignment: Alignment.center,
-                        height: 50,
-                        width: 100,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            // border: Border.all(color: Colors.black),
-                            color: Color(0xffF7FAFF)),
-                        child: Text(
-                          "Earning",
-                          style: TextStyle(
-                              fontSize: 15.sp,
-                              fontWeight: FontWeight.w700,
-                              fontFamily: "Manjari",
-                              color: Colors.black),
-                        ),
+                      child: Row(
+                        children: [
+                          Container(
+                            alignment: Alignment.center,
+                            height: 50,
+                            width: 100,
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(10),
+                                // border: Border.all(color: Colors.black),
+                                color: Color(0xffF7FAFF)),
+                            child: Row(
+                              children: [
+                                SizedBox(
+                                  width: 5,
+                                ),
+                                Container(
+                                  height: 20,
+                                  width: 20,
+                                  child: Image.asset("assets/receipt.png"),
+                                ),
+                                SizedBox(
+                                  width: 5,
+                                ),
+                                Text(
+                                  "Earning",
+                                  style: TextStyle(
+                                      fontSize: 13.sp,
+                                      fontWeight: FontWeight.w700,
+                                      fontFamily: "Manjari",
+                                      color: Colors.black),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                     SizedBox(
@@ -277,21 +386,40 @@ class _HomePage2State extends State<HomePage2> {
                             MaterialPageRoute(
                                 builder: (context) => Calculator()));
                       },
-                      child: Container(
-                        alignment: Alignment.center,
-                        height: 50,
-                        width: 100,
-                        decoration: BoxDecoration(
-                            // border: Border.all(color: Colors.black),
-                            borderRadius: BorderRadius.circular(10),
-                            color: Color(0xffF7FAFF)),
-                        child: Text(
-                          "Calculator",
-                          style: TextStyle(
-                              fontSize: 13.sp,
-                              fontWeight: FontWeight.w700,
-                              fontFamily: "Manjari"),
-                        ),
+                      child: Row(
+                        children: [
+                          Container(
+                            alignment: Alignment.center,
+                            height: 50,
+                            width: 100,
+                            decoration: BoxDecoration(
+                                // border: Border.all(color: Colors.black),
+                                borderRadius: BorderRadius.circular(10),
+                                color: Color(0xffF7FAFF)),
+                            child: Row(
+                              children: [
+                                SizedBox(
+                                  width: 5,
+                                ),
+                                Container(
+                                  height: 20,
+                                  width: 20,
+                                  child: Image.asset("assets/calculator.png"),
+                                ),
+                                SizedBox(
+                                  width: 5,
+                                ),
+                                Text(
+                                  "Calculator",
+                                  style: TextStyle(
+                                      fontSize: 13.sp,
+                                      fontWeight: FontWeight.w700,
+                                      fontFamily: "Manjari"),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                     SizedBox(
@@ -304,21 +432,34 @@ class _HomePage2State extends State<HomePage2> {
                             MaterialPageRoute(
                                 builder: (context) => AutoCalculate()));
                       },
-                      child: Container(
-                        alignment: Alignment.center,
-                        height: 50,
-                        width: 100,
-                        decoration: BoxDecoration(
-                            // border: Border.all(color: Colors.black),
-                            borderRadius: BorderRadius.circular(10),
-                            color: Color(0xffF7FAFF)),
-                        child: Text(
-                          "Auto calculator",
-                          style: TextStyle(
-                              fontSize: 13.sp,
-                              fontWeight: FontWeight.w700,
-                              fontFamily: "Manjari"),
-                        ),
+                      child: Row(
+                        children: [
+                          Container(
+                            alignment: Alignment.center,
+                            height: 50,
+                            width: 100,
+                            decoration: BoxDecoration(
+                                // border: Border.all(color: Colors.black),
+                                borderRadius: BorderRadius.circular(10),
+                                color: Color(0xffF7FAFF)),
+                            child: Row(
+                              children: [
+                                Container(
+                                  height: 20,
+                                  width: 20,
+                                  child: Image.asset("assets/calculator.png"),
+                                ),
+                                Text(
+                                  " Calculator",
+                                  style: TextStyle(
+                                      fontSize: 13.sp,
+                                      fontWeight: FontWeight.w700,
+                                      fontFamily: "Manjari"),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ],
@@ -344,22 +485,41 @@ class _HomePage2State extends State<HomePage2> {
                             MaterialPageRoute(
                                 builder: (context) => Sell_iteam()));
                       },
-                      child: Container(
-                        alignment: Alignment.center,
-                        height: 50,
-                        width: 100,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            // border: Border.all(color: Colors.black),
-                            color: Color(0xffF7FAFF)),
-                        child: Text(
-                          "Marketing",
-                          style: TextStyle(
-                              fontSize: 15.sp,
-                              fontWeight: FontWeight.w700,
-                              fontFamily: "Manjari",
-                              color: Colors.black),
-                        ),
+                      child: Row(
+                        children: [
+                          Container(
+                            alignment: Alignment.center,
+                            height: 50,
+                            width: 100,
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(10),
+                                // border: Border.all(color: Colors.black),
+                                color: Color(0xffF7FAFF)),
+                            child: Row(
+                              children: [
+                                SizedBox(
+                                  width: 5,
+                                ),
+                                Container(
+                                  height: 20,
+                                  width: 20,
+                                  child: Image.asset("assets/affiliate.png"),
+                                ),
+                                SizedBox(
+                                  width: 5,
+                                ),
+                                Text(
+                                  "Marketing",
+                                  style: TextStyle(
+                                      fontSize: 13.sp,
+                                      fontWeight: FontWeight.w700,
+                                      fontFamily: "Manjari",
+                                      color: Colors.black),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                     SizedBox(
@@ -399,21 +559,40 @@ class _HomePage2State extends State<HomePage2> {
                             MaterialPageRoute(
                                 builder: (context) => EmployeList()));
                       },
-                      child: Container(
-                        alignment: Alignment.center,
-                        height: 50,
-                        width: 100,
-                        decoration: BoxDecoration(
-                            // border: Border.all(color: Colors.black),
-                            borderRadius: BorderRadius.circular(10),
-                            color: Color(0xffF7FAFF)),
-                        child: Text(
-                          "Employee",
-                          style: TextStyle(
-                              fontSize: 13.sp,
-                              fontWeight: FontWeight.w700,
-                              fontFamily: "Manjari"),
-                        ),
+                      child: Row(
+                        children: [
+                          Container(
+                            alignment: Alignment.center,
+                            height: 50,
+                            width: 100,
+                            decoration: BoxDecoration(
+                                // border: Border.all(color: Colors.black),
+                                borderRadius: BorderRadius.circular(10),
+                                color: Color(0xffF7FAFF)),
+                            child: Row(
+                              children: [
+                                SizedBox(
+                                  width: 5,
+                                ),
+                                Container(
+                                  height: 20,
+                                  width: 20,
+                                  child: Image.asset("assets/division.png"),
+                                ),
+                                SizedBox(
+                                  width: 5,
+                                ),
+                                Text(
+                                  "Employee",
+                                  style: TextStyle(
+                                      fontSize: 13.sp,
+                                      fontWeight: FontWeight.w700,
+                                      fontFamily: "Manjari"),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ],
@@ -438,22 +617,41 @@ class _HomePage2State extends State<HomePage2> {
                             MaterialPageRoute(
                                 builder: (context) => Paymentlist()));
                       },
-                      child: Container(
-                        alignment: Alignment.center,
-                        height: 50,
-                        width: 100,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            // border: Border.all(color: Colors.black),
-                            color: Color(0xffF7FAFF)),
-                        child: Text(
-                          "Payment",
-                          style: TextStyle(
-                              fontSize: 15.sp,
-                              fontWeight: FontWeight.w700,
-                              fontFamily: "Manjari",
-                              color: Colors.black),
-                        ),
+                      child: Row(
+                        children: [
+                          Container(
+                            alignment: Alignment.center,
+                            height: 50,
+                            width: 100,
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(10),
+                                // border: Border.all(color: Colors.black),
+                                color: Color(0xffF7FAFF)),
+                            child: Row(
+                              children: [
+                                SizedBox(
+                                  width: 5,
+                                ),
+                                Container(
+                                  height: 20,
+                                  width: 20,
+                                  child: Image.asset("assets/cash-payment.png"),
+                                ),
+                                SizedBox(
+                                  width: 5,
+                                ),
+                                Text(
+                                  "Payment",
+                                  style: TextStyle(
+                                      fontSize: 13.sp,
+                                      fontWeight: FontWeight.w700,
+                                      fontFamily: "Manjari",
+                                      color: Colors.black),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                     SizedBox(
@@ -466,21 +664,40 @@ class _HomePage2State extends State<HomePage2> {
                             MaterialPageRoute(
                                 builder: (context) => Worldgold_price()));
                       },
-                      child: Container(
-                        alignment: Alignment.center,
-                        height: 50,
-                        width: 100,
-                        decoration: BoxDecoration(
-                            // border: Border.all(color: Colors.black),
-                            borderRadius: BorderRadius.circular(10),
-                            color: Color(0xffF7FAFF)),
-                        child: Text(
-                          "Price",
-                          style: TextStyle(
-                              fontSize: 13.sp,
-                              fontWeight: FontWeight.w700,
-                              fontFamily: "Manjari"),
-                        ),
+                      child: Row(
+                        children: [
+                          Container(
+                            alignment: Alignment.center,
+                            height: 50,
+                            width: 100,
+                            decoration: BoxDecoration(
+                                // border: Border.all(color: Colors.black),
+                                borderRadius: BorderRadius.circular(10),
+                                color: Color(0xffF7FAFF)),
+                            child: Row(
+                              children: [
+                                SizedBox(
+                                  width: 10,
+                                ),
+                                Container(
+                                  height: 20,
+                                  width: 20,
+                                  child: Image.asset("assets/price-tag.png"),
+                                ),
+                                SizedBox(
+                                  width: 10,
+                                ),
+                                Text(
+                                  "Price",
+                                  style: TextStyle(
+                                      fontSize: 13.sp,
+                                      fontWeight: FontWeight.w700,
+                                      fontFamily: "Manjari"),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                     SizedBox(
@@ -493,21 +710,40 @@ class _HomePage2State extends State<HomePage2> {
                             MaterialPageRoute(
                                 builder: (context) => Worldgold_price()));
                       },
-                      child: Container(
-                        alignment: Alignment.center,
-                        height: 50,
-                        width: 100,
-                        decoration: BoxDecoration(
-                            // border: Border.all(color: Colors.black),
-                            borderRadius: BorderRadius.circular(10),
-                            color: Color(0xffF7FAFF)),
-                        child: Text(
-                          "World",
-                          style: TextStyle(
-                              fontSize: 13.sp,
-                              fontWeight: FontWeight.w700,
-                              fontFamily: "Manjari"),
-                        ),
+                      child: Row(
+                        children: [
+                          Container(
+                            alignment: Alignment.center,
+                            height: 50,
+                            width: 100,
+                            decoration: BoxDecoration(
+                                // border: Border.all(color: Colors.black),
+                                borderRadius: BorderRadius.circular(10),
+                                color: Color(0xffF7FAFF)),
+                            child: Row(
+                              children: [
+                                SizedBox(
+                                  width: 10,
+                                ),
+                                Container(
+                                  height: 20,
+                                  width: 20,
+                                  child: Image.asset("assets/pin.png"),
+                                ),
+                                SizedBox(
+                                  width: 10,
+                                ),
+                                Text(
+                                  "World",
+                                  style: TextStyle(
+                                      fontSize: 13.sp,
+                                      fontWeight: FontWeight.w700,
+                                      fontFamily: "Manjari"),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ],
