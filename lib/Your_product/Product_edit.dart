@@ -3,6 +3,7 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:goldshop/Iteam_post/Iteam_post.dart';
+import 'package:goldshop/Total_iteam/Total_iteam.dart';
 
 class Product_edit extends StatefulWidget {
   const Product_edit({super.key});
@@ -48,14 +49,14 @@ class _Product_editState extends State<Product_edit> {
                 return InkWell(
                   onTap: () {
                     Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => iteam_post()));
+                        MaterialPageRoute(builder: (context) => Total_iteam()));
                   },
                   child: InkWell(
                     onTap: () {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => iteam_post()));
+                              builder: (context) => Total_iteam()));
                     },
                     child: Container(
                         alignment: Alignment.center,
