@@ -82,7 +82,17 @@ class _SavechangeState extends State<Savechange> {
                           child: Container(
                             height: 50,
                             width: 50,
-                            decoration: BoxDecoration(),
+                            decoration: BoxDecoration(
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey.withOpacity(0.5),
+                                  spreadRadius: 5,
+                                  blurRadius: 7,
+                                  offset: Offset(0, 3),
+                                )
+                              ],
+                              color: Colors.white,
+                            ),
                             // color: Color(0xffFFFFFF),
                             // borderRadius: BorderRadius.circular(20),
                             // border: Border.all(
@@ -96,6 +106,14 @@ class _SavechangeState extends State<Savechange> {
                           height: 50,
                           width: 50,
                           decoration: BoxDecoration(
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.5),
+                                spreadRadius: 5,
+                                blurRadius: 7,
+                                offset: Offset(0, 3),
+                              )
+                            ],
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(10),
                           ),
@@ -105,6 +123,14 @@ class _SavechangeState extends State<Savechange> {
                           height: 50,
                           width: 50,
                           decoration: BoxDecoration(
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.5),
+                                spreadRadius: 5,
+                                blurRadius: 7,
+                                offset: Offset(0, 3),
+                              )
+                            ],
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(10),
                           ),

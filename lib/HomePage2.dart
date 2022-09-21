@@ -15,6 +15,7 @@ import 'package:goldshop/Newemployee/New_employee.dart';
 import 'package:goldshop/Paymentlist.dart';
 import 'package:goldshop/SellIteam/Sell_iteam.dart';
 import 'package:goldshop/Selllist.dart';
+import 'package:goldshop/Your_product/Product_edit.dart';
 
 class HomePage2 extends StatefulWidget {
   const HomePage2({Key? key}) : super(key: key);
@@ -662,7 +663,7 @@ class _HomePage2State extends State<HomePage2> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => Worldgold_price()));
+                                builder: (context) => Product_edit()));
                       },
                       child: Row(
                         children: [
@@ -688,7 +689,7 @@ class _HomePage2State extends State<HomePage2> {
                                   width: 10,
                                 ),
                                 Text(
-                                  "Price",
+                                  "Producet",
                                   style: TextStyle(
                                       fontSize: 13.sp,
                                       fontWeight: FontWeight.w700,
