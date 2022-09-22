@@ -56,7 +56,7 @@ class _SearchpersonState extends State<Searchperson> {
                     MaterialPageRoute(builder: (context) => ShopLocation()));
               },
               icon: const Icon(
-                Icons.shop,
+                Icons.production_quantity_limits,
                 color: Colors.white,
               ),
             ),

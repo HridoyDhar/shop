@@ -49,7 +49,7 @@ class _World_ratingState extends State<World_rating> {
                               builder: (context) => ShopLocation()));
                     },
                     icon: const Icon(
-                      Icons.shop,
+                      Icons.production_quantity_limits,
                       color: Colors.white,
                     ),
                   ),

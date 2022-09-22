@@ -54,7 +54,7 @@ class _profilepageState extends State<profilepage> {
                     MaterialPageRoute(builder: (context) => ShopLocation()));
               },
               icon: const Icon(
-                Icons.shop,
+                Icons.production_quantity_limits,
                 color: Colors.white,
               ),
             ),

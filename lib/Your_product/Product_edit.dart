@@ -67,7 +67,7 @@ class _Product_editState extends State<Product_edit> {
                             borderRadius: BorderRadius.circular(10),
                             border: Border.all(color: Colors.black)),
                         child: Text(
-                          "Neckless",
+                          "Ring",
                           style: TextStyle(
                               fontFamily: "itim",
                               fontSize: 10,
@@ -161,7 +161,7 @@ class _Product_editState extends State<Product_edit> {
                   ),
                   Container(
                     child: Text(
-                      "Neckless",
+                      "chian",
                       style: TextStyle(
                           fontSize: 15.sp,
                           fontWeight: FontWeight.w700,
@@ -208,7 +208,7 @@ class _Product_editState extends State<Product_edit> {
                   ),
                   Container(
                     child: Text(
-                      "Neckless",
+                      "Earring",
                       style: TextStyle(
                           fontSize: 15.sp,
                           fontWeight: FontWeight.w700,

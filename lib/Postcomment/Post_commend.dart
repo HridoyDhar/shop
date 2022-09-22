@@ -65,7 +65,7 @@ class _Post_CommendState extends State<Post_Commend> {
                       MaterialPageRoute(builder: (context) => ShopLocation()));
                 },
                 icon: const Icon(
-                  Icons.shop,
+                  Icons.production_quantity_limits,
                   color: Colors.white,
                 ),
               ),

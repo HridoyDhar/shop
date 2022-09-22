@@ -14,6 +14,7 @@ import 'package:goldshop/Likepage.dart';
 import 'package:goldshop/Mypost/My_post.dart';
 import 'package:goldshop/Mysavepost/My_savepost.dart';
 import 'package:goldshop/Notifi_cation.dart';
+import 'package:goldshop/Price_World/Worldwide_price.dart';
 import 'package:goldshop/Profilepage.dart';
 import 'package:goldshop/ShopLocation.dart';
 import 'package:goldshop/ShoppingList.dart';
@@ -55,7 +56,7 @@ class _DetailsListState extends State<DetailsList> {
                     MaterialPageRoute(builder: (context) => ShopLocation()));
               },
               icon: const Icon(
-                Icons.shop,
+                Icons.production_quantity_limits,
                 color: Colors.white,
               ),
             ),
@@ -615,7 +616,7 @@ class _DetailsListState extends State<DetailsList> {
             InkWell(
               onTap: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => Joblist()));
+                    MaterialPageRoute(builder: (context) => Worldwide_price()));
               },
               child: Card(
                 child: Container(
@@ -629,7 +630,7 @@ class _DetailsListState extends State<DetailsList> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Icon(
-                        Icons.join_full,
+                        Icons.price_check,
                         color: Colors.blue,
                       ),
                       SizedBox(
@@ -637,7 +638,7 @@ class _DetailsListState extends State<DetailsList> {
                       ),
                       Container(
                         child: Text(
-                          "Job",
+                          "price",
                           style: TextStyle(
                               fontSize: 15.sp,
                               fontWeight: FontWeight.w700,

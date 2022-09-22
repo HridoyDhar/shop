@@ -52,7 +52,7 @@ class _ShopLocationState extends State<ShopLocation> {
                               builder: (context) => ShopLocation()));
                     },
                     icon: const Icon(
-                      Icons.shop,
+                      Icons.production_quantity_limits,
                       color: Colors.white,
                     ),
                   ),
