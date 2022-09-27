@@ -7,6 +7,7 @@ import 'package:goldshop/Home_page.dart';
 import 'package:goldshop/Notifi_cation.dart';
 import 'package:goldshop/Profilepage.dart';
 import 'package:goldshop/ShopLocation.dart';
+import 'package:goldshop/upload/Upload_image.dart';
 
 class Likepage extends StatefulWidget {
   const Likepage({Key? key}) : super(key: key);
@@ -95,7 +96,10 @@ class _LikepageState extends State<Likepage> {
         ),
         // implement the floating button
         floatingActionButton: FloatingActionButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => Upload_image()));
+            },
             backgroundColor: Colors.amber,
             child: const Icon(Icons.add)),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,

@@ -3,12 +3,14 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:goldshop/Commentpeople/Commentpeople.dart';
 
 import 'package:goldshop/Findperson.dart';
+import 'package:goldshop/Jobapply.dart';
 import 'package:goldshop/Likepage.dart';
 
 import 'package:goldshop/Notifi_cation.dart';
 import 'package:goldshop/Postcomment/Post_commend.dart';
 import 'package:goldshop/Profilepage.dart';
 import 'package:goldshop/ShopLocation.dart';
+import 'package:goldshop/upload/Upload_image.dart';
 
 class Home_page extends StatefulWidget {
   const Home_page({Key? key}) : super(key: key);
@@ -287,7 +289,10 @@ class _Home_pageState extends State<Home_page> {
       ),
       // implement the floating button
       floatingActionButton: FloatingActionButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => Upload_image()));
+          },
           backgroundColor: Colors.amber,
           child: const Icon(Icons.add)),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,

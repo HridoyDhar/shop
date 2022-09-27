@@ -11,6 +11,7 @@ import 'package:goldshop/Notifi_cation.dart';
 import 'package:goldshop/Postcomment/Post_commend.dart';
 import 'package:goldshop/Profilepage.dart';
 import 'package:goldshop/ShopProfile.dart';
+import 'package:goldshop/upload/Upload_image.dart';
 
 class ShopLocation extends StatefulWidget {
   const ShopLocation({Key? key}) : super(key: key);
@@ -85,7 +86,10 @@ class _ShopLocationState extends State<ShopLocation> {
             ),
             // implement the floating button
             floatingActionButton: FloatingActionButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Upload_image()));
+                },
                 backgroundColor: Colors.amber,
                 child: const Icon(Icons.add)),
             floatingActionButtonLocation:

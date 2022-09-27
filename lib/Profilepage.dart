@@ -14,6 +14,7 @@ import 'package:goldshop/Notifi_cation.dart';
 import 'package:goldshop/Perpost/PerPost.dart';
 
 import 'package:goldshop/ShopLocation.dart';
+import 'package:goldshop/upload/Upload_image.dart';
 import 'package:goldshop/worldRating/World_rating.dart';
 
 import 'Postcomment/Post_commend.dart';
@@ -83,7 +84,10 @@ class _profilepageState extends State<profilepage> {
       ),
       // implement the floating button
       floatingActionButton: FloatingActionButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => Upload_image()));
+          },
           backgroundColor: Colors.amber,
           child: const Icon(Icons.add)),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
