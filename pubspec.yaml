@@ -43,6 +43,7 @@ dependencies:
   awesome_icons: ^1.1.0
   fl_chart: ^0.55.1
   horizontal_list: ^0.0.5
+  flutter_date_pickers: ^0.4.0
 
 dev_dependencies:
   flutter_test:

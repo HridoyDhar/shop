@@ -11,6 +11,19 @@ class Selllist extends StatefulWidget {
 }
 
 class _SelllistState extends State<Selllist> {
+  DateTime currentDate = DateTime.now();
+  Future<void> _selectDate(BuildContext context) async {
+    final DateTime? pickedDate = await showDatePicker(
+        context: context,
+        initialDate: currentDate,
+        firstDate: DateTime(1900),
+        lastDate: DateTime(3050));
+    if (pickedDate != null && pickedDate != currentDate)
+      setState(() {
+        currentDate = pickedDate;
+      });
+  }
+
   final ScrollController _controller = ScrollController();
   double _scrollOffset = 0;
 
@@ -38,36 +51,48 @@ class _SelllistState extends State<Selllist> {
               height: 20,
             ),
             Container(
-              alignment: Alignment.center,
-              margin: EdgeInsets.symmetric(horizontal: 120),
-              height: 40.h,
-              width: 300.w,
-              decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.withOpacity(0.5),
-                      spreadRadius: 5,
-                      blurRadius: 7,
-                      offset: Offset(0, 3), // changes position of shadow
-                    ),
-                  ],
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(10),
-                  // boxShadow: [
-                  //   BoxShadow(
-                  //     color: Colors.grey.withOpacity(0.5),
-                  //     spreadRadius: 5,
-                  //     blurRadius: 7,
-                  //     offset: Offset(0, 3), // changes position of shadow
-                  //   ),
-                  // ],
-                  border: Border.all(color: Colors.blue)),
-              child: Text(
-                "19-03-22",
-                style: TextStyle(
-                    fontFamily: "itim", fontSize: 20, color: Colors.black),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: <Widget>[
+                  Text(currentDate.toString()),
+                  ElevatedButton(
+                    onPressed: () => _selectDate(context),
+                    child: Text('Select date'),
+                  ),
+                ],
               ),
             ),
+            // Container(
+            //   alignment: Alignment.center,
+            //   margin: EdgeInsets.symmetric(horizontal: 120),
+            //   height: 40.h,
+            //   width: 300.w,
+            //   decoration: BoxDecoration(
+            //       boxShadow: [
+            //         BoxShadow(
+            //           color: Colors.grey.withOpacity(0.5),
+            //           spreadRadius: 5,
+            //           blurRadius: 7,
+            //           offset: Offset(0, 3), // changes position of shadow
+            //         ),
+            //       ],
+            //       color: Colors.white,
+            //       borderRadius: BorderRadius.circular(10),
+            //       // boxShadow: [
+            //       //   BoxShadow(
+            //       //     color: Colors.grey.withOpacity(0.5),
+            //       //     spreadRadius: 5,
+            //       //     blurRadius: 7,
+            //       //     offset: Offset(0, 3), // changes position of shadow
+            //       //   ),
+            //       // ],
+            //       border: Border.all(color: Colors.blue)),
+            //   child: Text(
+            //     "19-03-22",
+            //     style: TextStyle(
+            //         fontFamily: "itim", fontSize: 20, color: Colors.black),
+            //   ),
+            // ),
             SizedBox(
               height: 20.h,
             ),
