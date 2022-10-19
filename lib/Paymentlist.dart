@@ -26,10 +26,10 @@ class _PaymentlistState extends State<Paymentlist> {
                 decoration: BoxDecoration(
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.grey.withOpacity(0.5),
-                      spreadRadius: 5,
-                      blurRadius: 7,
-                      offset: Offset(0, 3), // changes position of shadow
+                      color: Colors.grey.withOpacity(0.2),
+                      spreadRadius: 3,
+                      blurRadius: 3,
+                      offset: Offset(0, 2), // changes position of shadow
                     ),
                   ],
                   color: Colors.white,
@@ -67,10 +67,10 @@ class _PaymentlistState extends State<Paymentlist> {
               decoration: BoxDecoration(
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.grey.withOpacity(0.5),
-                    spreadRadius: 5,
-                    blurRadius: 7,
-                    offset: Offset(0, 3), // changes position of shadow
+                    color: Color.fromRGBO(158, 158, 158, 1).withOpacity(0.2),
+                    spreadRadius: 3,
+                    blurRadius: 3,
+                    offset: Offset(0, 2), // changes position of shadow
                   ),
                 ],
                 color: Colors.white,
@@ -78,6 +78,9 @@ class _PaymentlistState extends State<Paymentlist> {
               ),
               child: Row(
                 children: [
+                  SizedBox(
+                    width: 50,
+                  ),
                   Container(
                     alignment: Alignment.center,
                     child: Text(
@@ -89,7 +92,7 @@ class _PaymentlistState extends State<Paymentlist> {
                     ),
                   ),
                   SizedBox(
-                    width: 15.w,
+                    width: 20.w,
                   ),
                   Container(
                     height: 20,
@@ -110,10 +113,10 @@ class _PaymentlistState extends State<Paymentlist> {
               decoration: BoxDecoration(
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.grey.withOpacity(0.5),
-                    spreadRadius: 5,
-                    blurRadius: 7,
-                    offset: Offset(0, 3), // changes position of shadow
+                    color: Colors.grey.withOpacity(0.2),
+                    spreadRadius: 3,
+                    blurRadius: 3,
+                    offset: Offset(0, 2), // changes position of shadow
                   ),
                 ],
                 color: Colors.white,
@@ -121,10 +124,13 @@ class _PaymentlistState extends State<Paymentlist> {
               ),
               child: Row(
                 children: [
+                  SizedBox(
+                    width: 50,
+                  ),
                   Container(
                     alignment: Alignment.center,
                     child: Text(
-                      "1.Rimon          460000Tk",
+                      "2.Rimon          460000Tk",
                       style: TextStyle(
                           fontSize: 15.sp,
                           fontWeight: FontWeight.w700,
@@ -132,7 +138,7 @@ class _PaymentlistState extends State<Paymentlist> {
                     ),
                   ),
                   SizedBox(
-                    width: 15.w,
+                    width: 20.w,
                   ),
                   Container(
                     height: 20,
@@ -153,10 +159,10 @@ class _PaymentlistState extends State<Paymentlist> {
               decoration: BoxDecoration(
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.grey.withOpacity(0.5),
-                    spreadRadius: 5,
-                    blurRadius: 7,
-                    offset: Offset(0, 3), // changes position of shadow
+                    color: Colors.grey.withOpacity(0.2),
+                    spreadRadius: 3,
+                    blurRadius: 3,
+                    offset: Offset(0, 2), // changes position of shadow
                   ),
                 ],
                 color: Colors.white,
@@ -164,10 +170,13 @@ class _PaymentlistState extends State<Paymentlist> {
               ),
               child: Row(
                 children: [
+                  SizedBox(
+                    width: 50,
+                  ),
                   Container(
                     alignment: Alignment.center,
                     child: Text(
-                      "1.Rimon          460000Tk",
+                      "3.Rimon          460000Tk",
                       style: TextStyle(
                           fontSize: 15.sp,
                           fontWeight: FontWeight.w700,
@@ -175,7 +184,7 @@ class _PaymentlistState extends State<Paymentlist> {
                     ),
                   ),
                   SizedBox(
-                    width: 15.w,
+                    width: 20.w,
                   ),
                   Container(
                     height: 20,
@@ -196,10 +205,10 @@ class _PaymentlistState extends State<Paymentlist> {
               decoration: BoxDecoration(
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.grey.withOpacity(0.5),
-                    spreadRadius: 5,
-                    blurRadius: 7,
-                    offset: Offset(0, 3), // changes position of shadow
+                    color: Colors.grey.withOpacity(0.2),
+                    spreadRadius: 3,
+                    blurRadius: 3,
+                    offset: Offset(0, 2), // changes position of shadow
                   ),
                 ],
                 color: Colors.white,
@@ -207,10 +216,13 @@ class _PaymentlistState extends State<Paymentlist> {
               ),
               child: Row(
                 children: [
+                  SizedBox(
+                    width: 50,
+                  ),
                   Container(
                     alignment: Alignment.center,
                     child: Text(
-                      "1.Rimon          460000Tk",
+                      "4.Rimon          460000Tk",
                       style: TextStyle(
                           fontSize: 15.sp,
                           fontWeight: FontWeight.w700,
@@ -218,7 +230,7 @@ class _PaymentlistState extends State<Paymentlist> {
                     ),
                   ),
                   SizedBox(
-                    width: 15.w,
+                    width: 20.w,
                   ),
                   Container(
                     height: 20,
@@ -239,10 +251,10 @@ class _PaymentlistState extends State<Paymentlist> {
               decoration: BoxDecoration(
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.grey.withOpacity(0.5),
-                    spreadRadius: 5,
-                    blurRadius: 7,
-                    offset: Offset(0, 3), // changes position of shadow
+                    color: Colors.grey.withOpacity(0.2),
+                    spreadRadius: 3,
+                    blurRadius: 3,
+                    offset: Offset(0, 2), // changes position of shadow
                   ),
                 ],
                 color: Colors.white,
@@ -250,10 +262,13 @@ class _PaymentlistState extends State<Paymentlist> {
               ),
               child: Row(
                 children: [
+                  SizedBox(
+                    width: 50,
+                  ),
                   Container(
                     alignment: Alignment.center,
                     child: Text(
-                      "1.Rimon          460000Tk",
+                      "5.Rimon          460000Tk",
                       style: TextStyle(
                           fontSize: 15.sp,
                           fontWeight: FontWeight.w700,
@@ -261,7 +276,467 @@ class _PaymentlistState extends State<Paymentlist> {
                     ),
                   ),
                   SizedBox(
-                    width: 15.w,
+                    width: 20.w,
+                  ),
+                  Container(
+                    height: 20,
+                    width: 40,
+                    margin: EdgeInsets.symmetric(horizontal: 20),
+                    child: Image.asset("assets/visa.png"),
+                  )
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 20.w),
+              height: 40.h,
+              width: 300.w,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.2),
+                    spreadRadius: 3,
+                    blurRadius: 3,
+                    offset: Offset(0, 2), // changes position of shadow
+                  ),
+                ],
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10.r),
+              ),
+              child: Row(
+                children: [
+                  SizedBox(
+                    width: 50,
+                  ),
+                  Container(
+                    alignment: Alignment.center,
+                    child: Text(
+                      "5.Rimon          460000Tk",
+                      style: TextStyle(
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 20.w,
+                  ),
+                  Container(
+                    height: 20,
+                    width: 40,
+                    margin: EdgeInsets.symmetric(horizontal: 20),
+                    child: Image.asset("assets/visa.png"),
+                  )
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 20.w),
+              height: 40.h,
+              width: 300.w,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.2),
+                    spreadRadius: 3,
+                    blurRadius: 3,
+                    offset: Offset(0, 2), // changes position of shadow
+                  ),
+                ],
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10.r),
+              ),
+              child: Row(
+                children: [
+                  SizedBox(
+                    width: 50,
+                  ),
+                  Container(
+                    alignment: Alignment.center,
+                    child: Text(
+                      "5.Rimon          460000Tk",
+                      style: TextStyle(
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 20.w,
+                  ),
+                  Container(
+                    height: 20,
+                    width: 40,
+                    margin: EdgeInsets.symmetric(horizontal: 20),
+                    child: Image.asset("assets/visa.png"),
+                  )
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 20.w),
+              height: 40.h,
+              width: 300.w,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.2),
+                    spreadRadius: 3,
+                    blurRadius: 3,
+                    offset: Offset(0, 2), // changes position of shadow
+                  ),
+                ],
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10.r),
+              ),
+              child: Row(
+                children: [
+                  SizedBox(
+                    width: 50,
+                  ),
+                  Container(
+                    alignment: Alignment.center,
+                    child: Text(
+                      "5.Rimon          460000Tk",
+                      style: TextStyle(
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 20.w,
+                  ),
+                  Container(
+                    height: 20,
+                    width: 40,
+                    margin: EdgeInsets.symmetric(horizontal: 20),
+                    child: Image.asset("assets/visa.png"),
+                  )
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 20.w),
+              height: 40.h,
+              width: 300.w,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.2),
+                    spreadRadius: 3,
+                    blurRadius: 3,
+                    offset: Offset(0, 2), // changes position of shadow
+                  ),
+                ],
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10.r),
+              ),
+              child: Row(
+                children: [
+                  SizedBox(
+                    width: 50,
+                  ),
+                  Container(
+                    alignment: Alignment.center,
+                    child: Text(
+                      "5.Rimon          460000Tk",
+                      style: TextStyle(
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 20.w,
+                  ),
+                  Container(
+                    height: 20,
+                    width: 40,
+                    margin: EdgeInsets.symmetric(horizontal: 20),
+                    child: Image.asset("assets/visa.png"),
+                  )
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 20.w),
+              height: 40.h,
+              width: 300.w,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.2),
+                    spreadRadius: 3,
+                    blurRadius: 3,
+                    offset: Offset(0, 2), // changes position of shadow
+                  ),
+                ],
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10.r),
+              ),
+              child: Row(
+                children: [
+                  SizedBox(
+                    width: 50,
+                  ),
+                  Container(
+                    alignment: Alignment.center,
+                    child: Text(
+                      "5.Rimon          460000Tk",
+                      style: TextStyle(
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 20.w,
+                  ),
+                  Container(
+                    height: 20,
+                    width: 40,
+                    margin: EdgeInsets.symmetric(horizontal: 20),
+                    child: Image.asset("assets/visa.png"),
+                  )
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 20.w),
+              height: 40.h,
+              width: 300.w,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.2),
+                    spreadRadius: 3,
+                    blurRadius: 3,
+                    offset: Offset(0, 2), // changes position of shadow
+                  ),
+                ],
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10.r),
+              ),
+              child: Row(
+                children: [
+                  SizedBox(
+                    width: 50,
+                  ),
+                  Container(
+                    alignment: Alignment.center,
+                    child: Text(
+                      "5.Rimon          460000Tk",
+                      style: TextStyle(
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 20.w,
+                  ),
+                  Container(
+                    height: 20,
+                    width: 40,
+                    margin: EdgeInsets.symmetric(horizontal: 20),
+                    child: Image.asset("assets/visa.png"),
+                  )
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 20.w),
+              height: 40.h,
+              width: 300.w,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.2),
+                    spreadRadius: 3,
+                    blurRadius: 3,
+                    offset: Offset(0, 2), // changes position of shadow
+                  ),
+                ],
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10.r),
+              ),
+              child: Row(
+                children: [
+                  SizedBox(
+                    width: 50,
+                  ),
+                  Container(
+                    alignment: Alignment.center,
+                    child: Text(
+                      "5.Rimon          460000Tk",
+                      style: TextStyle(
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 20.w,
+                  ),
+                  Container(
+                    height: 20,
+                    width: 40,
+                    margin: EdgeInsets.symmetric(horizontal: 20),
+                    child: Image.asset("assets/visa.png"),
+                  )
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 20.w),
+              height: 40.h,
+              width: 300.w,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.2),
+                    spreadRadius: 3,
+                    blurRadius: 3,
+                    offset: Offset(0, 2), // changes position of shadow
+                  ),
+                ],
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10.r),
+              ),
+              child: Row(
+                children: [
+                  SizedBox(
+                    width: 50,
+                  ),
+                  Container(
+                    alignment: Alignment.center,
+                    child: Text(
+                      "5.Rimon          460000Tk",
+                      style: TextStyle(
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 20.w,
+                  ),
+                  Container(
+                    height: 20,
+                    width: 40,
+                    margin: EdgeInsets.symmetric(horizontal: 20),
+                    child: Image.asset("assets/visa.png"),
+                  )
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 20.w),
+              height: 40.h,
+              width: 300.w,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.2),
+                    spreadRadius: 3,
+                    blurRadius: 3,
+                    offset: Offset(0, 2), // changes position of shadow
+                  ),
+                ],
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10.r),
+              ),
+              child: Row(
+                children: [
+                  SizedBox(
+                    width: 50,
+                  ),
+                  Container(
+                    alignment: Alignment.center,
+                    child: Text(
+                      "5.Rimon          460000Tk",
+                      style: TextStyle(
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 20.w,
+                  ),
+                  Container(
+                    height: 20,
+                    width: 40,
+                    margin: EdgeInsets.symmetric(horizontal: 20),
+                    child: Image.asset("assets/visa.png"),
+                  )
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 20.w),
+              height: 40.h,
+              width: 300.w,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.2),
+                    spreadRadius: 3,
+                    blurRadius: 3,
+                    offset: Offset(0, 2), // changes position of shadow
+                  ),
+                ],
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10.r),
+              ),
+              child: Row(
+                children: [
+                  SizedBox(
+                    width: 50,
+                  ),
+                  Container(
+                    alignment: Alignment.center,
+                    child: Text(
+                      "5.Rimon          460000Tk",
+                      style: TextStyle(
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 20.w,
                   ),
                   Container(
                     height: 20,
@@ -284,10 +759,10 @@ class _PaymentlistState extends State<Paymentlist> {
                     borderRadius: BorderRadius.circular(10),
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.grey.withOpacity(0.5),
-                        spreadRadius: 5,
-                        blurRadius: 7,
-                        offset: Offset(0, 3), // changes position of shadow
+                        color: Colors.grey.withOpacity(0.2),
+                        spreadRadius: 3,
+                        blurRadius: 3,
+                        offset: Offset(0, 2), // changes position of shadow
                       ),
                     ],
                     color: Colors.white),

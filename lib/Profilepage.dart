@@ -5,7 +5,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'package:goldshop/Commentpeople/Commentpeople.dart';
 import 'package:goldshop/DetailsList/DetailsList.dart';
-
 import 'package:goldshop/Home_page.dart';
 import 'package:goldshop/Likepage.dart';
 import 'package:goldshop/Mypost/My_post.dart';

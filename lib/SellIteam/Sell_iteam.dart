@@ -52,6 +52,9 @@ class _Sell_iteamState extends State<Sell_iteam> {
                 child: Card(
                   child: Column(
                     children: [
+                      SizedBox(
+                        height: 40,
+                      ),
                       Container(
                         height: 110,
                         child: Image.asset(

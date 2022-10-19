@@ -28,48 +28,109 @@ class _HomePage2State extends State<HomePage2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.white,
-        body: ListView(children: [
+      backgroundColor: Colors.white,
+      body: ListView(
+        children: [
           SizedBox(
-            height: 40,
+            height: 100,
           ),
-          Container(
-              height: 200,
-              width: 200,
-              child: Image.asset(
-                  "assets/9994-name-profile-icon-animation-circle.gif")),
-          SizedBox(
-            height: 10,
-          ),
-          Container(
-            alignment: Alignment.center,
-            child: Text(
-              "Krisna kumar",
-              style: TextStyle(
-                  fontSize: 30, fontFamily: "itim", color: Colors.black),
-            ),
-          ),
-          SizedBox(
-            height: 10,
-          ),
-          Container(
-            alignment: Alignment.center,
-            child: Text(
-              "Contact:0178466383",
-              style: TextStyle(
-                  fontSize: 20, fontFamily: "itim", color: Colors.black),
-            ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Container(
+                alignment: Alignment.center,
+                height: 150,
+                width: 150,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(90),
+                    color: Colors.blueAccent),
+                child: Text(
+                  "339947.59 Tk",
+                  style: TextStyle(
+                      fontFamily: "itim", fontSize: 25, color: Colors.white),
+                ),
+              ),
+              SizedBox(
+                width: 20,
+              ),
+              Column(
+                children: [
+                  Row(
+                    children: [
+                      Container(
+                        height: 30,
+                        width: 30,
+                        child: Image.asset("assets/personal.png"),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Text(
+                        "344500 ps",
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontFamily: "itim",
+                            fontSize: 20),
+                      ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: [
+                      Container(
+                        height: 30,
+                        width: 30,
+                        child: Image.asset("assets/dollar-sign.png"),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Text(
+                        "344500 ps",
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontFamily: "itim",
+                            fontSize: 20),
+                      ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: [
+                      Container(
+                        height: 30,
+                        width: 30,
+                        child: Image.asset("assets/exchange.png"),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Text(
+                        "344500 ps",
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontFamily: "itim",
+                            fontSize: 20),
+                      ),
+                    ],
+                  ),
+                ],
+              )
+            ],
           ),
           SizedBox(
             height: 50,
-            width: 20,
           ),
           Container(
             width: 230.w,
             child: Column(
               children: [
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     InkWell(
                       onTap: () {
@@ -80,70 +141,73 @@ class _HomePage2State extends State<HomePage2> {
                       },
                       child: Row(
                         children: [
-                          Container(
-                            alignment: Alignment.centerLeft,
-                            height: 50,
-                            width: 100,
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(10),
-                                // border: Border.all(color: Colors.black),
-                                color: Color(0xffF7FAFF)),
-                            child: Row(
-                              children: [
-                                SizedBox(
-                                  width: 5,
-                                ),
-                                Container(
-                                  height: 20,
-                                  width: 20,
-                                  child: Image.asset("assets/loan.png"),
-                                ),
-                                SizedBox(
-                                  width: 5,
-                                ),
-                                Text(
-                                  "Mortage",
-                                  style: TextStyle(
-                                      fontSize: 13.sp,
-                                      fontWeight: FontWeight.w700,
-                                      fontFamily: "Manjari",
-                                      color: Colors.black),
-                                ),
-                              ],
-                            ),
+                          Column(
+                            children: [
+                              SizedBox(
+                                width: 5.w,
+                              ),
+                              Container(
+                                height: 30.h,
+                                width: 30.w,
+                                child: Image.asset(
+                                    "assets/personal-information.png"),
+                              ),
+                              SizedBox(
+                                width: 5,
+                              ),
+                              Text(
+                                "Mortage",
+                                style: TextStyle(
+                                    fontSize: 13.sp,
+                                    fontWeight: FontWeight.w700,
+                                    fontFamily: "Manjari",
+                                    color: Colors.black),
+                              ),
+                            ],
                           ),
                         ],
                       ),
                     ),
                     SizedBox(
-                      width: 20,
+                      width: 10.w,
                     ),
                     InkWell(
                       onTap: () {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => NewMortage()));
+                                builder: (context) => IncomeList()));
                       },
-                      child: Container(
-                        alignment: Alignment.center,
-                        height: 50,
-                        width: 100,
-                        decoration: BoxDecoration(
-                            // border: Border.all(color: Colors.black),
-                            borderRadius: BorderRadius.circular(10),
-                            color: Color(0xffF7FAFF)),
-                        child: Text(
-                          "New mortage",
-                          style: TextStyle(
-                              fontSize: 13.sp,
-                              fontWeight: FontWeight.w700,
-                              fontFamily: "Manjari"),
-                        ),
+                      child: Row(
+                        children: [
+                          Column(
+                            children: [
+                              SizedBox(
+                                width: 5.w,
+                              ),
+                              Container(
+                                height: 30.h,
+                                width: 30.w,
+                                child: Image.asset("assets/receipt.png"),
+                              ),
+                              SizedBox(
+                                height: 5.h,
+                              ),
+                              Text(
+                                "Earning",
+                                style: TextStyle(
+                                    fontSize: 13.sp,
+                                    fontWeight: FontWeight.w700,
+                                    fontFamily: "Manjari",
+                                    color: Colors.black),
+                              ),
+                            ],
+                          ),
+                        ],
                       ),
                     ),
                     SizedBox(
-                      width: 20,
+                      width: 10.w,
                     ),
                     InkWell(
                       onTap: () {
@@ -154,231 +218,33 @@ class _HomePage2State extends State<HomePage2> {
                       },
                       child: Row(
                         children: [
-                          Container(
-                            alignment: Alignment.center,
-                            height: 50,
-                            width: 100,
-                            decoration: BoxDecoration(
-                                // border: Border.all(color: Colors.black),
-                                borderRadius: BorderRadius.circular(10),
-                                color: Color(0xffF7FAFF)),
-                            child: Row(
-                              children: [
-                                SizedBox(
-                                  width: 10,
-                                ),
-                                Container(
-                                  height: 20,
-                                  width: 20,
-                                  child: Image.asset("assets/selling.png"),
-                                ),
-                                SizedBox(
-                                  width: 10,
-                                ),
-                                Text(
-                                  "Sell",
-                                  style: TextStyle(
-                                      fontSize: 13.sp,
-                                      fontWeight: FontWeight.w700,
-                                      fontFamily: "Manjari"),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-              ],
-            ),
-          ),
-          SizedBox(
-            height: 20,
-            width: 20,
-          ),
-          Container(
-            width: 230.w,
-            child: Column(
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    InkWell(
-                      onTap: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => NewSell()));
-                      },
-                      child: Container(
-                        alignment: Alignment.center,
-                        height: 50,
-                        width: 100,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            // border: Border.all(color: Colors.black),
-                            color: Color(0xffF7FAFF)),
-                        child: Text(
-                          "New sell",
-                          style: TextStyle(
-                              fontSize: 13.sp,
-                              fontWeight: FontWeight.w700,
-                              fontFamily: "Manjari",
-                              color: Colors.black),
-                        ),
-                      ),
-                    ),
-                    SizedBox(
-                      width: 20,
-                    ),
-                    InkWell(
-                      onTap: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => CompineList()));
-                      },
-                      child: Row(
-                        children: [
-                          Container(
-                            alignment: Alignment.center,
-                            height: 50,
-                            width: 100,
-                            decoration: BoxDecoration(
-                                // border: Border.all(color: Colors.black),
-                                borderRadius: BorderRadius.circular(10),
-                                color: Color(0xffF7FAFF)),
-                            child: Row(
-                              children: [
-                                SizedBox(
-                                  width: 5,
-                                ),
-                                Container(
-                                  height: 20,
-                                  width: 20,
-                                  child: Image.asset("assets/law.png"),
-                                ),
-                                SizedBox(
-                                  width: 5,
-                                ),
-                                Text(
-                                  "Compline",
-                                  style: TextStyle(
-                                      fontSize: 13.sp,
-                                      fontWeight: FontWeight.w700,
-                                      fontFamily: "Manjari"),
-                                ),
-                              ],
-                            ),
+                          Column(
+                            children: [
+                              SizedBox(
+                                width: 10.w,
+                              ),
+                              Container(
+                                height: 30.h,
+                                width: 30.w,
+                                child: Image.asset("assets/selling.png"),
+                              ),
+                              SizedBox(
+                                height: 5.h,
+                              ),
+                              Text(
+                                "Sell",
+                                style: TextStyle(
+                                    fontSize: 13.sp,
+                                    fontWeight: FontWeight.w700,
+                                    fontFamily: "Manjari"),
+                              ),
+                            ],
                           ),
                         ],
                       ),
                     ),
                     SizedBox(
-                      width: 20,
-                    ),
-                    InkWell(
-                      onTap: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Joblist()));
-                      },
-                      child: Row(
-                        children: [
-                          Container(
-                            alignment: Alignment.center,
-                            height: 50,
-                            width: 100,
-                            decoration: BoxDecoration(
-                                // border: Border.all(color: Colors.black),
-                                borderRadius: BorderRadius.circular(10),
-                                color: Color(0xffF7FAFF)),
-                            child: Row(
-                              children: [
-                                SizedBox(
-                                  width: 10,
-                                ),
-                                Container(
-                                  height: 20,
-                                  width: 20,
-                                  child: Image.asset("assets/job-search.png"),
-                                ),
-                                SizedBox(
-                                  width: 10,
-                                ),
-                                Text(
-                                  "Job",
-                                  style: TextStyle(
-                                      fontSize: 13.sp,
-                                      fontWeight: FontWeight.w700,
-                                      fontFamily: "Manjari"),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-              ],
-            ),
-          ),
-          SizedBox(
-            height: 20,
-            width: 20,
-          ),
-          Container(
-            width: 230.w,
-            child: Column(
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    InkWell(
-                      onTap: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => IncomeList()));
-                      },
-                      child: Row(
-                        children: [
-                          Container(
-                            alignment: Alignment.center,
-                            height: 50,
-                            width: 100,
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(10),
-                                // border: Border.all(color: Colors.black),
-                                color: Color(0xffF7FAFF)),
-                            child: Row(
-                              children: [
-                                SizedBox(
-                                  width: 5,
-                                ),
-                                Container(
-                                  height: 20,
-                                  width: 20,
-                                  child: Image.asset("assets/receipt.png"),
-                                ),
-                                SizedBox(
-                                  width: 5,
-                                ),
-                                Text(
-                                  "Earning",
-                                  style: TextStyle(
-                                      fontSize: 13.sp,
-                                      fontWeight: FontWeight.w700,
-                                      fontFamily: "Manjari",
-                                      color: Colors.black),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    SizedBox(
-                      width: 20,
+                      width: 10,
                     ),
                     InkWell(
                       onTap: () {
@@ -389,76 +255,27 @@ class _HomePage2State extends State<HomePage2> {
                       },
                       child: Row(
                         children: [
-                          Container(
-                            alignment: Alignment.center,
-                            height: 50,
-                            width: 100,
-                            decoration: BoxDecoration(
-                                // border: Border.all(color: Colors.black),
-                                borderRadius: BorderRadius.circular(10),
-                                color: Color(0xffF7FAFF)),
-                            child: Row(
-                              children: [
-                                SizedBox(
-                                  width: 5,
-                                ),
-                                Container(
-                                  height: 20,
-                                  width: 20,
-                                  child: Image.asset("assets/calculator.png"),
-                                ),
-                                SizedBox(
-                                  width: 5,
-                                ),
-                                Text(
-                                  "Calculator",
-                                  style: TextStyle(
-                                      fontSize: 13.sp,
-                                      fontWeight: FontWeight.w700,
-                                      fontFamily: "Manjari"),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    SizedBox(
-                      width: 20,
-                    ),
-                    InkWell(
-                      onTap: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => AutoCalculate()));
-                      },
-                      child: Row(
-                        children: [
-                          Container(
-                            alignment: Alignment.center,
-                            height: 50,
-                            width: 100,
-                            decoration: BoxDecoration(
-                                // border: Border.all(color: Colors.black),
-                                borderRadius: BorderRadius.circular(10),
-                                color: Color(0xffF7FAFF)),
-                            child: Row(
-                              children: [
-                                Container(
-                                  height: 20,
-                                  width: 20,
-                                  child: Image.asset("assets/calculator.png"),
-                                ),
-                                Text(
-                                  " Calculator",
-                                  style: TextStyle(
-                                      fontSize: 13.sp,
-                                      fontWeight: FontWeight.w700,
-                                      fontFamily: "Manjari"),
-                                ),
-                              ],
-                            ),
+                          Column(
+                            children: [
+                              SizedBox(
+                                width: 5.w,
+                              ),
+                              Container(
+                                height: 30.h,
+                                width: 30.w,
+                                child: Image.asset("assets/calculatoree.png"),
+                              ),
+                              SizedBox(
+                                height: 5.h,
+                              ),
+                              Text(
+                                "Calculator",
+                                style: TextStyle(
+                                    fontSize: 13.sp,
+                                    fontWeight: FontWeight.w700,
+                                    fontFamily: "Manjari"),
+                              ),
+                            ],
                           ),
                         ],
                       ),
@@ -469,16 +286,89 @@ class _HomePage2State extends State<HomePage2> {
             ),
           ),
           SizedBox(
-            height: 20,
-            width: 20,
+            height: 50,
           ),
           Container(
             width: 230.w,
             child: Column(
               children: [
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
+                    InkWell(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => CompineList()));
+                      },
+                      child: Row(
+                        children: [
+                          Column(
+                            children: [
+                              SizedBox(
+                                width: 5.w,
+                              ),
+                              Container(
+                                height: 30.h,
+                                width: 30.w,
+                                child: Image.asset("assets/lwee.png"),
+                              ),
+                              SizedBox(
+                                width: 5,
+                              ),
+                              Text(
+                                "Compline",
+                                style: TextStyle(
+                                    fontSize: 13.sp,
+                                    fontWeight: FontWeight.w700,
+                                    fontFamily: "Manjari",
+                                    color: Colors.black),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      width: 10.w,
+                    ),
+                    InkWell(
+                      onTap: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => Joblist()));
+                      },
+                      child: Row(
+                        children: [
+                          Column(
+                            children: [
+                              SizedBox(
+                                width: 5.w,
+                              ),
+                              Container(
+                                height: 30.h,
+                                width: 30.w,
+                                child: Image.asset("assets/businessman.png"),
+                              ),
+                              SizedBox(
+                                height: 5.h,
+                              ),
+                              Text(
+                                "Job",
+                                style: TextStyle(
+                                    fontSize: 13.sp,
+                                    fontWeight: FontWeight.w700,
+                                    fontFamily: "Manjari",
+                                    color: Colors.black),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      width: 10.w,
+                    ),
                     InkWell(
                       onTap: () {
                         Navigator.push(
@@ -488,70 +378,33 @@ class _HomePage2State extends State<HomePage2> {
                       },
                       child: Row(
                         children: [
-                          Container(
-                            alignment: Alignment.center,
-                            height: 50,
-                            width: 100,
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(10),
-                                // border: Border.all(color: Colors.black),
-                                color: Color(0xffF7FAFF)),
-                            child: Row(
-                              children: [
-                                SizedBox(
-                                  width: 5,
-                                ),
-                                Container(
-                                  height: 20,
-                                  width: 20,
-                                  child: Image.asset("assets/affiliate.png"),
-                                ),
-                                SizedBox(
-                                  width: 5,
-                                ),
-                                Text(
-                                  "Marketing",
-                                  style: TextStyle(
-                                      fontSize: 13.sp,
-                                      fontWeight: FontWeight.w700,
-                                      fontFamily: "Manjari",
-                                      color: Colors.black),
-                                ),
-                              ],
-                            ),
+                          Column(
+                            children: [
+                              SizedBox(
+                                width: 10.w,
+                              ),
+                              Container(
+                                height: 30.h,
+                                width: 30.w,
+                                child: Image.asset("assets/affiliate.png"),
+                              ),
+                              SizedBox(
+                                height: 5.h,
+                              ),
+                              Text(
+                                "Marketing",
+                                style: TextStyle(
+                                    fontSize: 13.sp,
+                                    fontWeight: FontWeight.w700,
+                                    fontFamily: "Manjari"),
+                              ),
+                            ],
                           ),
                         ],
                       ),
                     ),
                     SizedBox(
-                      width: 20,
-                    ),
-                    InkWell(
-                      onTap: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => New_employee()));
-                      },
-                      child: Container(
-                        alignment: Alignment.center,
-                        height: 50,
-                        width: 100,
-                        decoration: BoxDecoration(
-                            // border: Border.all(color: Colors.black),
-                            borderRadius: BorderRadius.circular(10),
-                            color: Color(0xffF7FAFF)),
-                        child: Text(
-                          "New employee",
-                          style: TextStyle(
-                              fontSize: 13.sp,
-                              fontWeight: FontWeight.w700,
-                              fontFamily: "Manjari"),
-                        ),
-                      ),
-                    ),
-                    SizedBox(
-                      width: 20,
+                      width: 10,
                     ),
                     InkWell(
                       onTap: () {
@@ -562,36 +415,27 @@ class _HomePage2State extends State<HomePage2> {
                       },
                       child: Row(
                         children: [
-                          Container(
-                            alignment: Alignment.center,
-                            height: 50,
-                            width: 100,
-                            decoration: BoxDecoration(
-                                // border: Border.all(color: Colors.black),
-                                borderRadius: BorderRadius.circular(10),
-                                color: Color(0xffF7FAFF)),
-                            child: Row(
-                              children: [
-                                SizedBox(
-                                  width: 5,
-                                ),
-                                Container(
-                                  height: 20,
-                                  width: 20,
-                                  child: Image.asset("assets/division.png"),
-                                ),
-                                SizedBox(
-                                  width: 5,
-                                ),
-                                Text(
-                                  "Employee",
-                                  style: TextStyle(
-                                      fontSize: 13.sp,
-                                      fontWeight: FontWeight.w700,
-                                      fontFamily: "Manjari"),
-                                ),
-                              ],
-                            ),
+                          Column(
+                            children: [
+                              SizedBox(
+                                width: 5.w,
+                              ),
+                              Container(
+                                height: 30.h,
+                                width: 30.w,
+                                child: Image.asset("assets/officer.png"),
+                              ),
+                              SizedBox(
+                                height: 5.h,
+                              ),
+                              Text(
+                                "Employee",
+                                style: TextStyle(
+                                    fontSize: 13.sp,
+                                    fontWeight: FontWeight.w700,
+                                    fontFamily: "Manjari"),
+                              ),
+                            ],
                           ),
                         ],
                       ),
@@ -602,15 +446,53 @@ class _HomePage2State extends State<HomePage2> {
             ),
           ),
           SizedBox(
-            height: 20,
+            height: 50,
           ),
           Container(
             width: 230.w,
             child: Column(
               children: [
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
+                    InkWell(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => AutoCalculate()));
+                      },
+                      child: Row(
+                        children: [
+                          Column(
+                            children: [
+                              SizedBox(
+                                width: 5.w,
+                              ),
+                              Container(
+                                height: 30.h,
+                                width: 30.w,
+                                child: Image.asset("assets/Cal.png"),
+                              ),
+                              SizedBox(
+                                width: 10,
+                              ),
+                              Text(
+                                "Calculator2",
+                                style: TextStyle(
+                                    fontSize: 13.sp,
+                                    fontWeight: FontWeight.w700,
+                                    fontFamily: "Manjari",
+                                    color: Colors.black),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      width: 10.w,
+                    ),
                     InkWell(
                       onTap: () {
                         Navigator.push(
@@ -620,43 +502,34 @@ class _HomePage2State extends State<HomePage2> {
                       },
                       child: Row(
                         children: [
-                          Container(
-                            alignment: Alignment.center,
-                            height: 50,
-                            width: 100,
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(10),
-                                // border: Border.all(color: Colors.black),
-                                color: Color(0xffF7FAFF)),
-                            child: Row(
-                              children: [
-                                SizedBox(
-                                  width: 5,
-                                ),
-                                Container(
-                                  height: 20,
-                                  width: 20,
-                                  child: Image.asset("assets/cash-payment.png"),
-                                ),
-                                SizedBox(
-                                  width: 5,
-                                ),
-                                Text(
-                                  "Payment",
-                                  style: TextStyle(
-                                      fontSize: 13.sp,
-                                      fontWeight: FontWeight.w700,
-                                      fontFamily: "Manjari",
-                                      color: Colors.black),
-                                ),
-                              ],
-                            ),
+                          Column(
+                            children: [
+                              SizedBox(
+                                width: 5.w,
+                              ),
+                              Container(
+                                height: 30.h,
+                                width: 30.w,
+                                child: Image.asset("assets/PaymenT.png"),
+                              ),
+                              SizedBox(
+                                height: 5.h,
+                              ),
+                              Text(
+                                "Payment",
+                                style: TextStyle(
+                                    fontSize: 13.sp,
+                                    fontWeight: FontWeight.w700,
+                                    fontFamily: "Manjari",
+                                    color: Colors.black),
+                              ),
+                            ],
                           ),
                         ],
                       ),
                     ),
                     SizedBox(
-                      width: 20,
+                      width: 10.w,
                     ),
                     InkWell(
                       onTap: () {
@@ -667,42 +540,33 @@ class _HomePage2State extends State<HomePage2> {
                       },
                       child: Row(
                         children: [
-                          Container(
-                            alignment: Alignment.center,
-                            height: 50,
-                            width: 100,
-                            decoration: BoxDecoration(
-                                // border: Border.all(color: Colors.black),
-                                borderRadius: BorderRadius.circular(10),
-                                color: Color(0xffF7FAFF)),
-                            child: Row(
-                              children: [
-                                SizedBox(
-                                  width: 10,
-                                ),
-                                Container(
-                                  height: 20,
-                                  width: 20,
-                                  child: Image.asset("assets/price-tag.png"),
-                                ),
-                                SizedBox(
-                                  width: 10,
-                                ),
-                                Text(
-                                  "Producet",
-                                  style: TextStyle(
-                                      fontSize: 13.sp,
-                                      fontWeight: FontWeight.w700,
-                                      fontFamily: "Manjari"),
-                                ),
-                              ],
-                            ),
+                          Column(
+                            children: [
+                              SizedBox(
+                                width: 10.w,
+                              ),
+                              Container(
+                                height: 30.h,
+                                width: 30.w,
+                                child: Image.asset("assets/box.png"),
+                              ),
+                              SizedBox(
+                                height: 5.h,
+                              ),
+                              Text(
+                                "Producet",
+                                style: TextStyle(
+                                    fontSize: 13.sp,
+                                    fontWeight: FontWeight.w700,
+                                    fontFamily: "Manjari"),
+                              ),
+                            ],
                           ),
                         ],
                       ),
                     ),
                     SizedBox(
-                      width: 20,
+                      width: 10,
                     ),
                     InkWell(
                       onTap: () {
@@ -713,36 +577,27 @@ class _HomePage2State extends State<HomePage2> {
                       },
                       child: Row(
                         children: [
-                          Container(
-                            alignment: Alignment.center,
-                            height: 50,
-                            width: 100,
-                            decoration: BoxDecoration(
-                                // border: Border.all(color: Colors.black),
-                                borderRadius: BorderRadius.circular(10),
-                                color: Color(0xffF7FAFF)),
-                            child: Row(
-                              children: [
-                                SizedBox(
-                                  width: 10,
-                                ),
-                                Container(
-                                  height: 20,
-                                  width: 20,
-                                  child: Image.asset("assets/pin.png"),
-                                ),
-                                SizedBox(
-                                  width: 10,
-                                ),
-                                Text(
-                                  "World",
-                                  style: TextStyle(
-                                      fontSize: 13.sp,
-                                      fontWeight: FontWeight.w700,
-                                      fontFamily: "Manjari"),
-                                ),
-                              ],
-                            ),
+                          Column(
+                            children: [
+                              SizedBox(
+                                width: 5.w,
+                              ),
+                              Container(
+                                height: 30.h,
+                                width: 30.w,
+                                child: Image.asset("assets/worldwide.png"),
+                              ),
+                              SizedBox(
+                                height: 5.h,
+                              ),
+                              Text(
+                                "World",
+                                style: TextStyle(
+                                    fontSize: 13.sp,
+                                    fontWeight: FontWeight.w700,
+                                    fontFamily: "Manjari"),
+                              ),
+                            ],
                           ),
                         ],
                       ),
@@ -752,6 +607,647 @@ class _HomePage2State extends State<HomePage2> {
               ],
             ),
           ),
-        ]));
+          SizedBox(
+            height: 50,
+          ),
+          Container(
+            width: 230.w,
+            child: Column(
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    InkWell(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => New_employee()));
+                      },
+                      child: Row(
+                        children: [
+                          Column(
+                            children: [
+                              SizedBox(
+                                width: 5.w,
+                              ),
+                              Container(
+                                height: 30.h,
+                                width: 30.w,
+                                child: Image.asset("assets/New.png"),
+                              ),
+                              SizedBox(
+                                width: 5,
+                              ),
+                              Text(
+                                "New Employee",
+                                style: TextStyle(
+                                    fontSize: 13.sp,
+                                    fontWeight: FontWeight.w700,
+                                    fontFamily: "Manjari",
+                                    color: Colors.black),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      width: 10.w,
+                    ),
+                    InkWell(
+                      onTap: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => NewSell()));
+                      },
+                      child: Row(
+                        children: [
+                          Column(
+                            children: [
+                              SizedBox(
+                                width: 5.w,
+                              ),
+                              Container(
+                                height: 30.h,
+                                width: 30.w,
+                                child: Image.asset("assets/add (1).png"),
+                              ),
+                              SizedBox(
+                                height: 5.h,
+                              ),
+                              Text(
+                                "New Sell",
+                                style: TextStyle(
+                                    fontSize: 13.sp,
+                                    fontWeight: FontWeight.w700,
+                                    fontFamily: "Manjari",
+                                    color: Colors.black),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      width: 10.w,
+                    ),
+                    InkWell(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Selllist()));
+                      },
+                      child: Row(
+                        children: [
+                          Column(
+                            children: [
+                              SizedBox(
+                                width: 10.w,
+                              ),
+                              Container(
+                                height: 30.h,
+                                width: 30.w,
+                                child: Image.asset("assets/BUy.png"),
+                              ),
+                              SizedBox(
+                                height: 5.h,
+                              ),
+                              Text(
+                                "Buy",
+                                style: TextStyle(
+                                    fontSize: 13.sp,
+                                    fontWeight: FontWeight.w700,
+                                    fontFamily: "Manjari"),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    InkWell(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Calculator()));
+                      },
+                      child: Row(
+                        children: [
+                          Column(
+                            children: [
+                              SizedBox(
+                                width: 5.w,
+                              ),
+                              Container(
+                                height: 30.h,
+                                width: 30.w,
+                                child: Image.asset("assets/BUy.png"),
+                              ),
+                              SizedBox(
+                                height: 5.h,
+                              ),
+                              Text(
+                                "Buy",
+                                style: TextStyle(
+                                    fontSize: 13.sp,
+                                    fontWeight: FontWeight.w700,
+                                    fontFamily: "Manjari"),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+          // SizedBox(
+          //   height: 20.h,
+          // ),
+          // Container(
+          //   width: 230.w,
+          //   child: Column(
+          //     children: [
+          //       Row(
+          //         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          //         children: [
+          //           InkWell(
+          //             onTap: () {
+          //               Navigator.push(
+          //                   context,
+          //                   MaterialPageRoute(
+          //                       builder: (context) => CompineList()));
+          //             },
+          //             child: Row(
+          //               children: [
+          //                 Column(
+          //                   children: [
+          //                     SizedBox(
+          //                       width: 5.w,
+          //                     ),
+          //                     Container(
+          //                       height: 30.h,
+          //                       width: 30.w,
+          //                       child: Image.asset("assets/lwee.png"),
+          //                     ),
+          //                     SizedBox(
+          //                       height: 5.h,
+          //                     ),
+          //                     Text(
+          //                       "Compline",
+          //                       style: TextStyle(
+          //                           fontSize: 13.sp,
+          //                           fontWeight: FontWeight.w700,
+          //                           fontFamily: "Manjari"),
+          //                     ),
+          //                   ],
+          //                 ),
+          //               ],
+          //             ),
+          //           ),
+          //           SizedBox(
+          //             width: 10.w,
+          //           ),
+          //           InkWell(
+          //             onTap: () {
+          //               Navigator.push(context,
+          //                   MaterialPageRoute(builder: (context) => Joblist()));
+          //             },
+          //             child: Row(
+          //               children: [
+          //                 Column(
+          //                   children: [
+          //                     SizedBox(
+          //                       width: 10.w,
+          //                     ),
+          //                     Container(
+          //                       height: 30.h,
+          //                       width: 30.w,
+          //                       child: Image.asset("assets/businessman.png"),
+          //                     ),
+          //                     SizedBox(
+          //                       height: 10.h,
+          //                     ),
+          //                     Text(
+          //                       "Job",
+          //                       style: TextStyle(
+          //                           fontSize: 13.sp,
+          //                           fontWeight: FontWeight.w700,
+          //                           fontFamily: "Manjari"),
+          //                     ),
+          //                   ],
+          //                 ),
+          //               ],
+          //             ),
+          //           ),
+          //           SizedBox(
+          //             width: 10.w,
+          //           ),
+          //           InkWell(
+          //             onTap: () {
+          //               Navigator.push(
+          //                   context,
+          //                   MaterialPageRoute(
+          //                       builder: (context) => Sell_iteam()));
+          //             },
+          //             child: Row(
+          //               children: [
+          //                 Column(
+          //                   children: [
+          //                     SizedBox(
+          //                       width: 10.w,
+          //                     ),
+          //                     Container(
+          //                       height: 30.h,
+          //                       width: 30.w,
+          //                       child: Image.asset("assets/affiliate.png"),
+          //                     ),
+          //                     SizedBox(
+          //                       height: 10.h,
+          //                     ),
+          //                     Text(
+          //                       "Marketing",
+          //                       style: TextStyle(
+          //                           fontSize: 13.sp,
+          //                           fontWeight: FontWeight.w700,
+          //                           fontFamily: "Manjari",
+          //                           color: Colors.black),
+          //                     ),
+          //                   ],
+          //                 ),
+          //               ],
+          //             ),
+          //           ),
+          //           SizedBox(
+          //             width: 10,
+          //           ),
+          //           InkWell(
+          //             onTap: () {
+          //               Navigator.push(
+          //                   context,
+          //                   MaterialPageRoute(
+          //                       builder: (context) => EmployeList()));
+          //             },
+          //             child: Row(
+          //               children: [
+          //                 Column(
+          //                   children: [
+          //                     SizedBox(
+          //                       width: 10.w,
+          //                     ),
+          //                     Container(
+          //                       height: 30.h,
+          //                       width: 30.w,
+          //                       child: Image.asset("assets/officer.png"),
+          //                     ),
+          //                     SizedBox(
+          //                       height: 10.h,
+          //                     ),
+          //                     Text(
+          //                       "Employee",
+          //                       style: TextStyle(
+          //                           fontSize: 13.sp,
+          //                           fontWeight: FontWeight.w700,
+          //                           fontFamily: "Manjari"),
+          //                     ),
+          //                   ],
+          //                 ),
+          //               ],
+          //             ),
+          //           ),
+          //         ],
+          //       ),
+          //     ],
+          //   ),
+          // ),
+          // SizedBox(
+          //   height: 20,
+          // ),
+          // Container(
+          //   width: 230.w,
+          //   child: Column(
+          //     children: [
+          //       Row(
+          //         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          //         children: [
+          //           InkWell(
+          //             onTap: () {
+          //               Navigator.push(
+          //                   context,
+          //                   MaterialPageRoute(
+          //                       builder: (context) => AutoCalculate()));
+          //             },
+          //             child: Row(
+          //               children: [
+          //                 Column(
+          //                   children: [
+          //                     SizedBox(
+          //                       width: 10.w,
+          //                     ),
+          //                     Container(
+          //                       height: 30.h,
+          //                       width: 30.w,
+          //                       child: Image.asset("assets/Cal.png"),
+          //                     ),
+          //                     SizedBox(
+          //                       height: 10.h,
+          //                     ),
+          //                     Text(
+          //                       " Calculator",
+          //                       style: TextStyle(
+          //                           fontSize: 13.sp,
+          //                           fontWeight: FontWeight.w700,
+          //                           fontFamily: "Manjari"),
+          //                     ),
+          //                   ],
+          //                 ),
+          //               ],
+          //             ),
+          //           ),
+          //           SizedBox(
+          //             width: 10,
+          //           ),
+          //           InkWell(
+          //             onTap: () {
+          //               Navigator.push(
+          //                   context,
+          //                   MaterialPageRoute(
+          //                       builder: (context) => Paymentlist()));
+          //             },
+          //             child: Row(
+          //               children: [
+          //                 Column(
+          //                   children: [
+          //                     SizedBox(
+          //                       width: 10.w,
+          //                     ),
+          //                     Container(
+          //                       height: 30.h,
+          //                       width: 30.w,
+          //                       child: Image.asset("assets/PaymenT.png"),
+          //                     ),
+          //                     SizedBox(
+          //                       height: 10.h,
+          //                     ),
+          //                     Text(
+          //                       "Payment",
+          //                       style: TextStyle(
+          //                           fontSize: 13.sp,
+          //                           fontWeight: FontWeight.w700,
+          //                           fontFamily: "Manjari",
+          //                           color: Colors.black),
+          //                     ),
+          //                   ],
+          //                 ),
+          //               ],
+          //             ),
+          //           ),
+          //           SizedBox(
+          //             width: 10.h,
+          //           ),
+          //           InkWell(
+          //             onTap: () {
+          //               Navigator.push(
+          //                   context,
+          //                   MaterialPageRoute(
+          //                       builder: (context) => Product_edit()));
+          //             },
+          //             child: Row(
+          //               children: [
+          //                 Column(
+          //                   children: [
+          //                     SizedBox(
+          //                       width: 10.w,
+          //                     ),
+          //                     Container(
+          //                       height: 30.h,
+          //                       width: 30.w,
+          //                       child: Image.asset("assets/box.png"),
+          //                     ),
+          //                     SizedBox(
+          //                       width: 10.w,
+          //                     ),
+          //                     Text(
+          //                       "Producet",
+          //                       style: TextStyle(
+          //                           fontSize: 13.sp,
+          //                           fontWeight: FontWeight.w700,
+          //                           fontFamily: "Manjari"),
+          //                     ),
+          //                   ],
+          //                 ),
+          //               ],
+          //             ),
+          //           ),
+          //           SizedBox(
+          //             width: 10.w,
+          //           ),
+          //           InkWell(
+          //             onTap: () {
+          //               Navigator.push(
+          //                   context,
+          //                   MaterialPageRoute(
+          //                       builder: (context) => Worldgold_price()));
+          //             },
+          //             child: Row(
+          //               children: [
+          //                 Column(
+          //                   children: [
+          //                     SizedBox(
+          //                       width: 10.w,
+          //                     ),
+          //                     Container(
+          //                       height: 30.h,
+          //                       width: 30.w,
+          //                       child: Image.asset("assets/worldwide.png"),
+          //                     ),
+          //                     SizedBox(
+          //                       height: 10.h,
+          //                     ),
+          //                     Text(
+          //                       "World",
+          //                       style: TextStyle(
+          //                           fontSize: 13.sp,
+          //                           fontWeight: FontWeight.w700,
+          //                           fontFamily: "Manjari"),
+          //                     ),
+          //                   ],
+          //                 ),
+          //               ],
+          //             ),
+          //           ),
+          //         ],
+          //       ),
+          //     ],
+          //   ),
+          // ),
+          // SizedBox(
+          //   height: 20.h,
+          // ),
+          // Container(
+          //   width: 230.w,
+          //   child: Column(
+          //     children: [
+          //       Row(
+          //         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          //         children: [
+          //           InkWell(
+          //             onTap: () {
+          //               Navigator.push(
+          //                   context,
+          //                   MaterialPageRoute(
+          //                       builder: (context) => New_employee()));
+          //             },
+          //             child: Row(
+          //               children: [
+          //                 Column(
+          //                   children: [
+          //                     SizedBox(
+          //                       width: 5.w,
+          //                     ),
+          //                     Container(
+          //                       height: 30.h,
+          //                       width: 30.w,
+          //                       child: Image.asset("assets/New.png"),
+          //                     ),
+          //                     SizedBox(
+          //                       height: 5.h,
+          //                     ),
+          //                     Text(
+          //                       "New Employee",
+          //                       style: TextStyle(
+          //                           fontSize: 13.sp,
+          //                           fontWeight: FontWeight.w700,
+          //                           fontFamily: "Manjari"),
+          //                     ),
+          //                   ],
+          //                 ),
+          //               ],
+          //             ),
+          //           ),
+          //           SizedBox(
+          //             width: 10.w,
+          //           ),
+          //           InkWell(
+          //             onTap: () {
+          //               Navigator.push(context,
+          //                   MaterialPageRoute(builder: (context) => NewSell()));
+          //             },
+          //             child: Row(
+          //               children: [
+          //                 Column(
+          //                   children: [
+          //                     SizedBox(
+          //                       width: 10.w,
+          //                     ),
+          //                     Container(
+          //                       height: 30.h,
+          //                       width: 30.w,
+          //                       child: Image.asset(
+          //                           "assets/7947586491595453760-128.png"),
+          //                     ),
+          //                     SizedBox(
+          //                       width: 5.w,
+          //                     ),
+          //                     Text(
+          //                       "New sell",
+          //                       style: TextStyle(
+          //                           fontSize: 13.sp,
+          //                           fontWeight: FontWeight.w700,
+          //                           fontFamily: "Manjari"),
+          //                     ),
+          //                   ],
+          //                 ),
+          //               ],
+          //             ),
+          //           ),
+          //           SizedBox(
+          //             width: 10.w,
+          //           ),
+          //           InkWell(
+          //             onTap: () {
+          //               Navigator.push(
+          //                   context,
+          //                   MaterialPageRoute(
+          //                       builder: (context) => Product_edit()));
+          //             },
+          //             child: Row(
+          //               children: [
+          //                 Column(
+          //                   children: [
+          //                     SizedBox(
+          //                       width: 10.w,
+          //                     ),
+          //                     Container(
+          //                       height: 30.h,
+          //                       width: 30.w,
+          //                       child: Image.asset("assets/BUy.png"),
+          //                     ),
+          //                     SizedBox(
+          //                       width: 5.w,
+          //                     ),
+          //                     Text(
+          //                       "Buy",
+          //                       style: TextStyle(
+          //                           fontSize: 13.sp,
+          //                           fontWeight: FontWeight.w700,
+          //                           fontFamily: "Manjari"),
+          //                     ),
+          //                   ],
+          //                 ),
+          //               ],
+          //             ),
+          //           ),
+          //           SizedBox(
+          //             width: 10.w,
+          //           ),
+          //           InkWell(
+          //             onTap: () {
+          //               Navigator.push(
+          //                   context,
+          //                   MaterialPageRoute(
+          //                       builder: (context) => Product_edit()));
+          //             },
+          //             child: Row(
+          //               children: [
+          //                 Column(
+          //                   children: [
+          //                     SizedBox(
+          //                       width: 10.w,
+          //                     ),
+          //                     Container(
+          //                       height: 30.h,
+          //                       width: 30.w,
+          //                       child: Image.asset("assets/BUy.png"),
+          //                     ),
+          //                     SizedBox(
+          //                       width: 5.w,
+          //                     ),
+          //                     Text(
+          //                       "Buy",
+          //                       style: TextStyle(
+          //                           fontSize: 13.sp,
+          //                           fontWeight: FontWeight.w700,
+          //                           fontFamily: "Manjari"),
+          //                     ),
+          //                   ],
+          //                 ),
+          //               ],
+          //             ),
+          //           ),
+          //         ],
+          //       ),
+          //     ],
+          //   ),
+          // ),
+        ],
+      ),
+    );
   }
 }

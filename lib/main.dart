@@ -54,7 +54,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.white,
-      child: Image.asset("assets/75705-welcome-animation.gif"),
+      child: Image.asset("assets/Logo.png"),
     );
   }
 }
