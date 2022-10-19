@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:goldshop/HomePage2.dart';
-import 'package:goldshop/Home_page.dart';
+import 'package:goldshop/Home_page/Home_page.dart';
+import 'package:goldshop/Home_page2/HomePage2.dart';
 
 class Choscegmail extends StatefulWidget {
   const Choscegmail({Key? key}) : super(key: key);

@@ -7,18 +7,18 @@ import 'package:goldshop/Calculate/Calculate.dart';
 import 'package:goldshop/Calculator/Calculator.dart';
 import 'package:goldshop/Commentpeople/Commentpeople.dart';
 import 'package:goldshop/Compline/Compline.dart';
+import 'package:goldshop/Home_page/Home_page.dart';
 
-import 'package:goldshop/Home_page.dart';
-import 'package:goldshop/Joblist.dart';
-import 'package:goldshop/Likepage.dart';
+import 'package:goldshop/JobList/Joblist.dart';
+
 import 'package:goldshop/Mypost/My_post.dart';
 import 'package:goldshop/Mysavepost/My_savepost.dart';
-import 'package:goldshop/Notifi_cation.dart';
+import 'package:goldshop/Notification/Notifi_cation.dart';
 import 'package:goldshop/Price_World/Worldwide_price.dart';
-import 'package:goldshop/Profilepage.dart';
+import 'package:goldshop/ProfilePage/Profilepage.dart';
 import 'package:goldshop/ShopLocation.dart';
 import 'package:goldshop/ShoppingList.dart';
-import 'package:goldshop/Shoppinlist2.dart';
+
 import 'package:goldshop/worldRating/World_rating.dart';
 
 class DetailsList extends StatefulWidget {

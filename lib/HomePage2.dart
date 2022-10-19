@@ -6,17 +6,16 @@ import 'package:goldshop/ComplineList/ComplineList.dart';
 import 'package:goldshop/EmployeList/EmployeList.dart';
 
 import 'package:goldshop/GoldPrice/Worldgold_price.dart';
-import 'package:goldshop/IncomeList/IncomeList.dart';
-import 'package:goldshop/JobList/Joblist.dart';
-import 'package:goldshop/MortageList/Mortagelist.dart';
-import 'package:goldshop/NewSell/NewSell.dart';
+import 'package:goldshop/IncomeList.dart';
+import 'package:goldshop/Joblist.dart';
+import 'package:goldshop/Mortagelist.dart';
 
+import 'package:goldshop/NewMortage.dart';
+import 'package:goldshop/NewSell.dart';
 import 'package:goldshop/Newemployee/New_employee.dart';
-import 'package:goldshop/PaymentList/Paymentlist.dart';
-
+import 'package:goldshop/Paymentlist.dart';
 import 'package:goldshop/SellIteam/Sell_iteam.dart';
 import 'package:goldshop/Selllist.dart';
-
 import 'package:goldshop/Your_product/Product_edit.dart';
 
 class HomePage2 extends StatefulWidget {

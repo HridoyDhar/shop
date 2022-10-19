@@ -3,12 +3,13 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:goldshop/DetailsList/DetailsList.dart';
-import 'package:goldshop/Home_page.dart';
+
+import 'package:goldshop/Home_page/Home_page.dart';
 import 'package:goldshop/Mypost/My_post.dart';
 import 'package:goldshop/Mysavepost/My_savepost.dart';
 import 'package:goldshop/Perpost/PerPost.dart';
 import 'package:goldshop/Postcomment/Post_commend.dart';
-import 'package:goldshop/Profilepage.dart';
+import 'package:goldshop/ProfilePage/Profilepage.dart';
 import 'package:goldshop/ShopLocation.dart';
 
 class World_rating extends StatefulWidget {

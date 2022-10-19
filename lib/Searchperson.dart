@@ -5,27 +5,29 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'package:goldshop/Commentpeople/Commentpeople.dart';
 import 'package:goldshop/DetailsList/DetailsList.dart';
+
 import 'package:goldshop/Home_page.dart';
 import 'package:goldshop/Likepage.dart';
 import 'package:goldshop/Mypost/My_post.dart';
 import 'package:goldshop/Mysavepost/My_savepost.dart';
 import 'package:goldshop/Notifi_cation.dart';
 import 'package:goldshop/Perpost/PerPost.dart';
+import 'package:goldshop/Postcomment/Post_commend.dart';
 
+import 'package:goldshop/Profilepage.dart';
+import 'package:goldshop/SearchpersonPost.dart';
+import 'package:goldshop/SearchpersonRate.dart';
 import 'package:goldshop/ShopLocation.dart';
-import 'package:goldshop/upload/Upload_image.dart';
 import 'package:goldshop/worldRating/World_rating.dart';
 
-import '../Postcomment/Post_commend.dart';
-
-class profilepage extends StatefulWidget {
-  const profilepage({Key? key}) : super(key: key);
+class Searchperson extends StatefulWidget {
+  const Searchperson({Key? key}) : super(key: key);
 
   @override
-  State<profilepage> createState() => _profilepageState();
+  State<Searchperson> createState() => _SearchpersonState();
 }
 
-class _profilepageState extends State<profilepage> {
+class _SearchpersonState extends State<Searchperson> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -83,10 +85,7 @@ class _profilepageState extends State<profilepage> {
       ),
       // implement the floating button
       floatingActionButton: FloatingActionButton(
-          onPressed: () {
-            Navigator.push(context,
-                MaterialPageRoute(builder: (context) => Upload_image()));
-          },
+          onPressed: () {},
           backgroundColor: Colors.amber,
           child: const Icon(Icons.add)),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
@@ -189,23 +188,27 @@ class _profilepageState extends State<profilepage> {
               ),
             ),
           ),
-
           SizedBox(
             height: 10,
           ),
-          Container(
-            margin: EdgeInsets.symmetric(horizontal: 20),
-            alignment: Alignment.center,
-            height: 20,
-            width: 320,
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10), color: Colors.white),
-            child: Text(
-              "Edit profile",
-              style: TextStyle(
-                  fontFamily: "itim", fontSize: 15, color: Colors.blue),
+          Center(
+            child: Container(
+              margin: EdgeInsets.symmetric(horizontal: 100),
+              alignment: Alignment.center,
+              height: 50,
+              width: 200,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                color: Colors.blue,
+              ),
+              child: Text(
+                "Follow",
+                style: TextStyle(
+                    fontFamily: "itim", fontSize: 20, color: Colors.white),
+              ),
             ),
           ),
+
           SizedBox(
             height: 30.h,
           ),
@@ -218,8 +221,10 @@ class _profilepageState extends State<profilepage> {
                   children: [
                     InkWell(
                       onTap: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => My_post()));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => SearchpersonPost()));
                       },
                       child: Container(
                         child: Text(
@@ -243,37 +248,10 @@ class _profilepageState extends State<profilepage> {
               ),
               InkWell(
                 onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => My_savepost()));
-                },
-                child: Container(
-                  width: 70.w,
-                  child: Row(
-                    children: [
-                      Container(
-                        child: Text(
-                          "Save",
-                          style: TextStyle(
-                              fontSize: 18.sp,
-                              fontWeight: FontWeight.w400,
-                              fontFamily: "Manjari"),
-                        ),
-                      ),
-                      SizedBox(
-                        width: 5.w,
-                      ),
-                      Icon(
-                        Icons.save,
-                        color: Colors.blue,
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              InkWell(
-                onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => World_rating()));
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => SearchpersonRate()));
                 },
                 child: Container(
                   width: 70.w,
@@ -299,32 +277,6 @@ class _profilepageState extends State<profilepage> {
                   ),
                 ),
               ),
-              InkWell(
-                onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => DetailsList()));
-                },
-                child: Container(
-                  width: 70.w,
-                  child: Row(
-                    children: [
-                      Container(
-                        child: Text(
-                          "List",
-                          style: TextStyle(
-                              fontSize: 18.sp,
-                              fontWeight: FontWeight.w400,
-                              fontFamily: "Manjari"),
-                        ),
-                      ),
-                      SizedBox(
-                        width: 5.w,
-                      ),
-                      Icon(Icons.list),
-                    ],
-                  ),
-                ),
-              )
             ],
           ),
           SizedBox(height: 10.h),

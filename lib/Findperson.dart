@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:goldshop/SearchPerson/Searchperson.dart';
+import 'package:goldshop/Searchperson.dart';
 
 class Findperson extends StatefulWidget {
   const Findperson({Key? key}) : super(key: key);

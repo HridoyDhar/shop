@@ -16,7 +16,7 @@ import 'package:goldshop/ShopLocation.dart';
 import 'package:goldshop/upload/Upload_image.dart';
 import 'package:goldshop/worldRating/World_rating.dart';
 
-import '../Postcomment/Post_commend.dart';
+import 'Postcomment/Post_commend.dart';
 
 class profilepage extends StatefulWidget {
   const profilepage({Key? key}) : super(key: key);

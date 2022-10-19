@@ -1,84 +1,73 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:goldshop/EmployeDetails/EmployeDetails.dart';
 
-class EmployeList extends StatefulWidget {
-  const EmployeList({Key? key}) : super(key: key);
+class Paymentlist extends StatefulWidget {
+  const Paymentlist({Key? key}) : super(key: key);
 
   @override
-  State<EmployeList> createState() => _EmployeListState();
+  State<Paymentlist> createState() => _PaymentlistState();
 }
 
-class _EmployeListState extends State<EmployeList> {
+class _PaymentlistState extends State<Paymentlist> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
-      body: ListView(
-        children: [
-          SizedBox(
-            height: 20.h,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => EmployeDetails()));
-            },
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 20.w),
-              height: 40.h,
-              width: 300.w,
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.2),
-                    spreadRadius: 3,
-                    blurRadius: 3,
-                    offset: Offset(0, 3), // changes position of shadow
-                  ),
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10.r),
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(
-                    Icons.person,
-                    color: Colors.greenAccent,
-                  ),
-                  SizedBox(
-                    width: 15.w,
-                  ),
-                  Container(
-                    child: Text(
-                      "4.Mr                                                          Rahul",
-                      style: TextStyle(
-                          fontSize: 15.sp,
-                          fontWeight: FontWeight.w700,
-                          color: Colors.black),
-                    ),
-                  ),
-                ],
-              ),
+        backgroundColor: Colors.white,
+        body: ListView(
+          children: [
+            SizedBox(
+              height: 20,
             ),
-          ),
-          SizedBox(
-            height: 20.h,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => EmployeDetails()));
-            },
-            child: Container(
+            Container(
+                alignment: Alignment.center,
+                margin: EdgeInsets.symmetric(horizontal: 100),
+                height: 40.h,
+                width: 300.w,
+                decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey.withOpacity(0.2),
+                      spreadRadius: 3,
+                      blurRadius: 3,
+                      offset: Offset(0, 2), // changes position of shadow
+                    ),
+                  ],
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Text("10-03-29",
+                    style: TextStyle(
+                        fontSize: 15,
+                        fontFamily: "itim",
+                        color: Colors.black))),
+            SizedBox(
+              height: 50,
+            ),
+            Container(
+                height: 40.h,
+                width: 300.w,
+                margin: EdgeInsets.symmetric(horizontal: 20),
+                child: TextField(
+                  decoration: InputDecoration(
+                      labelText: "Search",
+                      prefixIcon: Icon(
+                        Icons.search,
+                        color: Colors.blueGrey,
+                      ),
+                      border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(10))),
+                )),
+            SizedBox(
+              height: 20,
+            ),
+            Container(
               margin: EdgeInsets.symmetric(horizontal: 20.w),
               height: 40.h,
               width: 300.w,
               decoration: BoxDecoration(
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.grey.withOpacity(0.2),
+                    color: Color.fromRGBO(158, 158, 158, 1).withOpacity(0.2),
                     spreadRadius: 3,
                     blurRadius: 3,
                     offset: Offset(0, 2), // changes position of shadow
@@ -88,37 +77,36 @@ class _EmployeListState extends State<EmployeList> {
                 borderRadius: BorderRadius.circular(10.r),
               ),
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(
-                    Icons.person,
-                    color: Colors.greenAccent,
-                  ),
                   SizedBox(
-                    width: 15.w,
+                    width: 50,
                   ),
                   Container(
+                    alignment: Alignment.center,
                     child: Text(
-                      "4.Mr                                                          Rahul",
+                      "1.Rimon          460000Tk",
                       style: TextStyle(
                           fontSize: 15.sp,
                           fontWeight: FontWeight.w700,
                           color: Colors.black),
                     ),
                   ),
+                  SizedBox(
+                    width: 20.w,
+                  ),
+                  Container(
+                    height: 20,
+                    width: 40,
+                    margin: EdgeInsets.symmetric(horizontal: 20),
+                    child: Image.asset("assets/visa.png"),
+                  )
                 ],
               ),
             ),
-          ),
-          SizedBox(
-            height: 20.h,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => EmployeDetails()));
-            },
-            child: Container(
+            SizedBox(
+              height: 20,
+            ),
+            Container(
               margin: EdgeInsets.symmetric(horizontal: 20.w),
               height: 40.h,
               width: 300.w,
@@ -135,37 +123,36 @@ class _EmployeListState extends State<EmployeList> {
                 borderRadius: BorderRadius.circular(10.r),
               ),
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(
-                    Icons.person,
-                    color: Colors.greenAccent,
-                  ),
                   SizedBox(
-                    width: 15.w,
+                    width: 50,
                   ),
                   Container(
+                    alignment: Alignment.center,
                     child: Text(
-                      "4.Mr                                                          Rahul",
+                      "2.Rimon          460000Tk",
                       style: TextStyle(
                           fontSize: 15.sp,
                           fontWeight: FontWeight.w700,
                           color: Colors.black),
                     ),
                   ),
+                  SizedBox(
+                    width: 20.w,
+                  ),
+                  Container(
+                    height: 20,
+                    width: 40,
+                    margin: EdgeInsets.symmetric(horizontal: 20),
+                    child: Image.asset("assets/visa.png"),
+                  )
                 ],
               ),
             ),
-          ),
-          SizedBox(
-            height: 20.h,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => EmployeDetails()));
-            },
-            child: Container(
+            SizedBox(
+              height: 20,
+            ),
+            Container(
               margin: EdgeInsets.symmetric(horizontal: 20.w),
               height: 40.h,
               width: 300.w,
@@ -182,37 +169,36 @@ class _EmployeListState extends State<EmployeList> {
                 borderRadius: BorderRadius.circular(10.r),
               ),
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(
-                    Icons.person,
-                    color: Colors.greenAccent,
-                  ),
                   SizedBox(
-                    width: 15.w,
+                    width: 50,
                   ),
                   Container(
+                    alignment: Alignment.center,
                     child: Text(
-                      "4.Mr                                                          Rahul",
+                      "3.Rimon          460000Tk",
                       style: TextStyle(
                           fontSize: 15.sp,
                           fontWeight: FontWeight.w700,
                           color: Colors.black),
                     ),
                   ),
+                  SizedBox(
+                    width: 20.w,
+                  ),
+                  Container(
+                    height: 20,
+                    width: 40,
+                    margin: EdgeInsets.symmetric(horizontal: 20),
+                    child: Image.asset("assets/visa.png"),
+                  )
                 ],
               ),
             ),
-          ),
-          SizedBox(
-            height: 20.h,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => EmployeDetails()));
-            },
-            child: Container(
+            SizedBox(
+              height: 20,
+            ),
+            Container(
               margin: EdgeInsets.symmetric(horizontal: 20.w),
               height: 40.h,
               width: 300.w,
@@ -229,86 +215,36 @@ class _EmployeListState extends State<EmployeList> {
                 borderRadius: BorderRadius.circular(10.r),
               ),
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(
-                    Icons.person,
-                    color: Colors.greenAccent,
-                  ),
                   SizedBox(
-                    width: 15.w,
+                    width: 50,
                   ),
                   Container(
+                    alignment: Alignment.center,
                     child: Text(
-                      "4.Mr                                                          Rahul",
+                      "4.Rimon          460000Tk",
                       style: TextStyle(
                           fontSize: 15.sp,
                           fontWeight: FontWeight.w700,
                           color: Colors.black),
                     ),
                   ),
-                ],
-              ),
-            ),
-          ),
-          SizedBox(
-            height: 20.h,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => EmployeDetails()));
-            },
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 20.w),
-              height: 40.h,
-              width: 300.w,
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(
-                      0.2,
-                    ),
-                    spreadRadius: 3,
-                    blurRadius: 3,
-                    offset: Offset(0, 2), // changes position of shadow
-                  ),
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10.r),
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(
-                    Icons.person,
-                    color: Colors.greenAccent,
-                  ),
                   SizedBox(
-                    width: 15.w,
+                    width: 20.w,
                   ),
                   Container(
-                    child: Text(
-                      "4.Mr                                                          Rahul",
-                      style: TextStyle(
-                          fontSize: 15.sp,
-                          fontWeight: FontWeight.w700,
-                          color: Colors.black),
-                    ),
-                  ),
+                    height: 20,
+                    width: 40,
+                    margin: EdgeInsets.symmetric(horizontal: 20),
+                    child: Image.asset("assets/visa.png"),
+                  )
                 ],
               ),
             ),
-          ),
-          SizedBox(
-            height: 20.h,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => EmployeDetails()));
-            },
-            child: Container(
+            SizedBox(
+              height: 20,
+            ),
+            Container(
               margin: EdgeInsets.symmetric(horizontal: 20.w),
               height: 40.h,
               width: 300.w,
@@ -325,84 +261,36 @@ class _EmployeListState extends State<EmployeList> {
                 borderRadius: BorderRadius.circular(10.r),
               ),
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(
-                    Icons.person,
-                    color: Colors.greenAccent,
-                  ),
                   SizedBox(
-                    width: 15.w,
+                    width: 50,
                   ),
                   Container(
+                    alignment: Alignment.center,
                     child: Text(
-                      "4.Mr                                                          Rahul",
+                      "5.Rimon          460000Tk",
                       style: TextStyle(
                           fontSize: 15.sp,
                           fontWeight: FontWeight.w700,
                           color: Colors.black),
                     ),
                   ),
-                ],
-              ),
-            ),
-          ),
-          SizedBox(
-            height: 20.h,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => EmployeDetails()));
-            },
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 20.w),
-              height: 40.h,
-              width: 300.w,
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.3),
-                    spreadRadius: 3,
-                    blurRadius: 3,
-                    offset: Offset(0, 2), // changes position of shadow
-                  ),
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10.r),
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(
-                    Icons.person,
-                    color: Colors.greenAccent,
-                  ),
                   SizedBox(
-                    width: 15.w,
+                    width: 20.w,
                   ),
                   Container(
-                    child: Text(
-                      "4.Mr                                                          Rahul",
-                      style: TextStyle(
-                          fontSize: 15.sp,
-                          fontWeight: FontWeight.w700,
-                          color: Colors.black),
-                    ),
-                  ),
+                    height: 20,
+                    width: 40,
+                    margin: EdgeInsets.symmetric(horizontal: 20),
+                    child: Image.asset("assets/visa.png"),
+                  )
                 ],
               ),
             ),
-          ),
-          SizedBox(
-            height: 20.h,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => EmployeDetails()));
-            },
-            child: Container(
+            SizedBox(
+              height: 20,
+            ),
+            Container(
               margin: EdgeInsets.symmetric(horizontal: 20.w),
               height: 40.h,
               width: 300.w,
@@ -419,37 +307,36 @@ class _EmployeListState extends State<EmployeList> {
                 borderRadius: BorderRadius.circular(10.r),
               ),
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(
-                    Icons.person,
-                    color: Colors.greenAccent,
-                  ),
                   SizedBox(
-                    width: 15.w,
+                    width: 50,
                   ),
                   Container(
+                    alignment: Alignment.center,
                     child: Text(
-                      "4.Mr                                                          Rahul",
+                      "5.Rimon          460000Tk",
                       style: TextStyle(
                           fontSize: 15.sp,
                           fontWeight: FontWeight.w700,
                           color: Colors.black),
                     ),
                   ),
+                  SizedBox(
+                    width: 20.w,
+                  ),
+                  Container(
+                    height: 20,
+                    width: 40,
+                    margin: EdgeInsets.symmetric(horizontal: 20),
+                    child: Image.asset("assets/visa.png"),
+                  )
                 ],
               ),
             ),
-          ),
-          SizedBox(
-            height: 20.h,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => EmployeDetails()));
-            },
-            child: Container(
+            SizedBox(
+              height: 20,
+            ),
+            Container(
               margin: EdgeInsets.symmetric(horizontal: 20.w),
               height: 40.h,
               width: 300.w,
@@ -466,37 +353,36 @@ class _EmployeListState extends State<EmployeList> {
                 borderRadius: BorderRadius.circular(10.r),
               ),
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(
-                    Icons.person,
-                    color: Colors.greenAccent,
-                  ),
                   SizedBox(
-                    width: 15.w,
+                    width: 50,
                   ),
                   Container(
+                    alignment: Alignment.center,
                     child: Text(
-                      "4.Mr                                                          Rahul",
+                      "5.Rimon          460000Tk",
                       style: TextStyle(
                           fontSize: 15.sp,
                           fontWeight: FontWeight.w700,
                           color: Colors.black),
                     ),
                   ),
+                  SizedBox(
+                    width: 20.w,
+                  ),
+                  Container(
+                    height: 20,
+                    width: 40,
+                    margin: EdgeInsets.symmetric(horizontal: 20),
+                    child: Image.asset("assets/visa.png"),
+                  )
                 ],
               ),
             ),
-          ),
-          SizedBox(
-            height: 20.h,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => EmployeDetails()));
-            },
-            child: Container(
+            SizedBox(
+              height: 20,
+            ),
+            Container(
               margin: EdgeInsets.symmetric(horizontal: 20.w),
               height: 40.h,
               width: 300.w,
@@ -513,225 +399,36 @@ class _EmployeListState extends State<EmployeList> {
                 borderRadius: BorderRadius.circular(10.r),
               ),
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(
-                    Icons.person,
-                    color: Colors.greenAccent,
-                  ),
                   SizedBox(
-                    width: 15.w,
+                    width: 50,
                   ),
                   Container(
+                    alignment: Alignment.center,
                     child: Text(
-                      "4.Mr                                                          Rahul",
+                      "5.Rimon          460000Tk",
                       style: TextStyle(
                           fontSize: 15.sp,
                           fontWeight: FontWeight.w700,
                           color: Colors.black),
                     ),
                   ),
-                ],
-              ),
-            ),
-          ),
-          SizedBox(
-            height: 20.h,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => EmployeDetails()));
-            },
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 20.w),
-              height: 40.h,
-              width: 300.w,
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.5),
-                    spreadRadius: 5,
-                    blurRadius: 7,
-                    offset: Offset(0, 3), // changes position of shadow
-                  ),
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10.r),
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(
-                    Icons.person,
-                    color: Colors.greenAccent,
-                  ),
                   SizedBox(
-                    width: 15.w,
+                    width: 20.w,
                   ),
                   Container(
-                    child: Text(
-                      "4.Mr                                                          Rahul",
-                      style: TextStyle(
-                          fontSize: 15.sp,
-                          fontWeight: FontWeight.w700,
-                          color: Colors.black),
-                    ),
-                  ),
+                    height: 20,
+                    width: 40,
+                    margin: EdgeInsets.symmetric(horizontal: 20),
+                    child: Image.asset("assets/visa.png"),
+                  )
                 ],
               ),
             ),
-          ),
-          SizedBox(
-            height: 20.h,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => EmployeDetails()));
-            },
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 20.w),
-              height: 40.h,
-              width: 300.w,
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.5),
-                    spreadRadius: 5,
-                    blurRadius: 7,
-                    offset: Offset(0, 3), // changes position of shadow
-                  ),
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10.r),
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(
-                    Icons.person,
-                    color: Colors.greenAccent,
-                  ),
-                  SizedBox(
-                    width: 15.w,
-                  ),
-                  Container(
-                    child: Text(
-                      "4.Mr                                                          Rahul",
-                      style: TextStyle(
-                          fontSize: 15.sp,
-                          fontWeight: FontWeight.w700,
-                          color: Colors.black),
-                    ),
-                  ),
-                ],
-              ),
+            SizedBox(
+              height: 20,
             ),
-          ),
-          SizedBox(
-            height: 20.h,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => EmployeDetails()));
-            },
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 20.w),
-              height: 40.h,
-              width: 300.w,
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.5),
-                    spreadRadius: 5,
-                    blurRadius: 7,
-                    offset: Offset(0, 3), // changes position of shadow
-                  ),
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10.r),
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(
-                    Icons.person,
-                    color: Colors.greenAccent,
-                  ),
-                  SizedBox(
-                    width: 15.w,
-                  ),
-                  Container(
-                    child: Text(
-                      "4.Mr                                                          Rahul",
-                      style: TextStyle(
-                          fontSize: 15.sp,
-                          fontWeight: FontWeight.w700,
-                          color: Colors.black),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          SizedBox(
-            height: 20.h,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => EmployeDetails()));
-            },
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 20.w),
-              height: 40.h,
-              width: 300.w,
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.5),
-                    spreadRadius: 5,
-                    blurRadius: 7,
-                    offset: Offset(0, 3), // changes position of shadow
-                  ),
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10.r),
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(
-                    Icons.person,
-                    color: Colors.greenAccent,
-                  ),
-                  SizedBox(
-                    width: 15.w,
-                  ),
-                  Container(
-                    child: Text(
-                      "4.Mr                                                          Rahul",
-                      style: TextStyle(
-                          fontSize: 15.sp,
-                          fontWeight: FontWeight.w700,
-                          color: Colors.black),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          SizedBox(
-            height: 20.h,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => EmployeDetails()));
-            },
-            child: Container(
+            Container(
               margin: EdgeInsets.symmetric(horizontal: 20.w),
               height: 40.h,
               width: 300.w,
@@ -748,30 +445,331 @@ class _EmployeListState extends State<EmployeList> {
                 borderRadius: BorderRadius.circular(10.r),
               ),
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(
-                    Icons.person,
-                    color: Colors.greenAccent,
-                  ),
                   SizedBox(
-                    width: 15.w,
+                    width: 50,
                   ),
                   Container(
+                    alignment: Alignment.center,
                     child: Text(
-                      "4.Mr                                                          Rahul",
+                      "5.Rimon          460000Tk",
                       style: TextStyle(
                           fontSize: 15.sp,
                           fontWeight: FontWeight.w700,
                           color: Colors.black),
                     ),
                   ),
+                  SizedBox(
+                    width: 20.w,
+                  ),
+                  Container(
+                    height: 20,
+                    width: 40,
+                    margin: EdgeInsets.symmetric(horizontal: 20),
+                    child: Image.asset("assets/visa.png"),
+                  )
                 ],
               ),
             ),
-          ),
-        ],
-      ),
-    );
+            SizedBox(
+              height: 20,
+            ),
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 20.w),
+              height: 40.h,
+              width: 300.w,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.2),
+                    spreadRadius: 3,
+                    blurRadius: 3,
+                    offset: Offset(0, 2), // changes position of shadow
+                  ),
+                ],
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10.r),
+              ),
+              child: Row(
+                children: [
+                  SizedBox(
+                    width: 50,
+                  ),
+                  Container(
+                    alignment: Alignment.center,
+                    child: Text(
+                      "5.Rimon          460000Tk",
+                      style: TextStyle(
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 20.w,
+                  ),
+                  Container(
+                    height: 20,
+                    width: 40,
+                    margin: EdgeInsets.symmetric(horizontal: 20),
+                    child: Image.asset("assets/visa.png"),
+                  )
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 20.w),
+              height: 40.h,
+              width: 300.w,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.2),
+                    spreadRadius: 3,
+                    blurRadius: 3,
+                    offset: Offset(0, 2), // changes position of shadow
+                  ),
+                ],
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10.r),
+              ),
+              child: Row(
+                children: [
+                  SizedBox(
+                    width: 50,
+                  ),
+                  Container(
+                    alignment: Alignment.center,
+                    child: Text(
+                      "5.Rimon          460000Tk",
+                      style: TextStyle(
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 20.w,
+                  ),
+                  Container(
+                    height: 20,
+                    width: 40,
+                    margin: EdgeInsets.symmetric(horizontal: 20),
+                    child: Image.asset("assets/visa.png"),
+                  )
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 20.w),
+              height: 40.h,
+              width: 300.w,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.2),
+                    spreadRadius: 3,
+                    blurRadius: 3,
+                    offset: Offset(0, 2), // changes position of shadow
+                  ),
+                ],
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10.r),
+              ),
+              child: Row(
+                children: [
+                  SizedBox(
+                    width: 50,
+                  ),
+                  Container(
+                    alignment: Alignment.center,
+                    child: Text(
+                      "5.Rimon          460000Tk",
+                      style: TextStyle(
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 20.w,
+                  ),
+                  Container(
+                    height: 20,
+                    width: 40,
+                    margin: EdgeInsets.symmetric(horizontal: 20),
+                    child: Image.asset("assets/visa.png"),
+                  )
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 20.w),
+              height: 40.h,
+              width: 300.w,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.2),
+                    spreadRadius: 3,
+                    blurRadius: 3,
+                    offset: Offset(0, 2), // changes position of shadow
+                  ),
+                ],
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10.r),
+              ),
+              child: Row(
+                children: [
+                  SizedBox(
+                    width: 50,
+                  ),
+                  Container(
+                    alignment: Alignment.center,
+                    child: Text(
+                      "5.Rimon          460000Tk",
+                      style: TextStyle(
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 20.w,
+                  ),
+                  Container(
+                    height: 20,
+                    width: 40,
+                    margin: EdgeInsets.symmetric(horizontal: 20),
+                    child: Image.asset("assets/visa.png"),
+                  )
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 20.w),
+              height: 40.h,
+              width: 300.w,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.2),
+                    spreadRadius: 3,
+                    blurRadius: 3,
+                    offset: Offset(0, 2), // changes position of shadow
+                  ),
+                ],
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10.r),
+              ),
+              child: Row(
+                children: [
+                  SizedBox(
+                    width: 50,
+                  ),
+                  Container(
+                    alignment: Alignment.center,
+                    child: Text(
+                      "5.Rimon          460000Tk",
+                      style: TextStyle(
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 20.w,
+                  ),
+                  Container(
+                    height: 20,
+                    width: 40,
+                    margin: EdgeInsets.symmetric(horizontal: 20),
+                    child: Image.asset("assets/visa.png"),
+                  )
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 20.w),
+              height: 40.h,
+              width: 300.w,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.2),
+                    spreadRadius: 3,
+                    blurRadius: 3,
+                    offset: Offset(0, 2), // changes position of shadow
+                  ),
+                ],
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10.r),
+              ),
+              child: Row(
+                children: [
+                  SizedBox(
+                    width: 50,
+                  ),
+                  Container(
+                    alignment: Alignment.center,
+                    child: Text(
+                      "5.Rimon          460000Tk",
+                      style: TextStyle(
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 20.w,
+                  ),
+                  Container(
+                    height: 20,
+                    width: 40,
+                    margin: EdgeInsets.symmetric(horizontal: 20),
+                    child: Image.asset("assets/visa.png"),
+                  )
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Container(
+                alignment: Alignment.center,
+                margin: EdgeInsets.symmetric(horizontal: 100),
+                height: 40.h,
+                width: 300.w,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.withOpacity(0.2),
+                        spreadRadius: 3,
+                        blurRadius: 3,
+                        offset: Offset(0, 2), // changes position of shadow
+                      ),
+                    ],
+                    color: Colors.white),
+                child: Text("Total : 25600000Tk",
+                    style: TextStyle(
+                        fontFamily: "itim", fontSize: 15, color: Colors.black)))
+          ],
+        ));
   }
 }

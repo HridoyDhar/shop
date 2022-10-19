@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'package:goldshop/HomePage2.dart';
+import 'package:goldshop/Home_page2/HomePage2.dart';
 
 class EmployePayment extends StatefulWidget {
   const EmployePayment({Key? key}) : super(key: key);
