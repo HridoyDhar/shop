@@ -40,42 +40,51 @@ class _Product_editState extends State<Product_edit> {
       ),
       Column(
         children: [
-          Container(
-            height: 40.h,
-            child: ListView.builder(
-              scrollDirection: Axis.horizontal,
-              itemCount: 10,
-              itemBuilder: (context, index) {
-                return InkWell(
-                  onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Total_iteam()));
-                  },
-                  child: InkWell(
-                    onTap: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => Total_iteam()));
-                    },
-                    child: Container(
-                        alignment: Alignment.center,
-                        padding: EdgeInsets.symmetric(horizontal: 20.w),
-                        height: 30,
-                        width: 80,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            border: Border.all(color: Colors.black)),
-                        child: Text(
-                          "Ring",
-                          style: TextStyle(
-                              fontFamily: "itim",
-                              fontSize: 10,
-                              color: Colors.red),
-                        )),
+          SizedBox(
+            height: 20,
+          ),
+          InkWell(
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => Total_iteam()));
+            },
+            child: Container(
+              margin: EdgeInsets.symmetric(horizontal: 20.w),
+              height: 40.h,
+              width: 200.w,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.2),
+                    spreadRadius: 3,
+                    blurRadius: 3,
+                    offset: Offset(0, 2), // changes position of shadow
                   ),
-                );
-              },
+                ],
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10.r),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.production_quantity_limits,
+                    color: Colors.greenAccent,
+                  ),
+                  SizedBox(
+                    width: 15.w,
+                  ),
+                  Container(
+                    child: Text(
+                      "Total Producet",
+                      style: TextStyle(
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
           SizedBox(
@@ -105,9 +114,10 @@ class _Product_editState extends State<Product_edit> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(
-                    Icons.production_quantity_limits,
-                    color: Colors.greenAccent,
+                  Container(
+                    height: 20,
+                    width: 20,
+                    child: Image.asset("assets/necklace.png"),
                   ),
                   SizedBox(
                     width: 15.w,
@@ -152,16 +162,17 @@ class _Product_editState extends State<Product_edit> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(
-                    Icons.production_quantity_limits,
-                    color: Colors.greenAccent,
+                  Container(
+                    height: 20,
+                    width: 20,
+                    child: Image.asset("assets/pendant.png"),
                   ),
                   SizedBox(
                     width: 15.w,
                   ),
                   Container(
                     child: Text(
-                      "chian",
+                      "Chain",
                       style: TextStyle(
                           fontSize: 15.sp,
                           fontWeight: FontWeight.w700,
@@ -199,16 +210,17 @@ class _Product_editState extends State<Product_edit> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(
-                    Icons.production_quantity_limits,
-                    color: Colors.greenAccent,
+                  Container(
+                    height: 20,
+                    width: 20,
+                    child: Image.asset("assets/rings.png"),
                   ),
                   SizedBox(
                     width: 15.w,
                   ),
                   Container(
                     child: Text(
-                      "Earring",
+                      "Ring",
                       style: TextStyle(
                           fontSize: 15.sp,
                           fontWeight: FontWeight.w700,
@@ -246,439 +258,17 @@ class _Product_editState extends State<Product_edit> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(
-                    Icons.production_quantity_limits,
-                    color: Colors.greenAccent,
+                  Container(
+                    height: 20,
+                    width: 20,
+                    child: Image.asset("assets/earrings.png"),
                   ),
                   SizedBox(
                     width: 15.w,
                   ),
                   Container(
                     child: Text(
-                      "Neckless",
-                      style: TextStyle(
-                          fontSize: 15.sp,
-                          fontWeight: FontWeight.w700,
-                          color: Colors.black),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => iteam_post()));
-            },
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 20.w),
-              height: 40.h,
-              width: 300.w,
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.2),
-                    spreadRadius: 3,
-                    blurRadius: 3,
-                    offset: Offset(0, 2), // changes position of shadow
-                  ),
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10.r),
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(
-                    Icons.production_quantity_limits,
-                    color: Colors.greenAccent,
-                  ),
-                  SizedBox(
-                    width: 15.w,
-                  ),
-                  Container(
-                    child: Text(
-                      "Neckless",
-                      style: TextStyle(
-                          fontSize: 15.sp,
-                          fontWeight: FontWeight.w700,
-                          color: Colors.black),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => iteam_post()));
-            },
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 20.w),
-              height: 40.h,
-              width: 300.w,
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.2),
-                    spreadRadius: 3,
-                    blurRadius: 3,
-                    offset: Offset(0, 2), // changes position of shadow
-                  ),
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10.r),
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(
-                    Icons.production_quantity_limits,
-                    color: Colors.greenAccent,
-                  ),
-                  SizedBox(
-                    width: 15.w,
-                  ),
-                  Container(
-                    child: Text(
-                      "Neckless",
-                      style: TextStyle(
-                          fontSize: 15.sp,
-                          fontWeight: FontWeight.w700,
-                          color: Colors.black),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => iteam_post()));
-            },
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 20.w),
-              height: 40.h,
-              width: 300.w,
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.2),
-                    spreadRadius: 3,
-                    blurRadius: 3,
-                    offset: Offset(0, 2), // changes position of shadow
-                  ),
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10.r),
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(
-                    Icons.production_quantity_limits,
-                    color: Colors.greenAccent,
-                  ),
-                  SizedBox(
-                    width: 15.w,
-                  ),
-                  Container(
-                    child: Text(
-                      "Neckless",
-                      style: TextStyle(
-                          fontSize: 15.sp,
-                          fontWeight: FontWeight.w700,
-                          color: Colors.black),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => iteam_post()));
-            },
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 20.w),
-              height: 40.h,
-              width: 300.w,
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.2),
-                    spreadRadius: 3,
-                    blurRadius: 3,
-                    offset: Offset(0, 2), // changes position of shadow
-                  ),
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10.r),
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(
-                    Icons.production_quantity_limits,
-                    color: Colors.greenAccent,
-                  ),
-                  SizedBox(
-                    width: 15.w,
-                  ),
-                  Container(
-                    child: Text(
-                      "Neckless",
-                      style: TextStyle(
-                          fontSize: 15.sp,
-                          fontWeight: FontWeight.w700,
-                          color: Colors.black),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => iteam_post()));
-            },
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 20.w),
-              height: 40.h,
-              width: 300.w,
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.2),
-                    spreadRadius: 3,
-                    blurRadius: 3,
-                    offset: Offset(0, 2), // changes position of shadow
-                  ),
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10.r),
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(
-                    Icons.production_quantity_limits,
-                    color: Colors.greenAccent,
-                  ),
-                  SizedBox(
-                    width: 15.w,
-                  ),
-                  Container(
-                    child: Text(
-                      "Neckless",
-                      style: TextStyle(
-                          fontSize: 15.sp,
-                          fontWeight: FontWeight.w700,
-                          color: Colors.black),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => iteam_post()));
-            },
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 20.w),
-              height: 40.h,
-              width: 300.w,
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.2),
-                    spreadRadius: 3,
-                    blurRadius: 3,
-                    offset: Offset(0, 2), // changes position of shadow
-                  ),
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10.r),
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(
-                    Icons.production_quantity_limits,
-                    color: Colors.greenAccent,
-                  ),
-                  SizedBox(
-                    width: 15.w,
-                  ),
-                  Container(
-                    child: Text(
-                      "Neckless",
-                      style: TextStyle(
-                          fontSize: 15.sp,
-                          fontWeight: FontWeight.w700,
-                          color: Colors.black),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => iteam_post()));
-            },
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 20.w),
-              height: 40.h,
-              width: 300.w,
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.2),
-                    spreadRadius: 3,
-                    blurRadius: 3,
-                    offset: Offset(0, 2), // changes position of shadow
-                  ),
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10.r),
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(
-                    Icons.production_quantity_limits,
-                    color: Colors.greenAccent,
-                  ),
-                  SizedBox(
-                    width: 15.w,
-                  ),
-                  Container(
-                    child: Text(
-                      "Neckless",
-                      style: TextStyle(
-                          fontSize: 15.sp,
-                          fontWeight: FontWeight.w700,
-                          color: Colors.black),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => iteam_post()));
-            },
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 20.w),
-              height: 40.h,
-              width: 300.w,
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.2),
-                    spreadRadius: 3,
-                    blurRadius: 3,
-                    offset: Offset(0, 2), // changes position of shadow
-                  ),
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10.r),
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(
-                    Icons.production_quantity_limits,
-                    color: Colors.greenAccent,
-                  ),
-                  SizedBox(
-                    width: 15.w,
-                  ),
-                  Container(
-                    child: Text(
-                      "Neckless",
-                      style: TextStyle(
-                          fontSize: 15.sp,
-                          fontWeight: FontWeight.w700,
-                          color: Colors.black),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => iteam_post()));
-            },
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 20.w),
-              height: 40.h,
-              width: 300.w,
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.2),
-                    spreadRadius: 3,
-                    blurRadius: 3,
-                    offset: Offset(0, 2), // changes position of shadow
-                  ),
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10.r),
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(
-                    Icons.production_quantity_limits,
-                    color: Colors.greenAccent,
-                  ),
-                  SizedBox(
-                    width: 15.w,
-                  ),
-                  Container(
-                    child: Text(
-                      "Neckless",
+                      "Earing",
                       style: TextStyle(
                           fontSize: 15.sp,
                           fontWeight: FontWeight.w700,
@@ -690,1181 +280,263 @@ class _Product_editState extends State<Product_edit> {
             ),
           ),
 
+          SizedBox(
+            height: 20,
+          ),
+          InkWell(
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => iteam_post()));
+            },
+            child: Container(
+              margin: EdgeInsets.symmetric(horizontal: 20.w),
+              height: 40.h,
+              width: 300.w,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.2),
+                    spreadRadius: 3,
+                    blurRadius: 3,
+                    offset: Offset(0, 2), // changes position of shadow
+                  ),
+                ],
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10.r),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    height: 20,
+                    width: 20,
+                    child: Image.asset("assets/anklet.png"),
+                  ),
+                  SizedBox(
+                    width: 15.w,
+                  ),
+                  Container(
+                    child: Text(
+                      "Enklet",
+                      style: TextStyle(
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          // SizedBox(
+          //   height: 50,
+          // ),
+          // Container(
+          //   width: 230.w,
+          //   child: Column(
+          //     children: [
+          //       Row(
+          //         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          //         children: [
+          //           InkWell(
+          //             onTap: () {
+          //               Navigator.push(
+          //                   context,
+          //                   MaterialPageRoute(
+          //                       builder: (context) => iteam_post()));
+          //             },
+          //             child: Row(
+          //               children: [
+          //                 Column(
+          //                   children: [
+          //                     SizedBox(
+          //                       width: 5.w,
+          //                     ),
+          //                     Container(
+          //                       height: 30.h,
+          //                       width: 30.w,
+          //                       child: Image.asset("assets/necklace.png"),
+          //                     ),
+          //                     SizedBox(
+          //                       width: 5,
+          //                     ),
+          //                     Text(
+          //                       "Neckless",
+          //                       style: TextStyle(
+          //                           fontSize: 13.sp,
+          //                           fontWeight: FontWeight.w700,
+          //                           fontFamily: "Manjari",
+          //                           color: Colors.black),
+          //                     ),
+          //                   ],
+          //                 ),
+          //               ],
+          //             ),
+          //           ),
+          //           SizedBox(
+          //             width: 10.w,
+          //           ),
+          //           InkWell(
+          //             onTap: () {
+          //               Navigator.push(
+          //                   context,
+          //                   MaterialPageRoute(
+          //                       builder: (context) => iteam_post()));
+          //             },
+          //             child: Row(
+          //               children: [
+          //                 Column(
+          //                   children: [
+          //                     SizedBox(
+          //                       width: 5.w,
+          //                     ),
+          //                     Container(
+          //                       height: 30.h,
+          //                       width: 30.w,
+          //                       child: Image.asset("assets/pendant.png"),
+          //                     ),
+          //                     SizedBox(
+          //                       height: 5.h,
+          //                     ),
+          //                     Text(
+          //                       "Chain",
+          //                       style: TextStyle(
+          //                           fontSize: 13.sp,
+          //                           fontWeight: FontWeight.w700,
+          //                           fontFamily: "Manjari",
+          //                           color: Colors.black),
+          //                     ),
+          //                   ],
+          //                 ),
+          //               ],
+          //             ),
+          //           ),
+          //           SizedBox(
+          //             width: 10.w,
+          //           ),
+          //           InkWell(
+          //             onTap: () {
+          //               Navigator.push(
+          //                   context,
+          //                   MaterialPageRoute(
+          //                       builder: (context) => iteam_post()));
+          //             },
+          //             child: Row(
+          //               children: [
+          //                 Column(
+          //                   children: [
+          //                     SizedBox(
+          //                       width: 10.w,
+          //                     ),
+          //                     Container(
+          //                       height: 30.h,
+          //                       width: 30.w,
+          //                       child: Image.asset("assets/rings.png"),
+          //                     ),
+          //                     SizedBox(
+          //                       height: 5.h,
+          //                     ),
+          //                     Text(
+          //                       "Ring",
+          //                       style: TextStyle(
+          //                           fontSize: 13.sp,
+          //                           fontWeight: FontWeight.w700,
+          //                           fontFamily: "Manjari"),
+          //                     ),
+          //                   ],
+          //                 ),
+          //               ],
+          //             ),
+          //           ),
+          //           SizedBox(
+          //             width: 10,
+          //           ),
+          //           InkWell(
+          //             onTap: () {
+          //               Navigator.push(
+          //                   context,
+          //                   MaterialPageRoute(
+          //                       builder: (context) => iteam_post()));
+          //             },
+          //             child: Row(
+          //               children: [
+          //                 Column(
+          //                   children: [
+          //                     SizedBox(
+          //                       width: 5.w,
+          //                     ),
+          //                     Container(
+          //                       height: 30.h,
+          //                       width: 30.w,
+          //                       child: Image.asset("assets/earrings.png"),
+          //                     ),
+          //                     SizedBox(
+          //                       height: 5.h,
+          //                     ),
+          //                     Text(
+          //                       "Earing",
+          //                       style: TextStyle(
+          //                           fontSize: 13.sp,
+          //                           fontWeight: FontWeight.w700,
+          //                           fontFamily: "Manjari"),
+          //                     ),
+          //                   ],
+          //                 ),
+          //               ],
+          //             ),
+          //           ),
+          //         ],
+          //       ),
+          //     ],
+          //   ),
+          // ),
           // SizedBox(
           //   height: 20,
           // ),
-          // Card(
+          // InkWell(
+          //   onTap: () {
+          //     Navigator.push(context,
+          //         MaterialPageRoute(builder: (context) => iteam_post()));
+          //   },
           //   child: Container(
-          //     height: 350,
-          //     width: 300,
+          //     margin: EdgeInsets.symmetric(horizontal: 20.w),
+          //     height: 40.h,
+          //     width: 300.w,
           //     decoration: BoxDecoration(
-          //       borderRadius: BorderRadius.circular(10),
-          //       color: Color(0xffF7FAFF),
-          //     ),
-          //     child: Column(children: [
-          //       SizedBox(
-          //         height: 10,
-          //       ),
-          //       Container(
-          //         height: 200,
-          //         width: 200,
-          //         decoration: BoxDecoration(
-          //           borderRadius: BorderRadius.circular(10),
-          //           color: Color(0xffF7FAFF),
+          //       boxShadow: [
+          //         BoxShadow(
+          //           color: Colors.grey.withOpacity(0.2),
+          //           spreadRadius: 3,
+          //           blurRadius: 3,
+          //           offset: Offset(0, 2), // changes position of shadow
           //         ),
-          //         child: Image.asset("assets/GOLD-KIDS-CHARMS.jpg",
-          //             fit: BoxFit.fitHeight),
-          //       ),
-          //       SizedBox(
-          //         height: 20,
-          //       ),
-          //       Center(
-          //         child: Container(
-          //           width: 400,
-          //           child: Column(
-          //             children: [
-          //               Row(
-          //                 // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          //                 children: [
-          //                   Container(
-          //                     height: 40,
-          //                     width: 60,
-          //                     margin: EdgeInsets.symmetric(horizontal: 20),
-          //                     alignment: Alignment.center,
-          //                     child: TextField(
-          //                       decoration: InputDecoration(
-          //                           labelText: "Wight",
-          //                           border: OutlineInputBorder(
-          //                               borderRadius:
-          //                                   BorderRadius.circular(10))),
-          //                     ),
-          //                   ),
-          //                   SizedBox(
-          //                     height: 5,
-          //                   ),
-          //                   Container(
-          //                     height: 40,
-          //                     width: 110,
-          //                     margin: EdgeInsets.symmetric(horizontal: 20),
-          //                     alignment: Alignment.center,
-          //                     child: TextField(
-          //                       decoration: InputDecoration(
-          //                           labelText: "Money",
-          //                           border: OutlineInputBorder(
-          //                               borderRadius:
-          //                                   BorderRadius.circular(10))),
-          //                     ),
-          //                   ),
-          //                   SizedBox(
-          //                     height: 5,
-          //                   ),
-          //                   Container(
-          //                     height: 40,
-          //                     width: 60,
-          //                     margin: EdgeInsets.symmetric(horizontal: 20),
-          //                     alignment: Alignment.center,
-          //                     decoration: BoxDecoration(
-          //                       borderRadius: BorderRadius.circular(10),
-          //                       // color: Colors.cyanAccent),
-          //                     ),
-          //                     child: TextField(
-          //                       decoration: InputDecoration(
-          //                           labelText: "Carat",
-          //                           border: OutlineInputBorder(
-          //                               borderRadius:
-          //                                   BorderRadius.circular(10))),
-          //                     ),
-          //                   ),
-          //                 ],
-          //               ),
-          //             ],
+          //       ],
+          //       color: Colors.white,
+          //       borderRadius: BorderRadius.circular(10.r),
+          //     ),
+          //     child: Row(
+          //       mainAxisAlignment: MainAxisAlignment.center,
+          //       children: [
+          //         Icon(
+          //           Icons.production_quantity_limits,
+          //           color: Colors.greenAccent,
+          //         ),
+          //         SizedBox(
+          //           width: 15.w,
+          //         ),
+          //         Container(
+          //           child: Text(
+          //             "Neckless",
+          //             style: TextStyle(
+          //                 fontSize: 15.sp,
+          //                 fontWeight: FontWeight.w700,
+          //                 color: Colors.black),
           //           ),
           //         ),
-          //       ),
-          //       SizedBox(
-          //         height: 20,
-          //       ),
-          //       Container(
-          //         height: 40,
-          //         width: 80,
-          //         alignment: Alignment.center,
-          //         margin: EdgeInsets.symmetric(horizontal: 100),
-          //         decoration: BoxDecoration(
-          //           boxShadow: [
-          //             BoxShadow(
-          //               color: Colors.grey.withOpacity(0.5),
-          //               spreadRadius: 5,
-          //               blurRadius: 7,
-          //               offset: Offset(0, 3),
-          //             )
-          //           ],
-          //           borderRadius: BorderRadius.circular(10),
-          //           color: Colors.white,
-          //         ),
-          //         child: Text(
-          //           "Done",
-          //           style: TextStyle(
-          //               fontFamily: "itim", fontSize: 10, color: Colors.black),
-          //         ),
-          //       ),
-          //     ]),
-          //   ),
-          // ),
-          // SizedBox(
-          //   height: 20,
-          // ),
-          // Card(
-          //   child: Container(
-          //     height: 350,
-          //     width: 300,
-          //     decoration: BoxDecoration(
-          //       borderRadius: BorderRadius.circular(10),
-          //       color: Color(0xffF7FAFF),
+          //       ],
           //     ),
-          //     child: Column(children: [
-          //       SizedBox(
-          //         height: 10,
-          //       ),
-          //       Container(
-          //         height: 200,
-          //         width: 200,
-          //         decoration: BoxDecoration(
-          //           borderRadius: BorderRadius.circular(10),
-          //           color: Color(0xffF7FAFF),
-          //         ),
-          //         child: Image.asset("assets/Nekk.jpg", fit: BoxFit.fitHeight),
-          //       ),
-          //       SizedBox(
-          //         height: 20,
-          //       ),
-          //       Center(
-          //         child: Container(
-          //           width: 400,
-          //           child: Column(
-          //             children: [
-          //               Row(
-          //                 // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          //                 children: [
-          //                   Container(
-          //                     height: 40,
-          //                     width: 60,
-          //                     margin: EdgeInsets.symmetric(horizontal: 20),
-          //                     alignment: Alignment.center,
-          //                     child: TextField(
-          //                       decoration: InputDecoration(
-          //                           labelText: "Wight",
-          //                           border: OutlineInputBorder(
-          //                               borderRadius:
-          //                                   BorderRadius.circular(10))),
-          //                     ),
-          //                   ),
-          //                   SizedBox(
-          //                     height: 5,
-          //                   ),
-          //                   Container(
-          //                     height: 40,
-          //                     width: 110,
-          //                     margin: EdgeInsets.symmetric(horizontal: 20),
-          //                     alignment: Alignment.center,
-          //                     child: TextField(
-          //                       decoration: InputDecoration(
-          //                           labelText: "Money",
-          //                           border: OutlineInputBorder(
-          //                               borderRadius:
-          //                                   BorderRadius.circular(10))),
-          //                     ),
-          //                   ),
-          //                   SizedBox(
-          //                     height: 5,
-          //                   ),
-          //                   Container(
-          //                     height: 40,
-          //                     width: 60,
-          //                     margin: EdgeInsets.symmetric(horizontal: 20),
-          //                     alignment: Alignment.center,
-          //                     decoration: BoxDecoration(
-          //                       borderRadius: BorderRadius.circular(10),
-          //                       // color: Colors.cyanAccent),
-          //                     ),
-          //                     child: TextField(
-          //                       decoration: InputDecoration(
-          //                           labelText: "Carat",
-          //                           border: OutlineInputBorder(
-          //                               borderRadius:
-          //                                   BorderRadius.circular(10))),
-          //                     ),
-          //                   ),
-          //                 ],
-          //               ),
-          //             ],
-          //           ),
-          //         ),
-          //       ),
-          //       SizedBox(
-          //         height: 20,
-          //       ),
-          //       Container(
-          //         height: 40,
-          //         width: 80,
-          //         alignment: Alignment.center,
-          //         margin: EdgeInsets.symmetric(horizontal: 100),
-          //         decoration: BoxDecoration(
-          //           boxShadow: [
-          //             BoxShadow(
-          //               color: Colors.grey.withOpacity(0.5),
-          //               spreadRadius: 5,
-          //               blurRadius: 7,
-          //               offset: Offset(0, 3),
-          //             )
-          //           ],
-          //           borderRadius: BorderRadius.circular(10),
-          //           color: Colors.white,
-          //         ),
-          //         child: Text(
-          //           "Done",
-          //           style: TextStyle(
-          //               fontFamily: "itim", fontSize: 10, color: Colors.black),
-          //         ),
-          //       ),
-          //     ]),
           //   ),
           // ),
-          // Card(
-          //   child: Container(
-          //     height: 350,
-          //     width: 300,
-          //     decoration: BoxDecoration(
-          //       borderRadius: BorderRadius.circular(10),
-          //       color: Color(0xffF7FAFF),
-          //     ),
-          //     child: Column(children: [
-          //       SizedBox(
-          //         height: 10,
-          //       ),
-          //       Container(
-          //         height: 200,
-          //         width: 200,
-          //         decoration: BoxDecoration(
-          //           borderRadius: BorderRadius.circular(10),
-          //           color: Color(0xffF7FAFF),
-          //         ),
-          //         child: Image.asset(
-          //             "assets/Gold-antique-kundan-earrings-manubhai.jpg",
-          //             fit: BoxFit.fitHeight),
-          //       ),
-          //       SizedBox(
-          //         height: 20,
-          //       ),
-          //       Center(
-          //         child: Container(
-          //           width: 400,
-          //           child: Column(
-          //             children: [
-          //               Row(
-          //                 // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          //                 children: [
-          //                   Container(
-          //                     height: 40,
-          //                     width: 60,
-          //                     margin: EdgeInsets.symmetric(horizontal: 20),
-          //                     alignment: Alignment.center,
-          //                     child: TextField(
-          //                       decoration: InputDecoration(
-          //                           labelText: "Wight",
-          //                           border: OutlineInputBorder(
-          //                               borderRadius:
-          //                                   BorderRadius.circular(10))),
-          //                     ),
-          //                   ),
-          //                   SizedBox(
-          //                     height: 5,
-          //                   ),
-          //                   Container(
-          //                     height: 40,
-          //                     width: 110,
-          //                     margin: EdgeInsets.symmetric(horizontal: 20),
-          //                     alignment: Alignment.center,
-          //                     child: TextField(
-          //                       decoration: InputDecoration(
-          //                           labelText: "Money",
-          //                           border: OutlineInputBorder(
-          //                               borderRadius:
-          //                                   BorderRadius.circular(10))),
-          //                     ),
-          //                   ),
-          //                   SizedBox(
-          //                     height: 5,
-          //                   ),
-          //                   Container(
-          //                     height: 40,
-          //                     width: 60,
-          //                     margin: EdgeInsets.symmetric(horizontal: 20),
-          //                     alignment: Alignment.center,
-          //                     decoration: BoxDecoration(
-          //                       borderRadius: BorderRadius.circular(10),
-          //                       // color: Colors.cyanAccent),
-          //                     ),
-          //                     child: TextField(
-          //                       decoration: InputDecoration(
-          //                           labelText: "Carat",
-          //                           border: OutlineInputBorder(
-          //                               borderRadius:
-          //                                   BorderRadius.circular(10))),
-          //                     ),
-          //                   ),
-          //                 ],
-          //               ),
-          //             ],
-          //           ),
-          //         ),
-          //       ),
-          //       SizedBox(
-          //         height: 20,
-          //       ),
-          //       Container(
-          //         height: 40,
-          //         width: 80,
-          //         alignment: Alignment.center,
-          //         margin: EdgeInsets.symmetric(horizontal: 100),
-          //         decoration: BoxDecoration(
-          //           boxShadow: [
-          //             BoxShadow(
-          //               color: Colors.grey.withOpacity(0.5),
-          //               spreadRadius: 5,
-          //               blurRadius: 7,
-          //               offset: Offset(0, 3),
-          //             )
-          //           ],
-          //           borderRadius: BorderRadius.circular(10),
-          //           color: Colors.white,
-          //         ),
-          //         child: Text(
-          //           "Done",
-          //           style: TextStyle(
-          //               fontFamily: "itim", fontSize: 10, color: Colors.black),
-          //         ),
-          //       ),
-          //     ]),
-          //   ),
-          // ),
-          // Card(
-          //   child: Container(
-          //     height: 350,
-          //     width: 300,
-          //     decoration: BoxDecoration(
-          //       borderRadius: BorderRadius.circular(10),
-          //       color: Color(0xffF7FAFF),
-          //     ),
-          //     child: Column(children: [
-          //       SizedBox(
-          //         height: 10,
-          //       ),
-          //       Container(
-          //         height: 200,
-          //         width: 200,
-          //         decoration: BoxDecoration(
-          //           borderRadius: BorderRadius.circular(10),
-          //           color: Color(0xffF7FAFF),
-          //         ),
-          //         child: Image.asset("assets/008-3.jpg", fit: BoxFit.fitHeight),
-          //       ),
-          //       SizedBox(
-          //         height: 20,
-          //       ),
-          //       Center(
-          //         child: Container(
-          //           width: 400,
-          //           child: Column(
-          //             children: [
-          //               Row(
-          //                 // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          //                 children: [
-          //                   Container(
-          //                     height: 40,
-          //                     width: 60,
-          //                     margin: EdgeInsets.symmetric(horizontal: 20),
-          //                     alignment: Alignment.center,
-          //                     child: TextField(
-          //                       decoration: InputDecoration(
-          //                           labelText: "Wight",
-          //                           border: OutlineInputBorder(
-          //                               borderRadius:
-          //                                   BorderRadius.circular(10))),
-          //                     ),
-          //                   ),
-          //                   SizedBox(
-          //                     height: 5,
-          //                   ),
-          //                   Container(
-          //                     height: 40,
-          //                     width: 110,
-          //                     margin: EdgeInsets.symmetric(horizontal: 20),
-          //                     alignment: Alignment.center,
-          //                     child: TextField(
-          //                       decoration: InputDecoration(
-          //                           labelText: "Money",
-          //                           border: OutlineInputBorder(
-          //                               borderRadius:
-          //                                   BorderRadius.circular(10))),
-          //                     ),
-          //                   ),
-          //                   SizedBox(
-          //                     height: 5,
-          //                   ),
-          //                   Container(
-          //                     height: 40,
-          //                     width: 60,
-          //                     margin: EdgeInsets.symmetric(horizontal: 20),
-          //                     alignment: Alignment.center,
-          //                     decoration: BoxDecoration(
-          //                       borderRadius: BorderRadius.circular(10),
-          //                       // color: Colors.cyanAccent),
-          //                     ),
-          //                     child: TextField(
-          //                       decoration: InputDecoration(
-          //                           labelText: "Carat",
-          //                           border: OutlineInputBorder(
-          //                               borderRadius:
-          //                                   BorderRadius.circular(10))),
-          //                     ),
-          //                   ),
-          //                 ],
-          //               ),
-          //             ],
-          //           ),
-          //         ),
-          //       ),
-          //       SizedBox(
-          //         height: 20,
-          //       ),
-          //       Container(
-          //         height: 40,
-          //         width: 80,
-          //         alignment: Alignment.center,
-          //         margin: EdgeInsets.symmetric(horizontal: 100),
-          //         decoration: BoxDecoration(
-          //           boxShadow: [
-          //             BoxShadow(
-          //               color: Colors.grey.withOpacity(0.5),
-          //               spreadRadius: 5,
-          //               blurRadius: 7,
-          //               offset: Offset(0, 3),
-          //             )
-          //           ],
-          //           borderRadius: BorderRadius.circular(10),
-          //           color: Colors.white,
-          //         ),
-          //         child: Text(
-          //           "Done",
-          //           style: TextStyle(
-          //               fontFamily: "itim", fontSize: 10, color: Colors.black),
-          //         ),
-          //       ),
-          //     ]),
-          //   ),
-          // ),
-          // Card(
-          //   child: Container(
-          //     height: 350,
-          //     width: 300,
-          //     decoration: BoxDecoration(
-          //       borderRadius: BorderRadius.circular(10),
-          //       color: Color(0xffF7FAFF),
-          //     ),
-          //     child: Column(children: [
-          //       SizedBox(
-          //         height: 10,
-          //       ),
-          //       Container(
-          //         height: 200,
-          //         width: 200,
-          //         decoration: BoxDecoration(
-          //           borderRadius: BorderRadius.circular(10),
-          //           color: Color(0xffF7FAFF),
-          //         ),
-          //         child: Image.asset("assets/GOLD-KIDS-CHARMS.jpg",
-          //             fit: BoxFit.fitHeight),
-          //       ),
-          //       SizedBox(
-          //         height: 20,
-          //       ),
-          //       Center(
-          //         child: Container(
-          //           width: 400,
-          //           child: Column(
-          //             children: [
-          //               Row(
-          //                 // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          //                 children: [
-          //                   Container(
-          //                     height: 40,
-          //                     width: 60,
-          //                     margin: EdgeInsets.symmetric(horizontal: 20),
-          //                     alignment: Alignment.center,
-          //                     child: TextField(
-          //                       decoration: InputDecoration(
-          //                           labelText: "Wight",
-          //                           border: OutlineInputBorder(
-          //                               borderRadius:
-          //                                   BorderRadius.circular(10))),
-          //                     ),
-          //                   ),
-          //                   SizedBox(
-          //                     height: 5,
-          //                   ),
-          //                   Container(
-          //                     height: 40,
-          //                     width: 110,
-          //                     margin: EdgeInsets.symmetric(horizontal: 20),
-          //                     alignment: Alignment.center,
-          //                     child: TextField(
-          //                       decoration: InputDecoration(
-          //                           labelText: "Money",
-          //                           border: OutlineInputBorder(
-          //                               borderRadius:
-          //                                   BorderRadius.circular(10))),
-          //                     ),
-          //                   ),
-          //                   SizedBox(
-          //                     height: 5,
-          //                   ),
-          //                   Container(
-          //                     height: 40,
-          //                     width: 60,
-          //                     margin: EdgeInsets.symmetric(horizontal: 20),
-          //                     alignment: Alignment.center,
-          //                     decoration: BoxDecoration(
-          //                       borderRadius: BorderRadius.circular(10),
-          //                       // color: Colors.cyanAccent),
-          //                     ),
-          //                     child: TextField(
-          //                       decoration: InputDecoration(
-          //                           labelText: "Carat",
-          //                           border: OutlineInputBorder(
-          //                               borderRadius:
-          //                                   BorderRadius.circular(10))),
-          //                     ),
-          //                   ),
-          //                 ],
-          //               ),
-          //             ],
-          //           ),
-          //         ),
-          //       ),
-          //       SizedBox(
-          //         height: 20,
-          //       ),
-          //       Container(
-          //         height: 40,
-          //         width: 80,
-          //         alignment: Alignment.center,
-          //         margin: EdgeInsets.symmetric(horizontal: 100),
-          //         decoration: BoxDecoration(
-          //           boxShadow: [
-          //             BoxShadow(
-          //               color: Colors.grey.withOpacity(0.5),
-          //               spreadRadius: 5,
-          //               blurRadius: 7,
-          //               offset: Offset(0, 3),
-          //             )
-          //           ],
-          //           borderRadius: BorderRadius.circular(10),
-          //           color: Colors.white,
-          //         ),
-          //         child: Text(
-          //           "Done",
-          //           style: TextStyle(
-          //               fontFamily: "itim", fontSize: 10, color: Colors.black),
-          //         ),
-          //       ),
-          //     ]),
-          //   ),
-          // ),
-          // Card(
-          //   child: Container(
-          //     height: 350,
-          //     width: 300,
-          //     decoration: BoxDecoration(
-          //       borderRadius: BorderRadius.circular(10),
-          //       color: Color(0xffF7FAFF),
-          //     ),
-          //     child: Column(children: [
-          //       SizedBox(
-          //         height: 10,
-          //       ),
-          //       Container(
-          //         height: 200,
-          //         width: 200,
-          //         decoration: BoxDecoration(
-          //           borderRadius: BorderRadius.circular(10),
-          //           color: Color(0xffF7FAFF),
-          //         ),
-          //         child: Image.asset("assets/GOLD-KIDS-CHARMS.jpg",
-          //             fit: BoxFit.fitHeight),
-          //       ),
-          //       SizedBox(
-          //         height: 20,
-          //       ),
-          //       Center(
-          //         child: Container(
-          //           width: 400,
-          //           child: Column(
-          //             children: [
-          //               Row(
-          //                 // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          //                 children: [
-          //                   Container(
-          //                     height: 40,
-          //                     width: 60,
-          //                     margin: EdgeInsets.symmetric(horizontal: 20),
-          //                     alignment: Alignment.center,
-          //                     child: TextField(
-          //                       decoration: InputDecoration(
-          //                           labelText: "Wight",
-          //                           border: OutlineInputBorder(
-          //                               borderRadius:
-          //                                   BorderRadius.circular(10))),
-          //                     ),
-          //                   ),
-          //                   SizedBox(
-          //                     height: 5,
-          //                   ),
-          //                   Container(
-          //                     height: 40,
-          //                     width: 110,
-          //                     margin: EdgeInsets.symmetric(horizontal: 20),
-          //                     alignment: Alignment.center,
-          //                     child: TextField(
-          //                       decoration: InputDecoration(
-          //                           labelText: "Money",
-          //                           border: OutlineInputBorder(
-          //                               borderRadius:
-          //                                   BorderRadius.circular(10))),
-          //                     ),
-          //                   ),
-          //                   SizedBox(
-          //                     height: 5,
-          //                   ),
-          //                   Container(
-          //                     height: 40,
-          //                     width: 60,
-          //                     margin: EdgeInsets.symmetric(horizontal: 20),
-          //                     alignment: Alignment.center,
-          //                     decoration: BoxDecoration(
-          //                       borderRadius: BorderRadius.circular(10),
-          //                       // color: Colors.cyanAccent),
-          //                     ),
-          //                     child: TextField(
-          //                       decoration: InputDecoration(
-          //                           labelText: "Carat",
-          //                           border: OutlineInputBorder(
-          //                               borderRadius:
-          //                                   BorderRadius.circular(10))),
-          //                     ),
-          //                   ),
-          //                 ],
-          //               ),
-          //             ],
-          //           ),
-          //         ),
-          //       ),
-          //       SizedBox(
-          //         height: 20,
-          //       ),
-          //       Container(
-          //         height: 40,
-          //         width: 80,
-          //         alignment: Alignment.center,
-          //         margin: EdgeInsets.symmetric(horizontal: 100),
-          //         decoration: BoxDecoration(
-          //           boxShadow: [
-          //             BoxShadow(
-          //               color: Colors.grey.withOpacity(0.5),
-          //               spreadRadius: 5,
-          //               blurRadius: 7,
-          //               offset: Offset(0, 3),
-          //             )
-          //           ],
-          //           borderRadius: BorderRadius.circular(10),
-          //           color: Colors.white,
-          //         ),
-          //         child: Text(
-          //           "Done",
-          //           style: TextStyle(
-          //               fontFamily: "itim", fontSize: 10, color: Colors.black),
-          //         ),
-          //       ),
-          //     ]),
-          //   ),
-          // ),
-          // Card(
-          //   child: Container(
-          //     height: 350,
-          //     width: 300,
-          //     decoration: BoxDecoration(
-          //       borderRadius: BorderRadius.circular(10),
-          //       color: Color(0xffF7FAFF),
-          //     ),
-          //     child: Column(children: [
-          //       SizedBox(
-          //         height: 10,
-          //       ),
-          //       Container(
-          //         height: 200,
-          //         width: 200,
-          //         decoration: BoxDecoration(
-          //           borderRadius: BorderRadius.circular(10),
-          //           color: Color(0xffF7FAFF),
-          //         ),
-          //         child: Image.asset("assets/GOLD-KIDS-CHARMS.jpg",
-          //             fit: BoxFit.fitHeight),
-          //       ),
-          //       SizedBox(
-          //         height: 20,
-          //       ),
-          //       Center(
-          //         child: Container(
-          //           width: 400,
-          //           child: Column(
-          //             children: [
-          //               Row(
-          //                 // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          //                 children: [
-          //                   Container(
-          //                     height: 40,
-          //                     width: 60,
-          //                     margin: EdgeInsets.symmetric(horizontal: 20),
-          //                     alignment: Alignment.center,
-          //                     child: TextField(
-          //                       decoration: InputDecoration(
-          //                           labelText: "Wight",
-          //                           border: OutlineInputBorder(
-          //                               borderRadius:
-          //                                   BorderRadius.circular(10))),
-          //                     ),
-          //                   ),
-          //                   SizedBox(
-          //                     height: 5,
-          //                   ),
-          //                   Container(
-          //                     height: 40,
-          //                     width: 110,
-          //                     margin: EdgeInsets.symmetric(horizontal: 20),
-          //                     alignment: Alignment.center,
-          //                     child: TextField(
-          //                       decoration: InputDecoration(
-          //                           labelText: "Money",
-          //                           border: OutlineInputBorder(
-          //                               borderRadius:
-          //                                   BorderRadius.circular(10))),
-          //                     ),
-          //                   ),
-          //                   SizedBox(
-          //                     height: 5,
-          //                   ),
-          //                   Container(
-          //                     height: 40,
-          //                     width: 60,
-          //                     margin: EdgeInsets.symmetric(horizontal: 20),
-          //                     alignment: Alignment.center,
-          //                     decoration: BoxDecoration(
-          //                       borderRadius: BorderRadius.circular(10),
-          //                       // color: Colors.cyanAccent),
-          //                     ),
-          //                     child: TextField(
-          //                       decoration: InputDecoration(
-          //                           labelText: "Carat",
-          //                           border: OutlineInputBorder(
-          //                               borderRadius:
-          //                                   BorderRadius.circular(10))),
-          //                     ),
-          //                   ),
-          //                 ],
-          //               ),
-          //             ],
-          //           ),
-          //         ),
-          //       ),
-          //       SizedBox(
-          //         height: 20,
-          //       ),
-          //       Container(
-          //         height: 40,
-          //         width: 80,
-          //         alignment: Alignment.center,
-          //         margin: EdgeInsets.symmetric(horizontal: 100),
-          //         decoration: BoxDecoration(
-          //           boxShadow: [
-          //             BoxShadow(
-          //               color: Colors.grey.withOpacity(0.5),
-          //               spreadRadius: 5,
-          //               blurRadius: 7,
-          //               offset: Offset(0, 3),
-          //             )
-          //           ],
-          //           borderRadius: BorderRadius.circular(10),
-          //           color: Colors.white,
-          //         ),
-          //         child: Text(
-          //           "Done",
-          //           style: TextStyle(
-          //               fontFamily: "itim", fontSize: 10, color: Colors.black),
-          //         ),
-          //       ),
-          //     ]),
-          //   ),
-          // ),
-          // Card(
-          //   child: Container(
-          //     height: 350,
-          //     width: 300,
-          //     decoration: BoxDecoration(
-          //       borderRadius: BorderRadius.circular(10),
-          //       color: Color(0xffF7FAFF),
-          //     ),
-          //     child: Column(children: [
-          //       SizedBox(
-          //         height: 10,
-          //       ),
-          //       Container(
-          //         height: 200,
-          //         width: 200,
-          //         decoration: BoxDecoration(
-          //           borderRadius: BorderRadius.circular(10),
-          //           color: Color(0xffF7FAFF),
-          //         ),
-          //         child: Image.asset("assets/GOLD-KIDS-CHARMS.jpg",
-          //             fit: BoxFit.fitHeight),
-          //       ),
-          //       SizedBox(
-          //         height: 20,
-          //       ),
-          //       Center(
-          //         child: Container(
-          //           width: 400,
-          //           child: Column(
-          //             children: [
-          //               Row(
-          //                 // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          //                 children: [
-          //                   Container(
-          //                     height: 40,
-          //                     width: 60,
-          //                     margin: EdgeInsets.symmetric(horizontal: 20),
-          //                     alignment: Alignment.center,
-          //                     child: TextField(
-          //                       decoration: InputDecoration(
-          //                           labelText: "Wight",
-          //                           border: OutlineInputBorder(
-          //                               borderRadius:
-          //                                   BorderRadius.circular(10))),
-          //                     ),
-          //                   ),
-          //                   SizedBox(
-          //                     height: 5,
-          //                   ),
-          //                   Container(
-          //                     height: 40,
-          //                     width: 110,
-          //                     margin: EdgeInsets.symmetric(horizontal: 20),
-          //                     alignment: Alignment.center,
-          //                     child: TextField(
-          //                       decoration: InputDecoration(
-          //                           labelText: "Money",
-          //                           border: OutlineInputBorder(
-          //                               borderRadius:
-          //                                   BorderRadius.circular(10))),
-          //                     ),
-          //                   ),
-          //                   SizedBox(
-          //                     height: 5,
-          //                   ),
-          //                   Container(
-          //                     height: 40,
-          //                     width: 60,
-          //                     margin: EdgeInsets.symmetric(horizontal: 20),
-          //                     alignment: Alignment.center,
-          //                     decoration: BoxDecoration(
-          //                       borderRadius: BorderRadius.circular(10),
-          //                       // color: Colors.cyanAccent),
-          //                     ),
-          //                     child: TextField(
-          //                       decoration: InputDecoration(
-          //                           labelText: "Carat",
-          //                           border: OutlineInputBorder(
-          //                               borderRadius:
-          //                                   BorderRadius.circular(10))),
-          //                     ),
-          //                   ),
-          //                 ],
-          //               ),
-          //             ],
-          //           ),
-          //         ),
-          //       ),
-          //       SizedBox(
-          //         height: 20,
-          //       ),
-          //       Container(
-          //         height: 40,
-          //         width: 80,
-          //         alignment: Alignment.center,
-          //         margin: EdgeInsets.symmetric(horizontal: 100),
-          //         decoration: BoxDecoration(
-          //           boxShadow: [
-          //             BoxShadow(
-          //               color: Colors.grey.withOpacity(0.5),
-          //               spreadRadius: 5,
-          //               blurRadius: 7,
-          //               offset: Offset(0, 3),
-          //             )
-          //           ],
-          //           borderRadius: BorderRadius.circular(10),
-          //           color: Colors.white,
-          //         ),
-          //         child: Text(
-          //           "Done",
-          //           style: TextStyle(
-          //               fontFamily: "itim", fontSize: 10, color: Colors.black),
-          //         ),
-          //       ),
-          //     ]),
-          //   ),
-          // ),
-          // Card(
-          //   child: Container(
-          //     height: 350,
-          //     width: 300,
-          //     decoration: BoxDecoration(
-          //       borderRadius: BorderRadius.circular(10),
-          //       color: Color(0xffF7FAFF),
-          //     ),
-          //     child: Column(children: [
-          //       SizedBox(
-          //         height: 10,
-          //       ),
-          //       Container(
-          //         height: 200,
-          //         width: 200,
-          //         decoration: BoxDecoration(
-          //           borderRadius: BorderRadius.circular(10),
-          //           color: Color(0xffF7FAFF),
-          //         ),
-          //         child: Image.asset("assets/GOLD-KIDS-CHARMS.jpg",
-          //             fit: BoxFit.fitHeight),
-          //       ),
-          //       SizedBox(
-          //         height: 20,
-          //       ),
-          //       Center(
-          //         child: Container(
-          //           width: 400,
-          //           child: Column(
-          //             children: [
-          //               Row(
-          //                 // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          //                 children: [
-          //                   Container(
-          //                     height: 40,
-          //                     width: 60,
-          //                     margin: EdgeInsets.symmetric(horizontal: 20),
-          //                     alignment: Alignment.center,
-          //                     child: TextField(
-          //                       decoration: InputDecoration(
-          //                           labelText: "Wight",
-          //                           border: OutlineInputBorder(
-          //                               borderRadius:
-          //                                   BorderRadius.circular(10))),
-          //                     ),
-          //                   ),
-          //                   SizedBox(
-          //                     height: 5,
-          //                   ),
-          //                   Container(
-          //                     height: 40,
-          //                     width: 110,
-          //                     margin: EdgeInsets.symmetric(horizontal: 20),
-          //                     alignment: Alignment.center,
-          //                     child: TextField(
-          //                       decoration: InputDecoration(
-          //                           labelText: "Money",
-          //                           border: OutlineInputBorder(
-          //                               borderRadius:
-          //                                   BorderRadius.circular(10))),
-          //                     ),
-          //                   ),
-          //                   SizedBox(
-          //                     height: 5,
-          //                   ),
-          //                   Container(
-          //                     height: 40,
-          //                     width: 60,
-          //                     margin: EdgeInsets.symmetric(horizontal: 20),
-          //                     alignment: Alignment.center,
-          //                     decoration: BoxDecoration(
-          //                       borderRadius: BorderRadius.circular(10),
-          //                       // color: Colors.cyanAccent),
-          //                     ),
-          //                     child: TextField(
-          //                       decoration: InputDecoration(
-          //                           labelText: "Carat",
-          //                           border: OutlineInputBorder(
-          //                               borderRadius:
-          //                                   BorderRadius.circular(10))),
-          //                     ),
-          //                   ),
-          //                 ],
-          //               ),
-          //             ],
-          //           ),
-          //         ),
-          //       ),
-          //       SizedBox(
-          //         height: 20,
-          //       ),
-          //       Container(
-          //         height: 40,
-          //         width: 80,
-          //         alignment: Alignment.center,
-          //         margin: EdgeInsets.symmetric(horizontal: 100),
-          //         decoration: BoxDecoration(
-          //           boxShadow: [
-          //             BoxShadow(
-          //               color: Colors.grey.withOpacity(0.5),
-          //               spreadRadius: 5,
-          //               blurRadius: 7,
-          //               offset: Offset(0, 3),
-          //             )
-          //           ],
-          //           borderRadius: BorderRadius.circular(10),
-          //           color: Colors.white,
-          //         ),
-          //         child: Text(
-          //           "Done",
-          //           style: TextStyle(
-          //               fontFamily: "itim", fontSize: 10, color: Colors.black),
-          //         ),
-          //       ),
-          //     ]),
-          //   ),
-          // ),
-          // Card(
-          //   child: Container(
-          //     height: 350,
-          //     width: 300,
-          //     decoration: BoxDecoration(
-          //       borderRadius: BorderRadius.circular(10),
-          //       color: Color(0xffF7FAFF),
-          //     ),
-          //     child: Column(children: [
-          //       SizedBox(
-          //         height: 10,
-          //       ),
-          //       Container(
-          //         height: 200,
-          //         width: 200,
-          //         decoration: BoxDecoration(
-          //           borderRadius: BorderRadius.circular(10),
-          //           color: Color(0xffF7FAFF),
-          //         ),
-          //         child: Image.asset("assets/GOLD-KIDS-CHARMS.jpg",
-          //             fit: BoxFit.fitHeight),
-          //       ),
-          //       SizedBox(
-          //         height: 20,
-          //       ),
-          //       Center(
-          //         child: Container(
-          //           width: 400,
-          //           child: Column(
-          //             children: [
-          //               Row(
-          //                 // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          //                 children: [
-          //                   Container(
-          //                     height: 40,
-          //                     width: 60,
-          //                     margin: EdgeInsets.symmetric(horizontal: 20),
-          //                     alignment: Alignment.center,
-          //                     child: TextField(
-          //                       decoration: InputDecoration(
-          //                           labelText: "Wight",
-          //                           border: OutlineInputBorder(
-          //                               borderRadius:
-          //                                   BorderRadius.circular(10))),
-          //                     ),
-          //                   ),
-          //                   SizedBox(
-          //                     height: 5,
-          //                   ),
-          //                   Container(
-          //                     height: 40,
-          //                     width: 110,
-          //                     margin: EdgeInsets.symmetric(horizontal: 20),
-          //                     alignment: Alignment.center,
-          //                     child: TextField(
-          //                       decoration: InputDecoration(
-          //                           labelText: "Money",
-          //                           border: OutlineInputBorder(
-          //                               borderRadius:
-          //                                   BorderRadius.circular(10))),
-          //                     ),
-          //                   ),
-          //                   SizedBox(
-          //                     height: 5,
-          //                   ),
-          //                   Container(
-          //                     height: 40,
-          //                     width: 60,
-          //                     margin: EdgeInsets.symmetric(horizontal: 20),
-          //                     alignment: Alignment.center,
-          //                     decoration: BoxDecoration(
-          //                       borderRadius: BorderRadius.circular(10),
-          //                       // color: Colors.cyanAccent),
-          //                     ),
-          //                     child: TextField(
-          //                       decoration: InputDecoration(
-          //                           labelText: "Carat",
-          //                           border: OutlineInputBorder(
-          //                               borderRadius:
-          //                                   BorderRadius.circular(10))),
-          //                     ),
-          //                   ),
-          //                 ],
-          //               ),
-          //             ],
-          //           ),
-          //         ),
-          //       ),
-          //       SizedBox(
-          //         height: 20,
-          //       ),
-          //       Container(
-          //         height: 40,
-          //         width: 80,
-          //         alignment: Alignment.center,
-          //         margin: EdgeInsets.symmetric(horizontal: 100),
-          //         decoration: BoxDecoration(
-          //           boxShadow: [
-          //             BoxShadow(
-          //               color: Colors.grey.withOpacity(0.5),
-          //               spreadRadius: 5,
-          //               blurRadius: 7,
-          //               offset: Offset(0, 3),
-          //             )
-          //           ],
-          //           borderRadius: BorderRadius.circular(10),
-          //           color: Colors.white,
-          //         ),
-          //         child: Text(
-          //           "Done",
-          //           style: TextStyle(
-          //               fontFamily: "itim", fontSize: 10, color: Colors.black),
-          //         ),
-          //       ),
-          //     ]),
-          //   ),
-          // )
         ],
       ),
     ]));

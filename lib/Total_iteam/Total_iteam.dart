@@ -16,7 +16,7 @@ class _Total_iteamState extends State<Total_iteam> {
         backgroundColor: Colors.white,
         body: ListView(children: [
           SizedBox(
-            height: 20,
+            height: 100,
           ),
           Card(
               child: Container(
@@ -63,7 +63,7 @@ class _Total_iteamState extends State<Total_iteam> {
                                         color: Colors.black),
                                   )),
                                   SizedBox(
-                                    height: 30,
+                                    height: 40,
                                   ),
                                   Container(
                                     child: Column(
@@ -75,7 +75,7 @@ class _Total_iteamState extends State<Total_iteam> {
                                                     fontFamily: "itim",
                                                     color: Colors.pink))),
                                         SizedBox(
-                                          height: 50,
+                                          height: 40,
                                         ),
                                         Container(
                                             child: Text(
@@ -125,7 +125,7 @@ class _Total_iteamState extends State<Total_iteam> {
                                     color: Colors.black),
                               )),
                               SizedBox(
-                                height: 30,
+                                height: 40,
                               ),
                               Container(
                                 child: Column(
@@ -137,11 +137,11 @@ class _Total_iteamState extends State<Total_iteam> {
                                                 fontFamily: "itim",
                                                 color: Colors.pink))),
                                     SizedBox(
-                                      height: 50,
+                                      height: 40,
                                     ),
                                     Container(
                                         child: Text(
-                                      "Now:56",
+                                      "Now:56ps",
                                       style: TextStyle(
                                           fontSize: 10,
                                           fontFamily: "itim",

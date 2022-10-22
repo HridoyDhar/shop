@@ -36,94 +36,25 @@ class _HomePage2State extends State<HomePage2> {
           SizedBox(
             height: 100,
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Container(
-                alignment: Alignment.center,
-                height: 150,
-                width: 150,
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(90),
-                    color: Colors.blueAccent),
-                child: Text(
-                  "339947.59 Tk",
-                  style: TextStyle(
-                      fontFamily: "itim", fontSize: 25, color: Colors.white),
-                ),
+          Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+            Container(
+              alignment: Alignment.center,
+              height: 150,
+              width: 150,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(90),
+                  color: Colors.blueAccent),
+              child: Text(
+                "339947.59 Tk",
+                style: TextStyle(
+                    fontFamily: "itim", fontSize: 25, color: Colors.white),
               ),
-              SizedBox(
-                width: 20,
-              ),
-              Column(
-                children: [
-                  Row(
-                    children: [
-                      Container(
-                        height: 30,
-                        width: 30,
-                        child: Image.asset("assets/personal.png"),
-                      ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Text(
-                        "344500 ps",
-                        style: TextStyle(
-                            color: Colors.black,
-                            fontFamily: "itim",
-                            fontSize: 20),
-                      ),
-                    ],
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Row(
-                    children: [
-                      Container(
-                        height: 30,
-                        width: 30,
-                        child: Image.asset("assets/dollar-sign.png"),
-                      ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Text(
-                        "344500 ps",
-                        style: TextStyle(
-                            color: Colors.black,
-                            fontFamily: "itim",
-                            fontSize: 20),
-                      ),
-                    ],
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Row(
-                    children: [
-                      Container(
-                        height: 30,
-                        width: 30,
-                        child: Image.asset("assets/exchange.png"),
-                      ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Text(
-                        "344500 ps",
-                        style: TextStyle(
-                            color: Colors.black,
-                            fontFamily: "itim",
-                            fontSize: 20),
-                      ),
-                    ],
-                  ),
-                ],
-              )
-            ],
-          ),
+            ),
+            // SizedBox(
+            //   width: 20,
+            // ),
+            //
+          ]),
           SizedBox(
             height: 50,
           ),

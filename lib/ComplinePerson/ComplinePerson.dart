@@ -12,85 +12,94 @@ class _ComplilnePersonState extends State<ComplilnePerson> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
-      body: ListView(
-        children: [
-          SizedBox(
-            height: 20,
-          ),
-          Container(
-            alignment: Alignment.center,
-            margin: EdgeInsets.symmetric(horizontal: 90),
-            height: 40.h,
-            width: 300.w,
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                border: Border.all(color: Colors.blueAccent)),
-            child: Text(
-              "18-07-22",
-              style: TextStyle(
-                  fontSize: 20, fontFamily: "itim", color: Colors.black),
+        backgroundColor: Colors.white,
+        body: ListView(
+          children: [
+            SizedBox(
+              height: 50,
             ),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          Card(
-            child: Container(
-              alignment: Alignment.center,
+            Container(
+              alignment: Alignment.centerLeft,
               margin: EdgeInsets.symmetric(horizontal: 20),
-              height: 40.h,
-              width: 300.w,
+              height: 20.h,
+              width: 700.w,
               decoration: BoxDecoration(
+                color: Colors.white,
                 borderRadius: BorderRadius.circular(10),
               ),
-              child: Text(
-                "Mr.rahul              ",
-                style: TextStyle(
-                    fontSize: 15, fontFamily: "itim", color: Colors.black),
-              ),
+              child: Text("             Mr.Rahul",
+                  style: TextStyle(
+                      fontSize: 15, fontFamily: "itim", color: Colors.black)),
             ),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          Card(
-            child: Container(
-              alignment: Alignment.center,
+            SizedBox(
+              height: 20,
+            ),
+            Container(
+              alignment: Alignment.centerLeft,
               margin: EdgeInsets.symmetric(horizontal: 20),
-              height: 40.h,
-              width: 300.w,
+              height: 20.h,
+              width: 200.w,
               decoration: BoxDecoration(
+                color: Colors.white,
                 borderRadius: BorderRadius.circular(10),
               ),
-              child: Text(
-                "01783634923",
-                style: TextStyle(
-                    fontSize: 15, fontFamily: "itim", color: Colors.black),
-              ),
+              child: Text("            Mew town area ,Chittagong",
+                  style: TextStyle(
+                      fontSize: 15, fontFamily: "itim", color: Colors.black)),
             ),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          Card(
-            child: Container(
-              alignment: Alignment.center,
+            SizedBox(
+              height: 20,
+            ),
+            Container(
+              alignment: Alignment.centerLeft,
               margin: EdgeInsets.symmetric(horizontal: 20),
-              height: 40.h,
-              width: 300.w,
+              height: 20.h,
+              width: 200.w,
               decoration: BoxDecoration(
+                color: Colors.white,
                 borderRadius: BorderRadius.circular(10),
               ),
-              child: Text(
-                "New market,Dhaka",
-                style: TextStyle(
-                    fontSize: 15, fontFamily: "itim", color: Colors.black),
-              ),
+              child: Text("            013743995723",
+                  style: TextStyle(
+                      fontSize: 15, fontFamily: "itim", color: Colors.black)),
             ),
-          ),
-        ],
-      ),
-    );
+            SizedBox(
+              height: 10,
+            ),
+            DataTable(
+              columns: [
+                DataColumn(label: Text('Date')),
+                DataColumn(label: Text('Weigth')),
+                DataColumn(label: Text('Money')),
+              ],
+              rows: [
+                DataRow(cells: [
+                  DataCell(Text('01-02-2000')),
+                  DataCell(Text('2.5b')),
+                  DataCell(Text('76000Tk')),
+                ])
+              ],
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Container(
+              height: 200,
+              width: 200,
+              child: Image.asset("assets/necklace (1).png"),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Container(
+              alignment: Alignment.bottomLeft,
+              child: Text(
+                "It's not perfect widght.You need to change this producet ",
+                style: TextStyle(
+                    fontFamily: "Inter", fontSize: 20, color: Colors.red),
+              ),
+            )
+          ],
+        ));
   }
 }
