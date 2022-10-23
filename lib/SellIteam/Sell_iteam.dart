@@ -17,242 +17,182 @@ class _Sell_iteamState extends State<Sell_iteam> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: ListView(children: [
-      SizedBox(
-        height: 20,
-      ),
-      Container(
-        height: 40,
-        margin: EdgeInsets.symmetric(horizontal: 20),
-        width: 300,
-        child: TextField(
-          decoration: InputDecoration(
-              hintText: "Search",
-              prefixIcon: Icon(
-                Icons.search,
-                color: Colors.blue,
-              ),
-              border:
-                  OutlineInputBorder(borderRadius: BorderRadius.circular(10))),
+        body: ListView(
+      children: [
+        SizedBox(
+          height: 20,
         ),
-      ),
-      SizedBox(
-        height: 20,
-      ),
-      Column(
-        children: [
-          Container(
-            alignment: Alignment.bottomLeft,
-            margin: EdgeInsets.symmetric(horizontal: 20),
-            width: 300.0,
-            height: 200.0,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                  image: AssetImage(
-                      "assets/Gold-antique-kundan-earrings-manubhai.jpg"),
-                  fit: BoxFit.cover),
-            ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  "Price:2800Tk",
-                  style: TextStyle(
-                      color: Colors.yellowAccent.withOpacity(0.8),
-                      fontSize: 20.0,
-                      height: 1.4,
-                      fontWeight: FontWeight.w600),
+        Container(
+          height: 40,
+          margin: EdgeInsets.symmetric(horizontal: 20),
+          width: 300,
+          child: TextField(
+            decoration: InputDecoration(
+                hintText: "Search",
+                prefixIcon: Icon(
+                  Icons.search,
+                  color: Colors.blue,
                 ),
-                SizedBox(
-                  width: 10,
-                ),
-                Text(
-                  "Width:2.5b",
-                  style: TextStyle(
-                      color: Colors.yellowAccent.withOpacity(0.8),
-                      fontSize: 20.0,
-                      height: 1.4,
-                      fontWeight: FontWeight.w600),
-                ),
-              ],
-            ),
+                border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(10))),
           ),
-          SizedBox(
-            height: 10,
+        ),
+        SizedBox(
+          height: 20,
+        ),
+        Container(
+          alignment: Alignment.bottomLeft,
+          margin: EdgeInsets.symmetric(horizontal: 20),
+          width: 300.0,
+          height: 200.0,
+          decoration: BoxDecoration(
+            image: DecorationImage(
+                image: AssetImage("assets/1489-d60e20.jpg"), fit: BoxFit.cover),
           ),
-          Container(
-              alignment: Alignment.center,
-              height: 20,
-              width: 100,
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              decoration:
-                  BoxDecoration(border: Border.all(color: Colors.black)),
-              child: Text(
-                "Change",
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(
+                "Width:2.5b",
                 style: TextStyle(
-                    fontFamily: "itim", fontSize: 10, color: Colors.black),
-              )),
-          SizedBox(
+                    color: Colors.yellowAccent.withOpacity(0.8),
+                    fontSize: 20.0,
+                    height: 1.4,
+                    fontWeight: FontWeight.w600),
+              ),
+              SizedBox(
+                width: 90,
+              ),
+              Text(
+                "Width:2.5b",
+                style: TextStyle(
+                    color: Colors.yellowAccent.withOpacity(0.8),
+                    fontSize: 20.0,
+                    height: 1.4,
+                    fontWeight: FontWeight.w600),
+              )
+            ],
+          ),
+        ),
+        SizedBox(
+          height: 10,
+        ),
+        Container(
+            alignment: Alignment.center,
             height: 20,
-          ),
-          Container(
-            alignment: Alignment.bottomLeft,
+            width: 100,
             margin: EdgeInsets.symmetric(horizontal: 20),
-            width: 300.0,
-            height: 200.0,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                  image: AssetImage("assets/1489-d60e20.jpg"),
-                  fit: BoxFit.cover),
-            ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  "Width:2.5b",
-                  style: TextStyle(
-                      color: Colors.yellowAccent.withOpacity(0.8),
-                      fontSize: 20.0,
-                      height: 1.4,
-                      fontWeight: FontWeight.w600),
-                ),
-                SizedBox(
-                  width: 90,
-                ),
-                Text(
-                  "Width:2.5b",
-                  style: TextStyle(
-                      color: Colors.yellowAccent.withOpacity(0.8),
-                      fontSize: 20.0,
-                      height: 1.4,
-                      fontWeight: FontWeight.w600),
-                )
-              ],
-            ),
+            decoration: BoxDecoration(border: Border.all(color: Colors.black)),
+            child: Text(
+              "Change",
+              style: TextStyle(
+                  fontFamily: "itim", fontSize: 10, color: Colors.black),
+            )),
+        SizedBox(
+          height: 20,
+        ),
+        Container(
+          alignment: Alignment.bottomLeft,
+          margin: EdgeInsets.symmetric(horizontal: 20),
+          width: 300.0,
+          height: 200.0,
+          decoration: BoxDecoration(
+            image: DecorationImage(
+                image: AssetImage("assets/Nekk.jpg"), fit: BoxFit.cover),
           ),
-          SizedBox(
-            height: 10,
-          ),
-          Container(
-              alignment: Alignment.center,
-              height: 20,
-              width: 100,
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              decoration:
-                  BoxDecoration(border: Border.all(color: Colors.black)),
-              child: Text(
-                "Change",
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(
+                "Width:2.5b",
                 style: TextStyle(
-                    fontFamily: "itim", fontSize: 10, color: Colors.black),
-              )),
-          SizedBox(
+                    color: Colors.yellowAccent.withOpacity(0.8),
+                    fontSize: 20.0,
+                    height: 1.4,
+                    fontWeight: FontWeight.w600),
+              ),
+              SizedBox(
+                width: 90,
+              ),
+              Text(
+                "Width:2.5b",
+                style: TextStyle(
+                    color: Colors.yellowAccent.withOpacity(0.8),
+                    fontSize: 20.0,
+                    height: 1.4,
+                    fontWeight: FontWeight.w600),
+              )
+            ],
+          ),
+        ),
+        SizedBox(
+          height: 10,
+        ),
+        Container(
+            alignment: Alignment.center,
             height: 20,
-          ),
-          Container(
-            alignment: Alignment.bottomLeft,
+            width: 100,
             margin: EdgeInsets.symmetric(horizontal: 20),
-            width: 300.0,
-            height: 200.0,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                  image: AssetImage("assets/Nekk.jpg"), fit: BoxFit.cover),
-            ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  "Width:2.5b",
-                  style: TextStyle(
-                      color: Colors.yellowAccent.withOpacity(0.8),
-                      fontSize: 20.0,
-                      height: 1.4,
-                      fontWeight: FontWeight.w600),
-                ),
-                SizedBox(
-                  width: 90,
-                ),
-                Text(
-                  "Width:2.5b",
-                  style: TextStyle(
-                      color: Colors.yellowAccent.withOpacity(0.8),
-                      fontSize: 20.0,
-                      height: 1.4,
-                      fontWeight: FontWeight.w600),
-                )
-              ],
-            ),
+            decoration: BoxDecoration(border: Border.all(color: Colors.black)),
+            child: Text(
+              "Change",
+              style: TextStyle(
+                  fontFamily: "itim", fontSize: 10, color: Colors.black),
+            )),
+        SizedBox(
+          height: 20,
+        ),
+        Container(
+          alignment: Alignment.bottomLeft,
+          margin: EdgeInsets.symmetric(horizontal: 20),
+          width: 300.0,
+          height: 200.0,
+          decoration: BoxDecoration(
+            image: DecorationImage(
+                image: AssetImage(
+                    "assets/Latest-model-gold-bridal-necklace-naj.jpg"),
+                fit: BoxFit.cover),
           ),
-          SizedBox(
-            height: 10,
-          ),
-          Container(
-              alignment: Alignment.center,
-              height: 20,
-              width: 100,
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              decoration:
-                  BoxDecoration(border: Border.all(color: Colors.black)),
-              child: Text(
-                "Change",
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(
+                "Width:2.5b",
                 style: TextStyle(
-                    fontFamily: "itim", fontSize: 10, color: Colors.black),
-              )),
-          SizedBox(
+                    color: Colors.yellowAccent.withOpacity(0.8),
+                    fontSize: 20.0,
+                    height: 1.4,
+                    fontWeight: FontWeight.w600),
+              ),
+              SizedBox(
+                width: 90,
+              ),
+              Text(
+                "Width:2.5b",
+                style: TextStyle(
+                    color: Colors.yellowAccent.withOpacity(0.8),
+                    fontSize: 20.0,
+                    height: 1.4,
+                    fontWeight: FontWeight.w600),
+              ),
+            ],
+          ),
+        ),
+        SizedBox(
+          height: 10,
+        ),
+        Container(
+            alignment: Alignment.center,
             height: 20,
-          ),
-          Container(
-            alignment: Alignment.bottomLeft,
+            width: 100,
             margin: EdgeInsets.symmetric(horizontal: 20),
-            width: 300.0,
-            height: 200.0,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                  image: AssetImage(
-                      "assets/Latest-model-gold-bridal-necklace-naj.jpg"),
-                  fit: BoxFit.cover),
-            ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  "Width:2.5b",
-                  style: TextStyle(
-                      color: Colors.yellowAccent.withOpacity(0.8),
-                      fontSize: 20.0,
-                      height: 1.4,
-                      fontWeight: FontWeight.w600),
-                ),
-                SizedBox(
-                  width: 90,
-                ),
-                Text(
-                  "Width:2.5b",
-                  style: TextStyle(
-                      color: Colors.yellowAccent.withOpacity(0.8),
-                      fontSize: 20.0,
-                      height: 1.4,
-                      fontWeight: FontWeight.w600),
-                ),
-              ],
-            ),
-          ),
-          SizedBox(
-            height: 10,
-          ),
-          Container(
-              alignment: Alignment.center,
-              height: 20,
-              width: 100,
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              decoration:
-                  BoxDecoration(border: Border.all(color: Colors.black)),
-              child: Text(
-                "Change",
-                style: TextStyle(
-                    fontFamily: "itim", fontSize: 10, color: Colors.black),
-              ))
-        ],
-      )
-    ]));
+            decoration: BoxDecoration(border: Border.all(color: Colors.black)),
+            child: Text(
+              "Change",
+              style: TextStyle(
+                  fontFamily: "itim", fontSize: 10, color: Colors.black),
+            ))
+      ],
+    ));
   }
 }
