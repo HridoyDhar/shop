@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:goldshop/HomePage2.dart';
 
 class NewSell extends StatefulWidget {
   const NewSell({Key? key}) : super(key: key);
@@ -9,6 +10,25 @@ class NewSell extends StatefulWidget {
 }
 
 class _NewSellState extends State<NewSell> {
+  DateTime currentDate = DateTime.now();
+  Future<void> _selectDate(BuildContext context) async {
+    final DateTime? pickedDate = await showDatePicker(
+        context: context,
+        initialDate: currentDate,
+        firstDate: DateTime(1900),
+        lastDate: DateTime(3050));
+    if (pickedDate != null && pickedDate != currentDate)
+      setState(() {
+        currentDate = pickedDate;
+      });
+  }
+
+  final ScrollController _controller = ScrollController();
+  double _scrollOffset = 0;
+
+  // The maximum scroll offset
+  // In other words, this means the user has reached the bottom of the list view
+  double? _maxOffset;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,25 +49,22 @@ class _NewSellState extends State<NewSell> {
           child: Text(
             "Krishna Gold Shop",
             style: TextStyle(
-                fontSize: 20, fontFamily: "itim", color: Colors.black),
+                fontSize: 25, fontFamily: "itim", color: Colors.black),
           ),
         ),
         SizedBox(
           height: 20,
         ),
         Container(
-          margin: EdgeInsets.symmetric(horizontal: 80),
-          alignment: Alignment.center,
-          height: 40.h,
-          width: 300.w,
-          decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(10),
-              border: Border.all(color: Colors.blue)),
-          child: Text(
-            "19-09-34",
-            style: TextStyle(
-                fontSize: 20, fontFamily: "itim", color: Colors.black),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: <Widget>[
+              Text(currentDate.toString()),
+              ElevatedButton(
+                onPressed: () => _selectDate(context),
+                child: Text('Select date'),
+              ),
+            ],
           ),
         ),
         SizedBox(
@@ -512,19 +529,25 @@ class _NewSellState extends State<NewSell> {
         SizedBox(
           height: 20,
         ),
-        Container(
-          height: 40.h,
-          width: 300.w,
-          alignment: Alignment.center,
-          margin: EdgeInsets.symmetric(horizontal: 80),
-          decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(10),
-              border: Border.all(color: Colors.blue)),
-          child: Text(
-            "Print",
-            style: TextStyle(
-                fontSize: 20, fontFamily: "itim", color: Colors.black),
+        InkWell(
+          onTap: () {
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => HomePage2()));
+          },
+          child: Container(
+            height: 40.h,
+            width: 300.w,
+            alignment: Alignment.center,
+            margin: EdgeInsets.symmetric(horizontal: 110),
+            decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10),
+                border: Border.all(color: Colors.blue)),
+            child: Text(
+              "Done",
+              style: TextStyle(
+                  fontSize: 20, fontFamily: "itim", color: Colors.black),
+            ),
           ),
         )
       ]),

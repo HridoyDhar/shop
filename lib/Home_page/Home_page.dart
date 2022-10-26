@@ -165,6 +165,7 @@ class _Home_pageState extends State<Home_page> {
                             // ),
                             Center(
                               child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Container(
                                     padding:

@@ -13,11 +13,45 @@ class New_employee extends StatefulWidget {
 }
 
 class _New_employeeState extends State<New_employee> {
+  DateTime currentDate = DateTime.now();
+  Future<void> _selectDate(BuildContext context) async {
+    final DateTime? pickedDate = await showDatePicker(
+        context: context,
+        initialDate: currentDate,
+        firstDate: DateTime(1900),
+        lastDate: DateTime(3050));
+    if (pickedDate != null && pickedDate != currentDate)
+      setState(() {
+        currentDate = pickedDate;
+      });
+  }
+
+  final ScrollController _controller = ScrollController();
+  double _scrollOffset = 0;
+
+  // The maximum scroll offset
+  // In other words, this means the user has reached the bottom of the list view
+  double? _maxOffset;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView(
         children: [
+          SizedBox(
+            height: 20,
+          ),
+          Container(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
+                Text(currentDate.toString()),
+                ElevatedButton(
+                  onPressed: () => _selectDate(context),
+                  child: Text('Select date'),
+                ),
+              ],
+            ),
+          ),
           SizedBox(
             height: 50,
           ),
@@ -120,35 +154,36 @@ class _New_employeeState extends State<New_employee> {
                         Icon(Icons.card_membership, color: Colors.blue)),
               )),
           SizedBox(
-            height: 50,
+            height: 20,
           ),
           Center(
             child: InkWell(
-              onTap: (() {
+              onTap: () {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => HomePage2()));
-              }),
+              },
               child: Container(
-                height: 40,
-                width: 300,
+                margin: EdgeInsets.symmetric(horizontal: 110.w),
                 alignment: Alignment.center,
-                margin: EdgeInsets.symmetric(horizontal: 100),
+                height: 40.h,
+                width: 300.w,
                 decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.withOpacity(0.5),
-                      spreadRadius: 5,
-                      blurRadius: 7,
-                      offset: Offset(0, 3), // changes position of shadow
-                    ),
-                  ],
-                  borderRadius: BorderRadius.circular(10),
-                  color: Color(0xffF7FAFF),
-                ),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.withOpacity(0.2),
+                        spreadRadius: 3,
+                        blurRadius: 3,
+                        offset: Offset(0, 2), // changes position of shadow
+                      ),
+                    ],
+                    borderRadius: BorderRadius.circular(10.r),
+                    color: Color(0xffF7FAFF)),
                 child: Text(
                   "Done",
                   style: TextStyle(
-                      fontFamily: "itim", fontSize: 20, color: Colors.black),
+                      fontSize: 15.sp,
+                      fontWeight: FontWeight.w700,
+                      color: Colors.black),
                 ),
               ),
             ),

@@ -44,6 +44,7 @@ dependencies:
   fl_chart: ^0.55.1
   horizontal_list: ^0.0.5
   flutter_date_pickers: ^0.4.0
+  search_app_bar_page: ^2.1.5
 
 dev_dependencies:
   flutter_test:

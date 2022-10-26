@@ -29,7 +29,7 @@ class _CustomersellDetailsState extends State<CustomersellDetails> {
             child: Text(
               "Krishna Gold Shop",
               style: TextStyle(
-                  fontFamily: "itim", fontSize: 20, color: Colors.black),
+                  fontFamily: "itim", fontSize: 25, color: Colors.black),
             ),
           ),
           SizedBox(
@@ -46,7 +46,7 @@ class _CustomersellDetailsState extends State<CustomersellDetails> {
                 border: Border.all(color: Colors.blue)),
             child: Text("19-03-23",
                 style: TextStyle(
-                    fontFamily: "itim", fontSize: 15, color: Colors.black)),
+                    fontFamily: "itim", fontSize: 20, color: Colors.black)),
           ),
           SizedBox(
             height: 30,

@@ -10,12 +10,53 @@ class EmployeList extends StatefulWidget {
 }
 
 class _EmployeListState extends State<EmployeList> {
+  DateTime currentDate = DateTime.now();
+  Future<void> _selectDate(BuildContext context) async {
+    final DateTime? pickedDate = await showDatePicker(
+        context: context,
+        initialDate: currentDate,
+        firstDate: DateTime(1900),
+        lastDate: DateTime(3050));
+    if (pickedDate != null && pickedDate != currentDate)
+      setState(() {
+        currentDate = pickedDate;
+      });
+  }
+
+  final ScrollController _controller = ScrollController();
+  double _scrollOffset = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(actions: [
+        IconButton(
+          onPressed: () {
+            showSearch(
+              context: context,
+              delegate: CustomSearchDelegate(),
+            );
+          },
+          icon: const Icon(Icons.search),
+        )
+      ]),
       backgroundColor: Colors.white,
       body: ListView(
         children: [
+          SizedBox(
+            height: 20,
+          ),
+          Container(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
+                Text(currentDate.toString()),
+                ElevatedButton(
+                  onPressed: () => _selectDate(context),
+                  child: Text('Select date'),
+                ),
+              ],
+            ),
+          ),
           SizedBox(
             height: 20.h,
           ),
@@ -772,6 +813,70 @@ class _EmployeListState extends State<EmployeList> {
           ),
         ],
       ),
+    );
+  }
+}
+
+class CustomSearchDelegate extends SearchDelegate {
+  List<String> searchTerms = ['Krishna', '7788463'];
+  @override
+  List<Widget> buildActions(BuildContext context) {
+    return [
+      IconButton(
+        icon: const Icon(Icons.clear),
+        onPressed: (() {
+          query = '';
+        }),
+      ),
+    ];
+  }
+
+  @override
+  Widget buildLeading(BuildContext context) {
+    return IconButton(
+      icon: const Icon(Icons.arrow_back),
+      onPressed: (() {
+        close(context, null);
+        query = '';
+      }),
+    );
+  }
+
+  @override
+  Widget buildResults(BuildContext context) {
+    List<String> matchQuery = [];
+    for (var number in searchTerms) {
+      if (number.toString().contains(query.toString())) {
+        matchQuery.add(number);
+      }
+    }
+    return ListView.builder(
+      itemCount: matchQuery.length,
+      itemBuilder: (context, index) {
+        var result = matchQuery[index];
+        return ListTile(
+          title: Text(result),
+        );
+      },
+    );
+  }
+
+  @override
+  Widget buildSuggestions(BuildContext context) {
+    List<String> matchQuery = [];
+    for (var number in searchTerms) {
+      if (number.toString().contains(query.toString())) {
+        matchQuery.add(number);
+      }
+    }
+    return ListView.builder(
+      itemCount: matchQuery.length,
+      itemBuilder: (context, index) {
+        var result = matchQuery[index];
+        return ListTile(
+          title: Text(result),
+        );
+      },
     );
   }
 }

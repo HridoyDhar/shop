@@ -11,35 +11,56 @@ class IncomeList extends StatefulWidget {
 }
 
 class _IncomeListState extends State<IncomeList> {
+  DateTime currentDate = DateTime.now();
+  Future<void> _selectDate(BuildContext context) async {
+    final DateTime? pickedDate = await showDatePicker(
+        context: context,
+        initialDate: currentDate,
+        firstDate: DateTime(1900),
+        lastDate: DateTime(3050));
+    if (pickedDate != null && pickedDate != currentDate)
+      setState(() {
+        currentDate = pickedDate;
+      });
+  }
+
+  final ScrollController _controller = ScrollController();
+  double _scrollOffset = 0;
+
+  // The maximum scroll offset
+  // In other words, this means the user has reached the bottom of the list view
+  double? _maxOffset;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        actions: [
+          IconButton(
+            onPressed: () {
+              showSearch(
+                context: context,
+                delegate: CustomSearchDelegate(),
+              );
+            },
+            icon: const Icon(Icons.search),
+          )
+        ],
+      ),
       body: ListView(
         children: [
           SizedBox(
             height: 20,
           ),
           Container(
-            margin: EdgeInsets.symmetric(horizontal: 150),
-            alignment: Alignment.center,
-            height: 40.h,
-            width: 200.w,
-            decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.2),
-                    spreadRadius: 3,
-                    blurRadius: 3,
-                    offset: Offset(0, 2), // changes position of shadow
-                  ),
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10),
-                border: Border.all(color: Colors.black)),
-            child: Text(
-              "20-05-35",
-              style: TextStyle(
-                  fontFamily: "itim", fontSize: 15, color: Colors.black),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
+                Text(currentDate.toString()),
+                ElevatedButton(
+                  onPressed: () => _selectDate(context),
+                  child: Text('Select date'),
+                ),
+              ],
             ),
           ),
           SizedBox(
@@ -78,7 +99,101 @@ class _IncomeListState extends State<IncomeList> {
                   ),
                   Container(
                     child: Text(
-                      "4.Income                                                    569000",
+                      "1.Income                                                    569000",
+                      style: TextStyle(
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          SizedBox(
+            height: 20.h,
+          ),
+          InkWell(
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => DayIncome()));
+            },
+            child: Container(
+              margin: EdgeInsets.symmetric(horizontal: 20.w),
+              height: 40.h,
+              width: 200.w,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.2),
+                    spreadRadius: 3,
+                    blurRadius: 3,
+                    offset: Offset(0, 2), // changes position of shadow
+                  ),
+                ],
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10.r),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.money,
+                    color: Colors.greenAccent,
+                  ),
+                  SizedBox(
+                    width: 15.w,
+                  ),
+                  Container(
+                    child: Text(
+                      "2.Income                                                    569000",
+                      style: TextStyle(
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          SizedBox(
+            height: 20.h,
+          ),
+          InkWell(
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => DayIncome()));
+            },
+            child: Container(
+              margin: EdgeInsets.symmetric(horizontal: 20.w),
+              height: 40.h,
+              width: 200.w,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.2),
+                    spreadRadius: 3,
+                    blurRadius: 3,
+                    offset: Offset(0, 2), // changes position of shadow
+                  ),
+                ],
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10.r),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.money,
+                    color: Colors.greenAccent,
+                  ),
+                  SizedBox(
+                    width: 15.w,
+                  ),
+                  Container(
+                    child: Text(
+                      "3.Income                                                    569000",
                       style: TextStyle(
                           fontSize: 15.sp,
                           fontWeight: FontWeight.w700,
@@ -172,101 +287,7 @@ class _IncomeListState extends State<IncomeList> {
                   ),
                   Container(
                     child: Text(
-                      "4.Income                                                    569000",
-                      style: TextStyle(
-                          fontSize: 15.sp,
-                          fontWeight: FontWeight.w700,
-                          color: Colors.black),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          SizedBox(
-            height: 20.h,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => DayIncome()));
-            },
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 20.w),
-              height: 40.h,
-              width: 200.w,
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.2),
-                    spreadRadius: 3,
-                    blurRadius: 3,
-                    offset: Offset(0, 2), // changes position of shadow
-                  ),
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10.r),
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(
-                    Icons.money,
-                    color: Colors.greenAccent,
-                  ),
-                  SizedBox(
-                    width: 15.w,
-                  ),
-                  Container(
-                    child: Text(
-                      "4.Income                                                    569000",
-                      style: TextStyle(
-                          fontSize: 15.sp,
-                          fontWeight: FontWeight.w700,
-                          color: Colors.black),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          SizedBox(
-            height: 20.h,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => DayIncome()));
-            },
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 20.w),
-              height: 40.h,
-              width: 200.w,
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.2),
-                    spreadRadius: 3,
-                    blurRadius: 3,
-                    offset: Offset(0, 2), // changes position of shadow
-                  ),
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10.r),
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(
-                    Icons.money,
-                    color: Colors.greenAccent,
-                  ),
-                  SizedBox(
-                    width: 15.w,
-                  ),
-                  Container(
-                    child: Text(
-                      "4.Income                                                    569000",
+                      "5.Income                                                    569000",
                       style: TextStyle(
                           fontSize: 15.sp,
                           fontWeight: FontWeight.w700,
@@ -313,7 +334,7 @@ class _IncomeListState extends State<IncomeList> {
                   ),
                   Container(
                     child: Text(
-                      "4.Income                                                    569000",
+                      "6.Income                                                    569000",
                       style: TextStyle(
                           fontSize: 15.sp,
                           fontWeight: FontWeight.w700,
@@ -360,7 +381,7 @@ class _IncomeListState extends State<IncomeList> {
                   ),
                   Container(
                     child: Text(
-                      "4.Income                                                    569000",
+                      "7.Income                                                    569000",
                       style: TextStyle(
                           fontSize: 15.sp,
                           fontWeight: FontWeight.w700,
@@ -407,7 +428,7 @@ class _IncomeListState extends State<IncomeList> {
                   ),
                   Container(
                     child: Text(
-                      "4.Income                                                    569000",
+                      "8.Income                                                    569000",
                       style: TextStyle(
                           fontSize: 15.sp,
                           fontWeight: FontWeight.w700,
@@ -454,7 +475,7 @@ class _IncomeListState extends State<IncomeList> {
                   ),
                   Container(
                     child: Text(
-                      "4.Income                                                    569000",
+                      "9.Income                                                    569000",
                       style: TextStyle(
                           fontSize: 15.sp,
                           fontWeight: FontWeight.w700,
@@ -501,7 +522,7 @@ class _IncomeListState extends State<IncomeList> {
                     ),
                     Container(
                       child: Text(
-                        "4.Income                                                    569000",
+                        "10.Income                                                    569000",
                         style: TextStyle(
                             fontSize: 15.sp,
                             fontWeight: FontWeight.w700,
@@ -515,6 +536,70 @@ class _IncomeListState extends State<IncomeList> {
           ),
         ],
       ),
+    );
+  }
+}
+
+class CustomSearchDelegate extends SearchDelegate {
+  List<String> searchTerms = ['Krishna', '7788463'];
+  @override
+  List<Widget> buildActions(BuildContext context) {
+    return [
+      IconButton(
+        icon: const Icon(Icons.clear),
+        onPressed: (() {
+          query = '';
+        }),
+      ),
+    ];
+  }
+
+  @override
+  Widget buildLeading(BuildContext context) {
+    return IconButton(
+      icon: const Icon(Icons.arrow_back),
+      onPressed: (() {
+        close(context, null);
+        query = '';
+      }),
+    );
+  }
+
+  @override
+  Widget buildResults(BuildContext context) {
+    List<String> matchQuery = [];
+    for (var number in searchTerms) {
+      if (number.toString().contains(query.toString())) {
+        matchQuery.add(number);
+      }
+    }
+    return ListView.builder(
+      itemCount: matchQuery.length,
+      itemBuilder: (context, index) {
+        var result = matchQuery[index];
+        return ListTile(
+          title: Text(result),
+        );
+      },
+    );
+  }
+
+  @override
+  Widget buildSuggestions(BuildContext context) {
+    List<String> matchQuery = [];
+    for (var number in searchTerms) {
+      if (number.toString().contains(query.toString())) {
+        matchQuery.add(number);
+      }
+    }
+    return ListView.builder(
+      itemCount: matchQuery.length,
+      itemBuilder: (context, index) {
+        var result = matchQuery[index];
+        return ListTile(
+          title: Text(result),
+        );
+      },
     );
   }
 }

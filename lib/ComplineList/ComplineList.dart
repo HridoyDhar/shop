@@ -10,9 +10,39 @@ class CompineList extends StatefulWidget {
 }
 
 class _CompineListState extends State<CompineList> {
+  DateTime currentDate = DateTime.now();
+  Future<void> _selectDate(BuildContext context) async {
+    final DateTime? pickedDate = await showDatePicker(
+        context: context,
+        initialDate: currentDate,
+        firstDate: DateTime(1900),
+        lastDate: DateTime(3050));
+    if (pickedDate != null && pickedDate != currentDate)
+      setState(() {
+        currentDate = pickedDate;
+      });
+  }
+
+  final ScrollController _controller = ScrollController();
+  double _scrollOffset = 0;
+
+  // The maximum scroll offset
+  // In other words, this means the user has reached the bottom of the list view
+  double? _maxOffset;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(actions: [
+        IconButton(
+          onPressed: () {
+            showSearch(
+              context: context,
+              delegate: CustomSearchDelegate(),
+            );
+          },
+          icon: const Icon(Icons.search),
+        )
+      ]),
       backgroundColor: Colors.white,
       body: ListView(
         children: [
@@ -31,17 +61,15 @@ class _CompineListState extends State<CompineList> {
             height: 20,
           ),
           Container(
-            alignment: Alignment.center,
-            margin: EdgeInsets.symmetric(horizontal: 90),
-            height: 40.h,
-            width: 300.w,
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                border: Border.all(color: Colors.blue)),
-            child: Text(
-              "18-07-22",
-              style: TextStyle(
-                  fontSize: 20, fontFamily: "itim", color: Colors.black),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
+                Text(currentDate.toString()),
+                ElevatedButton(
+                  onPressed: () => _selectDate(context),
+                  child: Text('Select date'),
+                ),
+              ],
             ),
           ),
           SizedBox(
@@ -798,6 +826,70 @@ class _CompineListState extends State<CompineList> {
           ),
         ],
       ),
+    );
+  }
+}
+
+class CustomSearchDelegate extends SearchDelegate {
+  List<String> searchTerms = ['Krishna', '7788463'];
+  @override
+  List<Widget> buildActions(BuildContext context) {
+    return [
+      IconButton(
+        icon: const Icon(Icons.clear),
+        onPressed: (() {
+          query = '';
+        }),
+      ),
+    ];
+  }
+
+  @override
+  Widget buildLeading(BuildContext context) {
+    return IconButton(
+      icon: const Icon(Icons.arrow_back),
+      onPressed: (() {
+        close(context, null);
+        query = '';
+      }),
+    );
+  }
+
+  @override
+  Widget buildResults(BuildContext context) {
+    List<String> matchQuery = [];
+    for (var number in searchTerms) {
+      if (number.toString().contains(query.toString())) {
+        matchQuery.add(number);
+      }
+    }
+    return ListView.builder(
+      itemCount: matchQuery.length,
+      itemBuilder: (context, index) {
+        var result = matchQuery[index];
+        return ListTile(
+          title: Text(result),
+        );
+      },
+    );
+  }
+
+  @override
+  Widget buildSuggestions(BuildContext context) {
+    List<String> matchQuery = [];
+    for (var number in searchTerms) {
+      if (number.toString().contains(query.toString())) {
+        matchQuery.add(number);
+      }
+    }
+    return ListView.builder(
+      itemCount: matchQuery.length,
+      itemBuilder: (context, index) {
+        var result = matchQuery[index];
+        return ListTile(
+          title: Text(result),
+        );
+      },
     );
   }
 }

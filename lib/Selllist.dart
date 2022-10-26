@@ -33,6 +33,17 @@ class _SelllistState extends State<Selllist> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        appBar: AppBar(actions: [
+          IconButton(
+            onPressed: () {
+              showSearch(
+                context: context,
+                delegate: CustomSearchDelegate(),
+              );
+            },
+            icon: const Icon(Icons.search),
+          )
+        ]),
         backgroundColor: Colors.white,
         body: ListView(
           children: [
@@ -131,7 +142,105 @@ class _SelllistState extends State<Selllist> {
                     ),
                     Container(
                       child: Text(
-                        "4.Mr                                                          Rahul",
+                        "1.Mr                                                          Rahul",
+                        style: TextStyle(
+                            fontSize: 15.sp,
+                            fontWeight: FontWeight.w700,
+                            color: Colors.black),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 20.h,
+            ),
+            InkWell(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => CustomersellDetails()));
+              },
+              child: Container(
+                margin: EdgeInsets.symmetric(horizontal: 20.w),
+                height: 40.h,
+                width: 300.w,
+                decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey.withOpacity(0.2),
+                      spreadRadius: 3,
+                      blurRadius: 3,
+                      offset: Offset(0, 2), // changes position of shadow
+                    ),
+                  ],
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(10.r),
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      Icons.person,
+                      color: Colors.greenAccent,
+                    ),
+                    SizedBox(
+                      width: 15.w,
+                    ),
+                    Container(
+                      child: Text(
+                        "2.Mr                                                          Rahul",
+                        style: TextStyle(
+                            fontSize: 15.sp,
+                            fontWeight: FontWeight.w700,
+                            color: Colors.black),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 20.h,
+            ),
+            InkWell(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => CustomersellDetails()));
+              },
+              child: Container(
+                margin: EdgeInsets.symmetric(horizontal: 20.w),
+                height: 40.h,
+                width: 300.w,
+                decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey.withOpacity(0.2),
+                      spreadRadius: 3,
+                      blurRadius: 3,
+                      offset: Offset(0, 2), // changes position of shadow
+                    ),
+                  ],
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(10.r),
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      Icons.person,
+                      color: Colors.greenAccent,
+                    ),
+                    SizedBox(
+                      width: 15.w,
+                    ),
+                    Container(
+                      child: Text(
+                        "3.Mr                                                          Rahul",
                         style: TextStyle(
                             fontSize: 15.sp,
                             fontWeight: FontWeight.w700,
@@ -229,7 +338,7 @@ class _SelllistState extends State<Selllist> {
                     ),
                     Container(
                       child: Text(
-                        "4.Mr                                                          Rahul",
+                        "5.Mr                                                          Rahul",
                         style: TextStyle(
                             fontSize: 15.sp,
                             fontWeight: FontWeight.w700,
@@ -278,7 +387,7 @@ class _SelllistState extends State<Selllist> {
                     ),
                     Container(
                       child: Text(
-                        "4.Mr                                                          Rahul",
+                        "6.Mr                                                          Rahul",
                         style: TextStyle(
                             fontSize: 15.sp,
                             fontWeight: FontWeight.w700,
@@ -327,7 +436,7 @@ class _SelllistState extends State<Selllist> {
                     ),
                     Container(
                       child: Text(
-                        "4.Mr                                                          Rahul",
+                        "7.Mr                                                          Rahul",
                         style: TextStyle(
                             fontSize: 15.sp,
                             fontWeight: FontWeight.w700,
@@ -376,7 +485,7 @@ class _SelllistState extends State<Selllist> {
                     ),
                     Container(
                       child: Text(
-                        "4.Mr                                                          Rahul",
+                        "8.Mr                                                          Rahul",
                         style: TextStyle(
                             fontSize: 15.sp,
                             fontWeight: FontWeight.w700,
@@ -425,7 +534,7 @@ class _SelllistState extends State<Selllist> {
                     ),
                     Container(
                       child: Text(
-                        "4.Mr                                                          Rahul",
+                        "9.Mr                                                          Rahul",
                         style: TextStyle(
                             fontSize: 15.sp,
                             fontWeight: FontWeight.w700,
@@ -453,10 +562,10 @@ class _SelllistState extends State<Selllist> {
                 decoration: BoxDecoration(
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.grey.withOpacity(0.5),
-                      spreadRadius: 5,
-                      blurRadius: 7,
-                      offset: Offset(0, 3), // changes position of shadow
+                      color: Colors.grey.withOpacity(0.2),
+                      spreadRadius: 3,
+                      blurRadius: 3,
+                      offset: Offset(0, 2), // changes position of shadow
                     ),
                   ],
                   color: Colors.white,
@@ -474,7 +583,7 @@ class _SelllistState extends State<Selllist> {
                     ),
                     Container(
                       child: Text(
-                        "4.Mr                                                          Rahul",
+                        "10.Mr                                                          Rahul",
                         style: TextStyle(
                             fontSize: 15.sp,
                             fontWeight: FontWeight.w700,
@@ -502,10 +611,10 @@ class _SelllistState extends State<Selllist> {
                 decoration: BoxDecoration(
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.grey.withOpacity(0.5),
-                      spreadRadius: 5,
-                      blurRadius: 7,
-                      offset: Offset(0, 3), // changes position of shadow
+                      color: Colors.grey.withOpacity(0.2),
+                      spreadRadius: 3,
+                      blurRadius: 3,
+                      offset: Offset(0, 2), // changes position of shadow
                     ),
                   ],
                   color: Colors.white,
@@ -523,7 +632,7 @@ class _SelllistState extends State<Selllist> {
                     ),
                     Container(
                       child: Text(
-                        "4.Mr                                                          Rahul",
+                        "11.Mr                                                          Rahul",
                         style: TextStyle(
                             fontSize: 15.sp,
                             fontWeight: FontWeight.w700,
@@ -551,10 +660,10 @@ class _SelllistState extends State<Selllist> {
                 decoration: BoxDecoration(
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.grey.withOpacity(0.5),
-                      spreadRadius: 5,
-                      blurRadius: 7,
-                      offset: Offset(0, 3), // changes position of shadow
+                      color: Colors.grey.withOpacity(0.2),
+                      spreadRadius: 3,
+                      blurRadius: 3,
+                      offset: Offset(0, 2), // changes position of shadow
                     ),
                   ],
                   color: Colors.white,
@@ -572,7 +681,7 @@ class _SelllistState extends State<Selllist> {
                     ),
                     Container(
                       child: Text(
-                        "4.Mr                                                          Rahul",
+                        "12.Mr                                                          Rahul",
                         style: TextStyle(
                             fontSize: 15.sp,
                             fontWeight: FontWeight.w700,
@@ -600,10 +709,10 @@ class _SelllistState extends State<Selllist> {
                 decoration: BoxDecoration(
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.grey.withOpacity(0.5),
-                      spreadRadius: 5,
-                      blurRadius: 7,
-                      offset: Offset(0, 3), // changes position of shadow
+                      color: Colors.grey.withOpacity(0.2),
+                      spreadRadius: 3,
+                      blurRadius: 3,
+                      offset: Offset(0, 2), // changes position of shadow
                     ),
                   ],
                   color: Colors.white,
@@ -621,7 +730,7 @@ class _SelllistState extends State<Selllist> {
                     ),
                     Container(
                       child: Text(
-                        "4.Mr                                                          Rahul",
+                        "13.Mr                                                          Rahul",
                         style: TextStyle(
                             fontSize: 15.sp,
                             fontWeight: FontWeight.w700,
@@ -632,130 +741,71 @@ class _SelllistState extends State<Selllist> {
                 ),
               ),
             ),
-            SizedBox(
-              height: 20.h,
-            ),
-            InkWell(
-              onTap: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => CustomersellDetails()));
-              },
-              child: Container(
-                margin: EdgeInsets.symmetric(horizontal: 20.w),
-                height: 40.h,
-                width: 300.w,
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.withOpacity(0.5),
-                      spreadRadius: 5,
-                      blurRadius: 7,
-                      offset: Offset(0, 3), // changes position of shadow
-                    ),
-                  ],
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(10.r),
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(
-                      Icons.person,
-                      color: Colors.greenAccent,
-                    ),
-                    SizedBox(
-                      width: 15.w,
-                    ),
-                    Container(
-                      child: Text(
-                        "4.Mr                                                          Rahul",
-                        style: TextStyle(
-                            fontSize: 15.sp,
-                            fontWeight: FontWeight.w700,
-                            color: Colors.black),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            SizedBox(
-              height: 20.h,
-            ),
-            InkWell(
-              onTap: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => CustomersellDetails()));
-              },
-              child: Container(
-                margin: EdgeInsets.symmetric(horizontal: 20.w),
-                height: 40.h,
-                width: 300.w,
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.withOpacity(0.5),
-                      spreadRadius: 5,
-                      blurRadius: 7,
-                      offset: Offset(0, 3), // changes position of shadow
-                    ),
-                  ],
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(10.r),
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(
-                      Icons.person,
-                      color: Colors.greenAccent,
-                    ),
-                    SizedBox(
-                      width: 15.w,
-                    ),
-                    Container(
-                      child: Text(
-                        "4.Mr                                                          Rahul",
-                        style: TextStyle(
-                            fontSize: 15.sp,
-                            fontWeight: FontWeight.w700,
-                            color: Colors.black),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            Container(
-                alignment: Alignment.center,
-                margin: EdgeInsets.symmetric(horizontal: 120),
-                height: 40.h,
-                width: 300.w,
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.withOpacity(0.5),
-                      spreadRadius: 5,
-                      blurRadius: 7,
-                      offset: Offset(0, 3), // changes position of shadow
-                    ),
-                  ],
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Text("Total:8569000Tk",
-                    style: TextStyle(
-                        fontFamily: "itim",
-                        fontSize: 20,
-                        color: Colors.black))),
           ],
         ));
+  }
+}
+
+class CustomSearchDelegate extends SearchDelegate {
+  List<String> searchTerms = ['Krishna', '7788463'];
+  @override
+  List<Widget> buildActions(BuildContext context) {
+    return [
+      IconButton(
+        icon: const Icon(Icons.clear),
+        onPressed: (() {
+          query = '';
+        }),
+      ),
+    ];
+  }
+
+  @override
+  Widget buildLeading(BuildContext context) {
+    return IconButton(
+      icon: const Icon(Icons.arrow_back),
+      onPressed: (() {
+        close(context, null);
+        query = '';
+      }),
+    );
+  }
+
+  @override
+  Widget buildResults(BuildContext context) {
+    List<String> matchQuery = [];
+    for (var number in searchTerms) {
+      if (number.toString().contains(query.toString())) {
+        matchQuery.add(number);
+      }
+    }
+    return ListView.builder(
+      itemCount: matchQuery.length,
+      itemBuilder: (context, index) {
+        var result = matchQuery[index];
+        return ListTile(
+          title: Text(result),
+        );
+      },
+    );
+  }
+
+  @override
+  Widget buildSuggestions(BuildContext context) {
+    List<String> matchQuery = [];
+    for (var number in searchTerms) {
+      if (number.toString().contains(query.toString())) {
+        matchQuery.add(number);
+      }
+    }
+    return ListView.builder(
+      itemCount: matchQuery.length,
+      itemBuilder: (context, index) {
+        var result = matchQuery[index];
+        return ListTile(
+          title: Text(result),
+        );
+      },
+    );
   }
 }

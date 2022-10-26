@@ -10,54 +10,57 @@ class Mortagelist extends StatefulWidget {
 }
 
 class _MortagelistState extends State<Mortagelist> {
+  DateTime currentDate = DateTime.now();
+  Future<void> _selectDate(BuildContext context) async {
+    final DateTime? pickedDate = await showDatePicker(
+        context: context,
+        initialDate: currentDate,
+        firstDate: DateTime(1900),
+        lastDate: DateTime(3050));
+    if (pickedDate != null && pickedDate != currentDate)
+      setState(() {
+        currentDate = pickedDate;
+      });
+  }
+
+  final ScrollController _controller = ScrollController();
+  double _scrollOffset = 0;
+
+  // The maximum scroll offset
+  // In other words, this means the user has reached the bottom of the list view
+  double? _maxOffset;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        appBar: AppBar(actions: [
+          IconButton(
+            onPressed: () {
+              showSearch(
+                context: context,
+                delegate: CustomSearchDelegate(),
+              );
+            },
+            icon: const Icon(Icons.search),
+          )
+        ]),
         backgroundColor: Colors.white,
         body: ListView(
           children: [
             SizedBox(
-              height: 40,
-            ),
-            Container(
-                height: 40.h,
-                width: 300.w,
-                margin: EdgeInsets.symmetric(horizontal: 20),
-                child: TextField(
-                  decoration: InputDecoration(
-                      labelText: "Search",
-                      prefixIcon: Icon(
-                        Icons.search,
-                        color: Colors.blueGrey,
-                      ),
-                      border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10))),
-                )),
-            SizedBox(
               height: 20,
             ),
             Container(
-                alignment: Alignment.center,
-                margin: EdgeInsets.symmetric(horizontal: 100),
-                height: 40.h,
-                width: 300.w,
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.withOpacity(0.2),
-                      spreadRadius: 3,
-                      blurRadius: 3,
-                      offset: Offset(0, 2), // changes position of shadow
-                    ),
-                  ],
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Text("10-03-29",
-                    style: TextStyle(
-                        fontSize: 15,
-                        fontFamily: "itim",
-                        color: Colors.black))),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: <Widget>[
+                  Text(currentDate.toString()),
+                  ElevatedButton(
+                    onPressed: () => _selectDate(context),
+                    child: Text('Select date'),
+                  ),
+                ],
+              ),
+            ),
             SizedBox(
               height: 20.h,
             ),
@@ -1119,5 +1122,69 @@ class _MortagelistState extends State<Mortagelist> {
                         color: Colors.black))),
           ],
         ));
+  }
+}
+
+class CustomSearchDelegate extends SearchDelegate {
+  List<String> searchTerms = ['Krishna', '7788463'];
+  @override
+  List<Widget> buildActions(BuildContext context) {
+    return [
+      IconButton(
+        icon: const Icon(Icons.clear),
+        onPressed: (() {
+          query = '';
+        }),
+      ),
+    ];
+  }
+
+  @override
+  Widget buildLeading(BuildContext context) {
+    return IconButton(
+      icon: const Icon(Icons.arrow_back),
+      onPressed: (() {
+        close(context, null);
+        query = '';
+      }),
+    );
+  }
+
+  @override
+  Widget buildResults(BuildContext context) {
+    List<String> matchQuery = [];
+    for (var number in searchTerms) {
+      if (number.toString().contains(query.toString())) {
+        matchQuery.add(number);
+      }
+    }
+    return ListView.builder(
+      itemCount: matchQuery.length,
+      itemBuilder: (context, index) {
+        var result = matchQuery[index];
+        return ListTile(
+          title: Text(result),
+        );
+      },
+    );
+  }
+
+  @override
+  Widget buildSuggestions(BuildContext context) {
+    List<String> matchQuery = [];
+    for (var number in searchTerms) {
+      if (number.toString().contains(query.toString())) {
+        matchQuery.add(number);
+      }
+    }
+    return ListView.builder(
+      itemCount: matchQuery.length,
+      itemBuilder: (context, index) {
+        var result = matchQuery[index];
+        return ListTile(
+          title: Text(result),
+        );
+      },
+    );
   }
 }

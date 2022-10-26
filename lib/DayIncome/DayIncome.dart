@@ -20,18 +20,17 @@ class _DayIncomeState extends State<DayIncome> {
             height: 20,
           ),
           Container(
-            margin: EdgeInsets.symmetric(horizontal: 150),
+            margin: EdgeInsets.symmetric(horizontal: 100),
             alignment: Alignment.center,
             height: 40.h,
-            width: 400.w,
+            width: 200.w,
             decoration: BoxDecoration(
+                color: Colors.white,
                 borderRadius: BorderRadius.circular(10),
                 border: Border.all(color: Colors.blue)),
-            child: Text(
-              "23-05-63",
-              style: TextStyle(
-                  fontSize: 15, fontFamily: "itim", color: Colors.black),
-            ),
+            child: Text("19-03-23",
+                style: TextStyle(
+                    fontFamily: "itim", fontSize: 20, color: Colors.black)),
           ),
           SizedBox(
             height: 20,
